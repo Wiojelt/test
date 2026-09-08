@@ -34,17 +34,17 @@
   {
     "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/Jetfilmizle.cs3",
     "status": 3,
-    "version": 1,
+    "version": 2,
     "name": "Jetfilmizle Test",
     "internalName": "Jetfilmizle",
     "authors": ["Wiojelt"],
-    "description": "TurkStream Studio tarafından üretilen geçici test paketi",
-    "fileSize": 11222,
+    "description": "Çoklu katalog, film/dizi, bölüm, dublaj ve altyazı destekli JetFilmizle test paketi",
+    "fileSize": 32570,
     "repositoryUrl": "https://github.com/Wiojelt/test",
     "language": "tr",
     "tvTypes": ["Movie", "TvSeries"],
     "iconUrl": "https://jetfilmizle.now/assets/img/logo.png",
     "apiVersion": 1,
-    "fileHash": "sha256-0153f1e9d6e5d816354945e8ce7f732cc0c0694e741f0ab5bca1f61bea4bf4f7"
+    "fileHash": "sha256-817ed18dd0268eea9ae4b441865df20501dacbd272d76bbeadd301419068c832"
   }
 ]
