@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "name": "FullHDFilmizlesene",
+  "displayName": "FullHDFilmizlesene Test",
+  "packageName": "dev.wiojelt.generated.fullhdfilmizlesene",
+  "repository": "Wiojelt/test",
+  "author": "Wiojelt",
+  "kind": "movie",
+  "baseUrl": "https://www.fullhdfilmizlesene.now",
+  "listUrl": "https://www.fullhdfilmizlesene.now/",
+  "searchUrl": "",
+  "iconUrl": "https://www.fullhdfilmizlesene.now/favicon.ico",
+  "description": "TurkStream Studio test çıktısı",
+  "language": "tr",
+  "version": 1,
+  "defaultCategory": "Film ve Diziler",
+  "tvTypes": ["Movie", "TvSeries"],
+  "domainCandidates": [],
+  "selectors": {"item":".card","title":".title","link":"a[href]","poster":"img","category":"","description":".description, .card-text","stream":"iframe[src], iframe[data-src], video[src], source[src]","title_attr":"text","link_attr":"href","poster_attr":"src","category_attr":"text","stream_attr":"src"}
+}

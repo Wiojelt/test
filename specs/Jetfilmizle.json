@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "name": "Jetfilmizle",
+  "displayName": "Jetfilmizle Test",
+  "packageName": "dev.wiojelt.generated.jetfilmizle",
+  "repository": "Wiojelt/test",
+  "author": "Wiojelt",
+  "kind": "movie",
+  "baseUrl": "https://jetfilmizle.now",
+  "listUrl": "https://jetfilmizle.now/filmler",
+  "searchUrl": "",
+  "iconUrl": "https://jetfilmizle.now/assets/img/logo.png",
+  "description": "TurkStream Studio test çıktısı",
+  "language": "tr",
+  "version": 1,
+  "defaultCategory": "Film ve Diziler",
+  "tvTypes": ["Movie", "TvSeries"],
+  "domainCandidates": [],
+  "selectors": {"item":".film-card","title":".film-title-line a","link":"a[href]","poster":"img","category":"","description":".description, .card-text","stream":"iframe[src], iframe[data-src], video[src], source[src]","title_attr":"text","link_attr":"href","poster_attr":"src","category_attr":"text","stream_attr":"src"}
+}
