@@ -2,6 +2,8 @@
 
 TurkStream Studio tarafından üretilen deneysel CloudStream eklentilerinin geçici test deposudur.
 
+Jetfilmizle Test v2; sitedeki gerçek katalog başlıklarını ayrı satırlar halinde gösterir ve film/dizi detayları, bölümler, dublaj/altyazı kaynakları ile VideoPark oynatıcı akışını işler.
+
 
 CloudStream depo adresi:
 
