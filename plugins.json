@@ -1,0 +1,50 @@
+[
+  {
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/FullHDFilmizlesene.cs3",
+    "status": 3,
+    "version": 1,
+    "name": "FullHDFilmizlesene Test",
+    "internalName": "FullHDFilmizlesene",
+    "authors": ["Wiojelt"],
+    "description": "TurkStream Studio tarafından üretilen geçici test paketi",
+    "fileSize": 11253,
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "language": "tr",
+    "tvTypes": ["Movie", "TvSeries"],
+    "iconUrl": "https://www.fullhdfilmizlesene.now/favicon.ico",
+    "apiVersion": 1,
+    "fileHash": "sha256-88a793defe4ef89c21b6ef264fe248cb6594870ec866271a3ac28f5e7ce47345"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/HDFilmizle.cs3",
+    "status": 3,
+    "version": 1,
+    "name": "HDFilmizle Test",
+    "internalName": "HDFilmizle",
+    "authors": ["Wiojelt"],
+    "description": "TurkStream Studio tarafından üretilen geçici test paketi",
+    "fileSize": 11224,
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "language": "tr",
+    "tvTypes": ["Movie", "TvSeries"],
+    "iconUrl": "https://www.hdfilmizle.ink/wp-content/uploads/2023/04/hd-touch.webp",
+    "apiVersion": 1,
+    "fileHash": "sha256-e7f84e76d893829acdfab257c728d21ae4b64a1ef7a7dc48ae483b310d8ab3d2"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/Jetfilmizle.cs3",
+    "status": 3,
+    "version": 1,
+    "name": "Jetfilmizle Test",
+    "internalName": "Jetfilmizle",
+    "authors": ["Wiojelt"],
+    "description": "TurkStream Studio tarafından üretilen geçici test paketi",
+    "fileSize": 11222,
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "language": "tr",
+    "tvTypes": ["Movie", "TvSeries"],
+    "iconUrl": "https://jetfilmizle.now/assets/img/logo.png",
+    "apiVersion": 1,
+    "fileHash": "sha256-0153f1e9d6e5d816354945e8ce7f732cc0c0694e741f0ab5bca1f61bea4bf4f7"
+  }
+]
