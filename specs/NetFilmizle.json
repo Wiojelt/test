@@ -33,10 +33,6 @@
       "url": "https://netfilmizle.com/yerli-ve-yabanci-diziler"
     },
     {
-      "title": "Boxset Seri Filmler",
-      "url": "https://netfilmizle.com/seri-filmler"
-    },
-    {
       "title": "Yerli Filmler",
       "url": "https://netfilmizle.com/yerli-filmler/"
     },
@@ -58,8 +54,8 @@
     }
   ],
   "selectors": {
-    "item": ".listmovie",
-    "title": ".film-ismi a",
+    "item": ".move_k",
+    "title": ".title",
     "section": "",
     "section_title": "h1, h2, h3, h4",
     "link": "a[href]",

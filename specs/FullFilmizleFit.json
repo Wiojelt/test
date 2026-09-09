@@ -73,10 +73,6 @@
       "url": "https://fullfilmizle.fit/filmizle/fantastik-filmler/"
     },
     {
-      "title": "Fragman",
-      "url": "https://fullfilmizle.fit/filmizle/fragman/"
-    },
-    {
       "title": "Gençlik Filmleri",
       "url": "https://fullfilmizle.fit/filmizle/genclik-filmleri/"
     },
@@ -118,8 +114,8 @@
     }
   ],
   "selectors": {
-    "item": ".movie",
-    "title": "a",
+    "item": ".movie-box",
+    "title": ".name a",
     "section": "",
     "section_title": "h1, h2, h3, h4",
     "link": "a[href]",

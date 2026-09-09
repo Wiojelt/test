@@ -33,44 +33,8 @@
       "url": "https://www.hdfilmizle.ink/yerli-filmler/"
     },
     {
-      "title": "Diziler",
-      "url": "https://www.hdfilmizle.ink/dizi/"
-    },
-    {
-      "title": "Türkçe Dublaj Diziler",
-      "url": "https://www.hdfilmizle.ink/turkce-dublaj-diziler/"
-    },
-    {
-      "title": "Türkçe Altyazılı Diziler",
-      "url": "https://www.hdfilmizle.ink/turkce-altyazili-diziler/"
-    },
-    {
-      "title": "Yerli Diziler",
-      "url": "https://www.hdfilmizle.ink/yerli-diziler-izle/"
-    },
-    {
-      "title": "Türkçe Dublaj Bölümler",
-      "url": "https://www.hdfilmizle.ink/turkce-dublaj-bolumler/"
-    },
-    {
-      "title": "Türkçe Altyazılı Bölümler",
-      "url": "https://www.hdfilmizle.ink/turkce-altyazili-bolumler/"
-    },
-    {
-      "title": "Yerli Dizi Bölümleri",
-      "url": "https://www.hdfilmizle.ink/yerli-dizi-bolumleri-izle/"
-    },
-    {
-      "title": "IMDb En İyiler",
-      "url": "https://www.hdfilmizle.ink/imdb-en-iyiler/"
-    },
-    {
       "title": "Popüler",
       "url": "https://www.hdfilmizle.ink/populer/"
-    },
-    {
-      "title": "Seriler",
-      "url": "https://www.hdfilmizle.ink/boxset/"
     },
     {
       "title": "Aksiyon",
@@ -111,15 +75,11 @@
     {
       "title": "Fantastik",
       "url": "https://www.hdfilmizle.ink/tur/fantastik/"
-    },
-    {
-      "title": "Star Wars",
-      "url": "https://www.hdfilmizle.ink/boxset/star-wars/"
     }
   ],
   "selectors": {
     "item": ".item",
-    "title": ".title",
+    "title": ".data h2",
     "section": "",
     "section_title": "h1, h2, h3, h4",
     "link": "a[href]",

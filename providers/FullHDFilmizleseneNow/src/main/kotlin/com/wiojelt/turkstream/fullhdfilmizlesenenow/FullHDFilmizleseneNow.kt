@@ -17,8 +17,6 @@ class FullHDFilmizleseneNow : MainAPI() {
     override val supportedTypes = setOf(TvType.Movie, TvType.TvSeries)
     override val mainPage = mainPageOf(
         "https://www.fullhdfilmizlesene.now/filmizle/aile-filmleri" to "Film ve Diziler",
-        "https://www.fullhdfilmizlesene.now/film-listeleri" to "Listeler",
-        "https://www.fullhdfilmizlesene.now/seri-filmler" to "Seriler",
         "https://www.fullhdfilmizlesene.now/filmizle/aile-filmleri" to "Aile Filmleri",
         "https://www.fullhdfilmizlesene.now/filmizle/aksiyon-filmleri" to "Aksiyon Filmleri",
         "https://www.fullhdfilmizlesene.now/filmizle/animasyon-filmleri" to "Animasyon Filmleri",
@@ -56,6 +54,16 @@ class FullHDFilmizleseneNow : MainAPI() {
             .filter { value -> !value.contains("youtube.com/embed", true) && !value.contains("youtube-nocookie.com", true) }
             .mapNotNull { fixUrlNull(it) }.distinct()
     }
+
+    private fun isTrailer(value: String): Boolean = value.contains("youtube.com", true) ||
+        value.contains("youtube-nocookie.com", true) || value.contains("youtu.be", true)
+
+    private suspend fun expandPlayerPages(candidates: List<String>, referer: String): List<String> =
+        candidates.filter { it.startsWith(mainUrl, ignoreCase = true) && it.contains("vr_set", true) }
+            .flatMap { player ->
+                try { mediaCandidates(app.get(player, referer = referer).document) }
+                catch (_: Exception) { emptyList() }
+            }
 
     private fun textOrAttr(item: Element, selector: String, attr: String): String? {
         val target = if (selector.isBlank()) item else item.selectFirst(selector) ?: return null
@@ -121,7 +129,9 @@ class FullHDFilmizleseneNow : MainAPI() {
     override suspend fun loadLinks(data: String, isCasting: Boolean, subtitleCallback: (SubtitleFile) -> Unit, callback: (ExtractorLink) -> Unit): Boolean {
         trace("loadLinks start data=$data")
         val document = app.get(data).document
-        val streams = (listOfNotNull(fixUrlNull(document.selectFirst("iframe[src], iframe[data-src], video[src], source[src]")?.attr("src")?.trim())) + mediaCandidates(document)).distinct()
+        val initial = (listOfNotNull(fixUrlNull(document.selectFirst("iframe[src], iframe[data-src], video[src], source[src]")?.attr("src")?.trim())) + mediaCandidates(document))
+            .filterNot(::isTrailer).distinct()
+        val streams = (initial + expandPlayerPages(initial, data)).filterNot(::isTrailer).distinct()
         if (streams.isEmpty()) throw ErrorLoadingException("Video kaynağı bulunamadı")
         streams.forEach { stream ->
             if (stream.contains(".m3u8") || stream.contains(".mpd") || stream.contains(".mp4")) callback(newExtractorLink(name, name, stream, when {

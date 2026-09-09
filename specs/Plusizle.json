@@ -25,14 +25,6 @@
       "url": "https://plusizle.org/Kategori/tur/yerli-filmler-izle/"
     },
     {
-      "title": "NETFLIX",
-      "url": "https://plusizle.org/Kategori/netflix-filmleri-izle/"
-    },
-    {
-      "title": "EN POPÜLER",
-      "url": "https://plusizle.org/Kategori/en-populer-filmler/"
-    },
-    {
       "title": "Romantik",
       "url": "https://plusizle.org/Kategori/tur/romantik-filmler/"
     },
@@ -42,8 +34,8 @@
     }
   ],
   "selectors": {
-    "item": ".v100-movie-item",
-    "title": ".v100-title",
+    "item": ".custom-card-wrapper.normal-card",
+    "title": ".movie-title a",
     "section": "",
     "section_title": "h1, h2, h3, h4",
     "link": "a[href]",

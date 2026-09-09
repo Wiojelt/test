@@ -17,9 +17,7 @@ class Cepteizle : MainAPI() {
     override val supportedTypes = setOf(TvType.Movie, TvType.TvSeries)
     override val mainPage = mainPageOf(
         "https://cepteizle.net/yil/2025/" to "Film ve Diziler",
-        "https://cepteizle.net/tur/aksiyon/" to "Aksiyon",
         "https://cepteizle.net/tur/korku/" to "Korku",
-        "https://cepteizle.net/tur/komedi/" to "Komedi",
         "https://cepteizle.net/tur/macera/" to "Macera",
         "https://cepteizle.net/yil/2025/" to "2025 Filmleri",
         "https://cepteizle.net/yil/2026/" to "2026 Filmleri",
@@ -30,16 +28,12 @@ class Cepteizle : MainAPI() {
         "https://cepteizle.net/tur/aile/" to "Aile",
         "https://cepteizle.net/tur/animasyon/" to "Animasyon",
         "https://cepteizle.net/tur/anime-izle/" to "Anime izle",
-        "https://cepteizle.net/tur/belgesel/" to "Belgesel",
         "https://cepteizle.net/tur/blutv-filmleri/" to "BluTV Filmleri",
-        "https://cepteizle.net/tur/cizgi-filmler/" to "Çizgi Filmler",
         "https://cepteizle.net/tur/dram/" to "Dram",
         "https://cepteizle.net/tur/fantastik/" to "Fantastik",
         "https://cepteizle.net/tur/filmakinesi/" to "Filmakinesi",
         "https://cepteizle.net/tur/gerilim/" to "Gerilim",
         "https://cepteizle.net/tur/gizem/" to "Gizem",
-        "https://cepteizle.net/tur/hdfilmcehennemi/" to "Hdfilmcehennemi",
-        "https://cepteizle.net/tur/hdfilmcenneti/" to "Hdfilmcenneti",
         "https://cepteizle.net/tur/imdb-top-250/" to "IMDB TOP 250"
     )
 
@@ -57,12 +51,22 @@ class Cepteizle : MainAPI() {
             .mapNotNull { fixUrlNull(it) }.distinct()
     }
 
+    private fun isTrailer(value: String): Boolean = value.contains("youtube.com", true) ||
+        value.contains("youtube-nocookie.com", true) || value.contains("youtu.be", true)
+
+    private suspend fun expandPlayerPages(candidates: List<String>, referer: String): List<String> =
+        candidates.filter { it.startsWith(mainUrl, ignoreCase = true) && it.contains("vr_set", true) }
+            .flatMap { player ->
+                try { mediaCandidates(app.get(player, referer = referer).document) }
+                catch (_: Exception) { emptyList() }
+            }
+
     private fun textOrAttr(item: Element, selector: String, attr: String): String? {
         val target = if (selector.isBlank()) item else item.selectFirst(selector) ?: return null
         return (if (attr == "text") target.text() else target.attr(attr)).trim().ifBlank { null }
     }
 
-    private fun itemTitle(item: Element) = item.selectFirst(".title")?.text()?.trim()
+    private fun itemTitle(item: Element) = item.selectFirst(".film-ismi a")?.text()?.trim()
     private fun itemUrl(item: Element) = fixUrlNull(item.selectFirst("a[href]")?.attr("href")?.trim())
     private fun itemPoster(item: Element): String? {
         val node = item.selectFirst("img") ?: return null
@@ -121,7 +125,9 @@ class Cepteizle : MainAPI() {
     override suspend fun loadLinks(data: String, isCasting: Boolean, subtitleCallback: (SubtitleFile) -> Unit, callback: (ExtractorLink) -> Unit): Boolean {
         trace("loadLinks start data=$data")
         val document = app.get(data).document
-        val streams = (listOfNotNull(fixUrlNull(document.selectFirst("iframe[src], iframe[data-src], video[src], source[src]")?.attr("src")?.trim())) + mediaCandidates(document)).distinct()
+        val initial = (listOfNotNull(fixUrlNull(document.selectFirst("iframe[src], iframe[data-src], video[src], source[src]")?.attr("src")?.trim())) + mediaCandidates(document))
+            .filterNot(::isTrailer).distinct()
+        val streams = (initial + expandPlayerPages(initial, data)).filterNot(::isTrailer).distinct()
         if (streams.isEmpty()) throw ErrorLoadingException("Video kaynağı bulunamadı")
         streams.forEach { stream ->
             if (stream.contains(".m3u8") || stream.contains(".mpd") || stream.contains(".mp4")) callback(newExtractorLink(name, name, stream, when {

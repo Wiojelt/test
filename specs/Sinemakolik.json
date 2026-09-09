@@ -78,8 +78,8 @@
     }
   ],
   "selectors": {
-    "item": ".listmovie",
-    "title": ".film-ismi a",
+    "item": ".move_k",
+    "title": ".title h2",
     "section": "",
     "section_title": "h1, h2, h3, h4",
     "link": "a[href]",

@@ -69,18 +69,6 @@
       "url": "https://filmizlehell.net/tur/17-fantastik-001"
     },
     {
-      "title": "Seriler",
-      "url": "https://filmizlehell.net/seriler"
-    },
-    {
-      "title": "IMDb Puanı Yüksek Filmler",
-      "url": "https://filmizlehell.net/sayfa/imdb-puani-yuksek-filmler"
-    },
-    {
-      "title": "IMDb Puanı 7+ Filmler",
-      "url": "https://filmizlehell.net/sayfa/imdb-puani-7-filmler"
-    },
-    {
       "title": "Animasyon 256",
       "url": "https://filmizlehell.net/tur/18-animasyon-001"
     },
@@ -114,11 +102,11 @@
     }
   ],
   "selectors": {
-    "item": ".movie",
-    "title": "a",
+    "item": ".group[class*='aspect-']",
+    "title": ".absolute.bottom-0 div.text-white",
     "section": "",
     "section_title": "h1, h2, h3, h4",
-    "link": "a[href]",
+    "link": "a[aria-label]",
     "poster": "img",
     "category": "",
     "description": ".description, .card-text",

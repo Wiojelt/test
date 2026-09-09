@@ -20,11 +20,9 @@ class SinemaGG : MainAPI() {
         "https://www.sinema.gg/tag/imdb-top-250-izle" to "IMDB Top 250",
         "https://www.sinema.gg/izle/film-listeleri/hint-filmleri/" to "Hint",
         "https://www.sinema.gg/izle/film-listeleri/kore-filmleri/" to "Kore",
-        "https://www.sinema.gg/izle/film-listeleri/marvel-filmleri/" to "Marvel",
         "https://www.sinema.gg/izle/film-listeleri/netflix-filmleri/" to "Netflix",
         "https://www.sinema.gg/izle/film-listeleri/vampir-filmleri/" to "Vampir",
         "https://www.sinema.gg/izle/film-listeleri/zombi-filmleri/" to "Zombi",
-        "https://www.sinema.gg/izle/en-cok-begenilen-filmler/" to "Editörün Seçtikleri",
         "https://www.sinema.gg/izle/populer-filmler/" to "Popüler Filmler",
         "https://www.sinema.gg/izle/aile-filmleri/" to "Aile Filmleri",
         "https://www.sinema.gg/izle/aksiyon-filmleri/" to "Aksiyon Filmleri",
@@ -49,6 +47,16 @@ class SinemaGG : MainAPI() {
             .filter { value -> !value.contains("youtube.com/embed", true) && !value.contains("youtube-nocookie.com", true) }
             .mapNotNull { fixUrlNull(it) }.distinct()
     }
+
+    private fun isTrailer(value: String): Boolean = value.contains("youtube.com", true) ||
+        value.contains("youtube-nocookie.com", true) || value.contains("youtu.be", true)
+
+    private suspend fun expandPlayerPages(candidates: List<String>, referer: String): List<String> =
+        candidates.filter { it.startsWith(mainUrl, ignoreCase = true) && it.contains("vr_set", true) }
+            .flatMap { player ->
+                try { mediaCandidates(app.get(player, referer = referer).document) }
+                catch (_: Exception) { emptyList() }
+            }
 
     private fun textOrAttr(item: Element, selector: String, attr: String): String? {
         val target = if (selector.isBlank()) item else item.selectFirst(selector) ?: return null
@@ -114,7 +122,9 @@ class SinemaGG : MainAPI() {
     override suspend fun loadLinks(data: String, isCasting: Boolean, subtitleCallback: (SubtitleFile) -> Unit, callback: (ExtractorLink) -> Unit): Boolean {
         trace("loadLinks start data=$data")
         val document = app.get(data).document
-        val streams = (listOfNotNull(fixUrlNull(document.selectFirst("iframe[src], iframe[data-src], video[src], source[src]")?.attr("src")?.trim())) + mediaCandidates(document)).distinct()
+        val initial = (listOfNotNull(fixUrlNull(document.selectFirst("iframe[src], iframe[data-src], video[src], source[src]")?.attr("src")?.trim())) + mediaCandidates(document))
+            .filterNot(::isTrailer).distinct()
+        val streams = (initial + expandPlayerPages(initial, data)).filterNot(::isTrailer).distinct()
         if (streams.isEmpty()) throw ErrorLoadingException("Video kaynağı bulunamadı")
         streams.forEach { stream ->
             if (stream.contains(".m3u8") || stream.contains(".mpd") || stream.contains(".mp4")) callback(newExtractorLink(name, name, stream, when {

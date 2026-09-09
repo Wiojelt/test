@@ -105,10 +105,6 @@
       "url": "https://filmkovasi.co/filmizle/muzik/"
     },
     {
-      "title": "Polisiye",
-      "url": "https://filmkovasi.co/filmizle/polisiye/"
-    },
-    {
       "title": "Psikolojik",
       "url": "https://filmkovasi.co/filmizle/psikolojik/"
     },
@@ -118,8 +114,8 @@
     }
   ],
   "selectors": {
-    "item": ".movie",
-    "title": "a",
+    "item": ".listmovie",
+    "title": ".film-ismi a",
     "section": "",
     "section_title": "h1, h2, h3, h4",
     "link": "a[href]",

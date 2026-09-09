@@ -25,17 +25,13 @@
       "url": "https://fullhdfilmizlesene.co/film-arsivi/"
     },
     {
-      "title": "İMDB Top 250",
-      "url": "https://fullhdfilmizlesene.co/imdb-top-250"
-    },
-    {
       "title": "Belgesel",
       "url": "https://fullhdfilmizlesene.co/belgesel"
     }
   ],
   "selectors": {
-    "item": ".film",
-    "title": "h2",
+    "item": ".move_k",
+    "title": ".title h2",
     "section": "",
     "section_title": "h1, h2, h3, h4",
     "link": "a[href]",

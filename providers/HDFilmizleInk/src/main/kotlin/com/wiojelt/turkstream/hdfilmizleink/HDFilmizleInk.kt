@@ -20,16 +20,7 @@ class HDFilmizleInk : MainAPI() {
         "https://www.hdfilmizle.ink/turkce-dublaj-filmler/" to "Türkçe Dublaj Filmler",
         "https://www.hdfilmizle.ink/turkce-altyazili-filmler/" to "Türkçe Altyazılı Filmler",
         "https://www.hdfilmizle.ink/yerli-filmler/" to "Yerli Filmler",
-        "https://www.hdfilmizle.ink/dizi/" to "Diziler",
-        "https://www.hdfilmizle.ink/turkce-dublaj-diziler/" to "Türkçe Dublaj Diziler",
-        "https://www.hdfilmizle.ink/turkce-altyazili-diziler/" to "Türkçe Altyazılı Diziler",
-        "https://www.hdfilmizle.ink/yerli-diziler-izle/" to "Yerli Diziler",
-        "https://www.hdfilmizle.ink/turkce-dublaj-bolumler/" to "Türkçe Dublaj Bölümler",
-        "https://www.hdfilmizle.ink/turkce-altyazili-bolumler/" to "Türkçe Altyazılı Bölümler",
-        "https://www.hdfilmizle.ink/yerli-dizi-bolumleri-izle/" to "Yerli Dizi Bölümleri",
-        "https://www.hdfilmizle.ink/imdb-en-iyiler/" to "IMDb En İyiler",
         "https://www.hdfilmizle.ink/populer/" to "Popüler",
-        "https://www.hdfilmizle.ink/boxset/" to "Seriler",
         "https://www.hdfilmizle.ink/tur/aksiyon/" to "Aksiyon",
         "https://www.hdfilmizle.ink/tur/gerilim/" to "Gerilim",
         "https://www.hdfilmizle.ink/tur/komedi/" to "Komedi",
@@ -39,8 +30,7 @@ class HDFilmizleInk : MainAPI() {
         "https://www.hdfilmizle.ink/tur/romantik/" to "Romantik",
         "https://www.hdfilmizle.ink/tur/suc/" to "Suç",
         "https://www.hdfilmizle.ink/tur/bilim-kurgu/" to "Bilim-Kurgu",
-        "https://www.hdfilmizle.ink/tur/fantastik/" to "Fantastik",
-        "https://www.hdfilmizle.ink/boxset/star-wars/" to "Star Wars"
+        "https://www.hdfilmizle.ink/tur/fantastik/" to "Fantastik"
     )
 
     private fun mediaCandidates(document: org.jsoup.nodes.Document): List<String> {
@@ -57,12 +47,22 @@ class HDFilmizleInk : MainAPI() {
             .mapNotNull { fixUrlNull(it) }.distinct()
     }
 
+    private fun isTrailer(value: String): Boolean = value.contains("youtube.com", true) ||
+        value.contains("youtube-nocookie.com", true) || value.contains("youtu.be", true)
+
+    private suspend fun expandPlayerPages(candidates: List<String>, referer: String): List<String> =
+        candidates.filter { it.startsWith(mainUrl, ignoreCase = true) && it.contains("vr_set", true) }
+            .flatMap { player ->
+                try { mediaCandidates(app.get(player, referer = referer).document) }
+                catch (_: Exception) { emptyList() }
+            }
+
     private fun textOrAttr(item: Element, selector: String, attr: String): String? {
         val target = if (selector.isBlank()) item else item.selectFirst(selector) ?: return null
         return (if (attr == "text") target.text() else target.attr(attr)).trim().ifBlank { null }
     }
 
-    private fun itemTitle(item: Element) = item.selectFirst(".title")?.text()?.trim()
+    private fun itemTitle(item: Element) = item.selectFirst(".data h2")?.text()?.trim()
     private fun itemUrl(item: Element) = fixUrlNull(item.selectFirst("a[href]")?.attr("href")?.trim())
     private fun itemPoster(item: Element): String? {
         val node = item.selectFirst("img") ?: return null
@@ -121,7 +121,9 @@ class HDFilmizleInk : MainAPI() {
     override suspend fun loadLinks(data: String, isCasting: Boolean, subtitleCallback: (SubtitleFile) -> Unit, callback: (ExtractorLink) -> Unit): Boolean {
         trace("loadLinks start data=$data")
         val document = app.get(data).document
-        val streams = (listOfNotNull(fixUrlNull(document.selectFirst("iframe[src], iframe[data-src], video[src], source[src]")?.attr("src")?.trim())) + mediaCandidates(document)).distinct()
+        val initial = (listOfNotNull(fixUrlNull(document.selectFirst("iframe[src], iframe[data-src], video[src], source[src]")?.attr("src")?.trim())) + mediaCandidates(document))
+            .filterNot(::isTrailer).distinct()
+        val streams = (initial + expandPlayerPages(initial, data)).filterNot(::isTrailer).distinct()
         if (streams.isEmpty()) throw ErrorLoadingException("Video kaynağı bulunamadı")
         streams.forEach { stream ->
             if (stream.contains(".m3u8") || stream.contains(".mpd") || stream.contains(".mp4")) callback(newExtractorLink(name, name, stream, when {

@@ -21,16 +21,8 @@
   "domainCandidates": [],
   "categoryPages": [
     {
-      "title": "Aksiyon",
-      "url": "https://cepteizle.net/tur/aksiyon/"
-    },
-    {
       "title": "Korku",
       "url": "https://cepteizle.net/tur/korku/"
-    },
-    {
-      "title": "Komedi",
-      "url": "https://cepteizle.net/tur/komedi/"
     },
     {
       "title": "Macera",
@@ -73,16 +65,8 @@
       "url": "https://cepteizle.net/tur/anime-izle/"
     },
     {
-      "title": "Belgesel",
-      "url": "https://cepteizle.net/tur/belgesel/"
-    },
-    {
       "title": "BluTV Filmleri",
       "url": "https://cepteizle.net/tur/blutv-filmleri/"
-    },
-    {
-      "title": "Çizgi Filmler",
-      "url": "https://cepteizle.net/tur/cizgi-filmler/"
     },
     {
       "title": "Dram",
@@ -105,21 +89,13 @@
       "url": "https://cepteizle.net/tur/gizem/"
     },
     {
-      "title": "Hdfilmcehennemi",
-      "url": "https://cepteizle.net/tur/hdfilmcehennemi/"
-    },
-    {
-      "title": "Hdfilmcenneti",
-      "url": "https://cepteizle.net/tur/hdfilmcenneti/"
-    },
-    {
       "title": "IMDB TOP 250",
       "url": "https://cepteizle.net/tur/imdb-top-250/"
     }
   ],
   "selectors": {
     "item": ".listmovie",
-    "title": ".title",
+    "title": ".film-ismi a",
     "section": "",
     "section_title": "h1, h2, h3, h4",
     "link": "a[href]",

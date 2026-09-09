@@ -18,7 +18,6 @@ class FullHDFilmizleseneCo : MainAPI() {
     override val mainPage = mainPageOf(
         "https://fullhdfilmizlesene.co/seri-filmler/" to "Film ve Diziler",
         "https://fullhdfilmizlesene.co/film-arsivi/" to "Film Arşivi",
-        "https://fullhdfilmizlesene.co/imdb-top-250" to "İMDB Top 250",
         "https://fullhdfilmizlesene.co/belgesel" to "Belgesel"
     )
 
@@ -36,12 +35,22 @@ class FullHDFilmizleseneCo : MainAPI() {
             .mapNotNull { fixUrlNull(it) }.distinct()
     }
 
+    private fun isTrailer(value: String): Boolean = value.contains("youtube.com", true) ||
+        value.contains("youtube-nocookie.com", true) || value.contains("youtu.be", true)
+
+    private suspend fun expandPlayerPages(candidates: List<String>, referer: String): List<String> =
+        candidates.filter { it.startsWith(mainUrl, ignoreCase = true) && it.contains("vr_set", true) }
+            .flatMap { player ->
+                try { mediaCandidates(app.get(player, referer = referer).document) }
+                catch (_: Exception) { emptyList() }
+            }
+
     private fun textOrAttr(item: Element, selector: String, attr: String): String? {
         val target = if (selector.isBlank()) item else item.selectFirst(selector) ?: return null
         return (if (attr == "text") target.text() else target.attr(attr)).trim().ifBlank { null }
     }
 
-    private fun itemTitle(item: Element) = item.selectFirst("h2")?.text()?.trim()
+    private fun itemTitle(item: Element) = item.selectFirst(".title h2")?.text()?.trim()
     private fun itemUrl(item: Element) = fixUrlNull(item.selectFirst("a[href]")?.attr("href")?.trim())
     private fun itemPoster(item: Element): String? {
         val node = item.selectFirst("img") ?: return null
@@ -63,13 +72,13 @@ class FullHDFilmizleseneCo : MainAPI() {
         if ("".isNotBlank()) {
             val pageSections = document.select("").mapNotNull { container ->
                 val sectionName = container.selectFirst("h1, h2, h3, h4")?.text()?.trim().orEmpty()
-                val rows = container.select(".film").mapNotNull { it.toResult() }
+                val rows = container.select(".move_k").mapNotNull { it.toResult() }
                 if (rows.isEmpty()) null else HomePageList(sectionName.ifBlank { request.name }, rows, true)
             }
             trace("getMainPage parsed sections=${pageSections.size}")
             return newHomePageResponse(pageSections, false)
         }
-        val rows = document.select(".film").mapNotNull { it.toResult() }
+        val rows = document.select(".move_k").mapNotNull { it.toResult() }
         trace("getMainPage parsed rows=${rows.size}")
         return newHomePageResponse(request.name, rows)
     }
@@ -78,7 +87,7 @@ class FullHDFilmizleseneCo : MainAPI() {
         val target = "".takeIf { it.isNotBlank() }
             ?.replace("{query}", URLEncoder.encode(query, "UTF-8")) ?: "https://fullhdfilmizlesene.co/seri-filmler/"
         trace("search query=$query url=$target")
-        return app.get(target).document.select(".film").mapNotNull { it.toResult() }
+        return app.get(target).document.select(".move_k").mapNotNull { it.toResult() }
             .filter { it.name.contains(query, ignoreCase = true) }
     }
 
@@ -100,7 +109,9 @@ class FullHDFilmizleseneCo : MainAPI() {
     override suspend fun loadLinks(data: String, isCasting: Boolean, subtitleCallback: (SubtitleFile) -> Unit, callback: (ExtractorLink) -> Unit): Boolean {
         trace("loadLinks start data=$data")
         val document = app.get(data).document
-        val streams = (listOfNotNull(fixUrlNull(document.selectFirst("iframe[src], iframe[data-src], video[src], source[src]")?.attr("src")?.trim())) + mediaCandidates(document)).distinct()
+        val initial = (listOfNotNull(fixUrlNull(document.selectFirst("iframe[src], iframe[data-src], video[src], source[src]")?.attr("src")?.trim())) + mediaCandidates(document))
+            .filterNot(::isTrailer).distinct()
+        val streams = (initial + expandPlayerPages(initial, data)).filterNot(::isTrailer).distinct()
         if (streams.isEmpty()) throw ErrorLoadingException("Video kaynağı bulunamadı")
         streams.forEach { stream ->
             if (stream.contains(".m3u8") || stream.contains(".mpd") || stream.contains(".mp4")) callback(newExtractorLink(name, name, stream, when {
