@@ -1,140 +1,179 @@
+// ! Bu araç @keyiflerolsun tarafından | @KekikAkademi için yazılmıştır.
 package com.wiojelt.turkstream.sinemagg
-
-import com.lagradost.cloudstream3.*
-import com.lagradost.cloudstream3.utils.*
 import android.util.Log
 import org.jsoup.nodes.Element
-import java.net.URLEncoder
+import com.lagradost.cloudstream3.*
+import com.lagradost.cloudstream3.utils.*
+import com.lagradost.cloudstream3.LoadResponse.Companion.addActors
+import com.lagradost.cloudstream3.LoadResponse.Companion.addTrailer
+import com.fasterxml.jackson.annotation.JsonProperty
 
 class SinemaGG : MainAPI() {
-    private val logTag = "TS-SinemaGG"
-    private fun trace(message: String) = Log.d(logTag, message)
-    override var mainUrl = "https://www.sinema.gg"
-    override var name = "SinemaGG Test"
-    override var lang = "tr"
-    override val hasMainPage = true
-    override val hasDownloadSupport = true
-    override val supportedTypes = setOf(TvType.Movie, TvType.TvSeries)
+    override var mainUrl              = "https://www.sinema.gg"
+    override var name                 = "SinemaGG Test"
+    override val hasMainPage          = true
+    override var lang                 = "tr"
+    override val hasQuickSearch       = false
+    override val supportedTypes       = setOf(TvType.Movie)
+
+    // ! CloudFlare bypass
+	/*
+    override var sequentialMainPage = true        // * https://recloudstream.github.io/dokka/-cloudstream/com.lagradost.cloudstream3/-main-a-p-i/index.html#-2049735995%2FProperties%2F101969414
+    override var sequentialMainPageDelay       = 250L // ? 0.25 saniye
+    override var sequentialMainPageScrollDelay = 250L // ? 0.25 saniye
+	*/
+
     override val mainPage = mainPageOf(
-        "https://www.sinema.gg/izle/populer-filmler/" to "Film ve Diziler",
-        "https://www.sinema.gg/tag/imdb-top-250-izle" to "IMDB Top 250",
-        "https://www.sinema.gg/izle/film-listeleri/hint-filmleri/" to "Hint",
-        "https://www.sinema.gg/izle/film-listeleri/kore-filmleri/" to "Kore",
-        "https://www.sinema.gg/izle/film-listeleri/netflix-filmleri/" to "Netflix",
-        "https://www.sinema.gg/izle/film-listeleri/vampir-filmleri/" to "Vampir",
-        "https://www.sinema.gg/izle/film-listeleri/zombi-filmleri/" to "Zombi",
-        "https://www.sinema.gg/izle/populer-filmler/" to "Popüler Filmler",
-        "https://www.sinema.gg/izle/aile-filmleri/" to "Aile Filmleri",
-        "https://www.sinema.gg/izle/aksiyon-filmleri/" to "Aksiyon Filmleri",
-        "https://www.sinema.gg/izle/animasyon-filmleri/" to "Animasyon Filmleri",
-        "https://www.sinema.gg/izle/bilim-kurgu-filmleri/" to "Bilim Kurgu Filmler",
-        "https://www.sinema.gg/izle/dram-filmleri/" to "Dram Filmleri",
-        "https://www.sinema.gg/izle/fantastik-filmler/" to "Fantastik Filmler",
-        "https://www.sinema.gg/izle/komedi-filmleri/" to "Komedi Filmleri",
-        "https://www.sinema.gg/izle/korku-filmleri/" to "Korku Filmleri"
+        "${mainUrl}/page/"			                     to		"Son Eklenen Filmler",
+        "${mainUrl}/izle/aile-filmleri/page/"			 to		"Aile Filmleri",
+        "${mainUrl}/izle/aksiyon-filmleri/page/"		 to		"Aksiyon Filmleri",
+        "${mainUrl}/izle/animasyon-filmleri/page/"		 to		"Animasyon Filmleri",
+        "${mainUrl}/izle/belgesel/page/"				 to		"Belgesel Filmleri",
+        "${mainUrl}/izle/bilim-kurgu-filmleri/page/"	 to		"Bilim Kurgu Filmler",
+        "${mainUrl}/izle/biyografi/page/"				 to		"Biyografi Filmleri",
+        "${mainUrl}/izle/fantastik-filmler/page/"		 to		"Fantastik Filmler",
+        "${mainUrl}/izle/gizem-filmleri/page/"			 to		"Gizem Filmleri",
+        "${mainUrl}/izle/komedi-filmleri/page/"			 to		"Komedi Filmleri",
+        "${mainUrl}/izle/korku-filmleri/page/"			 to		"Korku Filmleri",
+        "${mainUrl}/izle/macera-filmleri/page/"			 to		"Macera Filmleri",
+        "${mainUrl}/izle/romantik-filmler/page/"		 to		"Romantik Filmler",
+        "${mainUrl}/izle/erotik-filmler/page/"			 to		"Erotik Film izle",
     )
 
-    private fun mediaCandidates(document: org.jsoup.nodes.Document): List<String> {
-        val fromNodes = document.select("iframe, video, source").mapNotNull { node ->
-            listOf("src", "data-src", "data-vsrc", "ysrc", "data-litespeed-src")
-                .asSequence().map { node.attr(it).trim() }.firstOrNull { it.isNotBlank() }
-        }
-        // Bazı siteler iframe'i JS ile sonradan basıyor; açık player URL'lerini inline HTML'den de al.
-        val fromHtml = Regex("""https?://[^"'<>\s]+""").findAll(document.html()).map { it.value }.filter { value ->
-            value.contains("player", true) || value.contains("video", true) || value.contains("embed", true) || value.contains("play", true)
-        }.toList()
-        return (fromNodes + fromHtml)
-            .filter { value -> !value.contains("youtube.com/embed", true) && !value.contains("youtube-nocookie.com", true) }
-            .mapNotNull { fixUrlNull(it) }.distinct()
-    }
-
-    private fun isTrailer(value: String): Boolean = value.contains("youtube.com", true) ||
-        value.contains("youtube-nocookie.com", true) || value.contains("youtu.be", true)
-
-    private suspend fun expandPlayerPages(candidates: List<String>, referer: String): List<String> =
-        candidates.filter { it.startsWith(mainUrl, ignoreCase = true) && it.contains("vr_set", true) }
-            .flatMap { player ->
-                try { mediaCandidates(app.get(player, referer = referer).document) }
-                catch (_: Exception) { emptyList() }
-            }
-
-    private fun textOrAttr(item: Element, selector: String, attr: String): String? {
-        val target = if (selector.isBlank()) item else item.selectFirst(selector) ?: return null
-        return (if (attr == "text") target.text() else target.attr(attr)).trim().ifBlank { null }
-    }
-
-    private fun itemTitle(item: Element) = item.selectFirst(".baslik span")?.text()?.trim()
-    private fun itemUrl(item: Element) = fixUrlNull(item.selectFirst("a[href]")?.attr("href")?.trim())
-    private fun itemPoster(item: Element): String? {
-        val node = item.selectFirst("img") ?: return null
-        val candidate = node.attr("data-src").ifBlank { node.attr("data-lazy-src") }
-            .ifBlank { node.attr("src") }.ifBlank { node.attr("data-original") }
-        return fixUrlNull(candidate)
-    }
-    private fun itemCategory(item: Element) = (null)?.ifBlank { null } ?: "Film ve Diziler"
-
-    private fun Element.toResult(): SearchResponse? {
-        val title = itemTitle(this) ?: return null
-        val url = itemUrl(this) ?: return null
-        return newMovieSearchResponse(title, url, TvType.Movie) { posterUrl = itemPoster(this@toResult) }
-    }
-
     override suspend fun getMainPage(page: Int, request: MainPageRequest): HomePageResponse {
-        trace("getMainPage start page=$page url=${request.data}")
-        val document = app.get(request.data).document
-        if ("".isNotBlank()) {
-            val pageSections = document.select("").mapNotNull { container ->
-                val sectionName = container.selectFirst("h1, h2, h3, h4")?.text()?.trim().orEmpty()
-                val rows = container.select(".frag-k").mapNotNull { it.toResult() }
-                if (rows.isEmpty()) null else HomePageList(sectionName.ifBlank { request.name }, rows, true)
-            }
-            trace("getMainPage parsed sections=${pageSections.size}")
-            return newHomePageResponse(pageSections, false)
-        }
-        val rows = document.select(".frag-k").mapNotNull { it.toResult() }
-        trace("getMainPage parsed rows=${rows.size}")
-        return newHomePageResponse(request.name, rows)
+        val document = app.get("${request.data}${page}").document
+        val home     = document.select("div.son div.frag-k, div.icerik div.frag-k").mapNotNull { it.toSearchResult() }
+
+        return newHomePageResponse(request.name, home)
+    }
+
+    private fun Element.toSearchResult(): SearchResponse? {
+        val title     = this.selectFirst("div.yanac span")?.text() ?: return null
+        val href      = fixUrlNull(this.selectFirst("div.yanac a")?.attr("href")) ?: return null
+        val posterUrl = fixUrlNull(this.selectFirst("a.resim img")?.attr("data-src")) ?: fixUrlNull(this.selectFirst("a.resim img")?.attr("src"))
+
+        return newMovieSearchResponse(title, href, TvType.Movie) { this.posterUrl = posterUrl }
     }
 
     override suspend fun search(query: String): List<SearchResponse> {
-        val target = "".takeIf { it.isNotBlank() }
-            ?.replace("{query}", URLEncoder.encode(query, "UTF-8")) ?: "https://www.sinema.gg/izle/populer-filmler/"
-        trace("search query=$query url=$target")
-        return app.get(target).document.select(".frag-k").mapNotNull { it.toResult() }
-            .filter { it.name.contains(query, ignoreCase = true) }
+        val document = app.get("${mainUrl}/?s=${query}").document
+
+        return document.select("div.icerik div.frag-k").mapNotNull { it.toSearchResult() }
     }
+
+    override suspend fun quickSearch(query: String): List<SearchResponse> = search(query)
 
     override suspend fun load(url: String): LoadResponse? {
-        trace("load start url=$url")
         val document = app.get(url).document
-        val titleElement: Element = document.selectFirst("h1, [property='og:title']") ?: return null
-        val title = (if (titleElement.hasAttr("content")) titleElement.attr("content") else titleElement.text())
-            .trim().ifBlank { return null }
-        val poster = fixUrlNull(document.selectFirst("[property='og:image']")?.attr("content"))
-        val plot = document.selectFirst(".description, .card-text")?.text()?.trim()
-        trace("load parsed title=$title poster=${poster != null} plot=${!plot.isNullOrBlank()}")
+
+        val title       = document.selectFirst("div.f-bilgi h1")?.text()?.trim() ?: return null
+        val poster      = fixUrlNull(document.selectFirst("link[rel='image_src']")?.attr("href"))
+        val year        = document.selectFirst("div.f-bilgi ul.detay a[href*='yapim']")?.text()?.toIntOrNull()
+        val description = document.selectFirst("div.f-bilgi div.ackl")?.text()?.trim()
+        val tags        = document.select("div.f-bilgi div.tur a").map { it.text() }
+        val duration    = Regex("""Süre: </span>(\d+) Dakika</li>""").find(document.html())?.groupValues?.get(1)?.toIntOrNull()
+        val trailer     = document.select("iframe[src], iframe[data-src], iframe[data-vsrc]").map { it.attr("data-vsrc").ifBlank { it.attr("data-src").ifBlank { it.attr("src") } } }.firstOrNull { it.contains("youtube", true) }
+        val actors      = document.select("li.oync li.oyuncu-k").map {
+            Actor(it.selectFirst("span.isim")!!.text(), it.selectFirst("img")!!.attr("data-src"))
+        }
+
         return newMovieLoadResponse(title, url, TvType.Movie, url) {
-            posterUrl = poster
-            this.plot = plot
+            this.posterUrl = poster
+            this.year      = year
+            this.plot      = description
+            this.tags      = tags
+            this.duration  = duration
+            addActors(actors)
+            addTrailer(trailer)
         }
     }
 
-    override suspend fun loadLinks(data: String, isCasting: Boolean, subtitleCallback: (SubtitleFile) -> Unit, callback: (ExtractorLink) -> Unit): Boolean {
-        trace("loadLinks start data=$data")
-        val document = app.get(data).document
-        val initial = (listOfNotNull(fixUrlNull(document.selectFirst("iframe[src], iframe[data-src], video[src], source[src]")?.attr("src")?.trim())) + mediaCandidates(document))
-            .filterNot(::isTrailer).distinct()
-        val streams = (initial + expandPlayerPages(initial, data)).filterNot(::isTrailer).distinct()
-        if (streams.isEmpty()) throw ErrorLoadingException("Video kaynağı bulunamadı")
-        streams.forEach { stream ->
-            if (stream.contains(".m3u8") || stream.contains(".mpd") || stream.contains(".mp4")) callback(newExtractorLink(name, name, stream, when {
-                stream.contains(".m3u8") -> ExtractorLinkType.M3U8
-                stream.contains(".mpd") -> ExtractorLinkType.DASH
-                else -> ExtractorLinkType.VIDEO
-            }) { referer = data; quality = Qualities.Unknown.value })
-            else loadExtractor(stream, data, subtitleCallback, callback)
-        }
-        trace("loadLinks candidates=${streams.size}")
-        return true
+override suspend fun loadLinks(
+    data: String,
+    isCasting: Boolean,
+    subtitleCallback: (SubtitleFile) -> Unit,
+    callback: (ExtractorLink) -> Unit
+): Boolean {
+    Log.d("SCX", "data » $data")
+
+    // Sayfa ve ilk iframe'i al
+    val document = app.get(data).document
+    val iframeRaw = document.select("iframe").map { it.attr("data-vsrc") }
+
+    val hasOnlyTrailer = iframeRaw.all {
+        it.contains("youtube", ignoreCase = true) ||
+        it.contains("fragman", ignoreCase = true) ||
+        it.contains("trailer", ignoreCase = true)
     }
+
+    // Eğer sayfa sadece fragmansa, /2/ sayfasından iframe'leri al
+    val iframeList = if (hasOnlyTrailer) {
+        val altUrl = if (data.endsWith("/")) data + "2/" else "$data/2/"
+        val altDoc = app.get(altUrl).document
+        altDoc.select("iframe").map { it.attr("data-vsrc") }
+    } else {
+        iframeRaw
+    }
+
+    // Eğer iframe bulunamadıysa işlemi sonlandır
+    val iframe = fixUrlNull(iframeList.firstOrNull())?.substringBefore("?img=") ?: return false
+    Log.d("SCX", "iframe » $iframe")
+
+    // Altyazı kontrolü
+    val iframeSource = app.get(iframe, referer = "${mainUrl}/").text
+    val subtitleSectionRegex = Regex("""playerjsSubtitle\s*=\s*"(.+?)"""")
+    val subtitleSectionMatch = subtitleSectionRegex.find(iframeSource)
+    if (subtitleSectionMatch != null) {
+        val subtitleSection = subtitleSectionMatch.groupValues[1]
+        val subtitleRegex = Regex("""\[(.*?)](https?://[^\s",]+)""")
+        val subtitleMatches = subtitleRegex.findAll(subtitleSection)
+
+        for (subtitleMatch in subtitleMatches) {
+            val subtitleGroups = subtitleMatch.groupValues
+            val subtitleLanguage = subtitleGroups[1]
+            val subtitleUrl = subtitleGroups[2]
+
+            subtitleCallback.invoke(
+                SubtitleFile(
+                    lang = subtitleLanguage,
+                    url = fixUrl(subtitleUrl)
+                )
+            )
+        }
+    }
+
+    // iframe kaynak kontrolü ve link çekme
+    if (iframe.lowercase().contains("player.filmizle.in")) {
+        val baseUrl = Regex("""https?://([^/]+)""").find(iframe)?.groupValues?.get(1)
+            ?: return false
+
+        val vidUrl = app.post(
+            "https://$baseUrl/player/index.php?data=" + iframe.split("/").last() + "&do=getVideo",
+            headers = mapOf("X-Requested-With" to "XMLHttpRequest"),
+            referer = "${mainUrl}/"
+        ).parsedSafe<Panel>()?.securedLink ?: return false
+
+        callback.invoke(
+            newExtractorLink(
+                source = this.name,
+                name = this.name,
+                url = vidUrl,
+                type = ExtractorLinkType.M3U8
+            ) {
+                quality = Qualities.Unknown.value
+                headers = mapOf("Referer" to iframe)
+            }
+        )
+    } else {
+        loadExtractor(iframe, "${mainUrl}/", subtitleCallback, callback)
+    }
+
+    return true
+}
+
+
+    data class Panel(
+        @JsonProperty("hls")         val hls: Boolean?        = null,
+        @JsonProperty("securedLink") val securedLink: String? = null
+    )
 }

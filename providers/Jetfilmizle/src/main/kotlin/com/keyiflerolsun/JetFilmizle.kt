@@ -4,6 +4,7 @@ import android.util.Log
 import com.fasterxml.jackson.annotation.JsonProperty
 import com.lagradost.cloudstream3.*
 import com.lagradost.cloudstream3.LoadResponse.Companion.addActors
+import com.lagradost.cloudstream3.LoadResponse.Companion.addTrailer
 import com.lagradost.cloudstream3.utils.*
 import org.jsoup.Jsoup
 import org.jsoup.nodes.Element
@@ -103,6 +104,7 @@ class JetFilmizle : MainAPI() {
             val actorName = it.selectFirst(".actor-name, .name")?.text()?.trim() ?: return@mapNotNull null
             Actor(actorName, fixUrlNull(it.selectFirst("img")?.attr("src")))
         }
+        val trailer = document.select("iframe, [data-video_url]").map { node -> listOf("data-video_url", "data-vsrc", "data-src", "data-litespeed-src", "src").map { node.attr(it) }.firstOrNull { it.contains("youtube", true) } }.filterNotNull().firstOrNull()
         val recommendations = document.select("#benzers .film-card, .similar-films .film-card").mapNotNull { it.toSearchResult() }
 
         if (url.contains("/dizi/", true)) {
@@ -118,13 +120,13 @@ class JetFilmizle : MainAPI() {
             trace("load series title=$title episodes=${episodes.size}")
             return newTvSeriesLoadResponse(title, url, TvType.TvSeries, episodes) {
                 posterUrl = poster; this.plot = plot; this.year = year; this.tags = tags
-                this.recommendations = recommendations; addActors(actors)
+                this.recommendations = recommendations; addActors(actors); addTrailer(trailer)
             }
         }
         trace("load movie title=$title")
         return newMovieLoadResponse(title, url, TvType.Movie, url) {
             posterUrl = poster; this.plot = plot; this.year = year; this.tags = tags
-            this.recommendations = recommendations; addActors(actors)
+            this.recommendations = recommendations; addActors(actors); addTrailer(trailer)
         }
     }
 

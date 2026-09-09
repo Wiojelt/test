@@ -8,5 +8,6 @@ import com.lagradost.cloudstream3.plugins.Plugin
 class PlusizlePlugin : Plugin() {
     override fun load(context: Context) {
         registerMainAPI(Plusizle())
+        registerExtractorAPI(HotStream())
     }
 }

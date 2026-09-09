@@ -8,5 +8,6 @@ import com.lagradost.cloudstream3.plugins.Plugin
 class CepteizlePlugin : Plugin() {
     override fun load(context: Context) {
         registerMainAPI(Cepteizle())
+        registerExtractorAPI(HotStream())
     }
 }

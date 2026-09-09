@@ -8,5 +8,6 @@ import com.lagradost.cloudstream3.plugins.Plugin
 class NetFilmizlePlugin : Plugin() {
     override fun load(context: Context) {
         registerMainAPI(NetFilmizle())
+        registerExtractorAPI(Vidmixi())
     }
 }

@@ -8,5 +8,6 @@ import com.lagradost.cloudstream3.plugins.Plugin
 class FilmizleHellPlugin : Plugin() {
     override fun load(context: Context) {
         registerMainAPI(FilmizleHell())
+        registerExtractorAPI(PlayTurka())
     }
 }

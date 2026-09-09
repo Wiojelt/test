@@ -2,7 +2,14 @@ package com.wiojelt.turkstream.fullhdfilmizlesenenow
 
 import com.lagradost.cloudstream3.*
 import com.lagradost.cloudstream3.utils.*
+import com.lagradost.cloudstream3.LoadResponse.Companion.addTrailer
 import android.util.Log
+import com.fasterxml.jackson.module.kotlin.readValue
+import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties
+import com.fasterxml.jackson.annotation.JsonProperty
+import org.jsoup.nodes.Document
+import android.util.Base64
 import org.jsoup.nodes.Element
 import java.net.URLEncoder
 
@@ -42,17 +49,34 @@ class FullHDFilmizleseneNow : MainAPI() {
     )
 
     private fun mediaCandidates(document: org.jsoup.nodes.Document): List<String> {
-        val fromNodes = document.select("iframe, video, source").mapNotNull { node ->
-            listOf("src", "data-src", "data-vsrc", "ysrc", "data-litespeed-src")
-                .asSequence().map { node.attr(it).trim() }.firstOrNull { it.isNotBlank() }
+        val fromNodes = document.select("iframe, video, source").flatMap { node ->
+            listOf("data-vsrc", "data-src", "data-litespeed-src", "data-original", "src", "ysrc")
+                .map { node.attr(it).trim() }.filter { it.isNotBlank() && it != "about:blank" }
         }
         // Bazı siteler iframe'i JS ile sonradan basıyor; açık player URL'lerini inline HTML'den de al.
         val fromHtml = Regex("""https?://[^"'<>\s]+""").findAll(document.html()).map { it.value }.filter { value ->
             value.contains("player", true) || value.contains("video", true) || value.contains("embed", true) || value.contains("play", true)
         }.toList()
-        return (fromNodes + fromHtml)
-            .filter { value -> !value.contains("youtube.com/embed", true) && !value.contains("youtube-nocookie.com", true) }
+        return (fromNodes + fromHtml + decodedPlayers(document.html()))
+            .filter { value -> value != "about:blank" && !value.startsWith("data:") && !value.contains("youtube.com/embed", true) && !value.contains("youtube-nocookie.com", true) }
             .mapNotNull { fixUrlNull(it) }.distinct()
+    }
+
+    private fun decodedJsonFrames(html: String): List<String> = Regex("""atob\(["']([^"']+)["']\)""").findAll(html).flatMap { match ->
+        runCatching { Regex("""https?://[^"'\\]+""").findAll(base64Decode(match.groupValues[1]).replace("\\/", "/")).map { it.value }.toList() }.getOrDefault(emptyList()).asSequence()
+    }.filterNot { it.contains("youtube", true) }.mapNotNull { fixUrlNull(it) }.distinct().toList()
+
+    private fun decodedPlayers(html: String, wanted: String? = null): List<String> {
+        val values = mutableListOf<Pair<String, String>>()
+        Regex("""var\s+ilkpartkod\s*=\s*['"]([^'"]+)""").find(html)?.groupValues?.getOrNull(1)?.let { values += "0" to it }
+        Regex("""pdata\[['"]prt_([^'"]+)['"]]\s*=\s*['"]([^'"]+)""").findAll(html).forEach { values += it.groupValues[1] to it.groupValues[2] }
+        return values.filter { wanted == null || it.first == wanted }.mapNotNull { (_, raw) ->
+            runCatching {
+                val payload = if (raw.startsWith("PG")) raw else "PG" + "BSZtFmcmlGP".reversed().removePrefix("PG") + raw
+                val decoded = base64Decode(payload)
+                Regex("""src=["']([^"']+)""").find(decoded)?.groupValues?.get(1)
+            }.getOrNull()
+        }.filterNot { it.contains("youtube", true) }.mapNotNull { fixUrlNull(it) }.distinct()
     }
 
     private fun isTrailer(value: String): Boolean = value.contains("youtube.com", true) ||
@@ -118,30 +142,133 @@ class FullHDFilmizleseneNow : MainAPI() {
         val title = (if (titleElement.hasAttr("content")) titleElement.attr("content") else titleElement.text())
             .trim().ifBlank { return null }
         val poster = fixUrlNull(document.selectFirst("[property='og:image']")?.attr("content"))
-        val plot = document.selectFirst(".description, .card-text")?.text()?.trim()
+        val plot = document.selectFirst(".description, .card-text, [itemprop=description], .film-description, .ackl")?.text()?.trim()
+        val trailer = document.select("iframe, [data-video_url]").map { node -> listOf("data-video_url", "data-vsrc", "data-src", "data-litespeed-src", "src").map { node.attr(it) }.firstOrNull { it.contains("youtube", true) } }.filterNotNull().firstOrNull()
         trace("load parsed title=$title poster=${poster != null} plot=${!plot.isNullOrBlank()}")
+        val inlineEpisodeNodes = document.select("li.psec[id]").filterNot { it.id().contains("fragman", true) }
+        if (inlineEpisodeNodes.size > 1) {
+            val episodes = inlineEpisodeNodes.mapIndexed { index, node -> newEpisode("$url|${node.id()}") { name = node.text().trim().ifBlank { "${index + 1}. Bölüm" }; episode = index + 1; posterUrl = poster } }
+            return newTvSeriesLoadResponse(title, url, TvType.TvSeries, episodes) { posterUrl = poster; this.plot = plot; addTrailer(trailer) }
+        }
+        val looksSeries = url.contains("/dizi/", true) || title.contains("tüm bölümleri", true) || document.select("a[href*='/bolum/']").isNotEmpty()
+        if (looksSeries) {
+            val links = document.select("a[href]").mapNotNull { a ->
+                val href = fixUrlNull(a.attr("href")) ?: return@mapNotNull null
+                val label = a.text().trim()
+                if (href.contains("/bolum/", true) || label.contains("bölüm", true) || Regex("/\\d+/?$").containsMatchIn(href)) href to label else null
+            }.distinctBy { it.first }
+            val episodes = links.mapIndexed { index, pair -> newEpisode(pair.first) { this.name = pair.second.ifBlank { "${index + 1}. Bölüm" }; episode = index + 1; this.posterUrl = poster } }
+            if (episodes.isNotEmpty()) return newTvSeriesLoadResponse(title, url, TvType.TvSeries, episodes) {
+                posterUrl = poster; this.plot = plot; addTrailer(trailer)
+            }
+        }
         return newMovieLoadResponse(title, url, TvType.Movie, url) {
             posterUrl = poster
             this.plot = plot
+            addTrailer(trailer)
         }
     }
 
-    override suspend fun loadLinks(data: String, isCasting: Boolean, subtitleCallback: (SubtitleFile) -> Unit, callback: (ExtractorLink) -> Unit): Boolean {
-        trace("loadLinks start data=$data")
-        val document = app.get(data).document
-        val initial = (listOfNotNull(fixUrlNull(document.selectFirst("iframe[src], iframe[data-src], video[src], source[src]")?.attr("src")?.trim())) + mediaCandidates(document))
-            .filterNot(::isTrailer).distinct()
-        val streams = (initial + expandPlayerPages(initial, data)).filterNot(::isTrailer).distinct()
-        if (streams.isEmpty()) throw ErrorLoadingException("Video kaynağı bulunamadı")
-        streams.forEach { stream ->
-            if (stream.contains(".m3u8") || stream.contains(".mpd") || stream.contains(".mp4")) callback(newExtractorLink(name, name, stream, when {
-                stream.contains(".m3u8") -> ExtractorLinkType.M3U8
-                stream.contains(".mpd") -> ExtractorLinkType.DASH
-                else -> ExtractorLinkType.VIDEO
-            }) { referer = data; quality = Qualities.Unknown.value })
-            else loadExtractor(stream, data, subtitleCallback, callback)
+    private fun atob(s: String): String {
+        return String(Base64.decode(s, Base64.DEFAULT))
+    }
+
+    private fun rtt(s: String): String {
+        fun rot13Char(c: Char): Char {
+            return when (c) {
+                in 'a'..'z' -> ((c - 'a' + 13) % 26 + 'a'.code).toChar()
+                in 'A'..'Z' -> ((c - 'A' + 13) % 26 + 'A'.code).toChar()
+                else -> c
+            }
         }
-        trace("loadLinks candidates=${streams.size}")
+
+        return s.map { rot13Char(it) }.joinToString("")
+    }
+
+    private fun getVideoLinks(document: Document): List<Map<String, String>> {
+        val scriptElement = document.select("script").firstOrNull { it.data().contains("scx =") || it.html().contains("scx =") }
+        val scriptContent = scriptElement?.data()?.trim() ?: return emptyList()
+
+        val scxData         = Regex("scx = (.*?);").find(scriptContent)?.groupValues?.get(1) ?: return emptyList()
+        val scxMap: SCXData = jacksonObjectMapper().readValue(scxData)
+        val keys             = listOf("atom", "advid", "advidprox", "proton", "fast", "fastly", "tr", "en")
+
+        val linkList = mutableListOf<Map<String, String>>()
+
+        for (key in keys) {
+            val t = when (key) {
+                "atom"      -> scxMap.atom?.sx?.t
+                "advid"     -> scxMap.advid?.sx?.t
+                "advidprox" -> scxMap.advidprox?.sx?.t
+                "proton"    -> scxMap.proton?.sx?.t
+                "fast"      -> scxMap.fast?.sx?.t
+                "fastly"    -> scxMap.fastly?.sx?.t
+                "tr"        -> scxMap.tr?.sx?.t
+                "en"        -> scxMap.en?.sx?.t
+                else        -> null
+            }
+
+            when (t) {
+                is List<*> -> {
+                    val links = t.filterIsInstance<String>().map { link -> atob(rtt(link)) }
+                    linkList.add(mapOf(key to links.joinToString(",")))
+                }
+                is Map<*, *> -> {
+                    val links = t.mapValues { (_, value) ->
+                        if (value is String) atob(rtt(value)) else ""
+                    }
+                    val safeLinks = links.mapKeys { (key, _) ->
+                        key?.toString() ?: "Unknown"
+                    }
+                    linkList.add(safeLinks)
+                }
+            }
+        }
+
+        return linkList
+    }
+
+    override suspend fun loadLinks(data: String, isCasting: Boolean, subtitleCallback: (SubtitleFile) -> Unit, callback: (ExtractorLink) -> Unit): Boolean {
+        Log.d("FHD", "data » $data")
+        val document    = app.get(data).document
+        val videoLinks = getVideoLinks(document)
+        Log.d("FHD", "videoLinks » $videoLinks")
+        if (videoLinks.isEmpty()) return false
+
+
+        for (videoMap in videoLinks) {
+            for ((key, value) in videoMap) {
+                val videoUrl = fixUrlNull(value) ?: continue
+                if (videoUrl.contains("turbo.imgz.me")) {
+                    loadExtractor("${key}||${videoUrl}", "${mainUrl}/", subtitleCallback, callback)
+                } else {
+                    loadExtractor(videoUrl, "${mainUrl}/", subtitleCallback, callback)
+                }
+            }
+        }
+
         return true
     }
+
+    @JsonIgnoreProperties(ignoreUnknown = true)
+    data class SCXData(
+        @JsonProperty("atom")      val atom: AtomData?      = null,
+        @JsonProperty("advid")     val advid: AtomData?     = null,
+        @JsonProperty("advidprox") val advidprox: AtomData? = null,
+        @JsonProperty("proton")    val proton: AtomData?    = null,
+        @JsonProperty("fast")      val fast: AtomData?      = null,
+        @JsonProperty("fastly")    val fastly: AtomData?    = null,
+        @JsonProperty("tr")        val tr: AtomData?        = null,
+        @JsonProperty("en")        val en: AtomData?        = null,
+    )
+
+    @JsonIgnoreProperties(ignoreUnknown = true)
+    data class AtomData(
+        @JsonProperty("sx") var sx: SXData
+    )
+
+    @JsonIgnoreProperties(ignoreUnknown = true)
+    data class SXData(
+        @JsonProperty("t") var t: Any
+    )
 }
