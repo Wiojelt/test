@@ -19,6 +19,104 @@
     "TvSeries"
   ],
   "domainCandidates": [],
+  "categoryPages": [
+    {
+      "title": "Türkçe Dublaj Filmler",
+      "url": "https://www.hdfilmizle.ink/turkce-dublaj-filmler/"
+    },
+    {
+      "title": "Türkçe Altyazılı Filmler",
+      "url": "https://www.hdfilmizle.ink/turkce-altyazili-filmler/"
+    },
+    {
+      "title": "Yerli Filmler",
+      "url": "https://www.hdfilmizle.ink/yerli-filmler/"
+    },
+    {
+      "title": "Diziler",
+      "url": "https://www.hdfilmizle.ink/dizi/"
+    },
+    {
+      "title": "Türkçe Dublaj Diziler",
+      "url": "https://www.hdfilmizle.ink/turkce-dublaj-diziler/"
+    },
+    {
+      "title": "Türkçe Altyazılı Diziler",
+      "url": "https://www.hdfilmizle.ink/turkce-altyazili-diziler/"
+    },
+    {
+      "title": "Yerli Diziler",
+      "url": "https://www.hdfilmizle.ink/yerli-diziler-izle/"
+    },
+    {
+      "title": "Türkçe Dublaj Bölümler",
+      "url": "https://www.hdfilmizle.ink/turkce-dublaj-bolumler/"
+    },
+    {
+      "title": "Türkçe Altyazılı Bölümler",
+      "url": "https://www.hdfilmizle.ink/turkce-altyazili-bolumler/"
+    },
+    {
+      "title": "Yerli Dizi Bölümleri",
+      "url": "https://www.hdfilmizle.ink/yerli-dizi-bolumleri-izle/"
+    },
+    {
+      "title": "IMDb En İyiler",
+      "url": "https://www.hdfilmizle.ink/imdb-en-iyiler/"
+    },
+    {
+      "title": "Popüler",
+      "url": "https://www.hdfilmizle.ink/populer/"
+    },
+    {
+      "title": "Seriler",
+      "url": "https://www.hdfilmizle.ink/boxset/"
+    },
+    {
+      "title": "Aksiyon",
+      "url": "https://www.hdfilmizle.ink/tur/aksiyon/"
+    },
+    {
+      "title": "Gerilim",
+      "url": "https://www.hdfilmizle.ink/tur/gerilim/"
+    },
+    {
+      "title": "Komedi",
+      "url": "https://www.hdfilmizle.ink/tur/komedi/"
+    },
+    {
+      "title": "Macera",
+      "url": "https://www.hdfilmizle.ink/tur/macera/"
+    },
+    {
+      "title": "2026",
+      "url": "https://www.hdfilmizle.ink/yil/2026/"
+    },
+    {
+      "title": "Dram",
+      "url": "https://www.hdfilmizle.ink/tur/dram/"
+    },
+    {
+      "title": "Romantik",
+      "url": "https://www.hdfilmizle.ink/tur/romantik/"
+    },
+    {
+      "title": "Suç",
+      "url": "https://www.hdfilmizle.ink/tur/suc/"
+    },
+    {
+      "title": "Bilim-Kurgu",
+      "url": "https://www.hdfilmizle.ink/tur/bilim-kurgu/"
+    },
+    {
+      "title": "Fantastik",
+      "url": "https://www.hdfilmizle.ink/tur/fantastik/"
+    },
+    {
+      "title": "Star Wars",
+      "url": "https://www.hdfilmizle.ink/boxset/star-wars/"
+    }
+  ],
   "selectors": {
     "item": ".item",
     "title": ".title",

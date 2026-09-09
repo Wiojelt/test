@@ -19,6 +19,104 @@
     "TvSeries"
   ],
   "domainCandidates": [],
+  "categoryPages": [
+    {
+      "title": "Türkçe Altyazılı Filmler",
+      "url": "https://sonhdfilm.net/turkce-altyazili-filmler/"
+    },
+    {
+      "title": "Türkçe Dublaj Filmler",
+      "url": "https://sonhdfilm.net/turkce-dublaj-filmler/"
+    },
+    {
+      "title": "Film Arşivi",
+      "url": "https://sonhdfilm.net/film-arsivi/"
+    },
+    {
+      "title": "2026",
+      "url": "https://sonhdfilm.net/yil/2026/"
+    },
+    {
+      "title": "2025",
+      "url": "https://sonhdfilm.net/yil/2025/"
+    },
+    {
+      "title": "2024",
+      "url": "https://sonhdfilm.net/yil/2024/"
+    },
+    {
+      "title": "2023",
+      "url": "https://sonhdfilm.net/yil/2023/"
+    },
+    {
+      "title": "2022",
+      "url": "https://sonhdfilm.net/yil/2022/"
+    },
+    {
+      "title": "2021",
+      "url": "https://sonhdfilm.net/yil/2021/"
+    },
+    {
+      "title": "2020",
+      "url": "https://sonhdfilm.net/yil/2020/"
+    },
+    {
+      "title": "2019",
+      "url": "https://sonhdfilm.net/yil/2019/"
+    },
+    {
+      "title": "2018",
+      "url": "https://sonhdfilm.net/yil/2018/"
+    },
+    {
+      "title": "2017",
+      "url": "https://sonhdfilm.net/yil/2017/"
+    },
+    {
+      "title": "2016",
+      "url": "https://sonhdfilm.net/yil/2016/"
+    },
+    {
+      "title": "2015",
+      "url": "https://sonhdfilm.net/yil/2015/"
+    },
+    {
+      "title": "2014",
+      "url": "https://sonhdfilm.net/yil/2014/"
+    },
+    {
+      "title": "2013",
+      "url": "https://sonhdfilm.net/yil/2013/"
+    },
+    {
+      "title": "2012",
+      "url": "https://sonhdfilm.net/yil/2012/"
+    },
+    {
+      "title": "2011",
+      "url": "https://sonhdfilm.net/yil/2011/"
+    },
+    {
+      "title": "2010",
+      "url": "https://sonhdfilm.net/yil/2010/"
+    },
+    {
+      "title": "2009",
+      "url": "https://sonhdfilm.net/yil/2009/"
+    },
+    {
+      "title": "2008",
+      "url": "https://sonhdfilm.net/yil/2008/"
+    },
+    {
+      "title": "2007",
+      "url": "https://sonhdfilm.net/yil/2007/"
+    },
+    {
+      "title": "2006",
+      "url": "https://sonhdfilm.net/yil/2006/"
+    }
+  ],
   "selectors": {
     "item": ".listmovie",
     "title": ".film-ismi a",

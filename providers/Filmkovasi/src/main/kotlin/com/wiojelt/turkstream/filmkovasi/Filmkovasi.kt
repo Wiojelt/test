@@ -15,7 +15,42 @@ class Filmkovasi : MainAPI() {
     override val hasMainPage = true
     override val hasDownloadSupport = true
     override val supportedTypes = setOf(TvType.Movie, TvType.TvSeries)
-    override val mainPage = mainPageOf("https://filmkovasi.co/filmizle/18-filmler/" to "Film ve Diziler")
+    override val mainPage = mainPageOf(
+        "https://filmkovasi.co/filmizle/18-filmler/" to "Film ve Diziler",
+        "https://filmkovasi.co/filmizle/18-filmler/" to "+18 Filmler",
+        "https://filmkovasi.co/filmizle/aile/" to "Aile",
+        "https://filmkovasi.co/filmizle/aksiyon/" to "Aksiyon",
+        "https://filmkovasi.co/filmizle/animasyon/" to "Animasyon",
+        "https://filmkovasi.co/filmizle/belgesel/" to "Belgesel",
+        "https://filmkovasi.co/filmizle/bilim-kurgu/" to "Bilim Kurgu",
+        "https://filmkovasi.co/filmizle/bilim-kurgu-2/" to "Bilim-Kurgu",
+        "https://filmkovasi.co/filmizle/cizgi/" to "Çizgi",
+        "https://filmkovasi.co/filmizle/cocuk/" to "Çocuk",
+        "https://filmkovasi.co/filmizle/dram/" to "Dram",
+        "https://filmkovasi.co/filmizle/erotik-filmler/" to "Erotik Filmler",
+        "https://filmkovasi.co/filmizle/fantastik/" to "Fantastik",
+        "https://filmkovasi.co/filmizle/genclik/" to "Gençlik",
+        "https://filmkovasi.co/filmizle/gerilim/" to "Gerilim",
+        "https://filmkovasi.co/filmizle/gizem/" to "Gizem",
+        "https://filmkovasi.co/filmizle/hint/" to "Hint",
+        "https://filmkovasi.co/filmizle/komedi/" to "Komedi",
+        "https://filmkovasi.co/filmizle/kore/" to "Kore",
+        "https://filmkovasi.co/filmizle/korku/" to "Korku",
+        "https://filmkovasi.co/filmizle/macera/" to "Macera",
+        "https://filmkovasi.co/filmizle/muzik/" to "Müzik",
+        "https://filmkovasi.co/filmizle/polisiye/" to "Polisiye",
+        "https://filmkovasi.co/filmizle/psikolojik/" to "Psikolojik",
+        "https://filmkovasi.co/filmizle/romantik/" to "Romantik"
+    )
+
+    private fun mediaCandidates(document: org.jsoup.nodes.Document): List<String> = document
+        .select("iframe, video, source")
+        .mapNotNull { node ->
+            listOf("src", "data-src", "data-vsrc", "ysrc", "data-litespeed-src")
+                .asSequence().map { node.attr(it).trim() }.firstOrNull { it.isNotBlank() }
+        }
+        .filter { value -> !value.contains("youtube.com/embed", true) && !value.contains("youtube-nocookie.com", true) }
+        .mapNotNull { fixUrlNull(it) }.distinct()
 
     private fun textOrAttr(item: Element, selector: String, attr: String): String? {
         val target = if (selector.isBlank()) item else item.selectFirst(selector) ?: return null
@@ -81,15 +116,17 @@ class Filmkovasi : MainAPI() {
     override suspend fun loadLinks(data: String, isCasting: Boolean, subtitleCallback: (SubtitleFile) -> Unit, callback: (ExtractorLink) -> Unit): Boolean {
         trace("loadLinks start data=$data")
         val document = app.get(data).document
-        val stream = fixUrlNull(document.selectFirst("iframe[src], iframe[data-src], video[src], source[src]")?.attr("src")?.trim()) ?: throw ErrorLoadingException("Video kaynağı bulunamadı")
-        trace("loadLinks resolved stream=$stream")
-        if (!stream.contains(".m3u8") && !stream.contains(".mpd") && !stream.contains(".mp4"))
-            return loadExtractor(stream, data, subtitleCallback, callback)
-        callback(newExtractorLink(name, name, stream, when {
-            stream.contains(".m3u8") -> ExtractorLinkType.M3U8
-            stream.contains(".mpd") -> ExtractorLinkType.DASH
-            else -> ExtractorLinkType.VIDEO
-        }) { referer = data; quality = Qualities.Unknown.value })
+        val streams = (listOfNotNull(fixUrlNull(document.selectFirst("iframe[src], iframe[data-src], video[src], source[src]")?.attr("src")?.trim())) + mediaCandidates(document)).distinct()
+        if (streams.isEmpty()) throw ErrorLoadingException("Video kaynağı bulunamadı")
+        streams.forEach { stream ->
+            if (stream.contains(".m3u8") || stream.contains(".mpd") || stream.contains(".mp4")) callback(newExtractorLink(name, name, stream, when {
+                stream.contains(".m3u8") -> ExtractorLinkType.M3U8
+                stream.contains(".mpd") -> ExtractorLinkType.DASH
+                else -> ExtractorLinkType.VIDEO
+            }) { referer = data; quality = Qualities.Unknown.value })
+            else loadExtractor(stream, data, subtitleCallback, callback)
+        }
+        trace("loadLinks candidates=${streams.size}")
         return true
     }
 }

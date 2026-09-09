@@ -15,7 +15,42 @@ class FullHDFilmizleseneNow : MainAPI() {
     override val hasMainPage = true
     override val hasDownloadSupport = true
     override val supportedTypes = setOf(TvType.Movie, TvType.TvSeries)
-    override val mainPage = mainPageOf("https://www.fullhdfilmizlesene.now/filmizle/aile-filmleri" to "Film ve Diziler")
+    override val mainPage = mainPageOf(
+        "https://www.fullhdfilmizlesene.now/filmizle/aile-filmleri" to "Film ve Diziler",
+        "https://www.fullhdfilmizlesene.now/film-listeleri" to "Listeler",
+        "https://www.fullhdfilmizlesene.now/seri-filmler" to "Seriler",
+        "https://www.fullhdfilmizlesene.now/filmizle/aile-filmleri" to "Aile Filmleri",
+        "https://www.fullhdfilmizlesene.now/filmizle/aksiyon-filmleri" to "Aksiyon Filmleri",
+        "https://www.fullhdfilmizlesene.now/filmizle/animasyon-filmleri" to "Animasyon Filmleri",
+        "https://www.fullhdfilmizlesene.now/filmizle/belgesel-filmleri" to "Belgeseller",
+        "https://www.fullhdfilmizlesene.now/filmizle/bilim-kurgu-filmleri" to "Bilim Kurgu Filmleri",
+        "https://www.fullhdfilmizlesene.now/filmizle/bluray-filmler" to "Blu Ray Filmler",
+        "https://www.fullhdfilmizlesene.now/filmizle/cizgi-filmler" to "Çizgi Filmler",
+        "https://www.fullhdfilmizlesene.now/filmizle/dram-filmler-izle" to "Dram Filmleri",
+        "https://www.fullhdfilmizlesene.now/filmizle/fantastik-filmler" to "Fantastik Filmler",
+        "https://www.fullhdfilmizlesene.now/filmizle/gerilim-filmleri" to "Gerilim Filmleri",
+        "https://www.fullhdfilmizlesene.now/filmizle/gizem-filmleri" to "Gizem Filmleri",
+        "https://www.fullhdfilmizlesene.now/filmizle/hint-filmleri" to "Hint Filmleri",
+        "https://www.fullhdfilmizlesene.now/filmizle/komedi-filmleri" to "Komedi Filmleri",
+        "https://www.fullhdfilmizlesene.now/filmizle/korku-filmleri" to "Korku Filmleri",
+        "https://www.fullhdfilmizlesene.now/filmizle/macera-filmleri" to "Macera Filmleri",
+        "https://www.fullhdfilmizlesene.now/filmizle/muzikal-filmler" to "Müzikal Filmler",
+        "https://www.fullhdfilmizlesene.now/filmizle/polisiye-filmleri" to "Polisiye Filmleri",
+        "https://www.fullhdfilmizlesene.now/filmizle/psikolojik-filmler" to "Psikolojik Filmler",
+        "https://www.fullhdfilmizlesene.now/filmizle/romantik-filmler" to "Romantik Filmler",
+        "https://www.fullhdfilmizlesene.now/filmizle/savas-filmleri" to "Savaş Filmleri",
+        "https://www.fullhdfilmizlesene.now/filmizle/suc-filmleri" to "Suç Filmleri",
+        "https://www.fullhdfilmizlesene.now/filmizle/tarih-filmleri" to "Tarih Filmleri"
+    )
+
+    private fun mediaCandidates(document: org.jsoup.nodes.Document): List<String> = document
+        .select("iframe, video, source")
+        .mapNotNull { node ->
+            listOf("src", "data-src", "data-vsrc", "ysrc", "data-litespeed-src")
+                .asSequence().map { node.attr(it).trim() }.firstOrNull { it.isNotBlank() }
+        }
+        .filter { value -> !value.contains("youtube.com/embed", true) && !value.contains("youtube-nocookie.com", true) }
+        .mapNotNull { fixUrlNull(it) }.distinct()
 
     private fun textOrAttr(item: Element, selector: String, attr: String): String? {
         val target = if (selector.isBlank()) item else item.selectFirst(selector) ?: return null
@@ -81,15 +116,17 @@ class FullHDFilmizleseneNow : MainAPI() {
     override suspend fun loadLinks(data: String, isCasting: Boolean, subtitleCallback: (SubtitleFile) -> Unit, callback: (ExtractorLink) -> Unit): Boolean {
         trace("loadLinks start data=$data")
         val document = app.get(data).document
-        val stream = fixUrlNull(document.selectFirst("iframe[src], iframe[data-src], video[src], source[src]")?.attr("src")?.trim()) ?: throw ErrorLoadingException("Video kaynağı bulunamadı")
-        trace("loadLinks resolved stream=$stream")
-        if (!stream.contains(".m3u8") && !stream.contains(".mpd") && !stream.contains(".mp4"))
-            return loadExtractor(stream, data, subtitleCallback, callback)
-        callback(newExtractorLink(name, name, stream, when {
-            stream.contains(".m3u8") -> ExtractorLinkType.M3U8
-            stream.contains(".mpd") -> ExtractorLinkType.DASH
-            else -> ExtractorLinkType.VIDEO
-        }) { referer = data; quality = Qualities.Unknown.value })
+        val streams = (listOfNotNull(fixUrlNull(document.selectFirst("iframe[src], iframe[data-src], video[src], source[src]")?.attr("src")?.trim())) + mediaCandidates(document)).distinct()
+        if (streams.isEmpty()) throw ErrorLoadingException("Video kaynağı bulunamadı")
+        streams.forEach { stream ->
+            if (stream.contains(".m3u8") || stream.contains(".mpd") || stream.contains(".mp4")) callback(newExtractorLink(name, name, stream, when {
+                stream.contains(".m3u8") -> ExtractorLinkType.M3U8
+                stream.contains(".mpd") -> ExtractorLinkType.DASH
+                else -> ExtractorLinkType.VIDEO
+            }) { referer = data; quality = Qualities.Unknown.value })
+            else loadExtractor(stream, data, subtitleCallback, callback)
+        }
+        trace("loadLinks candidates=${streams.size}")
         return true
     }
 }

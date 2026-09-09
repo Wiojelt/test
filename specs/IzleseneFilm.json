@@ -19,6 +19,104 @@
     "TvSeries"
   ],
   "domainCandidates": [],
+  "categoryPages": [
+    {
+      "title": "Film Deposu",
+      "url": "https://www.izlesene.film/film-arsivi"
+    },
+    {
+      "title": "IMDb Sıralama",
+      "url": "https://www.izlesene.film/imdb-en-iyiler"
+    },
+    {
+      "title": "Türkçe Altyazılı",
+      "url": "https://www.izlesene.film/turkce-altyazili-filmler"
+    },
+    {
+      "title": "Türkçe Dublaj",
+      "url": "https://www.izlesene.film/turkce-dublaj-filmler"
+    },
+    {
+      "title": "Yerli",
+      "url": "https://www.izlesene.film/yerli-filmler"
+    },
+    {
+      "title": "Dram",
+      "url": "https://www.izlesene.film/izle/dram"
+    },
+    {
+      "title": "Gerilim",
+      "url": "https://www.izlesene.film/izle/gerilim"
+    },
+    {
+      "title": "Korku",
+      "url": "https://www.izlesene.film/izle/korku"
+    },
+    {
+      "title": "2006",
+      "url": "https://www.izlesene.film/yil/2006"
+    },
+    {
+      "title": "Bilim Kurgu",
+      "url": "https://www.izlesene.film/izle/bilim-kurgu"
+    },
+    {
+      "title": "2020",
+      "url": "https://www.izlesene.film/yil/2020"
+    },
+    {
+      "title": "Aksiyon",
+      "url": "https://www.izlesene.film/izle/aksiyon"
+    },
+    {
+      "title": "Fantastik",
+      "url": "https://www.izlesene.film/izle/fantastik"
+    },
+    {
+      "title": "Macera",
+      "url": "https://www.izlesene.film/izle/macera"
+    },
+    {
+      "title": "2017",
+      "url": "https://www.izlesene.film/yil/2017"
+    },
+    {
+      "title": "Aile",
+      "url": "https://www.izlesene.film/izle/aile"
+    },
+    {
+      "title": "Animasyon",
+      "url": "https://www.izlesene.film/izle/animasyon"
+    },
+    {
+      "title": "Belgesel",
+      "url": "https://www.izlesene.film/izle/belgesel"
+    },
+    {
+      "title": "Gizem",
+      "url": "https://www.izlesene.film/izle/gizem"
+    },
+    {
+      "title": "Komedi",
+      "url": "https://www.izlesene.film/izle/komedi"
+    },
+    {
+      "title": "Müzik",
+      "url": "https://www.izlesene.film/izle/muzik"
+    },
+    {
+      "title": "Romantik",
+      "url": "https://www.izlesene.film/izle/romantik"
+    },
+    {
+      "title": "Savaş",
+      "url": "https://www.izlesene.film/izle/savas"
+    },
+    {
+      "title": "Suç",
+      "url": "https://www.izlesene.film/izle/suc"
+    }
+  ],
   "selectors": {
     "item": ".listmovie",
     "title": ".film-ismi a",

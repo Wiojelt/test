@@ -19,6 +19,104 @@
     "TvSeries"
   ],
   "domainCandidates": [],
+  "categoryPages": [
+    {
+      "title": "Türkçe Dublaj Filmler",
+      "url": "https://www.fullhdfilmizle.mom/turkce-dublaj-filmler/"
+    },
+    {
+      "title": "Türkçe Altyazılı Filmler",
+      "url": "https://www.fullhdfilmizle.mom/turkce-altyazili-filmler/"
+    },
+    {
+      "title": "Yerli Filmler",
+      "url": "https://www.fullhdfilmizle.mom/yerli-filmler/"
+    },
+    {
+      "title": "IMDb En İyiler",
+      "url": "https://www.fullhdfilmizle.mom/imdb-en-iyiler/"
+    },
+    {
+      "title": "Aile",
+      "url": "https://www.fullhdfilmizle.mom/tur/aile/"
+    },
+    {
+      "title": "Animasyon",
+      "url": "https://www.fullhdfilmizle.mom/tur/animasyon/"
+    },
+    {
+      "title": "Belgesel",
+      "url": "https://www.fullhdfilmizle.mom/tur/belgesel/"
+    },
+    {
+      "title": "Bilim Kurgu",
+      "url": "https://www.fullhdfilmizle.mom/tur/bilim-kurgu/"
+    },
+    {
+      "title": "Biyografi",
+      "url": "https://www.fullhdfilmizle.mom/tur/biyografi/"
+    },
+    {
+      "title": "Dini",
+      "url": "https://www.fullhdfilmizle.mom/tur/dini/"
+    },
+    {
+      "title": "Dram",
+      "url": "https://www.fullhdfilmizle.mom/tur/dram/"
+    },
+    {
+      "title": "Fantastik",
+      "url": "https://www.fullhdfilmizle.mom/tur/fantastik/"
+    },
+    {
+      "title": "Gerilim",
+      "url": "https://www.fullhdfilmizle.mom/tur/gerilim/"
+    },
+    {
+      "title": "Gizem",
+      "url": "https://www.fullhdfilmizle.mom/tur/gizem/"
+    },
+    {
+      "title": "Komedi",
+      "url": "https://www.fullhdfilmizle.mom/tur/komedi/"
+    },
+    {
+      "title": "Korku",
+      "url": "https://www.fullhdfilmizle.mom/tur/korku/"
+    },
+    {
+      "title": "Macera",
+      "url": "https://www.fullhdfilmizle.mom/tur/macera/"
+    },
+    {
+      "title": "Müzik",
+      "url": "https://www.fullhdfilmizle.mom/tur/muzik/"
+    },
+    {
+      "title": "Romantik",
+      "url": "https://www.fullhdfilmizle.mom/tur/romantik/"
+    },
+    {
+      "title": "Savaş",
+      "url": "https://www.fullhdfilmizle.mom/tur/savas/"
+    },
+    {
+      "title": "Spor",
+      "url": "https://www.fullhdfilmizle.mom/tur/spor/"
+    },
+    {
+      "title": "Suç",
+      "url": "https://www.fullhdfilmizle.mom/tur/suc/"
+    },
+    {
+      "title": "Tarih",
+      "url": "https://www.fullhdfilmizle.mom/tur/tarih/"
+    },
+    {
+      "title": "TV film",
+      "url": "https://www.fullhdfilmizle.mom/tur/tv-film/"
+    }
+  ],
   "selectors": {
     "item": ".listmovie",
     "title": ".film-ismi a",

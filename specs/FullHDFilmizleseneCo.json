@@ -19,6 +19,20 @@
     "TvSeries"
   ],
   "domainCandidates": [],
+  "categoryPages": [
+    {
+      "title": "Film Arşivi",
+      "url": "https://fullhdfilmizlesene.co/film-arsivi/"
+    },
+    {
+      "title": "İMDB Top 250",
+      "url": "https://fullhdfilmizlesene.co/imdb-top-250"
+    },
+    {
+      "title": "Belgesel",
+      "url": "https://fullhdfilmizlesene.co/belgesel"
+    }
+  ],
   "selectors": {
     "item": ".film",
     "title": "h2",

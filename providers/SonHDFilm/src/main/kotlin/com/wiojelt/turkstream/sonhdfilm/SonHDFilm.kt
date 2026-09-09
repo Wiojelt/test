@@ -15,7 +15,42 @@ class SonHDFilm : MainAPI() {
     override val hasMainPage = true
     override val hasDownloadSupport = true
     override val supportedTypes = setOf(TvType.Movie, TvType.TvSeries)
-    override val mainPage = mainPageOf("https://sonhdfilm.net/seri-filmler/" to "Film ve Diziler")
+    override val mainPage = mainPageOf(
+        "https://sonhdfilm.net/seri-filmler/" to "Film ve Diziler",
+        "https://sonhdfilm.net/turkce-altyazili-filmler/" to "Türkçe Altyazılı Filmler",
+        "https://sonhdfilm.net/turkce-dublaj-filmler/" to "Türkçe Dublaj Filmler",
+        "https://sonhdfilm.net/film-arsivi/" to "Film Arşivi",
+        "https://sonhdfilm.net/yil/2026/" to "2026",
+        "https://sonhdfilm.net/yil/2025/" to "2025",
+        "https://sonhdfilm.net/yil/2024/" to "2024",
+        "https://sonhdfilm.net/yil/2023/" to "2023",
+        "https://sonhdfilm.net/yil/2022/" to "2022",
+        "https://sonhdfilm.net/yil/2021/" to "2021",
+        "https://sonhdfilm.net/yil/2020/" to "2020",
+        "https://sonhdfilm.net/yil/2019/" to "2019",
+        "https://sonhdfilm.net/yil/2018/" to "2018",
+        "https://sonhdfilm.net/yil/2017/" to "2017",
+        "https://sonhdfilm.net/yil/2016/" to "2016",
+        "https://sonhdfilm.net/yil/2015/" to "2015",
+        "https://sonhdfilm.net/yil/2014/" to "2014",
+        "https://sonhdfilm.net/yil/2013/" to "2013",
+        "https://sonhdfilm.net/yil/2012/" to "2012",
+        "https://sonhdfilm.net/yil/2011/" to "2011",
+        "https://sonhdfilm.net/yil/2010/" to "2010",
+        "https://sonhdfilm.net/yil/2009/" to "2009",
+        "https://sonhdfilm.net/yil/2008/" to "2008",
+        "https://sonhdfilm.net/yil/2007/" to "2007",
+        "https://sonhdfilm.net/yil/2006/" to "2006"
+    )
+
+    private fun mediaCandidates(document: org.jsoup.nodes.Document): List<String> = document
+        .select("iframe, video, source")
+        .mapNotNull { node ->
+            listOf("src", "data-src", "data-vsrc", "ysrc", "data-litespeed-src")
+                .asSequence().map { node.attr(it).trim() }.firstOrNull { it.isNotBlank() }
+        }
+        .filter { value -> !value.contains("youtube.com/embed", true) && !value.contains("youtube-nocookie.com", true) }
+        .mapNotNull { fixUrlNull(it) }.distinct()
 
     private fun textOrAttr(item: Element, selector: String, attr: String): String? {
         val target = if (selector.isBlank()) item else item.selectFirst(selector) ?: return null
@@ -81,15 +116,17 @@ class SonHDFilm : MainAPI() {
     override suspend fun loadLinks(data: String, isCasting: Boolean, subtitleCallback: (SubtitleFile) -> Unit, callback: (ExtractorLink) -> Unit): Boolean {
         trace("loadLinks start data=$data")
         val document = app.get(data).document
-        val stream = fixUrlNull(document.selectFirst("iframe[src], iframe[data-src], video[src], source[src]")?.attr("src")?.trim()) ?: throw ErrorLoadingException("Video kaynağı bulunamadı")
-        trace("loadLinks resolved stream=$stream")
-        if (!stream.contains(".m3u8") && !stream.contains(".mpd") && !stream.contains(".mp4"))
-            return loadExtractor(stream, data, subtitleCallback, callback)
-        callback(newExtractorLink(name, name, stream, when {
-            stream.contains(".m3u8") -> ExtractorLinkType.M3U8
-            stream.contains(".mpd") -> ExtractorLinkType.DASH
-            else -> ExtractorLinkType.VIDEO
-        }) { referer = data; quality = Qualities.Unknown.value })
+        val streams = (listOfNotNull(fixUrlNull(document.selectFirst("iframe[src], iframe[data-src], video[src], source[src]")?.attr("src")?.trim())) + mediaCandidates(document)).distinct()
+        if (streams.isEmpty()) throw ErrorLoadingException("Video kaynağı bulunamadı")
+        streams.forEach { stream ->
+            if (stream.contains(".m3u8") || stream.contains(".mpd") || stream.contains(".mp4")) callback(newExtractorLink(name, name, stream, when {
+                stream.contains(".m3u8") -> ExtractorLinkType.M3U8
+                stream.contains(".mpd") -> ExtractorLinkType.DASH
+                else -> ExtractorLinkType.VIDEO
+            }) { referer = data; quality = Qualities.Unknown.value })
+            else loadExtractor(stream, data, subtitleCallback, callback)
+        }
+        trace("loadLinks candidates=${streams.size}")
         return true
     }
 }

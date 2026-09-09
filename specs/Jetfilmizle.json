@@ -19,6 +19,104 @@
     "TvSeries"
   ],
   "domainCandidates": [],
+  "categoryPages": [
+    {
+      "title": "Türkçe Dublaj",
+      "url": "https://jetfilmizle.now/turkce-dublaj"
+    },
+    {
+      "title": "Türkçe Altyazılı",
+      "url": "https://jetfilmizle.now/turkce-altyazili"
+    },
+    {
+      "title": "Yerli Yerli Film",
+      "url": "https://jetfilmizle.now/yerli-filmler"
+    },
+    {
+      "title": "Tüm Diziler",
+      "url": "https://jetfilmizle.now/diziler"
+    },
+    {
+      "title": "Yerli Yerli Diziler",
+      "url": "https://jetfilmizle.now/yerli-diziler"
+    },
+    {
+      "title": "Yabancı Diziler",
+      "url": "https://jetfilmizle.now/yabanci-diziler"
+    },
+    {
+      "title": "Aile",
+      "url": "https://jetfilmizle.now/tur/aile"
+    },
+    {
+      "title": "Aksiyon",
+      "url": "https://jetfilmizle.now/tur/aksiyon"
+    },
+    {
+      "title": "Animasyon",
+      "url": "https://jetfilmizle.now/tur/animasyon"
+    },
+    {
+      "title": "Anime",
+      "url": "https://jetfilmizle.now/tur/anime"
+    },
+    {
+      "title": "Belgesel",
+      "url": "https://jetfilmizle.now/tur/belgesel"
+    },
+    {
+      "title": "Bilim Kurgu",
+      "url": "https://jetfilmizle.now/tur/bilim-kurgu"
+    },
+    {
+      "title": "Dram",
+      "url": "https://jetfilmizle.now/tur/dram"
+    },
+    {
+      "title": "Fantastik",
+      "url": "https://jetfilmizle.now/tur/fantastik"
+    },
+    {
+      "title": "Fantezi",
+      "url": "https://jetfilmizle.now/tur/fantezi"
+    },
+    {
+      "title": "Gerilim",
+      "url": "https://jetfilmizle.now/tur/gerilim"
+    },
+    {
+      "title": "Gizem",
+      "url": "https://jetfilmizle.now/tur/gizem"
+    },
+    {
+      "title": "Haber",
+      "url": "https://jetfilmizle.now/tur/haber"
+    },
+    {
+      "title": "Kısa Film",
+      "url": "https://jetfilmizle.now/tur/kisa-film"
+    },
+    {
+      "title": "Komedi",
+      "url": "https://jetfilmizle.now/tur/komedi"
+    },
+    {
+      "title": "Korku",
+      "url": "https://jetfilmizle.now/tur/korku"
+    },
+    {
+      "title": "Macera",
+      "url": "https://jetfilmizle.now/tur/macera"
+    },
+    {
+      "title": "Müzik",
+      "url": "https://jetfilmizle.now/tur/muzik"
+    },
+    {
+      "title": "Müzikal",
+      "url": "https://jetfilmizle.now/tur/muzikal"
+    }
+  ],
   "selectors": {
     "item": ".film-card",
     "title": ".film-title-line a",

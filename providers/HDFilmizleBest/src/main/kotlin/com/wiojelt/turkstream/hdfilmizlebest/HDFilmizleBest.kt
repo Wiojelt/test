@@ -15,7 +15,42 @@ class HDFilmizleBest : MainAPI() {
     override val hasMainPage = true
     override val hasDownloadSupport = true
     override val supportedTypes = setOf(TvType.Movie, TvType.TvSeries)
-    override val mainPage = mainPageOf("https://www.hdfilmizle.best/film/" to "Film ve Diziler")
+    override val mainPage = mainPageOf(
+        "https://www.hdfilmizle.best/film/" to "Film ve Diziler",
+        "https://www.hdfilmizle.best/dizi/" to "Diziler",
+        "https://www.hdfilmizle.best/imdb-top-250/" to "IMDb Top 250",
+        "https://www.hdfilmizle.best/tur/aksiyon/" to "Aksiyon",
+        "https://www.hdfilmizle.best/tur/aile/" to "Aile",
+        "https://www.hdfilmizle.best/tur/animasyon/" to "Animasyon",
+        "https://www.hdfilmizle.best/tur/belgesel/" to "Belgesel",
+        "https://www.hdfilmizle.best/tur/bilim-kurgu/" to "Bilim Kurgu",
+        "https://www.hdfilmizle.best/tur/biyografi/" to "Biyografi",
+        "https://www.hdfilmizle.best/tur/dram/" to "Dram",
+        "https://www.hdfilmizle.best/tur/fantastik/" to "Fantastik",
+        "https://www.hdfilmizle.best/tur/gerilim/" to "Gerilim",
+        "https://www.hdfilmizle.best/tur/gizem/" to "Gizem",
+        "https://www.hdfilmizle.best/tur/komedi/" to "Komedi",
+        "https://www.hdfilmizle.best/tur/korku/" to "Korku",
+        "https://www.hdfilmizle.best/tur/macera/" to "Macera",
+        "https://www.hdfilmizle.best/tur/muzik/" to "Müzik",
+        "https://www.hdfilmizle.best/tur/romantik/" to "Romantik",
+        "https://www.hdfilmizle.best/tur/savas/" to "Savaş",
+        "https://www.hdfilmizle.best/tur/spor/" to "Spor",
+        "https://www.hdfilmizle.best/tur/suc/" to "Suç",
+        "https://www.hdfilmizle.best/tur/tarih/" to "Tarih",
+        "https://www.hdfilmizle.best/tur/western/" to "Western",
+        "https://www.hdfilmizle.best/yil/2026/" to "2026",
+        "https://www.hdfilmizle.best/yil/2025/" to "2025"
+    )
+
+    private fun mediaCandidates(document: org.jsoup.nodes.Document): List<String> = document
+        .select("iframe, video, source")
+        .mapNotNull { node ->
+            listOf("src", "data-src", "data-vsrc", "ysrc", "data-litespeed-src")
+                .asSequence().map { node.attr(it).trim() }.firstOrNull { it.isNotBlank() }
+        }
+        .filter { value -> !value.contains("youtube.com/embed", true) && !value.contains("youtube-nocookie.com", true) }
+        .mapNotNull { fixUrlNull(it) }.distinct()
 
     private fun textOrAttr(item: Element, selector: String, attr: String): String? {
         val target = if (selector.isBlank()) item else item.selectFirst(selector) ?: return null
@@ -81,15 +116,17 @@ class HDFilmizleBest : MainAPI() {
     override suspend fun loadLinks(data: String, isCasting: Boolean, subtitleCallback: (SubtitleFile) -> Unit, callback: (ExtractorLink) -> Unit): Boolean {
         trace("loadLinks start data=$data")
         val document = app.get(data).document
-        val stream = fixUrlNull(document.selectFirst("iframe[src], iframe[data-src], video[src], source[src]")?.attr("src")?.trim()) ?: throw ErrorLoadingException("Video kaynağı bulunamadı")
-        trace("loadLinks resolved stream=$stream")
-        if (!stream.contains(".m3u8") && !stream.contains(".mpd") && !stream.contains(".mp4"))
-            return loadExtractor(stream, data, subtitleCallback, callback)
-        callback(newExtractorLink(name, name, stream, when {
-            stream.contains(".m3u8") -> ExtractorLinkType.M3U8
-            stream.contains(".mpd") -> ExtractorLinkType.DASH
-            else -> ExtractorLinkType.VIDEO
-        }) { referer = data; quality = Qualities.Unknown.value })
+        val streams = (listOfNotNull(fixUrlNull(document.selectFirst("iframe[src], iframe[data-src], video[src], source[src]")?.attr("src")?.trim())) + mediaCandidates(document)).distinct()
+        if (streams.isEmpty()) throw ErrorLoadingException("Video kaynağı bulunamadı")
+        streams.forEach { stream ->
+            if (stream.contains(".m3u8") || stream.contains(".mpd") || stream.contains(".mp4")) callback(newExtractorLink(name, name, stream, when {
+                stream.contains(".m3u8") -> ExtractorLinkType.M3U8
+                stream.contains(".mpd") -> ExtractorLinkType.DASH
+                else -> ExtractorLinkType.VIDEO
+            }) { referer = data; quality = Qualities.Unknown.value })
+            else loadExtractor(stream, data, subtitleCallback, callback)
+        }
+        trace("loadLinks candidates=${streams.size}")
         return true
     }
 }

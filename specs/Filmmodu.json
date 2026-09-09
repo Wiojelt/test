@@ -19,6 +19,104 @@
     "TvSeries"
   ],
   "domainCandidates": [],
+  "categoryPages": [
+    {
+      "title": "Arşiv",
+      "url": "https://www.filmmodu.one/arsiv-filmler"
+    },
+    {
+      "title": "En Çok İzlenen Filmler",
+      "url": "https://www.filmmodu.one/hd-populer-filmler"
+    },
+    {
+      "title": "Seri Filmler",
+      "url": "https://www.filmmodu.one/boxset-seri-filmler"
+    },
+    {
+      "title": "Altyazılı Filmler",
+      "url": "https://www.filmmodu.one/turkce-altyazili-hd-filmler-izle"
+    },
+    {
+      "title": "Türkçe Dublaj Filmler",
+      "url": "https://www.filmmodu.one/turkce-dublaj-hd-film-izle"
+    },
+    {
+      "title": "4K",
+      "url": "https://www.filmmodu.one/film-tur/4k-film-izle"
+    },
+    {
+      "title": "Aile",
+      "url": "https://www.filmmodu.one/film-tur/aile-filmleri"
+    },
+    {
+      "title": "Aksiyon",
+      "url": "https://www.filmmodu.one/film-tur/aksiyon"
+    },
+    {
+      "title": "Animasyon",
+      "url": "https://www.filmmodu.one/film-tur/animasyon"
+    },
+    {
+      "title": "Belgesel",
+      "url": "https://www.filmmodu.one/film-tur/belgeseller"
+    },
+    {
+      "title": "Bilim-Kurgu",
+      "url": "https://www.filmmodu.one/film-tur/bilim-kurgu-filmleri"
+    },
+    {
+      "title": "Dram",
+      "url": "https://www.filmmodu.one/film-tur/dram-filmleri"
+    },
+    {
+      "title": "Fantastik",
+      "url": "https://www.filmmodu.one/film-tur/fantastik-filmler"
+    },
+    {
+      "title": "Gerilim",
+      "url": "https://www.filmmodu.one/film-tur/gerilim"
+    },
+    {
+      "title": "Gizem",
+      "url": "https://www.filmmodu.one/film-tur/gizem-filmleri"
+    },
+    {
+      "title": "Hint Filmleri",
+      "url": "https://www.filmmodu.one/film-tur/hd-hint-filmleri"
+    },
+    {
+      "title": "Kısa Film",
+      "url": "https://www.filmmodu.one/film-tur/kisa-film"
+    },
+    {
+      "title": "Komedi",
+      "url": "https://www.filmmodu.one/film-tur/hd-komedi-filmleri"
+    },
+    {
+      "title": "Korku",
+      "url": "https://www.filmmodu.one/film-tur/korku-filmleri"
+    },
+    {
+      "title": "Kült Filmler",
+      "url": "https://www.filmmodu.one/film-tur/kult-filmler-izle"
+    },
+    {
+      "title": "Macera",
+      "url": "https://www.filmmodu.one/film-tur/macera-filmleri"
+    },
+    {
+      "title": "Müzik",
+      "url": "https://www.filmmodu.one/film-tur/muzik"
+    },
+    {
+      "title": "Oscar Ödüllü Filmler",
+      "url": "https://www.filmmodu.one/film-tur/odullu-filmler-izle"
+    },
+    {
+      "title": "Romantik",
+      "url": "https://www.filmmodu.one/film-tur/romantik-filmler"
+    }
+  ],
   "selectors": {
     "item": "div.movie",
     "title": "a",

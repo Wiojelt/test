@@ -15,7 +15,42 @@ class FullFilmizleFit : MainAPI() {
     override val hasMainPage = true
     override val hasDownloadSupport = true
     override val supportedTypes = setOf(TvType.Movie, TvType.TvSeries)
-    override val mainPage = mainPageOf("https://fullfilmizle.fit/yapim/2024/" to "Film ve Diziler")
+    override val mainPage = mainPageOf(
+        "https://fullfilmizle.fit/yapim/2024/" to "Film ve Diziler",
+        "https://fullfilmizle.fit/film-arsivi/" to "Film Arşivi",
+        "https://fullfilmizle.fit/filmizle/yerli-filmler/" to "Yerli Filmler",
+        "https://fullfilmizle.fit/filmizle/turkce-altyazili-filmler/" to "Türkçe Altyazılı Filmler",
+        "https://fullfilmizle.fit/filmizle/turkce-dublaj-film/" to "Türkçe Dublaj Filmler",
+        "https://fullfilmizle.fit/filmizle/18-erotik-filmler/" to "+18 Filmler",
+        "https://fullfilmizle.fit/filmizle/aile-filmleri/" to "Aile Filmleri",
+        "https://fullfilmizle.fit/filmizle/aksiyon-filmleri/" to "Aksiyon Filmleri",
+        "https://fullfilmizle.fit/filmizle/animasyon-filmleri/" to "Animasyon Filmleri",
+        "https://fullfilmizle.fit/filmizle/belgesel/" to "Belgesel",
+        "https://fullfilmizle.fit/filmizle/bilim-kurgu-filmleri/" to "Bilim Kurgu Filmleri",
+        "https://fullfilmizle.fit/filmizle/biyografi-filmleri/" to "Biyografi Filmleri",
+        "https://fullfilmizle.fit/filmizle/dram-filmleri/" to "Dram Filmleri",
+        "https://fullfilmizle.fit/filmizle/fantastik-filmler/" to "Fantastik Filmler",
+        "https://fullfilmizle.fit/filmizle/fragman/" to "Fragman",
+        "https://fullfilmizle.fit/filmizle/genclik-filmleri/" to "Gençlik Filmleri",
+        "https://fullfilmizle.fit/filmizle/gerilim-filmleri/" to "Gerilim Filmleri",
+        "https://fullfilmizle.fit/filmizle/gizem-filmleri/" to "Gizem Filmleri",
+        "https://fullfilmizle.fit/filmizle/hint-filmleri/" to "Hint Filmleri",
+        "https://fullfilmizle.fit/filmizle/komedi-filmleri/" to "Komedi Filmleri",
+        "https://fullfilmizle.fit/filmizle/korku-filmleri/" to "Korku Filmleri",
+        "https://fullfilmizle.fit/filmizle/macera-filmleri/" to "Macera Filmleri",
+        "https://fullfilmizle.fit/filmizle/muzikal-filmler/" to "Müzikal Filmler",
+        "https://fullfilmizle.fit/filmizle/psikolojik-filmler/" to "Psikolojik Filmler",
+        "https://fullfilmizle.fit/filmizle/romantik-filmler/" to "Romantik Filmler"
+    )
+
+    private fun mediaCandidates(document: org.jsoup.nodes.Document): List<String> = document
+        .select("iframe, video, source")
+        .mapNotNull { node ->
+            listOf("src", "data-src", "data-vsrc", "ysrc", "data-litespeed-src")
+                .asSequence().map { node.attr(it).trim() }.firstOrNull { it.isNotBlank() }
+        }
+        .filter { value -> !value.contains("youtube.com/embed", true) && !value.contains("youtube-nocookie.com", true) }
+        .mapNotNull { fixUrlNull(it) }.distinct()
 
     private fun textOrAttr(item: Element, selector: String, attr: String): String? {
         val target = if (selector.isBlank()) item else item.selectFirst(selector) ?: return null
@@ -81,15 +116,17 @@ class FullFilmizleFit : MainAPI() {
     override suspend fun loadLinks(data: String, isCasting: Boolean, subtitleCallback: (SubtitleFile) -> Unit, callback: (ExtractorLink) -> Unit): Boolean {
         trace("loadLinks start data=$data")
         val document = app.get(data).document
-        val stream = fixUrlNull(document.selectFirst("iframe[src], iframe[data-src], video[src], source[src]")?.attr("src")?.trim()) ?: throw ErrorLoadingException("Video kaynağı bulunamadı")
-        trace("loadLinks resolved stream=$stream")
-        if (!stream.contains(".m3u8") && !stream.contains(".mpd") && !stream.contains(".mp4"))
-            return loadExtractor(stream, data, subtitleCallback, callback)
-        callback(newExtractorLink(name, name, stream, when {
-            stream.contains(".m3u8") -> ExtractorLinkType.M3U8
-            stream.contains(".mpd") -> ExtractorLinkType.DASH
-            else -> ExtractorLinkType.VIDEO
-        }) { referer = data; quality = Qualities.Unknown.value })
+        val streams = (listOfNotNull(fixUrlNull(document.selectFirst("iframe[src], iframe[data-src], video[src], source[src]")?.attr("src")?.trim())) + mediaCandidates(document)).distinct()
+        if (streams.isEmpty()) throw ErrorLoadingException("Video kaynağı bulunamadı")
+        streams.forEach { stream ->
+            if (stream.contains(".m3u8") || stream.contains(".mpd") || stream.contains(".mp4")) callback(newExtractorLink(name, name, stream, when {
+                stream.contains(".m3u8") -> ExtractorLinkType.M3U8
+                stream.contains(".mpd") -> ExtractorLinkType.DASH
+                else -> ExtractorLinkType.VIDEO
+            }) { referer = data; quality = Qualities.Unknown.value })
+            else loadExtractor(stream, data, subtitleCallback, callback)
+        }
+        trace("loadLinks candidates=${streams.size}")
         return true
     }
 }

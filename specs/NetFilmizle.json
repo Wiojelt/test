@@ -19,6 +19,44 @@
     "TvSeries"
   ],
   "domainCandidates": [],
+  "categoryPages": [
+    {
+      "title": "Türkçe Dublaj",
+      "url": "https://netfilmizle.com/turkce-dublaj-filmler/"
+    },
+    {
+      "title": "Türkçe Altyazı",
+      "url": "https://netfilmizle.com/turkce-altyazili-filmler/"
+    },
+    {
+      "title": "Yerli ve Yabancı Diziler",
+      "url": "https://netfilmizle.com/yerli-ve-yabanci-diziler"
+    },
+    {
+      "title": "Boxset Seri Filmler",
+      "url": "https://netfilmizle.com/seri-filmler"
+    },
+    {
+      "title": "Yerli Filmler",
+      "url": "https://netfilmizle.com/yerli-filmler/"
+    },
+    {
+      "title": "Türkçe Altyazılı Filmler",
+      "url": "https://netfilmizle.com/turkce-altyazili-filmler"
+    },
+    {
+      "title": "Türkçe Dublaj Filmler",
+      "url": "https://netfilmizle.com/turkce-dublaj-filmler"
+    },
+    {
+      "title": "Yerli Filmler",
+      "url": "https://netfilmizle.com/yerli-filmler"
+    },
+    {
+      "title": "Yerli ve Yabancı Diziler",
+      "url": "https://netfilmizle.com/yerli-ve-yabanci-diziler/"
+    }
+  ],
   "selectors": {
     "item": ".listmovie",
     "title": ".film-ismi a",

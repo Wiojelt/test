@@ -19,6 +19,104 @@
     "TvSeries"
   ],
   "domainCandidates": [],
+  "categoryPages": [
+    {
+      "title": "+18 Filmler",
+      "url": "https://filmkovasi.co/filmizle/18-filmler/"
+    },
+    {
+      "title": "Aile",
+      "url": "https://filmkovasi.co/filmizle/aile/"
+    },
+    {
+      "title": "Aksiyon",
+      "url": "https://filmkovasi.co/filmizle/aksiyon/"
+    },
+    {
+      "title": "Animasyon",
+      "url": "https://filmkovasi.co/filmizle/animasyon/"
+    },
+    {
+      "title": "Belgesel",
+      "url": "https://filmkovasi.co/filmizle/belgesel/"
+    },
+    {
+      "title": "Bilim Kurgu",
+      "url": "https://filmkovasi.co/filmizle/bilim-kurgu/"
+    },
+    {
+      "title": "Bilim-Kurgu",
+      "url": "https://filmkovasi.co/filmizle/bilim-kurgu-2/"
+    },
+    {
+      "title": "Çizgi",
+      "url": "https://filmkovasi.co/filmizle/cizgi/"
+    },
+    {
+      "title": "Çocuk",
+      "url": "https://filmkovasi.co/filmizle/cocuk/"
+    },
+    {
+      "title": "Dram",
+      "url": "https://filmkovasi.co/filmizle/dram/"
+    },
+    {
+      "title": "Erotik Filmler",
+      "url": "https://filmkovasi.co/filmizle/erotik-filmler/"
+    },
+    {
+      "title": "Fantastik",
+      "url": "https://filmkovasi.co/filmizle/fantastik/"
+    },
+    {
+      "title": "Gençlik",
+      "url": "https://filmkovasi.co/filmizle/genclik/"
+    },
+    {
+      "title": "Gerilim",
+      "url": "https://filmkovasi.co/filmizle/gerilim/"
+    },
+    {
+      "title": "Gizem",
+      "url": "https://filmkovasi.co/filmizle/gizem/"
+    },
+    {
+      "title": "Hint",
+      "url": "https://filmkovasi.co/filmizle/hint/"
+    },
+    {
+      "title": "Komedi",
+      "url": "https://filmkovasi.co/filmizle/komedi/"
+    },
+    {
+      "title": "Kore",
+      "url": "https://filmkovasi.co/filmizle/kore/"
+    },
+    {
+      "title": "Korku",
+      "url": "https://filmkovasi.co/filmizle/korku/"
+    },
+    {
+      "title": "Macera",
+      "url": "https://filmkovasi.co/filmizle/macera/"
+    },
+    {
+      "title": "Müzik",
+      "url": "https://filmkovasi.co/filmizle/muzik/"
+    },
+    {
+      "title": "Polisiye",
+      "url": "https://filmkovasi.co/filmizle/polisiye/"
+    },
+    {
+      "title": "Psikolojik",
+      "url": "https://filmkovasi.co/filmizle/psikolojik/"
+    },
+    {
+      "title": "Romantik",
+      "url": "https://filmkovasi.co/filmizle/romantik/"
+    }
+  ],
   "selectors": {
     "item": ".movie",
     "title": "a",

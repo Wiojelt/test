@@ -15,7 +15,42 @@ class FullHDFilmizleMom : MainAPI() {
     override val hasMainPage = true
     override val hasDownloadSupport = true
     override val supportedTypes = setOf(TvType.Movie, TvType.TvSeries)
-    override val mainPage = mainPageOf("https://www.fullhdfilmizle.mom/turkce-dublaj-filmler/" to "Film ve Diziler")
+    override val mainPage = mainPageOf(
+        "https://www.fullhdfilmizle.mom/turkce-dublaj-filmler/" to "Film ve Diziler",
+        "https://www.fullhdfilmizle.mom/turkce-dublaj-filmler/" to "Türkçe Dublaj Filmler",
+        "https://www.fullhdfilmizle.mom/turkce-altyazili-filmler/" to "Türkçe Altyazılı Filmler",
+        "https://www.fullhdfilmizle.mom/yerli-filmler/" to "Yerli Filmler",
+        "https://www.fullhdfilmizle.mom/imdb-en-iyiler/" to "IMDb En İyiler",
+        "https://www.fullhdfilmizle.mom/tur/aile/" to "Aile",
+        "https://www.fullhdfilmizle.mom/tur/animasyon/" to "Animasyon",
+        "https://www.fullhdfilmizle.mom/tur/belgesel/" to "Belgesel",
+        "https://www.fullhdfilmizle.mom/tur/bilim-kurgu/" to "Bilim Kurgu",
+        "https://www.fullhdfilmizle.mom/tur/biyografi/" to "Biyografi",
+        "https://www.fullhdfilmizle.mom/tur/dini/" to "Dini",
+        "https://www.fullhdfilmizle.mom/tur/dram/" to "Dram",
+        "https://www.fullhdfilmizle.mom/tur/fantastik/" to "Fantastik",
+        "https://www.fullhdfilmizle.mom/tur/gerilim/" to "Gerilim",
+        "https://www.fullhdfilmizle.mom/tur/gizem/" to "Gizem",
+        "https://www.fullhdfilmizle.mom/tur/komedi/" to "Komedi",
+        "https://www.fullhdfilmizle.mom/tur/korku/" to "Korku",
+        "https://www.fullhdfilmizle.mom/tur/macera/" to "Macera",
+        "https://www.fullhdfilmizle.mom/tur/muzik/" to "Müzik",
+        "https://www.fullhdfilmizle.mom/tur/romantik/" to "Romantik",
+        "https://www.fullhdfilmizle.mom/tur/savas/" to "Savaş",
+        "https://www.fullhdfilmizle.mom/tur/spor/" to "Spor",
+        "https://www.fullhdfilmizle.mom/tur/suc/" to "Suç",
+        "https://www.fullhdfilmizle.mom/tur/tarih/" to "Tarih",
+        "https://www.fullhdfilmizle.mom/tur/tv-film/" to "TV film"
+    )
+
+    private fun mediaCandidates(document: org.jsoup.nodes.Document): List<String> = document
+        .select("iframe, video, source")
+        .mapNotNull { node ->
+            listOf("src", "data-src", "data-vsrc", "ysrc", "data-litespeed-src")
+                .asSequence().map { node.attr(it).trim() }.firstOrNull { it.isNotBlank() }
+        }
+        .filter { value -> !value.contains("youtube.com/embed", true) && !value.contains("youtube-nocookie.com", true) }
+        .mapNotNull { fixUrlNull(it) }.distinct()
 
     private fun textOrAttr(item: Element, selector: String, attr: String): String? {
         val target = if (selector.isBlank()) item else item.selectFirst(selector) ?: return null
@@ -81,15 +116,17 @@ class FullHDFilmizleMom : MainAPI() {
     override suspend fun loadLinks(data: String, isCasting: Boolean, subtitleCallback: (SubtitleFile) -> Unit, callback: (ExtractorLink) -> Unit): Boolean {
         trace("loadLinks start data=$data")
         val document = app.get(data).document
-        val stream = fixUrlNull(document.selectFirst("iframe[src], iframe[data-src], video[src], source[src]")?.attr("src")?.trim()) ?: throw ErrorLoadingException("Video kaynağı bulunamadı")
-        trace("loadLinks resolved stream=$stream")
-        if (!stream.contains(".m3u8") && !stream.contains(".mpd") && !stream.contains(".mp4"))
-            return loadExtractor(stream, data, subtitleCallback, callback)
-        callback(newExtractorLink(name, name, stream, when {
-            stream.contains(".m3u8") -> ExtractorLinkType.M3U8
-            stream.contains(".mpd") -> ExtractorLinkType.DASH
-            else -> ExtractorLinkType.VIDEO
-        }) { referer = data; quality = Qualities.Unknown.value })
+        val streams = (listOfNotNull(fixUrlNull(document.selectFirst("iframe[src], iframe[data-src], video[src], source[src]")?.attr("src")?.trim())) + mediaCandidates(document)).distinct()
+        if (streams.isEmpty()) throw ErrorLoadingException("Video kaynağı bulunamadı")
+        streams.forEach { stream ->
+            if (stream.contains(".m3u8") || stream.contains(".mpd") || stream.contains(".mp4")) callback(newExtractorLink(name, name, stream, when {
+                stream.contains(".m3u8") -> ExtractorLinkType.M3U8
+                stream.contains(".mpd") -> ExtractorLinkType.DASH
+                else -> ExtractorLinkType.VIDEO
+            }) { referer = data; quality = Qualities.Unknown.value })
+            else loadExtractor(stream, data, subtitleCallback, callback)
+        }
+        trace("loadLinks candidates=${streams.size}")
         return true
     }
 }

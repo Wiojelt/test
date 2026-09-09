@@ -19,6 +19,104 @@
     "TvSeries"
   ],
   "domainCandidates": [],
+  "categoryPages": [
+    {
+      "title": "Diziler",
+      "url": "https://www.hdfilmizle.best/dizi/"
+    },
+    {
+      "title": "IMDb Top 250",
+      "url": "https://www.hdfilmizle.best/imdb-top-250/"
+    },
+    {
+      "title": "Aksiyon",
+      "url": "https://www.hdfilmizle.best/tur/aksiyon/"
+    },
+    {
+      "title": "Aile",
+      "url": "https://www.hdfilmizle.best/tur/aile/"
+    },
+    {
+      "title": "Animasyon",
+      "url": "https://www.hdfilmizle.best/tur/animasyon/"
+    },
+    {
+      "title": "Belgesel",
+      "url": "https://www.hdfilmizle.best/tur/belgesel/"
+    },
+    {
+      "title": "Bilim Kurgu",
+      "url": "https://www.hdfilmizle.best/tur/bilim-kurgu/"
+    },
+    {
+      "title": "Biyografi",
+      "url": "https://www.hdfilmizle.best/tur/biyografi/"
+    },
+    {
+      "title": "Dram",
+      "url": "https://www.hdfilmizle.best/tur/dram/"
+    },
+    {
+      "title": "Fantastik",
+      "url": "https://www.hdfilmizle.best/tur/fantastik/"
+    },
+    {
+      "title": "Gerilim",
+      "url": "https://www.hdfilmizle.best/tur/gerilim/"
+    },
+    {
+      "title": "Gizem",
+      "url": "https://www.hdfilmizle.best/tur/gizem/"
+    },
+    {
+      "title": "Komedi",
+      "url": "https://www.hdfilmizle.best/tur/komedi/"
+    },
+    {
+      "title": "Korku",
+      "url": "https://www.hdfilmizle.best/tur/korku/"
+    },
+    {
+      "title": "Macera",
+      "url": "https://www.hdfilmizle.best/tur/macera/"
+    },
+    {
+      "title": "Müzik",
+      "url": "https://www.hdfilmizle.best/tur/muzik/"
+    },
+    {
+      "title": "Romantik",
+      "url": "https://www.hdfilmizle.best/tur/romantik/"
+    },
+    {
+      "title": "Savaş",
+      "url": "https://www.hdfilmizle.best/tur/savas/"
+    },
+    {
+      "title": "Spor",
+      "url": "https://www.hdfilmizle.best/tur/spor/"
+    },
+    {
+      "title": "Suç",
+      "url": "https://www.hdfilmizle.best/tur/suc/"
+    },
+    {
+      "title": "Tarih",
+      "url": "https://www.hdfilmizle.best/tur/tarih/"
+    },
+    {
+      "title": "Western",
+      "url": "https://www.hdfilmizle.best/tur/western/"
+    },
+    {
+      "title": "2026",
+      "url": "https://www.hdfilmizle.best/yil/2026/"
+    },
+    {
+      "title": "2025",
+      "url": "https://www.hdfilmizle.best/yil/2025/"
+    }
+  ],
   "selectors": {
     "item": ".hdf-item-relative",
     "title": ".title",

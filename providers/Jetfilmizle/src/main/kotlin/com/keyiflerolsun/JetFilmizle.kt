@@ -29,7 +29,28 @@ class JetFilmizle : MainAPI() {
     override val hasQuickSearch = false
     override val hasDownloadSupport = true
     override val supportedTypes = setOf(TvType.Movie, TvType.TvSeries)
-    override val mainPage = mainPageOf(mainUrl to "Ana Sayfa")
+    override val mainPage = mainPageOf(
+        mainUrl to "Ana Sayfa",
+        "$mainUrl/filmler" to "Tüm Filmler",
+        "$mainUrl/turkce-dublaj" to "Türkçe Dublaj",
+        "$mainUrl/turkce-altyazili" to "Türkçe Altyazılı",
+        "$mainUrl/diziler" to "Tüm Diziler",
+        "$mainUrl/yerli-filmler" to "Yerli Filmler",
+        "$mainUrl/yabanci-diziler" to "Yabancı Diziler",
+        "$mainUrl/tur/aksiyon" to "Aksiyon",
+        "$mainUrl/tur/animasyon" to "Animasyon",
+        "$mainUrl/tur/belgesel" to "Belgesel",
+        "$mainUrl/tur/bilim-kurgu" to "Bilim Kurgu",
+        "$mainUrl/tur/dram" to "Dram",
+        "$mainUrl/tur/fantastik" to "Fantastik",
+        "$mainUrl/tur/gerilim" to "Gerilim",
+        "$mainUrl/tur/gizem" to "Gizem",
+        "$mainUrl/tur/komedi" to "Komedi",
+        "$mainUrl/tur/korku" to "Korku",
+        "$mainUrl/tur/macera" to "Macera",
+        "$mainUrl/tur/romantik" to "Romantik",
+        "$mainUrl/tur/suc" to "Suç"
+    )
 
     private val logTag = "TS-Jetfilmizle"
     private val userAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"

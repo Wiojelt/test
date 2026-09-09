@@ -19,6 +19,100 @@
     "TvSeries"
   ],
   "domainCandidates": [],
+  "categoryPages": [
+    {
+      "title": "Aksiyon",
+      "url": "https://filmizlehell.net/tur/1-aksiyon-002"
+    },
+    {
+      "title": "Macera",
+      "url": "https://filmizlehell.net/tur/7-macera-001"
+    },
+    {
+      "title": "Bilim-Kurgu",
+      "url": "https://filmizlehell.net/tur/8-bilim-kurgu-001"
+    },
+    {
+      "title": "Savaş",
+      "url": "https://filmizlehell.net/tur/9-savas-001"
+    },
+    {
+      "title": "Dram",
+      "url": "https://filmizlehell.net/tur/10-dram-001"
+    },
+    {
+      "title": "Yerli Film",
+      "url": "https://filmizlehell.net/tur/11-yerli-film-001"
+    },
+    {
+      "title": "Gerilim",
+      "url": "https://filmizlehell.net/tur/12-gerilim-001"
+    },
+    {
+      "title": "Komedi",
+      "url": "https://filmizlehell.net/tur/13-komedi-001"
+    },
+    {
+      "title": "TV film",
+      "url": "https://filmizlehell.net/tur/14-tv-film-001"
+    },
+    {
+      "title": "Belgesel",
+      "url": "https://filmizlehell.net/tur/15-belgesel-001"
+    },
+    {
+      "title": "Aile",
+      "url": "https://filmizlehell.net/tur/16-aile-001"
+    },
+    {
+      "title": "Fantastik",
+      "url": "https://filmizlehell.net/tur/17-fantastik-001"
+    },
+    {
+      "title": "Seriler",
+      "url": "https://filmizlehell.net/seriler"
+    },
+    {
+      "title": "IMDb Puanı Yüksek Filmler",
+      "url": "https://filmizlehell.net/sayfa/imdb-puani-yuksek-filmler"
+    },
+    {
+      "title": "IMDb Puanı 7+ Filmler",
+      "url": "https://filmizlehell.net/sayfa/imdb-puani-7-filmler"
+    },
+    {
+      "title": "Animasyon 256",
+      "url": "https://filmizlehell.net/tur/18-animasyon-001"
+    },
+    {
+      "title": "Romantik 500",
+      "url": "https://filmizlehell.net/tur/19-romantik-001"
+    },
+    {
+      "title": "Korku 483",
+      "url": "https://filmizlehell.net/tur/20-korku-001"
+    },
+    {
+      "title": "Suç 503",
+      "url": "https://filmizlehell.net/tur/21-suc-001"
+    },
+    {
+      "title": "Vahşi Batı 43",
+      "url": "https://filmizlehell.net/tur/22-vahsi-bati-001"
+    },
+    {
+      "title": "Tarih 188",
+      "url": "https://filmizlehell.net/tur/23-tarih-001"
+    },
+    {
+      "title": "Gizem 290",
+      "url": "https://filmizlehell.net/tur/24-gizem-001"
+    },
+    {
+      "title": "Müzik 95",
+      "url": "https://filmizlehell.net/tur/25-muzik-001"
+    }
+  ],
   "selectors": {
     "item": ".movie",
     "title": "a",

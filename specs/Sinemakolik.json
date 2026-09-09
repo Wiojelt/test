@@ -19,6 +19,64 @@
     "TvSeries"
   ],
   "domainCandidates": [],
+  "categoryPages": [
+    {
+      "title": "Aile",
+      "url": "https://sinemakolik.com/aile"
+    },
+    {
+      "title": "Aksiyon",
+      "url": "https://sinemakolik.com/aksiyon"
+    },
+    {
+      "title": "Bilim Kurgu",
+      "url": "https://sinemakolik.com/bilim-kurgu"
+    },
+    {
+      "title": "Dram",
+      "url": "https://sinemakolik.com/dram"
+    },
+    {
+      "title": "Fantastik",
+      "url": "https://sinemakolik.com/fantastik"
+    },
+    {
+      "title": "Gerilim",
+      "url": "https://sinemakolik.com/gerilim"
+    },
+    {
+      "title": "Gizem",
+      "url": "https://sinemakolik.com/gizem"
+    },
+    {
+      "title": "Komedi",
+      "url": "https://sinemakolik.com/komedi"
+    },
+    {
+      "title": "Korku",
+      "url": "https://sinemakolik.com/korku"
+    },
+    {
+      "title": "Macera",
+      "url": "https://sinemakolik.com/macera"
+    },
+    {
+      "title": "Romantik",
+      "url": "https://sinemakolik.com/romantik"
+    },
+    {
+      "title": "Savaş",
+      "url": "https://sinemakolik.com/savas"
+    },
+    {
+      "title": "Suç",
+      "url": "https://sinemakolik.com/suc"
+    },
+    {
+      "title": "Tarih",
+      "url": "https://sinemakolik.com/tarih"
+    }
+  ],
   "selectors": {
     "item": ".listmovie",
     "title": ".film-ismi a",

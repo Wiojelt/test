@@ -19,6 +19,76 @@
     "TvSeries"
   ],
   "domainCandidates": [],
+  "categoryPages": [
+    {
+      "title": "IMDB Top 250",
+      "url": "https://www.sinema.gg/tag/imdb-top-250-izle"
+    },
+    {
+      "title": "Hint",
+      "url": "https://www.sinema.gg/izle/film-listeleri/hint-filmleri/"
+    },
+    {
+      "title": "Kore",
+      "url": "https://www.sinema.gg/izle/film-listeleri/kore-filmleri/"
+    },
+    {
+      "title": "Marvel",
+      "url": "https://www.sinema.gg/izle/film-listeleri/marvel-filmleri/"
+    },
+    {
+      "title": "Netflix",
+      "url": "https://www.sinema.gg/izle/film-listeleri/netflix-filmleri/"
+    },
+    {
+      "title": "Vampir",
+      "url": "https://www.sinema.gg/izle/film-listeleri/vampir-filmleri/"
+    },
+    {
+      "title": "Zombi",
+      "url": "https://www.sinema.gg/izle/film-listeleri/zombi-filmleri/"
+    },
+    {
+      "title": "Editörün Seçtikleri",
+      "url": "https://www.sinema.gg/izle/en-cok-begenilen-filmler/"
+    },
+    {
+      "title": "Popüler Filmler",
+      "url": "https://www.sinema.gg/izle/populer-filmler/"
+    },
+    {
+      "title": "Aile Filmleri",
+      "url": "https://www.sinema.gg/izle/aile-filmleri/"
+    },
+    {
+      "title": "Aksiyon Filmleri",
+      "url": "https://www.sinema.gg/izle/aksiyon-filmleri/"
+    },
+    {
+      "title": "Animasyon Filmleri",
+      "url": "https://www.sinema.gg/izle/animasyon-filmleri/"
+    },
+    {
+      "title": "Bilim Kurgu Filmler",
+      "url": "https://www.sinema.gg/izle/bilim-kurgu-filmleri/"
+    },
+    {
+      "title": "Dram Filmleri",
+      "url": "https://www.sinema.gg/izle/dram-filmleri/"
+    },
+    {
+      "title": "Fantastik Filmler",
+      "url": "https://www.sinema.gg/izle/fantastik-filmler/"
+    },
+    {
+      "title": "Komedi Filmleri",
+      "url": "https://www.sinema.gg/izle/komedi-filmleri/"
+    },
+    {
+      "title": "Korku Filmleri",
+      "url": "https://www.sinema.gg/izle/korku-filmleri/"
+    }
+  ],
   "selectors": {
     "item": ".frag-k",
     "title": ".baslik span",

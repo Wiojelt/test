@@ -19,6 +19,104 @@
     "TvSeries"
   ],
   "domainCandidates": [],
+  "categoryPages": [
+    {
+      "title": "Listeler",
+      "url": "https://www.fullhdfilmizlesene.now/film-listeleri"
+    },
+    {
+      "title": "Seriler",
+      "url": "https://www.fullhdfilmizlesene.now/seri-filmler"
+    },
+    {
+      "title": "Aile Filmleri",
+      "url": "https://www.fullhdfilmizlesene.now/filmizle/aile-filmleri"
+    },
+    {
+      "title": "Aksiyon Filmleri",
+      "url": "https://www.fullhdfilmizlesene.now/filmizle/aksiyon-filmleri"
+    },
+    {
+      "title": "Animasyon Filmleri",
+      "url": "https://www.fullhdfilmizlesene.now/filmizle/animasyon-filmleri"
+    },
+    {
+      "title": "Belgeseller",
+      "url": "https://www.fullhdfilmizlesene.now/filmizle/belgesel-filmleri"
+    },
+    {
+      "title": "Bilim Kurgu Filmleri",
+      "url": "https://www.fullhdfilmizlesene.now/filmizle/bilim-kurgu-filmleri"
+    },
+    {
+      "title": "Blu Ray Filmler",
+      "url": "https://www.fullhdfilmizlesene.now/filmizle/bluray-filmler"
+    },
+    {
+      "title": "Çizgi Filmler",
+      "url": "https://www.fullhdfilmizlesene.now/filmizle/cizgi-filmler"
+    },
+    {
+      "title": "Dram Filmleri",
+      "url": "https://www.fullhdfilmizlesene.now/filmizle/dram-filmler-izle"
+    },
+    {
+      "title": "Fantastik Filmler",
+      "url": "https://www.fullhdfilmizlesene.now/filmizle/fantastik-filmler"
+    },
+    {
+      "title": "Gerilim Filmleri",
+      "url": "https://www.fullhdfilmizlesene.now/filmizle/gerilim-filmleri"
+    },
+    {
+      "title": "Gizem Filmleri",
+      "url": "https://www.fullhdfilmizlesene.now/filmizle/gizem-filmleri"
+    },
+    {
+      "title": "Hint Filmleri",
+      "url": "https://www.fullhdfilmizlesene.now/filmizle/hint-filmleri"
+    },
+    {
+      "title": "Komedi Filmleri",
+      "url": "https://www.fullhdfilmizlesene.now/filmizle/komedi-filmleri"
+    },
+    {
+      "title": "Korku Filmleri",
+      "url": "https://www.fullhdfilmizlesene.now/filmizle/korku-filmleri"
+    },
+    {
+      "title": "Macera Filmleri",
+      "url": "https://www.fullhdfilmizlesene.now/filmizle/macera-filmleri"
+    },
+    {
+      "title": "Müzikal Filmler",
+      "url": "https://www.fullhdfilmizlesene.now/filmizle/muzikal-filmler"
+    },
+    {
+      "title": "Polisiye Filmleri",
+      "url": "https://www.fullhdfilmizlesene.now/filmizle/polisiye-filmleri"
+    },
+    {
+      "title": "Psikolojik Filmler",
+      "url": "https://www.fullhdfilmizlesene.now/filmizle/psikolojik-filmler"
+    },
+    {
+      "title": "Romantik Filmler",
+      "url": "https://www.fullhdfilmizlesene.now/filmizle/romantik-filmler"
+    },
+    {
+      "title": "Savaş Filmleri",
+      "url": "https://www.fullhdfilmizlesene.now/filmizle/savas-filmleri"
+    },
+    {
+      "title": "Suç Filmleri",
+      "url": "https://www.fullhdfilmizlesene.now/filmizle/suc-filmleri"
+    },
+    {
+      "title": "Tarih Filmleri",
+      "url": "https://www.fullhdfilmizlesene.now/filmizle/tarih-filmleri"
+    }
+  ],
   "selectors": {
     "item": ".film",
     "title": "h2",

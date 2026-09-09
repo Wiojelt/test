@@ -15,7 +15,27 @@ class NetFilmizle : MainAPI() {
     override val hasMainPage = true
     override val hasDownloadSupport = true
     override val supportedTypes = setOf(TvType.Movie, TvType.TvSeries)
-    override val mainPage = mainPageOf("https://netfilmizle.com/yerli-ve-yabanci-diziler" to "Film ve Diziler")
+    override val mainPage = mainPageOf(
+        "https://netfilmizle.com/yerli-ve-yabanci-diziler" to "Film ve Diziler",
+        "https://netfilmizle.com/turkce-dublaj-filmler/" to "Türkçe Dublaj",
+        "https://netfilmizle.com/turkce-altyazili-filmler/" to "Türkçe Altyazı",
+        "https://netfilmizle.com/yerli-ve-yabanci-diziler" to "Yerli ve Yabancı Diziler",
+        "https://netfilmizle.com/seri-filmler" to "Boxset Seri Filmler",
+        "https://netfilmizle.com/yerli-filmler/" to "Yerli Filmler",
+        "https://netfilmizle.com/turkce-altyazili-filmler" to "Türkçe Altyazılı Filmler",
+        "https://netfilmizle.com/turkce-dublaj-filmler" to "Türkçe Dublaj Filmler",
+        "https://netfilmizle.com/yerli-filmler" to "Yerli Filmler",
+        "https://netfilmizle.com/yerli-ve-yabanci-diziler/" to "Yerli ve Yabancı Diziler"
+    )
+
+    private fun mediaCandidates(document: org.jsoup.nodes.Document): List<String> = document
+        .select("iframe, video, source")
+        .mapNotNull { node ->
+            listOf("src", "data-src", "data-vsrc", "ysrc", "data-litespeed-src")
+                .asSequence().map { node.attr(it).trim() }.firstOrNull { it.isNotBlank() }
+        }
+        .filter { value -> !value.contains("youtube.com/embed", true) && !value.contains("youtube-nocookie.com", true) }
+        .mapNotNull { fixUrlNull(it) }.distinct()
 
     private fun textOrAttr(item: Element, selector: String, attr: String): String? {
         val target = if (selector.isBlank()) item else item.selectFirst(selector) ?: return null
@@ -81,15 +101,17 @@ class NetFilmizle : MainAPI() {
     override suspend fun loadLinks(data: String, isCasting: Boolean, subtitleCallback: (SubtitleFile) -> Unit, callback: (ExtractorLink) -> Unit): Boolean {
         trace("loadLinks start data=$data")
         val document = app.get(data).document
-        val stream = fixUrlNull(document.selectFirst("iframe[src], iframe[data-src], video[src], source[src]")?.attr("src")?.trim()) ?: throw ErrorLoadingException("Video kaynağı bulunamadı")
-        trace("loadLinks resolved stream=$stream")
-        if (!stream.contains(".m3u8") && !stream.contains(".mpd") && !stream.contains(".mp4"))
-            return loadExtractor(stream, data, subtitleCallback, callback)
-        callback(newExtractorLink(name, name, stream, when {
-            stream.contains(".m3u8") -> ExtractorLinkType.M3U8
-            stream.contains(".mpd") -> ExtractorLinkType.DASH
-            else -> ExtractorLinkType.VIDEO
-        }) { referer = data; quality = Qualities.Unknown.value })
+        val streams = (listOfNotNull(fixUrlNull(document.selectFirst("iframe[src], iframe[data-src], video[src], source[src]")?.attr("src")?.trim())) + mediaCandidates(document)).distinct()
+        if (streams.isEmpty()) throw ErrorLoadingException("Video kaynağı bulunamadı")
+        streams.forEach { stream ->
+            if (stream.contains(".m3u8") || stream.contains(".mpd") || stream.contains(".mp4")) callback(newExtractorLink(name, name, stream, when {
+                stream.contains(".m3u8") -> ExtractorLinkType.M3U8
+                stream.contains(".mpd") -> ExtractorLinkType.DASH
+                else -> ExtractorLinkType.VIDEO
+            }) { referer = data; quality = Qualities.Unknown.value })
+            else loadExtractor(stream, data, subtitleCallback, callback)
+        }
+        trace("loadLinks candidates=${streams.size}")
         return true
     }
 }

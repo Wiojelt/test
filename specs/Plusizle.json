@@ -19,6 +19,28 @@
     "TvSeries"
   ],
   "domainCandidates": [],
+  "categoryPages": [
+    {
+      "title": "YERLİ FİLMLER",
+      "url": "https://plusizle.org/Kategori/tur/yerli-filmler-izle/"
+    },
+    {
+      "title": "NETFLIX",
+      "url": "https://plusizle.org/Kategori/netflix-filmleri-izle/"
+    },
+    {
+      "title": "EN POPÜLER",
+      "url": "https://plusizle.org/Kategori/en-populer-filmler/"
+    },
+    {
+      "title": "Romantik",
+      "url": "https://plusizle.org/Kategori/tur/romantik-filmler/"
+    },
+    {
+      "title": "Dizi izle",
+      "url": "https://plusizle.org/Kategori/dizi-izle/"
+    }
+  ],
   "selectors": {
     "item": ".v100-movie-item",
     "title": ".v100-title",

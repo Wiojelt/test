@@ -15,7 +15,42 @@ class HDFilmizleInk : MainAPI() {
     override val hasMainPage = true
     override val hasDownloadSupport = true
     override val supportedTypes = setOf(TvType.Movie, TvType.TvSeries)
-    override val mainPage = mainPageOf("https://www.hdfilmizle.ink/film/" to "Film ve Diziler")
+    override val mainPage = mainPageOf(
+        "https://www.hdfilmizle.ink/film/" to "Film ve Diziler",
+        "https://www.hdfilmizle.ink/turkce-dublaj-filmler/" to "Türkçe Dublaj Filmler",
+        "https://www.hdfilmizle.ink/turkce-altyazili-filmler/" to "Türkçe Altyazılı Filmler",
+        "https://www.hdfilmizle.ink/yerli-filmler/" to "Yerli Filmler",
+        "https://www.hdfilmizle.ink/dizi/" to "Diziler",
+        "https://www.hdfilmizle.ink/turkce-dublaj-diziler/" to "Türkçe Dublaj Diziler",
+        "https://www.hdfilmizle.ink/turkce-altyazili-diziler/" to "Türkçe Altyazılı Diziler",
+        "https://www.hdfilmizle.ink/yerli-diziler-izle/" to "Yerli Diziler",
+        "https://www.hdfilmizle.ink/turkce-dublaj-bolumler/" to "Türkçe Dublaj Bölümler",
+        "https://www.hdfilmizle.ink/turkce-altyazili-bolumler/" to "Türkçe Altyazılı Bölümler",
+        "https://www.hdfilmizle.ink/yerli-dizi-bolumleri-izle/" to "Yerli Dizi Bölümleri",
+        "https://www.hdfilmizle.ink/imdb-en-iyiler/" to "IMDb En İyiler",
+        "https://www.hdfilmizle.ink/populer/" to "Popüler",
+        "https://www.hdfilmizle.ink/boxset/" to "Seriler",
+        "https://www.hdfilmizle.ink/tur/aksiyon/" to "Aksiyon",
+        "https://www.hdfilmizle.ink/tur/gerilim/" to "Gerilim",
+        "https://www.hdfilmizle.ink/tur/komedi/" to "Komedi",
+        "https://www.hdfilmizle.ink/tur/macera/" to "Macera",
+        "https://www.hdfilmizle.ink/yil/2026/" to "2026",
+        "https://www.hdfilmizle.ink/tur/dram/" to "Dram",
+        "https://www.hdfilmizle.ink/tur/romantik/" to "Romantik",
+        "https://www.hdfilmizle.ink/tur/suc/" to "Suç",
+        "https://www.hdfilmizle.ink/tur/bilim-kurgu/" to "Bilim-Kurgu",
+        "https://www.hdfilmizle.ink/tur/fantastik/" to "Fantastik",
+        "https://www.hdfilmizle.ink/boxset/star-wars/" to "Star Wars"
+    )
+
+    private fun mediaCandidates(document: org.jsoup.nodes.Document): List<String> = document
+        .select("iframe, video, source")
+        .mapNotNull { node ->
+            listOf("src", "data-src", "data-vsrc", "ysrc", "data-litespeed-src")
+                .asSequence().map { node.attr(it).trim() }.firstOrNull { it.isNotBlank() }
+        }
+        .filter { value -> !value.contains("youtube.com/embed", true) && !value.contains("youtube-nocookie.com", true) }
+        .mapNotNull { fixUrlNull(it) }.distinct()
 
     private fun textOrAttr(item: Element, selector: String, attr: String): String? {
         val target = if (selector.isBlank()) item else item.selectFirst(selector) ?: return null
@@ -81,15 +116,17 @@ class HDFilmizleInk : MainAPI() {
     override suspend fun loadLinks(data: String, isCasting: Boolean, subtitleCallback: (SubtitleFile) -> Unit, callback: (ExtractorLink) -> Unit): Boolean {
         trace("loadLinks start data=$data")
         val document = app.get(data).document
-        val stream = fixUrlNull(document.selectFirst("iframe[src], iframe[data-src], video[src], source[src]")?.attr("src")?.trim()) ?: throw ErrorLoadingException("Video kaynağı bulunamadı")
-        trace("loadLinks resolved stream=$stream")
-        if (!stream.contains(".m3u8") && !stream.contains(".mpd") && !stream.contains(".mp4"))
-            return loadExtractor(stream, data, subtitleCallback, callback)
-        callback(newExtractorLink(name, name, stream, when {
-            stream.contains(".m3u8") -> ExtractorLinkType.M3U8
-            stream.contains(".mpd") -> ExtractorLinkType.DASH
-            else -> ExtractorLinkType.VIDEO
-        }) { referer = data; quality = Qualities.Unknown.value })
+        val streams = (listOfNotNull(fixUrlNull(document.selectFirst("iframe[src], iframe[data-src], video[src], source[src]")?.attr("src")?.trim())) + mediaCandidates(document)).distinct()
+        if (streams.isEmpty()) throw ErrorLoadingException("Video kaynağı bulunamadı")
+        streams.forEach { stream ->
+            if (stream.contains(".m3u8") || stream.contains(".mpd") || stream.contains(".mp4")) callback(newExtractorLink(name, name, stream, when {
+                stream.contains(".m3u8") -> ExtractorLinkType.M3U8
+                stream.contains(".mpd") -> ExtractorLinkType.DASH
+                else -> ExtractorLinkType.VIDEO
+            }) { referer = data; quality = Qualities.Unknown.value })
+            else loadExtractor(stream, data, subtitleCallback, callback)
+        }
+        trace("loadLinks candidates=${streams.size}")
         return true
     }
 }

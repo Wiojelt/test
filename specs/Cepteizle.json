@@ -19,6 +19,104 @@
     "TvSeries"
   ],
   "domainCandidates": [],
+  "categoryPages": [
+    {
+      "title": "Aksiyon",
+      "url": "https://cepteizle.net/tur/aksiyon/"
+    },
+    {
+      "title": "Korku",
+      "url": "https://cepteizle.net/tur/korku/"
+    },
+    {
+      "title": "Komedi",
+      "url": "https://cepteizle.net/tur/komedi/"
+    },
+    {
+      "title": "Macera",
+      "url": "https://cepteizle.net/tur/macera/"
+    },
+    {
+      "title": "2025 Filmleri",
+      "url": "https://cepteizle.net/yil/2025/"
+    },
+    {
+      "title": "2026 Filmleri",
+      "url": "https://cepteizle.net/yil/2026/"
+    },
+    {
+      "title": "Bilim Kurgu",
+      "url": "https://cepteizle.net/tur/bilim-kurgu/"
+    },
+    {
+      "title": "Suç",
+      "url": "https://cepteizle.net/tur/suc/"
+    },
+    {
+      "title": "Netflix Filmleri izle",
+      "url": "https://cepteizle.net/tur/netflix-filmleri-izle/"
+    },
+    {
+      "title": "Yerli Filmler",
+      "url": "https://cepteizle.net/tur/tur/yerli-filmler-izle/"
+    },
+    {
+      "title": "Aile",
+      "url": "https://cepteizle.net/tur/aile/"
+    },
+    {
+      "title": "Animasyon",
+      "url": "https://cepteizle.net/tur/animasyon/"
+    },
+    {
+      "title": "Anime izle",
+      "url": "https://cepteizle.net/tur/anime-izle/"
+    },
+    {
+      "title": "Belgesel",
+      "url": "https://cepteizle.net/tur/belgesel/"
+    },
+    {
+      "title": "BluTV Filmleri",
+      "url": "https://cepteizle.net/tur/blutv-filmleri/"
+    },
+    {
+      "title": "Çizgi Filmler",
+      "url": "https://cepteizle.net/tur/cizgi-filmler/"
+    },
+    {
+      "title": "Dram",
+      "url": "https://cepteizle.net/tur/dram/"
+    },
+    {
+      "title": "Fantastik",
+      "url": "https://cepteizle.net/tur/fantastik/"
+    },
+    {
+      "title": "Filmakinesi",
+      "url": "https://cepteizle.net/tur/filmakinesi/"
+    },
+    {
+      "title": "Gerilim",
+      "url": "https://cepteizle.net/tur/gerilim/"
+    },
+    {
+      "title": "Gizem",
+      "url": "https://cepteizle.net/tur/gizem/"
+    },
+    {
+      "title": "Hdfilmcehennemi",
+      "url": "https://cepteizle.net/tur/hdfilmcehennemi/"
+    },
+    {
+      "title": "Hdfilmcenneti",
+      "url": "https://cepteizle.net/tur/hdfilmcenneti/"
+    },
+    {
+      "title": "IMDB TOP 250",
+      "url": "https://cepteizle.net/tur/imdb-top-250/"
+    }
+  ],
   "selectors": {
     "item": ".listmovie",
     "title": ".title",

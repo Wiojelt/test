@@ -19,6 +19,104 @@
     "TvSeries"
   ],
   "domainCandidates": [],
+  "categoryPages": [
+    {
+      "title": "Film Arşivi",
+      "url": "https://fullfilmizle.fit/film-arsivi/"
+    },
+    {
+      "title": "Yerli Filmler",
+      "url": "https://fullfilmizle.fit/filmizle/yerli-filmler/"
+    },
+    {
+      "title": "Türkçe Altyazılı Filmler",
+      "url": "https://fullfilmizle.fit/filmizle/turkce-altyazili-filmler/"
+    },
+    {
+      "title": "Türkçe Dublaj Filmler",
+      "url": "https://fullfilmizle.fit/filmizle/turkce-dublaj-film/"
+    },
+    {
+      "title": "+18 Filmler",
+      "url": "https://fullfilmizle.fit/filmizle/18-erotik-filmler/"
+    },
+    {
+      "title": "Aile Filmleri",
+      "url": "https://fullfilmizle.fit/filmizle/aile-filmleri/"
+    },
+    {
+      "title": "Aksiyon Filmleri",
+      "url": "https://fullfilmizle.fit/filmizle/aksiyon-filmleri/"
+    },
+    {
+      "title": "Animasyon Filmleri",
+      "url": "https://fullfilmizle.fit/filmizle/animasyon-filmleri/"
+    },
+    {
+      "title": "Belgesel",
+      "url": "https://fullfilmizle.fit/filmizle/belgesel/"
+    },
+    {
+      "title": "Bilim Kurgu Filmleri",
+      "url": "https://fullfilmizle.fit/filmizle/bilim-kurgu-filmleri/"
+    },
+    {
+      "title": "Biyografi Filmleri",
+      "url": "https://fullfilmizle.fit/filmizle/biyografi-filmleri/"
+    },
+    {
+      "title": "Dram Filmleri",
+      "url": "https://fullfilmizle.fit/filmizle/dram-filmleri/"
+    },
+    {
+      "title": "Fantastik Filmler",
+      "url": "https://fullfilmizle.fit/filmizle/fantastik-filmler/"
+    },
+    {
+      "title": "Fragman",
+      "url": "https://fullfilmizle.fit/filmizle/fragman/"
+    },
+    {
+      "title": "Gençlik Filmleri",
+      "url": "https://fullfilmizle.fit/filmizle/genclik-filmleri/"
+    },
+    {
+      "title": "Gerilim Filmleri",
+      "url": "https://fullfilmizle.fit/filmizle/gerilim-filmleri/"
+    },
+    {
+      "title": "Gizem Filmleri",
+      "url": "https://fullfilmizle.fit/filmizle/gizem-filmleri/"
+    },
+    {
+      "title": "Hint Filmleri",
+      "url": "https://fullfilmizle.fit/filmizle/hint-filmleri/"
+    },
+    {
+      "title": "Komedi Filmleri",
+      "url": "https://fullfilmizle.fit/filmizle/komedi-filmleri/"
+    },
+    {
+      "title": "Korku Filmleri",
+      "url": "https://fullfilmizle.fit/filmizle/korku-filmleri/"
+    },
+    {
+      "title": "Macera Filmleri",
+      "url": "https://fullfilmizle.fit/filmizle/macera-filmleri/"
+    },
+    {
+      "title": "Müzikal Filmler",
+      "url": "https://fullfilmizle.fit/filmizle/muzikal-filmler/"
+    },
+    {
+      "title": "Psikolojik Filmler",
+      "url": "https://fullfilmizle.fit/filmizle/psikolojik-filmler/"
+    },
+    {
+      "title": "Romantik Filmler",
+      "url": "https://fullfilmizle.fit/filmizle/romantik-filmler/"
+    }
+  ],
   "selectors": {
     "item": ".movie",
     "title": "a",
