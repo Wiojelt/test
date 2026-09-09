@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "name": "Filmmodu",
+  "displayName": "Filmmodu Test",
+  "packageName": "com.wiojelt.turkstream.filmmodu",
+  "repository": "Wiojelt/test",
+  "author": "Wiojelt",
+  "kind": "movie",
+  "baseUrl": "https://www.filmmodu.one",
+  "listUrl": "https://www.filmmodu.one/hd-populer-filmler",
+  "searchUrl": "",
+  "iconUrl": "https://cdn.filmmodu.one/assets/logo-f443431aa7cfd080f4c8e1eb47b9713cfab4b9889253b3562f4ab0707c7e7c70.svg",
+  "description": "TurkStream test sağlayıcısı; katalog doğrulandı, oynatıcı akışı siteye göre beklemede olabilir.",
+  "language": "tr",
+  "version": 1,
+  "defaultCategory": "Film ve Diziler",
+  "tvTypes": [
+    "Movie",
+    "TvSeries"
+  ],
+  "domainCandidates": [],
+  "selectors": {
+    "item": "div.movie",
+    "title": "a",
+    "section": "",
+    "section_title": "h1, h2, h3, h4",
+    "link": "a[href]",
+    "poster": "img",
+    "category": "",
+    "description": ".description, .card-text",
+    "stream": "iframe[src], iframe[data-src], video[src], source[src]",
+    "title_attr": "text",
+    "link_attr": "href",
+    "poster_attr": "src",
+    "category_attr": "text",
+    "stream_attr": "src"
+  }
+}

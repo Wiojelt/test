@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "name": "FullHDFilmizleMom",
+  "displayName": "FullHDFilmizleMom Test",
+  "packageName": "com.wiojelt.turkstream.fullhdfilmizlemom",
+  "repository": "Wiojelt/test",
+  "author": "Wiojelt",
+  "kind": "movie",
+  "baseUrl": "https://www.fullhdfilmizle.mom",
+  "listUrl": "https://www.fullhdfilmizle.mom/turkce-dublaj-filmler/",
+  "searchUrl": "",
+  "iconUrl": "https://www.fullhdfilmizle.mom/wp-content/themes/filmplus/fav.ico",
+  "description": "TurkStream test sağlayıcısı; katalog doğrulandı, oynatıcı akışı siteye göre beklemede olabilir.",
+  "language": "tr",
+  "version": 1,
+  "defaultCategory": "Film ve Diziler",
+  "tvTypes": [
+    "Movie",
+    "TvSeries"
+  ],
+  "domainCandidates": [],
+  "selectors": {
+    "item": ".listmovie",
+    "title": ".film-ismi a",
+    "section": "",
+    "section_title": "h1, h2, h3, h4",
+    "link": "a[href]",
+    "poster": "img",
+    "category": "",
+    "description": ".description, .card-text",
+    "stream": "iframe[src], iframe[data-src], video[src], source[src]",
+    "title_attr": "text",
+    "link_attr": "href",
+    "poster_attr": "src",
+    "category_attr": "text",
+    "stream_attr": "src"
+  }
+}

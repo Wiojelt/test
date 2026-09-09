@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "name": "Filmkovasi",
+  "displayName": "Filmkovasi Test",
+  "packageName": "com.wiojelt.turkstream.filmkovasi",
+  "repository": "Wiojelt/test",
+  "author": "Wiojelt",
+  "kind": "movie",
+  "baseUrl": "https://filmkovasi.co",
+  "listUrl": "https://filmkovasi.co/filmizle/18-filmler/",
+  "searchUrl": "",
+  "iconUrl": "https://filmkovasi.co/apple-touch-icon.png",
+  "description": "TurkStream test sağlayıcısı; katalog doğrulandı, oynatıcı akışı siteye göre beklemede olabilir.",
+  "language": "tr",
+  "version": 1,
+  "defaultCategory": "Film ve Diziler",
+  "tvTypes": [
+    "Movie",
+    "TvSeries"
+  ],
+  "domainCandidates": [],
+  "selectors": {
+    "item": ".movie",
+    "title": "a",
+    "section": "",
+    "section_title": "h1, h2, h3, h4",
+    "link": "a[href]",
+    "poster": "img",
+    "category": "",
+    "description": ".description, .card-text",
+    "stream": "iframe[src], iframe[data-src], video[src], source[src]",
+    "title_attr": "text",
+    "link_attr": "href",
+    "poster_attr": "src",
+    "category_attr": "text",
+    "stream_attr": "src"
+  }
+}

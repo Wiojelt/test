@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "name": "HDFilmizleInk",
+  "displayName": "HDFilmizleInk Test",
+  "packageName": "com.wiojelt.turkstream.hdfilmizleink",
+  "repository": "Wiojelt/test",
+  "author": "Wiojelt",
+  "kind": "movie",
+  "baseUrl": "https://www.hdfilmizle.ink",
+  "listUrl": "https://www.hdfilmizle.ink/film/",
+  "searchUrl": "",
+  "iconUrl": "https://www.hdfilmizle.ink/wp-content/uploads/2023/04/hd-touch.webp",
+  "description": "TurkStream test sağlayıcısı; katalog doğrulandı, oynatıcı akışı siteye göre beklemede olabilir.",
+  "language": "tr",
+  "version": 1,
+  "defaultCategory": "Film ve Diziler",
+  "tvTypes": [
+    "Movie",
+    "TvSeries"
+  ],
+  "domainCandidates": [],
+  "selectors": {
+    "item": ".item",
+    "title": ".title",
+    "section": "",
+    "section_title": "h1, h2, h3, h4",
+    "link": "a[href]",
+    "poster": "img",
+    "category": "",
+    "description": ".description, .card-text",
+    "stream": "iframe[src], iframe[data-src], video[src], source[src]",
+    "title_attr": "text",
+    "link_attr": "href",
+    "poster_attr": "src",
+    "category_attr": "text",
+    "stream_attr": "src"
+  }
+}

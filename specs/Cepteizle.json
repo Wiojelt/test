@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "name": "Cepteizle",
+  "displayName": "Cepteizle Test",
+  "packageName": "com.wiojelt.turkstream.cepteizle",
+  "repository": "Wiojelt/test",
+  "author": "Wiojelt",
+  "kind": "movie",
+  "baseUrl": "https://cepteizle.net",
+  "listUrl": "https://cepteizle.net/yil/2025/",
+  "searchUrl": "",
+  "iconUrl": "https://cepteizle.net/wp-content/uploads/2025/09/cropped-limonicon-180x180.png",
+  "description": "TurkStream test sağlayıcısı; katalog doğrulandı, oynatıcı akışı siteye göre beklemede olabilir.",
+  "language": "tr",
+  "version": 1,
+  "defaultCategory": "Film ve Diziler",
+  "tvTypes": [
+    "Movie",
+    "TvSeries"
+  ],
+  "domainCandidates": [],
+  "selectors": {
+    "item": ".listmovie",
+    "title": ".title",
+    "section": "",
+    "section_title": "h1, h2, h3, h4",
+    "link": "a[href]",
+    "poster": "img",
+    "category": "",
+    "description": ".description, .card-text",
+    "stream": "iframe[src], iframe[data-src], video[src], source[src]",
+    "title_attr": "text",
+    "link_attr": "href",
+    "poster_attr": "src",
+    "category_attr": "text",
+    "stream_attr": "src"
+  }
+}

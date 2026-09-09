@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "name": "HDFilmizleBest",
+  "displayName": "HDFilmizleBest Test",
+  "packageName": "com.wiojelt.turkstream.hdfilmizlebest",
+  "repository": "Wiojelt/test",
+  "author": "Wiojelt",
+  "kind": "movie",
+  "baseUrl": "https://www.hdfilmizle.best",
+  "listUrl": "https://www.hdfilmizle.best/film/",
+  "searchUrl": "",
+  "iconUrl": "https://www.hdfilmizle.best/wp-content/themes/hdfilmizle/assets/img/apple-touch-icon.png?v=3.9.190",
+  "description": "TurkStream test sağlayıcısı; katalog doğrulandı, oynatıcı akışı siteye göre beklemede olabilir.",
+  "language": "tr",
+  "version": 1,
+  "defaultCategory": "Film ve Diziler",
+  "tvTypes": [
+    "Movie",
+    "TvSeries"
+  ],
+  "domainCandidates": [],
+  "selectors": {
+    "item": ".hdf-item-relative",
+    "title": ".title",
+    "section": "",
+    "section_title": "h1, h2, h3, h4",
+    "link": "a[href]",
+    "poster": "img",
+    "category": "",
+    "description": ".description, .card-text",
+    "stream": "iframe[src], iframe[data-src], video[src], source[src]",
+    "title_attr": "text",
+    "link_attr": "href",
+    "poster_attr": "src",
+    "category_attr": "text",
+    "stream_attr": "src"
+  }
+}

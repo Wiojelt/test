@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "name": "SinemaGG",
+  "displayName": "SinemaGG Test",
+  "packageName": "com.wiojelt.turkstream.sinemagg",
+  "repository": "Wiojelt/test",
+  "author": "Wiojelt",
+  "kind": "movie",
+  "baseUrl": "https://www.sinema.gg",
+  "listUrl": "https://www.sinema.gg/izle/populer-filmler/",
+  "searchUrl": "",
+  "iconUrl": "https://www.sinema.gg/wp-content/themes/Wpdeo_Wega/__front/images/favicon.png",
+  "description": "TurkStream test sağlayıcısı; katalog doğrulandı, oynatıcı akışı siteye göre beklemede olabilir.",
+  "language": "tr",
+  "version": 1,
+  "defaultCategory": "Film ve Diziler",
+  "tvTypes": [
+    "Movie",
+    "TvSeries"
+  ],
+  "domainCandidates": [],
+  "selectors": {
+    "item": ".frag-k",
+    "title": ".baslik span",
+    "section": "",
+    "section_title": "h1, h2, h3, h4",
+    "link": "a[href]",
+    "poster": "img",
+    "category": "",
+    "description": ".description, .card-text",
+    "stream": "iframe[src], iframe[data-src], video[src], source[src]",
+    "title_attr": "text",
+    "link_attr": "href",
+    "poster_attr": "src",
+    "category_attr": "text",
+    "stream_attr": "src"
+  }
+}

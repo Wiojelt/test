@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "name": "SonHDFilm",
+  "displayName": "SonHDFilm Test",
+  "packageName": "com.wiojelt.turkstream.sonhdfilm",
+  "repository": "Wiojelt/test",
+  "author": "Wiojelt",
+  "kind": "movie",
+  "baseUrl": "https://sonhdfilm.net",
+  "listUrl": "https://sonhdfilm.net/seri-filmler/",
+  "searchUrl": "",
+  "iconUrl": "https://sonhdfilm.net/wp-content/uploads/2025/05/Favicon_hdfilmizle.net_.png",
+  "description": "TurkStream test sağlayıcısı; katalog doğrulandı, oynatıcı akışı siteye göre beklemede olabilir.",
+  "language": "tr",
+  "version": 1,
+  "defaultCategory": "Film ve Diziler",
+  "tvTypes": [
+    "Movie",
+    "TvSeries"
+  ],
+  "domainCandidates": [],
+  "selectors": {
+    "item": ".listmovie",
+    "title": ".film-ismi a",
+    "section": "",
+    "section_title": "h1, h2, h3, h4",
+    "link": "a[href]",
+    "poster": "img",
+    "category": "",
+    "description": ".description, .card-text",
+    "stream": "iframe[src], iframe[data-src], video[src], source[src]",
+    "title_attr": "text",
+    "link_attr": "href",
+    "poster_attr": "src",
+    "category_attr": "text",
+    "stream_attr": "src"
+  }
+}

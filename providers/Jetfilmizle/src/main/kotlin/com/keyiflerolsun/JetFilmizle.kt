@@ -37,7 +37,8 @@ class JetFilmizle : MainAPI() {
     private fun requestHeaders(referer: String) = mapOf("User-Agent" to userAgent, "Referer" to referer)
 
     private fun Element.toSearchResult(): SearchResponse? {
-        val anchor = selectFirst(".film-title-line a, .card-title a, a[href]") ?: return null
+        val anchor = selectFirst(".film-title-line a") ?: selectFirst(".card-title a")
+            ?: select("a[href]").firstOrNull { it.text().isNotBlank() } ?: return null
         val href = fixUrlNull(anchor.attr("href")) ?: return null
         val title = anchor.text().trim().substringBeforeLast(" izle").trim().ifBlank { return null }
         val image = selectFirst(".film-poster img, img")

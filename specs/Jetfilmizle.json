@@ -2,19 +2,37 @@
   "schemaVersion": 1,
   "name": "Jetfilmizle",
   "displayName": "Jetfilmizle Test",
-  "packageName": "dev.wiojelt.generated.jetfilmizle",
+  "packageName": "com.wiojelt.turkstream.jetfilmizle",
   "repository": "Wiojelt/test",
   "author": "Wiojelt",
   "kind": "movie",
   "baseUrl": "https://jetfilmizle.now",
   "listUrl": "https://jetfilmizle.now/",
-  "searchUrl": "https://jetfilmizle.now/arama?q={query}",
+  "searchUrl": "",
   "iconUrl": "https://jetfilmizle.now/assets/img/logo.png",
-  "description": "Çoklu katalog, film/dizi, bölüm, dublaj ve altyazı akışları doğrulanmış JetFilmizle test çıktısı",
+  "description": "TurkStream test sağlayıcısı; katalog doğrulandı, oynatıcı akışı siteye göre beklemede olabilir.",
   "language": "tr",
-  "version": 2,
+  "version": 3,
   "defaultCategory": "Film ve Diziler",
-  "tvTypes": ["Movie", "TvSeries"],
+  "tvTypes": [
+    "Movie",
+    "TvSeries"
+  ],
   "domainCandidates": [],
-  "selectors": {"item":".film-card","title":".film-title-line a","section":".latest-films, .nette-ilkler, .diziler-section","section_title":"h1, h2, h3, h4","link":"a[href]","poster":"img","category":"","description":".description-text, .film-description, [itemprop=description]","stream":"iframe[src], iframe[data-src], video[src], source[src]","title_attr":"text","link_attr":"href","poster_attr":"src","category_attr":"text","stream_attr":"src"}
+  "selectors": {
+    "item": ".film-card",
+    "title": ".film-title-line a",
+    "section": ".latest-films, .nette-ilkler, .diziler-section",
+    "section_title": "h1, h2, h3, h4",
+    "link": "a[href]",
+    "poster": "img",
+    "category": "",
+    "description": ".description, .card-text",
+    "stream": "iframe[src], iframe[data-src], video[src], source[src]",
+    "title_attr": "text",
+    "link_attr": "href",
+    "poster_attr": "src",
+    "category_attr": "text",
+    "stream_attr": "src"
+  }
 }
