@@ -51,7 +51,7 @@
       "Wiojelt"
     ],
     "description": "TurkStream test sağlayıcısı; katalog doğrulandı, oynatıcı akışı siteye göre beklemede olabilir.",
-    "fileSize": 32713,
+    "fileSize": 33404,
     "repositoryUrl": "https://github.com/Wiojelt/test",
     "language": "tr",
     "tvTypes": [
@@ -60,7 +60,7 @@
     ],
     "iconUrl": "https://jetfilmizle.now/assets/img/logo.png",
     "apiVersion": 1,
-    "fileHash": "sha256-b068fee0037fde1b11a59ce8557bc547eb0b54efc552147d3879b8ef915cba0f"
+    "fileHash": "sha256-72e85efbfb72aad2b404d0305292446b0a20df4d6411d3cbc898c614279a323d"
   },
   {
     "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/HDFilmizleInk.cs3",
@@ -72,7 +72,7 @@
       "Wiojelt"
     ],
     "description": "TurkStream test sağlayıcısı; katalog doğrulandı, oynatıcı akışı siteye göre beklemede olabilir.",
-    "fileSize": 12168,
+    "fileSize": 14990,
     "repositoryUrl": "https://github.com/Wiojelt/test",
     "language": "tr",
     "tvTypes": [
@@ -81,7 +81,7 @@
     ],
     "iconUrl": "https://www.hdfilmizle.ink/wp-content/uploads/2023/04/hd-touch.webp",
     "apiVersion": 1,
-    "fileHash": "sha256-cbe090db376590ee20dbb262fef295c279c05d64d715a929b55408575b98d067"
+    "fileHash": "sha256-8413e3054cf433e326cc44822bf81ae74b200e58bf29e7244a3750c7de15b91a"
   },
   {
     "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/FullHDFilmizleseneNow.cs3",
@@ -93,7 +93,7 @@
       "Wiojelt"
     ],
     "description": "TurkStream test sağlayıcısı; katalog doğrulandı, oynatıcı akışı siteye göre beklemede olabilir.",
-    "fileSize": 12198,
+    "fileSize": 15018,
     "repositoryUrl": "https://github.com/Wiojelt/test",
     "language": "tr",
     "tvTypes": [
@@ -102,7 +102,7 @@
     ],
     "iconUrl": "https://www.fullhdfilmizlesene.now/apple-touch-icon.png",
     "apiVersion": 1,
-    "fileHash": "sha256-0cae8c335dffccc80dcfc5e25a6f7bc8d7646a9894db425ab7a78977b66e047c"
+    "fileHash": "sha256-373d0cfc862a0d3ec78b1d47f657799a3322904ed9b03503dc092030a8880a99"
   },
   {
     "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/Plusizle.cs3",
@@ -114,7 +114,7 @@
       "Wiojelt"
     ],
     "description": "TurkStream test sağlayıcısı; katalog doğrulandı, oynatıcı akışı siteye göre beklemede olabilir.",
-    "fileSize": 12158,
+    "fileSize": 14280,
     "repositoryUrl": "https://github.com/Wiojelt/test",
     "language": "tr",
     "tvTypes": [
@@ -123,7 +123,7 @@
     ],
     "iconUrl": "https://plusizle.org/favicon.ico",
     "apiVersion": 1,
-    "fileHash": "sha256-237dd5e2b1c9afdf2c48e6fce214aa4cccbc40bd2daa51246f6f48835d3df91c"
+    "fileHash": "sha256-d99506c0a1b48e8d8fb5679dcc91d08a06e67f41513ad1d3eb14938bb0afd656"
   },
   {
     "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/SinemaGG.cs3",
@@ -135,7 +135,7 @@
       "Wiojelt"
     ],
     "description": "TurkStream test sağlayıcısı; katalog doğrulandı, oynatıcı akışı siteye göre beklemede olabilir.",
-    "fileSize": 12165,
+    "fileSize": 14754,
     "repositoryUrl": "https://github.com/Wiojelt/test",
     "language": "tr",
     "tvTypes": [
@@ -144,7 +144,7 @@
     ],
     "iconUrl": "https://www.sinema.gg/wp-content/themes/Wpdeo_Wega/__front/images/favicon.png",
     "apiVersion": 1,
-    "fileHash": "sha256-ed1d4932648aed454342346718f031fcc21026869cd554057926f8f012c6d567"
+    "fileHash": "sha256-47fa0852d07d15f6972c1536bfec946db1ecd36b0204a6e90328991d0c285781"
   },
   {
     "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/Cepteizle.cs3",
@@ -156,7 +156,7 @@
       "Wiojelt"
     ],
     "description": "TurkStream test sağlayıcısı; katalog doğrulandı, oynatıcı akışı siteye göre beklemede olabilir.",
-    "fileSize": 12140,
+    "fileSize": 14937,
     "repositoryUrl": "https://github.com/Wiojelt/test",
     "language": "tr",
     "tvTypes": [
@@ -165,7 +165,7 @@
     ],
     "iconUrl": "https://cepteizle.net/wp-content/uploads/2025/09/cropped-limonicon-180x180.png",
     "apiVersion": 1,
-    "fileHash": "sha256-982110847179988657569eb337c5c29fb908f5385b40f40a66636d18502d3bd6"
+    "fileHash": "sha256-e2c0af6ad9418eea337d032911f1adee9cc47af7c659aa9bc1056f62918ad4df"
   },
   {
     "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/Sinemakolik.cs3",
@@ -177,7 +177,7 @@
       "Wiojelt"
     ],
     "description": "TurkStream test sağlayıcısı; katalog doğrulandı, oynatıcı akışı siteye göre beklemede olabilir.",
-    "fileSize": 12141,
+    "fileSize": 14544,
     "repositoryUrl": "https://github.com/Wiojelt/test",
     "language": "tr",
     "tvTypes": [
@@ -186,7 +186,7 @@
     ],
     "iconUrl": "https://sinemakolik.com/favicon.ico",
     "apiVersion": 1,
-    "fileHash": "sha256-81c8e155e3ca590d68d96c52beceb70f3c819489f365877c79169425aa7af4cf"
+    "fileHash": "sha256-081d45e8b8261ea11c69ff08187cca4fc2bf6cee7ac5ede1977072eb31ebac85"
   },
   {
     "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/HDFilmizleBest.cs3",
@@ -198,7 +198,7 @@
       "Wiojelt"
     ],
     "description": "TurkStream test sağlayıcısı; katalog doğrulandı, oynatıcı akışı siteye göre beklemede olabilir.",
-    "fileSize": 12179,
+    "fileSize": 14927,
     "repositoryUrl": "https://github.com/Wiojelt/test",
     "language": "tr",
     "tvTypes": [
@@ -207,7 +207,7 @@
     ],
     "iconUrl": "https://www.hdfilmizle.best/wp-content/themes/hdfilmizle/assets/img/apple-touch-icon.png?v=3.9.190",
     "apiVersion": 1,
-    "fileHash": "sha256-3c95442d01aff4d2659c90dfb88cb95116239c7702fd460df536f8dab2e00899"
+    "fileHash": "sha256-92af4d2d0245f47382c6b4e17b00bc81a5b418757e1d6c900bf4af8b8ae475c5"
   },
   {
     "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/SonHDFilm.cs3",
@@ -219,7 +219,7 @@
       "Wiojelt"
     ],
     "description": "TurkStream test sağlayıcısı; katalog doğrulandı, oynatıcı akışı siteye göre beklemede olabilir.",
-    "fileSize": 12156,
+    "fileSize": 14777,
     "repositoryUrl": "https://github.com/Wiojelt/test",
     "language": "tr",
     "tvTypes": [
@@ -228,7 +228,7 @@
     ],
     "iconUrl": "https://sonhdfilm.net/wp-content/uploads/2025/05/Favicon_hdfilmizle.net_.png",
     "apiVersion": 1,
-    "fileHash": "sha256-b4de1276c3fca1363dfe0456a4d5d0149223be9f0550ec6ddac2785a0d41dca9"
+    "fileHash": "sha256-1917da676a9f9d87412194ea850ded9ad498ec52841d0b96f34c8b1425ea131d"
   },
   {
     "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/FullHDFilmizleMom.cs3",
@@ -240,7 +240,7 @@
       "Wiojelt"
     ],
     "description": "TurkStream test sağlayıcısı; katalog doğrulandı, oynatıcı akışı siteye göre beklemede olabilir.",
-    "fileSize": 12211,
+    "fileSize": 14981,
     "repositoryUrl": "https://github.com/Wiojelt/test",
     "language": "tr",
     "tvTypes": [
@@ -249,7 +249,7 @@
     ],
     "iconUrl": "https://www.fullhdfilmizle.mom/wp-content/themes/filmplus/fav.ico",
     "apiVersion": 1,
-    "fileHash": "sha256-cdaf439811085876d14b978f454eda09439ff0573c95d84ea726535543996ffd"
+    "fileHash": "sha256-fc4262aae650eebdaac3be3bc5d5baac220ae3567b966b59e6d3193663db058c"
   },
   {
     "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/FullFilmizleFit.cs3",
@@ -261,7 +261,7 @@
       "Wiojelt"
     ],
     "description": "TurkStream test sağlayıcısı; katalog doğrulandı, oynatıcı akışı siteye göre beklemede olabilir.",
-    "fileSize": 12170,
+    "fileSize": 15033,
     "repositoryUrl": "https://github.com/Wiojelt/test",
     "language": "tr",
     "tvTypes": [
@@ -270,7 +270,7 @@
     ],
     "iconUrl": "https://fullfilmizle.fit/wp-content/uploads/2022/09/Logo.png",
     "apiVersion": 1,
-    "fileHash": "sha256-0d72871ec124a0bcbc352507566e76433a19c2c0e4615c94644ebf0cb1c5dfc4"
+    "fileHash": "sha256-6f1af2dd48a3bbf202b92b748f86fa70819c955717a761c4c5f1ef848adc60be"
   },
   {
     "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/Filmkovasi.cs3",
@@ -282,7 +282,7 @@
       "Wiojelt"
     ],
     "description": "TurkStream test sağlayıcısı; katalog doğrulandı, oynatıcı akışı siteye göre beklemede olabilir.",
-    "fileSize": 12147,
+    "fileSize": 14865,
     "repositoryUrl": "https://github.com/Wiojelt/test",
     "language": "tr",
     "tvTypes": [
@@ -291,7 +291,7 @@
     ],
     "iconUrl": "https://filmkovasi.co/apple-touch-icon.png",
     "apiVersion": 1,
-    "fileHash": "sha256-668451e59734f4d8a063569d93b85637ea66f92267d38a4029494418a0058976"
+    "fileHash": "sha256-6f27afe3650a1bc8545b85dcdb85a8cf6cf62a103f1b96b989a0f895d8dfe857"
   },
   {
     "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/FullHDFilmizleseneCo.cs3",
@@ -303,7 +303,7 @@
       "Wiojelt"
     ],
     "description": "TurkStream test sağlayıcısı; katalog doğrulandı, oynatıcı akışı siteye göre beklemede olabilir.",
-    "fileSize": 12190,
+    "fileSize": 14247,
     "repositoryUrl": "https://github.com/Wiojelt/test",
     "language": "tr",
     "tvTypes": [
@@ -312,7 +312,7 @@
     ],
     "iconUrl": "https://fullhdfilmizlesene.co/favicon.ico",
     "apiVersion": 1,
-    "fileHash": "sha256-b67cb12b51915ad79bf9ee9210322620e9b8f6b82b917edf167b81851818715e"
+    "fileHash": "sha256-3fbaf74fc47f9097119d9587f7552e6c55727dc580e6d1051fa41d92dfb4fd20"
   },
   {
     "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/NetFilmizle.cs3",
@@ -324,7 +324,7 @@
       "Wiojelt"
     ],
     "description": "TurkStream test sağlayıcısı; katalog doğrulandı, oynatıcı akışı siteye göre beklemede olabilir.",
-    "fileSize": 12174,
+    "fileSize": 14420,
     "repositoryUrl": "https://github.com/Wiojelt/test",
     "language": "tr",
     "tvTypes": [
@@ -333,7 +333,7 @@
     ],
     "iconUrl": "https://netfilmizle.com/favicon.ico",
     "apiVersion": 1,
-    "fileHash": "sha256-1310c4d467a6cdf6dbdc7e19cd31d3f59c875913fc0dbc5b1779072ba3ad8faf"
+    "fileHash": "sha256-48f5244c97a6abf3611fc980c831ae47f4253a8a44a151104991e7621ce465b5"
   },
   {
     "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/Filmmodu.cs3",
@@ -345,7 +345,7 @@
       "Wiojelt"
     ],
     "description": "TurkStream test sağlayıcısı; katalog doğrulandı, oynatıcı akışı siteye göre beklemede olabilir.",
-    "fileSize": 12148,
+    "fileSize": 14980,
     "repositoryUrl": "https://github.com/Wiojelt/test",
     "language": "tr",
     "tvTypes": [
@@ -354,7 +354,7 @@
     ],
     "iconUrl": "https://cdn.filmmodu.one/assets/logo-f443431aa7cfd080f4c8e1eb47b9713cfab4b9889253b3562f4ab0707c7e7c70.svg",
     "apiVersion": 1,
-    "fileHash": "sha256-745d4d690eded8f2e18352361223e8cb053c75f4265a1955b2da929f74b817ba"
+    "fileHash": "sha256-930d5c6ea02b1370aea6c0647a27a4ed2914b60b3d00e05f6eb690192aee3b0a"
   },
   {
     "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/IzleseneFilm.cs3",
@@ -366,7 +366,7 @@
       "Wiojelt"
     ],
     "description": "TurkStream test sağlayıcısı; katalog doğrulandı, oynatıcı akışı siteye göre beklemede olabilir.",
-    "fileSize": 12194,
+    "fileSize": 14957,
     "repositoryUrl": "https://github.com/Wiojelt/test",
     "language": "tr",
     "tvTypes": [
@@ -375,7 +375,7 @@
     ],
     "iconUrl": "https://www.izlesene.film/wp-content/uploads/2022/09/favicon.png",
     "apiVersion": 1,
-    "fileHash": "sha256-f8c0a312640140861f255beb987bdc4206c79afc41b3953be09854757e340193"
+    "fileHash": "sha256-dcadbd0d95c65aa03a8a407f9c4ef3a37fec7a8868454c254749bc772a678522"
   },
   {
     "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/FilmizleHell.cs3",
@@ -387,7 +387,7 @@
       "Wiojelt"
     ],
     "description": "TurkStream test sağlayıcısı; katalog doğrulandı, oynatıcı akışı siteye göre beklemede olabilir.",
-    "fileSize": 12154,
+    "fileSize": 14986,
     "repositoryUrl": "https://github.com/Wiojelt/test",
     "language": "tr",
     "tvTypes": [
@@ -396,6 +396,6 @@
     ],
     "iconUrl": "https://filmizlehell.net/filmizlehell-icon.png",
     "apiVersion": 1,
-    "fileHash": "sha256-f60e44b786fce46527742dbb832cdc914dcd571c2ace7c56ece511cdd6185d44"
+    "fileHash": "sha256-c10ad8d11c8cbc5613550ea848c5e427256a1a82c232356e02e8473d67a81f2e"
   }
 ]
