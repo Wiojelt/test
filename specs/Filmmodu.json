@@ -12,7 +12,7 @@
   "iconUrl": "https://cdn.filmmodu.one/assets/logo-f443431aa7cfd080f4c8e1eb47b9713cfab4b9889253b3562f4ab0707c7e7c70.svg",
   "description": "TurkStream test sağlayıcısı; katalog doğrulandı, oynatıcı akışı siteye göre beklemede olabilir.",
   "language": "tr",
-  "version": 1,
+  "version": 2,
   "defaultCategory": "Film ve Diziler",
   "tvTypes": [
     "Movie",

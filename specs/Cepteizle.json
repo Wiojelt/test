@@ -12,7 +12,7 @@
   "iconUrl": "https://cepteizle.net/wp-content/uploads/2025/09/cropped-limonicon-180x180.png",
   "description": "TurkStream test sağlayıcısı; katalog doğrulandı, oynatıcı akışı siteye göre beklemede olabilir.",
   "language": "tr",
-  "version": 1,
+  "version": 2,
   "defaultCategory": "Film ve Diziler",
   "tvTypes": [
     "Movie",
