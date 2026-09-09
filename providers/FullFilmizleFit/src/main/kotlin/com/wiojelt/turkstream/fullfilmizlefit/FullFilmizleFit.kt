@@ -43,14 +43,19 @@ class FullFilmizleFit : MainAPI() {
         "https://fullfilmizle.fit/filmizle/romantik-filmler/" to "Romantik Filmler"
     )
 
-    private fun mediaCandidates(document: org.jsoup.nodes.Document): List<String> = document
-        .select("iframe, video, source")
-        .mapNotNull { node ->
+    private fun mediaCandidates(document: org.jsoup.nodes.Document): List<String> {
+        val fromNodes = document.select("iframe, video, source").mapNotNull { node ->
             listOf("src", "data-src", "data-vsrc", "ysrc", "data-litespeed-src")
                 .asSequence().map { node.attr(it).trim() }.firstOrNull { it.isNotBlank() }
         }
-        .filter { value -> !value.contains("youtube.com/embed", true) && !value.contains("youtube-nocookie.com", true) }
-        .mapNotNull { fixUrlNull(it) }.distinct()
+        // Bazı siteler iframe'i JS ile sonradan basıyor; açık player URL'lerini inline HTML'den de al.
+        val fromHtml = Regex("""https?://[^"'<>\s]+""").findAll(document.html()).map { it.value }.filter { value ->
+            value.contains("player", true) || value.contains("video", true) || value.contains("embed", true) || value.contains("play", true)
+        }.toList()
+        return (fromNodes + fromHtml)
+            .filter { value -> !value.contains("youtube.com/embed", true) && !value.contains("youtube-nocookie.com", true) }
+            .mapNotNull { fixUrlNull(it) }.distinct()
+    }
 
     private fun textOrAttr(item: Element, selector: String, attr: String): String? {
         val target = if (selector.isBlank()) item else item.selectFirst(selector) ?: return null
