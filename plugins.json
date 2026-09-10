@@ -149,14 +149,14 @@
   {
     "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/Cepteizle.cs3",
     "status": 3,
-    "version": 2,
+    "version": 3,
     "name": "Cepteizle Test",
     "internalName": "Cepteizle",
     "authors": [
       "Wiojelt"
     ],
     "description": "TurkStream test sağlayıcısı; katalog doğrulandı, oynatıcı akışı siteye göre beklemede olabilir.",
-    "fileSize": 30936,
+    "fileSize": 31753,
     "repositoryUrl": "https://github.com/Wiojelt/test",
     "language": "tr",
     "tvTypes": [
@@ -165,7 +165,7 @@
     ],
     "iconUrl": "https://cepteizle.net/wp-content/uploads/2025/09/cropped-limonicon-180x180.png",
     "apiVersion": 1,
-    "fileHash": "sha256-02d8b576232a5c395b35037a72ebaf0e75c32386d6d720b1a64794b5e7a8cc49"
+    "fileHash": "sha256-9d5fa0cf07d2d630d3dcd5c16dc6809f3f0185a475c7bf32af017933b33d9dca"
   },
   {
     "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/Sinemakolik.cs3",
