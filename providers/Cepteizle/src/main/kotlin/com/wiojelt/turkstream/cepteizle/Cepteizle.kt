@@ -25,7 +25,7 @@ class Cepteizle : MainAPI() {
         "https://cepteizle.net/tur/bilim-kurgu/" to "Bilim Kurgu",
         "https://cepteizle.net/tur/suc/" to "Suç",
         "https://cepteizle.net/tur/netflix-filmleri-izle/" to "Netflix Filmleri izle",
-        "https://cepteizle.net/tur/tur/yerli-filmler-izle/" to "Yerli Filmler",
+        "https://cepteizle.net/tur/yerli-filmler-izle/" to "Yerli Filmler",
         "https://cepteizle.net/tur/aile/" to "Aile",
         "https://cepteizle.net/tur/animasyon/" to "Animasyon",
         "https://cepteizle.net/tur/anime-izle/" to "Anime izle",
