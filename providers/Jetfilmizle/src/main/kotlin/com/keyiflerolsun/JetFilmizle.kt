@@ -186,7 +186,9 @@ class JetFilmizle : MainAPI() {
         }.distinctBy { it.attr("data-source-index") + '|' + it.attr("data-player-type") }
         trace("loadLinks filmId=$filmId season=$wantedSeason episode=$wantedEpisode sources=${buttons.size}")
         var emitted = false
-        buttons.forEach { button ->
+        // Kaynaklar bağımsızdır. Seri dolaşmak, tek bir yavaş iframe'in bütün
+        // kaynak listesini geciktirmesine neden oluyordu.
+        buttons.amap { button ->
             val index = button.attr("data-source-index").ifBlank { "0" }
             val type = button.attr("data-player-type").ifBlank { "dublaj" }
             val buttonName = button.text().trim().ifBlank { "Kaynak ${index.toIntOrNull()?.plus(1) ?: index}" }

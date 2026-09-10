@@ -27,7 +27,13 @@ open class Vidmixi : ExtractorApi() {
             val encrypted    = AesHelper.cryptoAESHandler(bePlayerData, bePlayerPass.toByteArray(), false)?.replace("\\", "") ?: throw ErrorLoadingException("failed to decrypt")
             Log.d("Kekik_${this.name}", "encrypted » $encrypted")
 
-            m3uLink = Regex("""video_location":"([^"]+)""").find(encrypted)?.groupValues?.get(1)
+            val payload = jacksonObjectMapper().readTree(encrypted)
+            m3uLink = payload.path("video_location").asText().takeIf(String::isNotBlank)
+            payload.path("strSubtitles").forEach { track ->
+                val file = track.path("file").asText().takeIf(String::isNotBlank) ?: return@forEach
+                val label = track.path("label").asText().ifBlank { track.path("language").asText().ifBlank { "Altyazı" } }
+                subtitleCallback(SubtitleFile(label, if (file.startsWith("http")) file else fixUrl(file)))
+            }
         } else {
             m3uLink = Regex("""file:"([^"]+)""").find(iSource)?.groupValues?.get(1)
 

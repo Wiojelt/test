@@ -8,5 +8,6 @@ import com.lagradost.cloudstream3.plugins.Plugin
 class SonHDFilmPlugin : Plugin() {
     override fun load(context: Context) {
         registerMainAPI(SonHDFilm())
+        registerExtractorAPI(FirePlayerExtractor())
     }
 }

@@ -26,8 +26,13 @@ open class HotStream : ExtractorApi() {
             val bePlayerData = bePlayer[2]
             val encrypted    = AesHelper.cryptoAESHandler(bePlayerData, bePlayerPass.toByteArray(), false)?.replace("\\", "") ?: throw ErrorLoadingException("failed to decrypt")
             Log.d("Kekik_${this.name}", "encrypted » $encrypted")
-
-            m3uLink = Regex("""video_location":"([^"]+)""").find(encrypted)?.groupValues?.get(1)
+            val payload = jacksonObjectMapper().readTree(encrypted)
+            m3uLink = payload.path("video_location").asText().takeIf(String::isNotBlank)
+            payload.path("strSubtitles").forEach { track ->
+                val file = track.path("file").asText().takeIf(String::isNotBlank) ?: return@forEach
+                val label = track.path("label").asText().ifBlank { track.path("language").asText().ifBlank { "Altyazı" } }
+                subtitleCallback(SubtitleFile(label, if (file.startsWith("http")) file else fixUrl(file)))
+            }
         } else {
             m3uLink = Regex("""file:"([^"]+)""").find(iSource)?.groupValues?.get(1)
 
@@ -49,17 +54,9 @@ open class HotStream : ExtractorApi() {
             }
         }
 
-        callback.invoke(
-          newExtractorLink(
-        source = this.name,
-        name = this.name,
-        url = m3uLink ?: throw ErrorLoadingException("m3u link not found"),
-        type = ExtractorLinkType.M3U8 // isM3u8 artık bu şekilde belirtiliyor
-        ) {
-        headers = mapOf("Referer" to url) // Eski "referer" artık headers içinde
-        quality = Qualities.Unknown.value // Kalite ayarlandı
-        }
-    )
+        val stream = m3uLink ?: throw ErrorLoadingException("m3u link not found")
+        val streamHeaders = mapOf("Referer" to url, "Origin" to mainUrl, "User-Agent" to USER_AGENT)
+        M3u8Helper.generateM3u8(name, stream, url, headers = streamHeaders).forEach(callback)
 
     }
 

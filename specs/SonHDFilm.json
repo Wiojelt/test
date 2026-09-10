@@ -12,7 +12,7 @@
   "iconUrl": "https://sonhdfilm.net/wp-content/uploads/2025/05/Favicon_hdfilmizle.net_.png",
   "description": "TurkStream test sağlayıcısı; katalog doğrulandı, oynatıcı akışı siteye göre beklemede olabilir.",
   "language": "tr",
-  "version": 2,
+  "version": 3,
   "defaultCategory": "Film ve Diziler",
   "tvTypes": [
     "Movie",

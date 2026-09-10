@@ -9,5 +9,6 @@ class NetFilmizlePlugin : Plugin() {
     override fun load(context: Context) {
         registerMainAPI(NetFilmizle())
         registerExtractorAPI(Vidmixi())
+        registerExtractorAPI(FirePlayerExtractor("https://streamplayer.club"))
     }
 }
