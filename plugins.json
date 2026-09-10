@@ -107,14 +107,14 @@
   {
     "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/Plusizle.cs3",
     "status": 3,
-    "version": 3,
+    "version": 4,
     "name": "Plusizle Test",
     "internalName": "Plusizle",
     "authors": [
       "Wiojelt"
     ],
     "description": "TurkStream test sağlayıcısı; katalog doğrulandı, oynatıcı akışı siteye göre beklemede olabilir.",
-    "fileSize": 31003,
+    "fileSize": 31495,
     "repositoryUrl": "https://github.com/Wiojelt/test",
     "language": "tr",
     "tvTypes": [
@@ -123,7 +123,7 @@
     ],
     "iconUrl": "https://plusizle.org/favicon.ico",
     "apiVersion": 1,
-    "fileHash": "sha256-e371b432a37b68fddb91e3b722e29e1bc16dfca47971a63614ae2bed1050a933"
+    "fileHash": "sha256-4cd1ee9f7af96103797b2779630a6e5df9c92b70b4a73aeb9c8a222f70f5f7d4"
   },
   {
     "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/SinemaGG.cs3",
@@ -212,14 +212,14 @@
   {
     "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/SonHDFilm.cs3",
     "status": 3,
-    "version": 3,
+    "version": 4,
     "name": "SonHDFilm Test",
     "internalName": "SonHDFilm",
     "authors": [
       "Wiojelt"
     ],
     "description": "TurkStream test sağlayıcısı; katalog doğrulandı, oynatıcı akışı siteye göre beklemede olabilir.",
-    "fileSize": 28253,
+    "fileSize": 30143,
     "repositoryUrl": "https://github.com/Wiojelt/test",
     "language": "tr",
     "tvTypes": [
@@ -228,7 +228,7 @@
     ],
     "iconUrl": "https://sonhdfilm.net/wp-content/uploads/2025/05/Favicon_hdfilmizle.net_.png",
     "apiVersion": 1,
-    "fileHash": "sha256-8b53e959e79c24898514ed2faae083037cf44d7a3174bb4e8dadf76a2ecd796d"
+    "fileHash": "sha256-a455bd3c6fa9e9c9c8e6c307ab50079616f5856b56432c49724a72b82282ec4b"
   },
   {
     "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/FullHDFilmizleMom.cs3",
