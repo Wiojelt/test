@@ -12,7 +12,7 @@
   "iconUrl": "https://plusizle.org/favicon.ico",
   "description": "TurkStream test sağlayıcısı; katalog doğrulandı, oynatıcı akışı siteye göre beklemede olabilir.",
   "language": "tr",
-  "version": 3,
+  "version": 4,
   "defaultCategory": "Film ve Diziler",
   "tvTypes": [
     "Movie",

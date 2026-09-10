@@ -56,7 +56,11 @@ open class HotStream : ExtractorApi() {
 
         val stream = m3uLink ?: throw ErrorLoadingException("m3u link not found")
         val streamHeaders = mapOf("Referer" to url, "Origin" to mainUrl, "User-Agent" to USER_AGENT)
-        M3u8Helper.generateM3u8(name, stream, url, headers = streamHeaders).forEach(callback)
+        callback(newExtractorLink(name, name, stream, ExtractorLinkType.M3U8) {
+            this.referer = url
+            this.headers = streamHeaders
+            this.quality = Qualities.Unknown.value
+        })
 
     }
 

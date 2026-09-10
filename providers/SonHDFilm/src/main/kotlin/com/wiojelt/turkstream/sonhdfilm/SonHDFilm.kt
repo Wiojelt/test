@@ -90,7 +90,14 @@ class SonHDFilm : MainAPI() {
         return (if (attr == "text") target.text() else target.attr(attr)).trim().ifBlank { null }
     }
 
-    private fun itemTitle(item: Element) = item.selectFirst(".film-ismi a")?.text()?.trim()
+    private fun cleanTitle(raw: String): String = raw.substringBefore('|')
+        .replace(Regex("""\s*\([^)]*\)"""), "")
+        .replace(Regex("""\s+(?:Film\s+)?Serisi\s*$""", RegexOption.IGNORE_CASE), "")
+        .replace(Regex("""\s+(?:19|20)\d{2}\s*$"""), "")
+        .replace(Regex("""\s+izle\s*$""", RegexOption.IGNORE_CASE), "")
+        .trim()
+
+    private fun itemTitle(item: Element) = item.selectFirst(".film-ismi a")?.text()?.let(::cleanTitle)?.takeIf(String::isNotBlank)
     private fun itemUrl(item: Element) = fixUrlNull(item.selectFirst("a[href]")?.attr("href")?.trim())
     private fun itemPoster(item: Element): String? {
         val node = item.selectFirst("img") ?: return null
@@ -135,8 +142,8 @@ class SonHDFilm : MainAPI() {
         trace("load start url=$url")
         val document = app.get(url).document
         val titleElement: Element = document.selectFirst("h1, [property='og:title']") ?: return null
-        val title = (if (titleElement.hasAttr("content")) titleElement.attr("content") else titleElement.text())
-            .trim().ifBlank { return null }
+        val title = cleanTitle(if (titleElement.hasAttr("content")) titleElement.attr("content") else titleElement.text())
+            .ifBlank { return null }
         val poster = fixUrlNull(document.selectFirst("[property='og:image']")?.attr("content"))
         val plot = document.selectFirst(".description, .card-text, [itemprop=description], .film-description, .ackl")?.text()?.trim()
         val trailer = document.select("iframe, [data-video_url]").map { node -> listOf("data-video_url", "data-vsrc", "data-src", "data-litespeed-src", "src").map { node.attr(it) }.firstOrNull { it.contains("youtube", true) } }.filterNotNull().firstOrNull()

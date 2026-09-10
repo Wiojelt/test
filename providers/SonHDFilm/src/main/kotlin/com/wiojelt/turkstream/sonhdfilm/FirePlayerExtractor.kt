@@ -19,6 +19,22 @@ class FirePlayerExtractor : ExtractorApi() {
         ).text
         val source = Regex(""""videoSrc"\s*:\s*"([^"]+)"""").find(response)?.groupValues?.get(1)?.replace("\\/", "/")
             ?: throw ErrorLoadingException("HDPlayerX kaynağı bulunamadı")
-        loadExtractor(source, pageUrl, subtitleCallback, callback)
+        if (source.contains("odnoklassniki.ru", true)) {
+            val embed = app.get(source, headers = mapOf("User-Agent" to USER_AGENT)).text
+                .replace("&quot;", "\"")
+                .replace("\\u0026", "&")
+                .replace("\\/", "/")
+            val videos = Regex("""\{"name":"([^"]+)","url":"([^"]+)"""").findAll(embed).toList()
+            if (videos.isEmpty()) throw ErrorLoadingException("Odnoklassniki videosu bulunamadı")
+            videos.forEach { match ->
+                val label = match.groupValues[1]
+                callback(newExtractorLink(name, "$name $label", match.groupValues[2], INFER_TYPE) {
+                    this.referer = "https://odnoklassniki.ru/"
+                    quality = getQualityFromName(label)
+                })
+            }
+        } else {
+            loadExtractor(source, pageUrl, subtitleCallback, callback)
+        }
     }
 }
