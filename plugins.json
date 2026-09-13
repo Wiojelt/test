@@ -397,5 +397,27 @@
     "iconUrl": "https://filmizlehell.net/filmizlehell-icon.png",
     "apiVersion": 1,
     "fileHash": "sha256-20f11cd38d53af878e7102fbbd18e58e525323dfbdd762509ec21cdbf6e5238b"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/Deokwave.cs3",
+    "status": 3,
+    "version": 1,
+    "name": "Deokwave Test",
+    "internalName": "Deokwave",
+    "authors": [
+      "Wiojelt"
+    ],
+    "description": "Deokwave 4K Türkçe altyazılı anime sağlayıcısı test paketi.",
+    "fileSize": 20067,
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "language": "tr",
+    "tvTypes": [
+      "Anime",
+      "AnimeMovie",
+      "OVA"
+    ],
+    "iconUrl": "https://deokwave.com/img/logo-d.png",
+    "apiVersion": 1,
+    "fileHash": "sha256-6bf43e42dc297d042ce18b1db56fcf650d296c011af144cf4026411be494b187"
   }
 ]
