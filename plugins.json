@@ -401,7 +401,7 @@
   {
     "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/Deokwave.cs3",
     "status": 3,
-    "version": 2,
+    "version": 3,
     "name": "Deokwave Test",
     "internalName": "Deokwave",
     "authors": [
@@ -418,6 +418,6 @@
     ],
     "iconUrl": "https://deokwave.com/img/logo-d.png",
     "apiVersion": 1,
-    "fileHash": "sha256-31f066de8de907626273a102f6da8029280f95435a14d0121a83981eeadee5a1"
+    "fileHash": "sha256-5c148d0b9b437d66edd6f0ab889415bd6a04e1838827dd99fdd4f04ff7868c99"
   }
 ]
