@@ -401,14 +401,14 @@
   {
     "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/Deokwave.cs3",
     "status": 3,
-    "version": 5,
+    "version": 6,
     "name": "Deokwave Test",
     "internalName": "Deokwave",
     "authors": [
       "Wiojelt"
     ],
-    "description": "Deokwave 4K Türkçe altyazılı anime sağlayıcısı - 4K Ultra HD & HDR desteği",
-    "fileSize": 31229,
+    "description": "Deokwave 4K Türkçe altyazılı anime sağlayıcısı - 4K & HDR desteği. Token hatası alırsanız eklentinin yanındaki seçenekler (dişli) butonundan ayarları açıp 'VIP Oturumu Yenile' ile güncelleyin.",
+    "fileSize": 32827,
     "repositoryUrl": "https://github.com/Wiojelt/test",
     "language": "tr",
     "tvTypes": [
@@ -418,6 +418,6 @@
     ],
     "iconUrl": "https://deokwave.com/img/logo-d.png",
     "apiVersion": 1,
-    "fileHash": "sha256-7a7330db1917744f8f22d5de7d15756ab4d793c13a6a00fe7974971ff87fcfbf"
+    "fileHash": "sha256-465aa32f9f72993183432b15678c221083b1257d9b0a0540e04351ae0fb2dc22"
   }
 ]
