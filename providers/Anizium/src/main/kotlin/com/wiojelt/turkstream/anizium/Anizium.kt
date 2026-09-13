@@ -1,9 +1,11 @@
 package com.wiojelt.turkstream.anizium
 
 import org.json.JSONObject
+import org.json.JSONArray
 import java.net.URLEncoder
 import java.util.Calendar
 import java.util.TimeZone
+import android.util.Base64
 import com.lagradost.cloudstream3.*
 import com.lagradost.cloudstream3.utils.*
 
@@ -66,10 +68,11 @@ class Anizium(private val sessionProvider: () -> String = { "" }) : MainAPI() {
 
     override val mainPage = mainPageOf(
         "$API_BASE/page/last-added-episodes?page=" to "Son Eklenen Bölümler",
-        "$API_BASE/page/home#top" to "Öne Çıkanlar (Top)",
+        "$API_BASE/page/home#top" to "Öne Çıkanlar",
         "$API_BASE/page/home#middle" to "Popüler Animeler",
         "$API_BASE/page/home#lower" to "Gündemdeki Animeler",
-        "$API_BASE/page/home#special" to "Özel Listeler"
+        "$API_BASE/page/home#special" to "Özel Listeler",
+        "$API_BASE/page/calendar" to "Takvim / Yakında Gelecekler"
     )
 
     override suspend fun getMainPage(page: Int, request: MainPageRequest): HomePageResponse {
@@ -127,6 +130,29 @@ class Anizium(private val sessionProvider: () -> String = { "" }) : MainAPI() {
                     )
                 }
             }
+        } else if (request.data.startsWith("$API_BASE/page/calendar")) {
+            val res = app.get("$API_BASE/page/calendar", headers = getHeaders()).text
+            val json = JSONObject(res)
+            val list = json.optJSONArray("data")
+            if (list != null) {
+                for (i in 0 until list.length()) {
+                    val item = list.optJSONObject(i) ?: continue
+                    val content = item.optJSONObject("content")
+                    val id = item.optString("content_id").ifBlank { item.optString("ID") }
+                    val name = content?.optString("name") ?: item.optString("name")
+                    if (id.isBlank() || name.isBlank()) continue
+                    val poster = fixUrlNull(content?.optString("poster"))
+                        ?: fixUrlNull(content?.optString("banner"))
+                        ?: fixUrlNull(content?.optString("details_banner"))
+                    val typeStr = item.optString("content_type").ifBlank { item.optString("type") }
+                    val type = if (typeStr.equals("movie", ignoreCase = true)) TvType.AnimeMovie else TvType.Anime
+                    results.add(
+                        newAnimeSearchResponse(name, "$mainUrl/anime/$id", type) {
+                            this.posterUrl = poster
+                        }
+                    )
+                }
+            }
         }
         return newHomePageResponse(request.name, results)
     }
@@ -165,26 +191,57 @@ class Anizium(private val sessionProvider: () -> String = { "" }) : MainAPI() {
         val root = JSONObject(res)
         val data = root.optJSONObject("data") ?: return null
 
-        val name = data.optString("name").ifBlank { data.optString("name_tr") }
-        val overview = data.optString("overview").ifBlank { data.optString("overview_short") }
+        val name = data.optString("name").ifBlank { data.optString("name_tr") }.ifBlank { data.optString("name_jp") }
+        val rawOverview = data.optString("overview").ifBlank { data.optString("overview_short") }
+        val overview = if (rawOverview.startsWith("{")) {
+            try {
+                val j = JSONObject(rawOverview)
+                j.optString("overview").ifBlank { j.optString("name") }
+            } catch (_: Exception) {
+                rawOverview
+            }
+        } else {
+            rawOverview
+        }
+
         val poster = fixUrlNull(data.optString("poster")) ?: fixUrlNull(data.optString("mobile_poster_link"))
         val banner = fixUrlNull(data.optString("banner")) ?: fixUrlNull(data.optString("details_banner"))
         val year = data.optInt("release_year", 0).takeIf { it > 0 }
         val typeStr = data.optString("type")
         val isMovie = typeStr.equals("movie", ignoreCase = true)
 
-        val tags = mutableListOf<String>()
-        data.optJSONArray("genre")?.let { gArr ->
-            for (i in 0 until gArr.length()) {
-                val g = gArr.optString(i)
-                if (g.isNotBlank()) tags.add(g)
+        fun extractNames(arr: JSONArray?): List<String> {
+            val list = mutableListOf<String>()
+            if (arr == null) return list
+            for (i in 0 until arr.length()) {
+                val item = arr.opt(i)
+                val str = when (item) {
+                    is JSONObject -> item.optString("name").ifBlank { item.optString("name_tr") }
+                    is String -> {
+                        if (item.startsWith("{")) {
+                            try {
+                                val j = JSONObject(item)
+                                j.optString("name").ifBlank { j.optString("name_tr") }
+                            } catch (_: Exception) {
+                                item
+                            }
+                        } else {
+                            item
+                        }
+                    }
+                    else -> null
+                }?.trim()
+                if (!str.isNullOrBlank() && !list.contains(str)) {
+                    list.add(str)
+                }
             }
+            return list
         }
-        data.optJSONArray("tag")?.let { tArr ->
-            for (i in 0 until tArr.length()) {
-                val t = tArr.optString(i)
-                if (t.isNotBlank() && !tags.contains(t)) tags.add(t)
-            }
+
+        val tags = mutableListOf<String>()
+        tags.addAll(extractNames(data.optJSONArray("genre")))
+        extractNames(data.optJSONArray("tag")).forEach {
+            if (!tags.contains(it)) tags.add(it)
         }
 
         if (isMovie) {
@@ -210,7 +267,12 @@ class Anizium(private val sessionProvider: () -> String = { "" }) : MainAPI() {
                     for (eIdx in 0 until epsArray.length()) {
                         val epObj = epsArray.optJSONObject(eIdx) ?: continue
                         val eNum = epObj.optInt("number", eIdx + 1)
-                        val epName = epObj.optString("name").ifBlank { "Bölüm $eNum" }
+                        val rawEpName = epObj.optString("name")
+                        val epName = if (rawEpName.isBlank() || rawEpName.equals("null", ignoreCase = true)) {
+                            "Bölüm $eNum"
+                        } else {
+                            rawEpName
+                        }
                         val epThumb = fixUrlNull(epObj.optString("banner_link"))
                         val epOverview = epObj.optString("overview")
                         val epData = JSONObject().apply {
@@ -253,15 +315,29 @@ class Anizium(private val sessionProvider: () -> String = { "" }) : MainAPI() {
         val season = json.optInt("season", 1)
         val episode = json.optInt("episode", 1)
 
-        val sourceUrl = if (isMovie) {
-            "$API_BASE/anime/source?id=$id&site=main&plan=&server=1"
-        } else {
-            "$API_BASE/anime/source?id=$id&site=main&plan=&season=$season&episode=$episode&server=1"
+        var sourceJson: JSONObject? = null
+        val serverList = listOf("2", "beta", "1")
+        for (srv in serverList) {
+            val sourceUrl = if (isMovie) {
+                "$API_BASE/anime/source?id=$id&site=main&plan=&server=$srv"
+            } else {
+                "$API_BASE/anime/source?id=$id&site=main&plan=&season=$season&episode=$episode&server=$srv"
+            }
+            try {
+                val res = app.get(sourceUrl, headers = getHeaders()).text
+                val testJson = JSONObject(res)
+                if (testJson.optBoolean("success", false)) {
+                    val groups = testJson.optJSONArray("groups")
+                    if (groups != null && groups.length() > 0) {
+                        sourceJson = testJson
+                        break
+                    }
+                }
+            } catch (_: Exception) {
+            }
         }
 
-        val res = app.get(sourceUrl, headers = getHeaders()).text
-        val sourceJson = JSONObject(res)
-        if (!sourceJson.optBoolean("success", false)) return false
+        if (sourceJson == null) return false
 
         val groups = sourceJson.optJSONArray("groups")
         if (groups != null) {
@@ -270,36 +346,83 @@ class Anizium(private val sessionProvider: () -> String = { "" }) : MainAPI() {
                 val grpGroup = grp.optString("group")
                 val grpName = grp.optString("name")
                 val items = grp.optJSONArray("items") ?: continue
+                if (items.length() == 0) continue
+
+                val isDub = grpGroup.contains("dub", ignoreCase = true) || grpName.contains("Türkçe", ignoreCase = true)
+                val dubSuffix = if (isDub && !grpName.contains("Dublaj", ignoreCase = true)) " (Dublaj)" else ""
+                val sourceLabel = "Anizium - $grpName$dubSuffix"
+
+                val hlsItems = mutableListOf<JSONObject>()
+                val mp4Items = mutableListOf<JSONObject>()
 
                 for (i in 0 until items.length()) {
-                    val item = items.optJSONObject(i) ?: continue
-                    val qInt = item.optInt("quality", 1080)
-                    val link = item.optString("link")
+                    val it = items.optJSONObject(i) ?: continue
+                    val link = it.optString("link")
                     if (link.isBlank()) continue
-
-                    val qualName = when (qInt) {
-                        2160 -> "4K"
-                        1440 -> "2K"
-                        1080 -> "1080p"
-                        720  -> "720p"
-                        480  -> "480p"
-                        else -> "${qInt}p"
-                    }
-
-                    val sourceLabel = if (grpGroup.contains("dub", ignoreCase = true) || grpName.contains("Türkçe", ignoreCase = true)) {
-                        "Anizium - $grpName (Dublaj)"
+                    val itType = it.optString("type")
+                    if (itType.equals("hls", ignoreCase = true) || link.contains(".m3u8")) {
+                        hlsItems.add(it)
                     } else {
-                        "Anizium - $grpName"
+                        mp4Items.add(it)
                     }
+                }
+
+                if (hlsItems.isNotEmpty()) {
+                    hlsItems.sortByDescending { it.optInt("quality", 1080) }
+                    val lines = mutableListOf(
+                        "#EXTM3U",
+                        "#EXT-X-VERSION:3",
+                        "#EXT-X-INDEPENDENT-SEGMENTS"
+                    )
+                    for (it in hlsItems) {
+                        val qInt = it.optInt("quality", 1080)
+                        val link = it.optString("link")
+                        val (res, bw) = when (qInt) {
+                            2160 -> Pair("3840x2160", 16000000)
+                            1440 -> Pair("2560x1440", 8000000)
+                            1080 -> Pair("1920x1080", 4500000)
+                            720  -> Pair("1280x720", 2200000)
+                            480  -> Pair("854x480", 1000000)
+                            else -> Pair("1920x${qInt}", qInt * 4000)
+                        }
+                        val qualName = when (qInt) {
+                            2160 -> "4K"
+                            1440 -> "2K"
+                            1080 -> "1080p"
+                            720  -> "720p"
+                            480  -> "480p"
+                            else -> "${qInt}p"
+                        }
+                        lines.add("#EXT-X-STREAM-INF:BANDWIDTH=$bw,RESOLUTION=$res,NAME=\"$qualName\"")
+                        lines.add(link)
+                    }
+                    val masterContent = lines.joinToString("\n") + "\n"
+                    val b64 = Base64.encodeToString(masterContent.toByteArray(Charsets.UTF_8), Base64.NO_WRAP)
+                    val dataUri = "data:application/vnd.apple.mpegurl;base64,$b64"
 
                     callback.invoke(
                         newExtractorLink(
                             source = sourceLabel,
-                            name = "$sourceLabel $qualName",
-                            url = link,
+                            name = sourceLabel,
+                            url = dataUri,
+                            type = ExtractorLinkType.M3U8
+                        ) {
+                            this.referer = "$mainUrl/"
+                            this.quality = Qualities.Unknown.value
+                        }
+                    )
+                } else if (mp4Items.isNotEmpty()) {
+                    mp4Items.sortByDescending { it.optInt("quality", 1080) }
+                    val bestMp4 = mp4Items.first()
+                    callback.invoke(
+                        newExtractorLink(
+                            source = sourceLabel,
+                            name = sourceLabel,
+                            url = bestMp4.optString("link"),
                             type = ExtractorLinkType.VIDEO
                         ) {
-                            this.quality = getQualityFromName("${qInt}p")
+                            this.referer = "$mainUrl/"
+                            this.quality = Qualities.Unknown.value
                         }
                     )
                 }

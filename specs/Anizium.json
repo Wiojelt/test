@@ -10,7 +10,7 @@
   "iconUrl": "https://x.anizium.co/assets/index/img/embed-logo.png",
   "description": "Anizium 4K & 2K Türkçe Dublaj ve Altyazılı Anime Sağlayıcısı. Token/giriş hatası alırsanız eklentinin seçenekler butonundan oturumu yenileyin.",
   "language": "tr",
-  "version": 1,
+  "version": 2,
   "defaultCategory": "Animeler",
   "tvTypes": [
     "Anime",
