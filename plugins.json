@@ -2,7 +2,7 @@
   {
     "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/WioIPTVPanels.cs3",
     "status": 3,
-    "version": 1,
+    "version": 2,
     "name": "WioIPTVPanels",
     "internalName": "WioIPTVPanels",
     "authors": [
@@ -425,7 +425,7 @@
     "name": "InatBox",
     "internalName": "InatBox",
     "authors": [
-      "wiojelt"
+      "Wiojelt"
     ],
     "description": "InatBox - Canlı TV, Dizi ve Film İçerikleri",
     "fileSize": 55402,
