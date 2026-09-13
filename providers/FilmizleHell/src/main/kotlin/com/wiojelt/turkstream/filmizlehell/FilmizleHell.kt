@@ -174,7 +174,19 @@ class FilmizleHell : MainAPI() {
         val streams = (initial + alternateStreams + expandPlayerPages(initial, pageUrl)).filterNot(::isTrailer).distinct()
         if (streams.isEmpty()) throw ErrorLoadingException("Video kaynağı bulunamadı")
         streams.forEach { stream ->
-            if (stream.contains(".m3u8") || stream.contains(".mpd") || stream.contains(".mp4")) callback(newExtractorLink(name, name, stream, when {
+            if (stream.contains("playturka.space")) {
+                val id = stream.substringAfterLast("#")
+                if (id.isNotBlank() && id != stream) {
+                    val m3u8Url = "https://p.playturka.space/videos/$id/master.m3u8"
+                    callback(newExtractorLink(name, "PlayTurka (FilmizleHell)", m3u8Url, ExtractorLinkType.M3U8) {
+                        this.headers = mapOf(
+                            "User-Agent" to "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+                            "Referer" to "https://p.playturka.space/"
+                        )
+                        this.quality = Qualities.P1080.value
+                    })
+                }
+            } else if (stream.contains(".m3u8") || stream.contains(".mpd") || stream.contains(".mp4")) callback(newExtractorLink(name, name, stream, when {
                 stream.contains(".m3u8") -> ExtractorLinkType.M3U8
                 stream.contains(".mpd") -> ExtractorLinkType.DASH
                 else -> ExtractorLinkType.VIDEO
