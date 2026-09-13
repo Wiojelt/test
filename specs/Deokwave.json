@@ -1,4 +1,4 @@
-﻿{
+{
   "schemaVersion": 1,
   "name": "Deokwave",
   "displayName": "Deokwave Test",
@@ -12,7 +12,7 @@
   "iconUrl": "https://deokwave.com/img/logo-d.png",
   "description": "Deokwave 4K Türkçe altyazılı anime sağlayıcısı test paketi.",
   "language": "tr",
-  "version": 1,
+  "version": 3,
   "defaultCategory": "Animeler",
   "tvTypes": [
     "Anime",
