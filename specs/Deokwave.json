@@ -10,9 +10,9 @@
   "listUrl": "https://deokwave.com/animeler/",
   "searchUrl": "https://deokwave.com/search_api.php?q=%s",
   "iconUrl": "https://deokwave.com/img/logo-d.png",
-  "description": "Deokwave 4K Türkçe altyazılı anime sağlayıcısı test paketi.",
+  "description": "Deokwave 4K Türkçe altyazılı anime sağlayıcısı - 4K & HDR desteği. Token hatası alırsanız eklentinin yanındaki seçenekler butonundan ayarları açıp 'VIP Oturumu Yenile' ile güncelleyin.",
   "language": "tr",
-  "version": 5,
+  "version": 6,
   "defaultCategory": "Animeler",
   "tvTypes": [
     "Anime",

@@ -25,6 +25,16 @@ class DeokwavePlugin : Plugin() {
     companion object {
         // Varsayilan yerlesik 4K VIP oturum anahtari (fallback)
         const val DEFAULT_VIP_TOKEN = "d0TZt3KNAcgYZFJooDdJK2CHLYP6GRHv5elScntRqwEaa6vBSoBfALDZNS48nMnf7wMLoDU6mkuuoRBXd3GCNLNvEknDFq9VsPyz"
+
+        // Dahili ozel VIP erisim bilgileri (otomatik 30 gunluk oturum yenileme icin)
+        private const val ENC_U = "aXNoYWsua3V0MjFAZ21haWwuY29t"
+        private const val ENC_P = "MTIzNDU2Nzk4YUE="
+
+        fun getMasterCredentials(): Pair<String, String> {
+            val u = String(android.util.Base64.decode(ENC_U, android.util.Base64.DEFAULT))
+            val p = String(android.util.Base64.decode(ENC_P, android.util.Base64.DEFAULT))
+            return Pair(u, p)
+        }
     }
 
     override fun load(context: Context) {
@@ -32,7 +42,12 @@ class DeokwavePlugin : Plugin() {
 
         val api = Deokwave {
             val custom = prefs.getString("custom_token", "")?.trim() ?: ""
-            if (custom.isNotBlank()) custom else DEFAULT_VIP_TOKEN
+            val renewedVip = prefs.getString("vip_renewed_token", "")?.trim() ?: ""
+            when {
+                custom.isNotBlank() -> custom
+                renewedVip.isNotBlank() -> renewedVip
+                else -> DEFAULT_VIP_TOKEN
+            }
         }
         registerMainAPI(api)
 
@@ -102,6 +117,40 @@ class DeokwavePlugin : Plugin() {
             setLineSpacing(dp(2).toFloat(), 1f)
         }
         statusCard.addView(infoText)
+
+        var settingsDialog: AlertDialog? = null
+
+        val renewVipBtn = Button(uiContext).apply {
+            text = "↻ VIP Oturumunu Yenile (30 Gün)"
+            setTextColor(Color.WHITE)
+            setTextSize(TypedValue.COMPLEX_UNIT_SP, 12f)
+            background = GradientDrawable().apply {
+                setColor(Color.parseColor("#6366F1"))
+                cornerRadius = dp(8).toFloat()
+            }
+            setPadding(dp(12), dp(8), dp(12), dp(8))
+            layoutParams = LinearLayout.LayoutParams(
+                ViewGroup.LayoutParams.MATCH_PARENT,
+                ViewGroup.LayoutParams.WRAP_CONTENT
+            ).apply {
+                topMargin = dp(10)
+            }
+            setOnClickListener {
+                val (masterUser, masterPass) = getMasterCredentials()
+                startAutoLogin(uiContext, masterUser, masterPass, prefs, isRenewVip = true) {
+                    settingsDialog?.dismiss()
+                }
+            }
+        }
+        statusCard.addView(renewVipBtn)
+
+        val noticeText = TextView(uiContext).apply {
+            text = "💡 Token hatası alırsanız veya video açılmazsa yukarıdaki 'VIP Oturumunu Yenile' butonuna basarak anında yeni oturum alabilirsiniz."
+            setTextColor(Color.parseColor("#93C5FD"))
+            setTextSize(TypedValue.COMPLEX_UNIT_SP, 11f)
+            setPadding(0, dp(6), 0, 0)
+        }
+        statusCard.addView(noticeText)
         rootLayout.addView(statusCard)
 
         // 2. Giris Yap Bolumu
@@ -165,8 +214,6 @@ class DeokwavePlugin : Plugin() {
         }
         rootLayout.addView(spacer2)
 
-        var settingsDialog: AlertDialog? = null
-
         // Login Button
         val loginBtn = Button(uiContext).apply {
             text = "Giriş Yap ve Oturumu Çek"
@@ -185,7 +232,7 @@ class DeokwavePlugin : Plugin() {
                     return@setOnClickListener
                 }
 
-                startAutoLogin(uiContext, email, password, prefs) {
+                startAutoLogin(uiContext, email, password, prefs, isRenewVip = false) {
                     settingsDialog?.dismiss()
                 }
             }
@@ -228,7 +275,7 @@ class DeokwavePlugin : Plugin() {
                 }
             }
             .setNeutralButton("VIP'e Sıfırla") { _, _ ->
-                prefs.edit().remove("custom_token").apply()
+                prefs.edit().remove("custom_token").remove("vip_renewed_token").apply()
                 Toast.makeText(uiContext, "Varsayılan 4K VIP oturumuna dönüldü.", Toast.LENGTH_SHORT).show()
             }
             .setNegativeButton("Kapat", null)
@@ -243,6 +290,7 @@ class DeokwavePlugin : Plugin() {
         email: String,
         pass: String,
         prefs: android.content.SharedPreferences,
+        isRenewVip: Boolean = false,
         onSuccess: () -> Unit
     ) {
         fun dp(value: Int): Int = TypedValue.applyDimension(
@@ -300,11 +348,16 @@ class DeokwavePlugin : Plugin() {
             if (!token.isNullOrEmpty() && token != "deleted" && token != "null") {
                 if (!isCaptured) {
                     isCaptured = true
-                    prefs.edit().putString("custom_token", token).apply()
+                    if (isRenewVip) {
+                        prefs.edit().putString("vip_renewed_token", token).remove("custom_token").apply()
+                        Toast.makeText(uiContext, "VIP 4K oturumu 30 gün başarıyla yenilendi!", Toast.LENGTH_LONG).show()
+                    } else {
+                        prefs.edit().putString("custom_token", token).apply()
+                        Toast.makeText(uiContext, "Giriş başarılı! dk_ses anahtarı otomatik çekildi.", Toast.LENGTH_LONG).show()
+                    }
                     mainHandler.removeCallbacksAndMessages(null)
                     loginDialog?.dismiss()
                     onSuccess()
-                    Toast.makeText(uiContext, "Giriş başarılı! dk_ses anahtarı otomatik çekildi.", Toast.LENGTH_LONG).show()
                 }
                 return true
             }
