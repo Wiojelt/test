@@ -6,7 +6,7 @@ import java.net.URLEncoder
 import com.lagradost.cloudstream3.*
 import com.lagradost.cloudstream3.utils.*
 
-class Deokwave : MainAPI() {
+class Deokwave(private val tokenProvider: () -> String = { DEFAULT_TOKEN }) : MainAPI() {
     override var mainUrl = "https://deokwave.com"
     override var name = "Deokwave Test"
     override val hasMainPage = true
@@ -15,19 +15,27 @@ class Deokwave : MainAPI() {
     override val supportedTypes = setOf(TvType.Anime, TvType.AnimeMovie, TvType.OVA)
 
     companion object {
+        const val DEFAULT_TOKEN = "d0TZt3KNAcgYZFJooDdJK2CHLYP6GRHv5elScntRqwEaa6vBSoBfALDZNS48nMnf7wMLoDU6mkuuoRBXd3GCNLNvEknDFq9VsPyz"
         private const val USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
     }
 
-    private val commonHeaders = mapOf(
-        "User-Agent" to USER_AGENT,
-        "Referer" to "$mainUrl/"
-    )
+    private fun getHeaders(): Map<String, String> {
+        val token = tokenProvider().trim()
+        val headers = mutableMapOf(
+            "User-Agent" to USER_AGENT,
+            "Referer" to "$mainUrl/"
+        )
+        if (token.isNotBlank()) {
+            headers["Cookie"] = "dk_ses=$token"
+        }
+        return headers
+    }
 
     override val mainPage = mainPageOf(
         "${mainUrl}/animeler/?sort=popularity&page=" to "Popüler Animeler",
         "${mainUrl}/animeler/?sort=newest&page=" to "Yeni Eklenen Animeler",
         "${mainUrl}/animeler/?sort=rating&page=" to "En Yüksek Puanlılar",
-        "${mainUrl}/animeler/?type=movie&page=" to "Anime Filmleri",
+        "${mainUrl}/animeler/?type=movie&page=" to "Anime Filmleri (4K)",
         "${mainUrl}/animeler/?genre=Action&page=" to "Aksiyon",
         "${mainUrl}/animeler/?genre=Comedy&page=" to "Komedi",
         "${mainUrl}/animeler/?genre=Fantasy&page=" to "Fantastik",
@@ -38,7 +46,7 @@ class Deokwave : MainAPI() {
     )
 
     override suspend fun getMainPage(page: Int, request: MainPageRequest): HomePageResponse {
-        val document = app.get("${request.data}${page}", headers = commonHeaders).document
+        val document = app.get("${request.data}${page}", headers = getHeaders()).document
         val home = document.select("a.anime-card").mapNotNull { it.toSearchResult() }
         return newHomePageResponse(request.name, home)
     }
@@ -53,13 +61,12 @@ class Deokwave : MainAPI() {
 
         return newAnimeSearchResponse(title, href, type) {
             this.posterUrl = posterUrl
-            
         }
     }
 
     override suspend fun search(query: String): List<SearchResponse> {
         val url = "$mainUrl/search_api.php?q=${URLEncoder.encode(query, "UTF-8")}"
-        val response = app.get(url, headers = commonHeaders).text
+        val response = app.get(url, headers = getHeaders()).text
         val json = JSONObject(response)
         val animes = json.optJSONArray("animes") ?: return emptyList()
         val results = mutableListOf<SearchResponse>()
@@ -82,7 +89,8 @@ class Deokwave : MainAPI() {
     }
 
     override suspend fun load(url: String): LoadResponse? {
-        val document = app.get(url, headers = commonHeaders).document
+        val headers = getHeaders()
+        val document = app.get(url, headers = headers).document
         val title = document.selectFirst("h1")?.text()?.trim() ?: return null
         val poster = fixUrlNull(document.selectFirst("meta[property='og:image']")?.attr("content"))
             ?: fixUrlNull(document.selectFirst("img.lazy, .card-poster img")?.attr("data-src"))
@@ -95,7 +103,7 @@ class Deokwave : MainAPI() {
         val watchLink = document.selectFirst("a[href*='/watch/']")?.attr("href") ?: url
         val watchUrl = fixUrl(watchLink)
 
-        val watchDoc = app.get(watchUrl, headers = commonHeaders).document
+        val watchDoc = app.get(watchUrl, headers = headers).document
         val appConfigEl = watchDoc.getElementById("appConfig")
 
         if (appConfigEl != null) {
@@ -173,8 +181,10 @@ class Deokwave : MainAPI() {
         subtitleCallback: (SubtitleFile) -> Unit,
         callback: (ExtractorLink) -> Unit
     ): Boolean {
+        val token = tokenProvider().trim()
+        val headers = getHeaders()
         val watchUrl = fixUrl(data)
-        val html = app.get(watchUrl, headers = commonHeaders).text
+        val html = app.get(watchUrl, headers = headers).text
 
         val vtMatch = Regex("""window\.__VT__\s*=\s*['"]([a-f0-9]+)['"]""").find(html)
         val vt = vtMatch?.groupValues?.get(1) ?: return false
@@ -186,6 +196,15 @@ class Deokwave : MainAPI() {
 
         var foundLinks = false
         val fansubs = conf.optJSONArray("fansubs")
+
+        val streamHeaders = mutableMapOf(
+            "User-Agent" to USER_AGENT,
+            "Referer" to "$mainUrl/",
+            "Origin" to mainUrl
+        )
+        if (token.isNotBlank()) {
+            streamHeaders["Cookie"] = "dk_ses=$token"
+        }
 
         if (fansubs != null && fansubs.length() > 0) {
             for (i in 0 until fansubs.length()) {
@@ -210,20 +229,21 @@ class Deokwave : MainAPI() {
                             val qLabel = qualities.optString(q)
                             val qNum = qLabel.replace("p", "").trim()
                             val streamUrl = "https://sw2.deokwave.com/v/$vid/$qNum/?vt=$vt"
+                            val displayName = when (qLabel) {
+                                "2160p" -> "Deokwave - $fsName (4K Ultra HD / HDR)"
+                                "1080p" -> "Deokwave - $fsName (1080p Full HD)"
+                                else -> "Deokwave - $fsName ($qLabel)"
+                            }
 
                             callback.invoke(
                                 newExtractorLink(
-                                    name = "Deokwave - $fsName",
-                                    source = "Deokwave - $fsName",
+                                    name = displayName,
+                                    source = displayName,
                                     url = streamUrl,
                                     type = ExtractorLinkType.VIDEO
                                 ) {
                                     this.quality = getQualityFromName(qLabel)
-                                    this.headers = mapOf(
-                                        "User-Agent" to USER_AGENT,
-                                        "Referer" to "$mainUrl/",
-                                        "Origin" to mainUrl
-                                    )
+                                    this.headers = streamHeaders
                                 }
                             )
                             foundLinks = true
@@ -233,36 +253,34 @@ class Deokwave : MainAPI() {
             }
         }
 
-        if (!foundLinks) {
-            val fallbackVid = conf.optString("videoId")
-            val qualities = conf.optJSONArray("qualities")
-            if (fallbackVid.isNotBlank() && qualities != null) {
-                for (q in 0 until qualities.length()) {
-                    val qLabel = qualities.optString(q)
-                    val qNum = qLabel.replace("p", "").trim()
-                    val streamUrl = "https://sw2.deokwave.com/v/$fallbackVid/$qNum/?vt=$vt"
-
-                    callback.invoke(
-                        newExtractorLink(
-                            name = "Deokwave",
-                            source = "Deokwave",
-                            url = streamUrl,
-                            type = ExtractorLinkType.VIDEO
-                        ) {
-                            this.quality = getQualityFromName(qLabel)
-                            this.headers = mapOf(
-                                "User-Agent" to USER_AGENT,
-                                "Referer" to "$mainUrl/",
-                                "Origin" to mainUrl
-                            )
-                        }
-                    )
-                    foundLinks = true
+        val fallbackVid = conf.optString("videoId")
+        val fallbackQualities = conf.optJSONArray("qualities")
+        if (fallbackVid.isNotBlank() && fallbackQualities != null && fallbackQualities.length() > 0) {
+            for (q in 0 until fallbackQualities.length()) {
+                val qLabel = fallbackQualities.optString(q)
+                val qNum = qLabel.replace("p", "").trim()
+                val streamUrl = "https://sw2.deokwave.com/v/$fallbackVid/$qNum/?vt=$vt"
+                val displayName = when (qLabel) {
+                    "2160p" -> "Deokwave - 4K Ultra HD (HDR Orijinal 4K)"
+                    "1080p" -> "Deokwave - 1080p Full HD"
+                    else -> "Deokwave - $qLabel"
                 }
+
+                callback.invoke(
+                    newExtractorLink(
+                        name = displayName,
+                        source = displayName,
+                        url = streamUrl,
+                        type = ExtractorLinkType.VIDEO
+                    ) {
+                        this.quality = getQualityFromName(qLabel)
+                        this.headers = streamHeaders
+                    }
+                )
+                foundLinks = true
             }
         }
 
         return foundLinks
     }
 }
-
