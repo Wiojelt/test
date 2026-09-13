@@ -441,5 +441,27 @@
     "iconUrl": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3vCp6N1K4bECoYRQD-cisJF2_6V_Hk01ZhDmoPR2JuM8O5qr4MqrPO1munM9cRlleBBSK6odYhLtDBWv4E3vhPhynlmS5hVVtJZShHoGA5REQ8_3v8SIlccTEqzVQu2UJyNYQdJNrKIfWy66RQeT0D-CcmFCbHPz5023H6p2v5fv4NVloZ5Rqo_yGrIY/s320/iNat-Box-App.png",
     "apiVersion": 1,
     "fileHash": "sha256-b48474d060531f0c0dadb740db2fba371e15266a75aacfb3109adc7eb4f40e3a"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/Anizium.cs3",
+    "status": 3,
+    "version": 1,
+    "name": "Anizium Test",
+    "internalName": "Anizium",
+    "authors": [
+      "wiojelt"
+    ],
+    "description": "Anizium 4K & 2K Türkçe Dublaj ve Altyazılı Anime Sağlayıcısı. Token/giriş hatası alırsanız eklentinin seçenekler butonundan oturumu yenileyin.",
+    "fileSize": 29664,
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "language": "tr",
+    "tvTypes": [
+      "Anime",
+      "AnimeMovie",
+      "OVA"
+    ],
+    "iconUrl": "https://x.anizium.co/assets/index/img/embed-logo.png",
+    "apiVersion": 1,
+    "fileHash": "sha256-c3b59853cbf7f550b8adfba5829a8ec746e24912d8cd49c74609547603e5817e"
   }
 ]
