@@ -181,6 +181,7 @@ class JetFilmizle : MainAPI() {
         val document = app.get(detailUrl, headers = requestHeaders(mainUrl)).document
         val filmId = document.selectFirst("input[name=film_id]")?.attr("value")?.takeIf(String::isNotBlank)
             ?: throw ErrorLoadingException("film_id bulunamadı")
+        val csrfToken = document.selectFirst("meta[name=csrf-token]")?.attr("content")?.trim().orEmpty()
         val buttons = document.select(".player-source-btn").filter { button ->
             wantedSeason == null || (button.attr("data-season").toIntOrNull() == wantedSeason && button.attr("data-episode").toIntOrNull() == wantedEpisode)
         }.distinctBy { it.attr("data-source-index") + '|' + it.attr("data-player-type") }
@@ -194,9 +195,17 @@ class JetFilmizle : MainAPI() {
             val buttonName = button.text().trim().ifBlank { "Kaynak ${index.toIntOrNull()?.plus(1) ?: index}" }
             val language = if (type.contains("altyazi", true)) "Altyazılı" else "Dublaj"
             runCatching {
+                val headersMap = mutableMapOf(
+                    "Origin" to mainUrl,
+                    "X-Requested-With" to "XMLHttpRequest",
+                    "Content-Type" to "application/x-www-form-urlencoded"
+                )
+                if (csrfToken.isNotBlank()) {
+                    headersMap["X-CSRF-TOKEN"] = csrfToken
+                }
                 val response = app.post(
                     "$mainUrl/jetplayer",
-                    headers = requestHeaders(detailUrl) + mapOf("Origin" to mainUrl, "X-Requested-With" to "XMLHttpRequest", "Content-Type" to "application/x-www-form-urlencoded"),
+                    headers = requestHeaders(detailUrl) + headersMap,
                     data = mapOf("film_id" to filmId, "source_index" to index, "player_type" to type),
                 ).text
                 val iframe = Jsoup.parse(response, mainUrl).selectFirst("iframe[src]")?.absUrl("src")?.takeIf(String::isNotBlank) ?: return@runCatching
