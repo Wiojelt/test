@@ -417,7 +417,6 @@
       "OVA"
     ],
     "iconUrl": "https://deokwave.com/img/logo-d.png",
-    "apiVersion": 1,
-    "fileHash": "sha256-5c148d0b9b437d66edd6f0ab889415bd6a04e1838827dd99fdd4f04ff7868c99"
+    "apiVersion": 1
   }
 ]
