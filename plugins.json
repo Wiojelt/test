@@ -380,14 +380,14 @@
   {
     "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/FilmizleHell.cs3",
     "status": 3,
-    "version": 2,
+    "version": 3,
     "name": "FilmizleHell Test",
     "internalName": "FilmizleHell",
     "authors": [
       "Wiojelt"
     ],
     "description": "TurkStream test sağlayıcısı; katalog doğrulandı, oynatıcı akışı siteye göre beklemede olabilir.",
-    "fileSize": 31745,
+    "fileSize": 32909,
     "repositoryUrl": "https://github.com/Wiojelt/test",
     "language": "tr",
     "tvTypes": [
@@ -396,7 +396,7 @@
     ],
     "iconUrl": "https://filmizlehell.net/filmizlehell-icon.png",
     "apiVersion": 1,
-    "fileHash": "sha256-20f11cd38d53af878e7102fbbd18e58e525323dfbdd762509ec21cdbf6e5238b"
+    "fileHash": "sha256-ce8881878032689a9418df4c44e504790595e29215ee6954fc714c51b62c7508"
   },
   {
     "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/Deokwave.cs3",
