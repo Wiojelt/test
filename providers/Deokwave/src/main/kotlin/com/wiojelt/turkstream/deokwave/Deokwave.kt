@@ -1,4 +1,4 @@
-﻿package com.wiojelt.turkstream.deokwave
+package com.wiojelt.turkstream.deokwave
 
 import org.json.JSONObject
 import org.jsoup.nodes.Element
@@ -197,6 +197,31 @@ class Deokwave(private val tokenProvider: () -> String = { DEFAULT_TOKEN }) : Ma
         var foundLinks = false
         val fansubs = conf.optJSONArray("fansubs")
 
+        // Altyazıları oynatıcıya yükle
+        val animeId = conf.optString("animeId")
+        val episodeNum = conf.optInt("episodeNum", 0)
+        val seasonNum = conf.optInt("seasonNum", 0)
+        if (animeId.isNotBlank()) {
+            val mainSubUrl = "$mainUrl/watch/sub/index.php?animeid=$animeId&episode=$episodeNum&season=$seasonNum"
+            subtitleCallback.invoke(
+                SubtitleFile("Türkçe", mainSubUrl)
+            )
+
+            if (fansubs != null && fansubs.length() > 0) {
+                for (i in 0 until fansubs.length()) {
+                    val fs = fansubs.optJSONObject(i) ?: continue
+                    val fsName = fs.optString("name", "Alternatif")
+                    val fsKey = fs.optString("key")
+                    if (fsKey.isNotBlank() && fsKey != "main") {
+                        val fsSubUrl = "$mainSubUrl&source=$fsKey"
+                        subtitleCallback.invoke(
+                            SubtitleFile("Türkçe ($fsName)", fsSubUrl)
+                        )
+                    }
+                }
+            }
+        }
+
         val streamHeaders = mutableMapOf(
             "User-Agent" to USER_AGENT,
             "Referer" to "$mainUrl/",
@@ -229,16 +254,11 @@ class Deokwave(private val tokenProvider: () -> String = { DEFAULT_TOKEN }) : Ma
                             val qLabel = qualities.optString(q)
                             val qNum = qLabel.replace("p", "").trim()
                             val streamUrl = "https://sw2.deokwave.com/v/$vid/$qNum/?vt=$vt"
-                            val displayName = when (qLabel) {
-                                "2160p" -> "Deokwave - $fsName (4K Ultra HD / HDR)"
-                                "1080p" -> "Deokwave - $fsName (1080p Full HD)"
-                                else -> "Deokwave - $fsName ($qLabel)"
-                            }
 
                             callback.invoke(
                                 newExtractorLink(
-                                    name = displayName,
-                                    source = displayName,
+                                    source = "Deokwave",
+                                    name = fsName,
                                     url = streamUrl,
                                     type = ExtractorLinkType.VIDEO
                                 ) {
@@ -260,16 +280,11 @@ class Deokwave(private val tokenProvider: () -> String = { DEFAULT_TOKEN }) : Ma
                 val qLabel = fallbackQualities.optString(q)
                 val qNum = qLabel.replace("p", "").trim()
                 val streamUrl = "https://sw2.deokwave.com/v/$fallbackVid/$qNum/?vt=$vt"
-                val displayName = when (qLabel) {
-                    "2160p" -> "Deokwave - 4K Ultra HD (HDR Orijinal 4K)"
-                    "1080p" -> "Deokwave - 1080p Full HD"
-                    else -> "Deokwave - $qLabel"
-                }
 
                 callback.invoke(
                     newExtractorLink(
-                        name = displayName,
-                        source = displayName,
+                        source = "Deokwave",
+                        name = "Deokwave",
                         url = streamUrl,
                         type = ExtractorLinkType.VIDEO
                     ) {

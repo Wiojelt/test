@@ -12,7 +12,7 @@
   "iconUrl": "https://deokwave.com/img/logo-d.png",
   "description": "Deokwave 4K Türkçe altyazılı anime sağlayıcısı - 4K & HDR desteği. Token hatası alırsanız eklentinin yanındaki seçenekler butonundan ayarları açıp 'VIP Oturumu Yenile' ile güncelleyin.",
   "language": "tr",
-  "version": 6,
+  "version": 7,
   "defaultCategory": "Animeler",
   "tvTypes": [
     "Anime",
