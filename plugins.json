@@ -445,14 +445,14 @@
   {
     "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/Anizium.cs3",
     "status": 3,
-    "version": 1,
+    "version": 2,
     "name": "Anizium Test",
     "internalName": "Anizium",
     "authors": [
       "wiojelt"
     ],
     "description": "Anizium 4K & 2K Türkçe Dublaj ve Altyazılı Anime Sağlayıcısı. Token/giriş hatası alırsanız eklentinin seçenekler butonundan oturumu yenileyin.",
-    "fileSize": 29664,
+    "fileSize": 34492,
     "repositoryUrl": "https://github.com/Wiojelt/test",
     "language": "tr",
     "tvTypes": [
@@ -462,6 +462,6 @@
     ],
     "iconUrl": "https://x.anizium.co/assets/index/img/embed-logo.png",
     "apiVersion": 1,
-    "fileHash": "sha256-c3b59853cbf7f550b8adfba5829a8ec746e24912d8cd49c74609547603e5817e"
+    "fileHash": "sha256-5bc4e6239981273c78a063df1ba20cd02219b273e73d393084bad20031ef4387"
   }
 ]
