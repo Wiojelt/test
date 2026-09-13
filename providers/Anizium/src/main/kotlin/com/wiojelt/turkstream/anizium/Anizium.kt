@@ -3,11 +3,87 @@ package com.wiojelt.turkstream.anizium
 import org.json.JSONObject
 import org.json.JSONArray
 import java.net.URLEncoder
+import java.net.ServerSocket
+import java.net.Socket
+import java.net.InetAddress
+import java.io.BufferedReader
+import java.io.InputStreamReader
 import java.util.Calendar
 import java.util.TimeZone
-import android.util.Base64
+import java.util.concurrent.ConcurrentHashMap
 import com.lagradost.cloudstream3.*
 import com.lagradost.cloudstream3.utils.*
+
+object LocalM3u8Server {
+    private val playlists = ConcurrentHashMap<String, String>()
+    private var serverSocket: ServerSocket? = null
+    var port: Int = 0
+        private set
+
+    @Synchronized
+    fun start() {
+        if (serverSocket != null && !serverSocket!!.isClosed) return
+        try {
+            val ss = ServerSocket(0, 10, InetAddress.getByName("127.0.0.1"))
+            serverSocket = ss
+            port = ss.localPort
+            Thread {
+                while (!ss.isClosed) {
+                    try {
+                        val socket = ss.accept()
+                        handleSocket(socket)
+                    } catch (_: Exception) {
+                        break
+                    }
+                }
+            }.apply {
+                isDaemon = true
+                name = "AniziumLocalM3u8"
+                start()
+            }
+        } catch (_: Exception) {
+        }
+    }
+
+    private fun handleSocket(socket: Socket) {
+        Thread {
+            try {
+                val reader = BufferedReader(InputStreamReader(socket.getInputStream()))
+                val line = reader.readLine() ?: return@Thread
+                val parts = line.split(" ")
+                val path = if (parts.size > 1) parts[1].trimStart('/') else ""
+                val content = playlists[path]
+                val out = socket.getOutputStream()
+                if (content != null) {
+                    val bytes = content.toByteArray(Charsets.UTF_8)
+                    val header = "HTTP/1.1 200 OK\r\n" +
+                            "Content-Type: application/vnd.apple.mpegurl\r\n" +
+                            "Access-Control-Allow-Origin: *\r\n" +
+                            "Content-Length: ${bytes.size}\r\n" +
+                            "Connection: close\r\n\r\n"
+                    out.write(header.toByteArray(Charsets.UTF_8))
+                    out.write(bytes)
+                } else {
+                    val notFound = "HTTP/1.1 404 Not Found\r\nConnection: close\r\n\r\n"
+                    out.write(notFound.toByteArray(Charsets.UTF_8))
+                }
+                out.flush()
+            } catch (_: Exception) {
+            } finally {
+                try { socket.close() } catch (_: Exception) {}
+            }
+        }.apply {
+            isDaemon = true
+            start()
+        }
+    }
+
+    fun register(key: String, m3u8: String): String {
+        start()
+        playlists[key] = m3u8
+        return if (port > 0) "http://127.0.0.1:$port/$key" else ""
+    }
+}
 
 class Anizium(private val sessionProvider: () -> String = { "" }) : MainAPI() {
     override var mainUrl = "https://anizium.co"
@@ -185,7 +261,7 @@ class Anizium(private val sessionProvider: () -> String = { "" }) : MainAPI() {
     }
 
     override suspend fun load(url: String): LoadResponse? {
-        val id = Regex("""\b(\d{5,20})\b""").find(url)?.groupValues?.get(1) ?: url.substringAfterLast("/")
+        val id = Regex("\\b(\\d{5,20})\\b").find(url)?.groupValues?.get(1) ?: url.substringAfterLast("/")
         val apiUrl = "$API_BASE/anime/get?id=$id"
         val res = app.get(apiUrl, headers = getHeaders()).text
         val root = JSONObject(res)
@@ -397,17 +473,22 @@ class Anizium(private val sessionProvider: () -> String = { "" }) : MainAPI() {
                         lines.add(link)
                     }
                     val masterContent = lines.joinToString("\n") + "\n"
-                    val b64 = Base64.encodeToString(masterContent.toByteArray(Charsets.UTF_8), Base64.NO_WRAP)
-                    val dataUri = "data:application/vnd.apple.mpegurl;base64,$b64"
+                    val fileKey = "master_${id}_${season}_${episode}_${grpGroup}.m3u8"
+                    val localUrl = LocalM3u8Server.register(fileKey, masterContent)
+                    val finalUrl = if (localUrl.isNotBlank()) localUrl else hlsItems.first().optString("link")
 
                     callback.invoke(
                         newExtractorLink(
-                            source = sourceLabel,
+                            source = this.name,
                             name = sourceLabel,
-                            url = dataUri,
+                            url = finalUrl,
                             type = ExtractorLinkType.M3U8
                         ) {
-                            this.referer = "$mainUrl/"
+                            this.referer = "https://anizium.co/"
+                            this.headers = mapOf(
+                                "User-Agent" to USER_AGENT,
+                                "Referer" to "https://anizium.co/"
+                            )
                             this.quality = Qualities.Unknown.value
                         }
                     )
@@ -416,12 +497,16 @@ class Anizium(private val sessionProvider: () -> String = { "" }) : MainAPI() {
                     val bestMp4 = mp4Items.first()
                     callback.invoke(
                         newExtractorLink(
-                            source = sourceLabel,
+                            source = this.name,
                             name = sourceLabel,
                             url = bestMp4.optString("link"),
                             type = ExtractorLinkType.VIDEO
                         ) {
-                            this.referer = "$mainUrl/"
+                            this.referer = "https://anizium.co/"
+                            this.headers = mapOf(
+                                "User-Agent" to USER_AGENT,
+                                "Referer" to "https://anizium.co/"
+                            )
                             this.quality = Qualities.Unknown.value
                         }
                     )
