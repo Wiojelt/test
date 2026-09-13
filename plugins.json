@@ -399,28 +399,6 @@
     "fileHash": "sha256-ce8881878032689a9418df4c44e504790595e29215ee6954fc714c51b62c7508"
   },
   {
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/Deokwave.cs3",
-    "status": 3,
-    "version": 7,
-    "name": "Deokwave Test",
-    "internalName": "Deokwave",
-    "authors": [
-      "Wiojelt"
-    ],
-    "description": "Deokwave 4K Türkçe altyazılı anime sağlayıcısı - 4K & HDR desteği. Token hatası alırsanız eklentinin yanındaki seçenekler (dişli) butonundan ayarları açıp 'VIP Oturumu Yenile' ile güncelleyin.",
-    "fileSize": 33433,
-    "repositoryUrl": "https://github.com/Wiojelt/test",
-    "language": "tr",
-    "tvTypes": [
-      "Anime",
-      "AnimeMovie",
-      "OVA"
-    ],
-    "iconUrl": "https://deokwave.com/img/logo-d.png",
-    "apiVersion": 1,
-    "fileHash": "sha256-0f33a8360c2ba296a8667d1a1e73296cab5752f6ae5058c11d6f416b699df5cd"
-  },
-  {
     "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/InatBox.cs3",
     "status": 3,
     "version": 3,
@@ -441,27 +419,5 @@
     "iconUrl": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh3vCp6N1K4bECoYRQD-cisJF2_6V_Hk01ZhDmoPR2JuM8O5qr4MqrPO1munM9cRlleBBSK6odYhLtDBWv4E3vhPhynlmS5hVVtJZShHoGA5REQ8_3v8SIlccTEqzVQu2UJyNYQdJNrKIfWy66RQeT0D-CcmFCbHPz5023H6p2v5fv4NVloZ5Rqo_yGrIY/s320/iNat-Box-App.png",
     "apiVersion": 1,
     "fileHash": "sha256-b48474d060531f0c0dadb740db2fba371e15266a75aacfb3109adc7eb4f40e3a"
-  },
-  {
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/Anizium.cs3",
-    "status": 3,
-    "version": 3,
-    "name": "Anizium Test",
-    "internalName": "Anizium",
-    "authors": [
-      "wiojelt"
-    ],
-    "description": "Anizium 4K & 2K Türkçe Dublaj ve Altyazılı Anime Sağlayıcısı. Token/giriş hatası alırsanız eklentinin seçenekler butonundan oturumu yenileyin.",
-    "fileSize": 36551,
-    "repositoryUrl": "https://github.com/Wiojelt/test",
-    "language": "tr",
-    "tvTypes": [
-      "Anime",
-      "AnimeMovie",
-      "OVA"
-    ],
-    "iconUrl": "https://x.anizium.co/assets/index/img/embed-logo.png",
-    "apiVersion": 1,
-    "fileHash": "sha256-44f1d8f198a57a9b823c701b9e4aaa3f8a93ff4dd5e3a68531fead87711518d8"
   }
 ]
