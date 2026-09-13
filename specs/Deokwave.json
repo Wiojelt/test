@@ -12,7 +12,7 @@
   "iconUrl": "https://deokwave.com/img/logo-d.png",
   "description": "Deokwave 4K Türkçe altyazılı anime sağlayıcısı test paketi.",
   "language": "tr",
-  "version": 3,
+  "version": 4,
   "defaultCategory": "Animeler",
   "tvTypes": [
     "Anime",
