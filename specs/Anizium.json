@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "name": "Anizium",
+  "displayName": "Anizium Test",
+  "packageName": "com.wiojelt.turkstream.anizium",
+  "repository": "Wiojelt/test",
+  "author": "wiojelt",
+  "kind": "anime",
+  "baseUrl": "https://anizium.co",
+  "iconUrl": "https://x.anizium.co/assets/index/img/embed-logo.png",
+  "description": "Anizium 4K & 2K Türkçe Dublaj ve Altyazılı Anime Sağlayıcısı. Token/giriş hatası alırsanız eklentinin seçenekler butonundan oturumu yenileyin.",
+  "language": "tr",
+  "version": 1,
+  "defaultCategory": "Animeler",
+  "tvTypes": [
+    "Anime",
+    "AnimeMovie",
+    "OVA"
+  ]
+}
