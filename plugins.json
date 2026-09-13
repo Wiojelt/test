@@ -1,5 +1,25 @@
 [
   {
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/WioIPTVPanels.cs3",
+    "status": 3,
+    "version": 1,
+    "name": "WioIPTVPanels",
+    "internalName": "WioIPTVPanels",
+    "authors": [
+      "Wiojelt"
+    ],
+    "description": "Tüm Türk Ulusal, Türk Spor ve Dünya Spor Kanalları (Eagle, 8kGold, Spor 20x, World Sport çoklu yayın alternatifleri ve panel kontrol arayüzü)",
+    "fileSize": 38811,
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "language": "tr",
+    "tvTypes": [
+      "Live"
+    ],
+    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/WioSinema/main/assets/logo.png",
+    "apiVersion": 1,
+    "fileHash": "sha256-617b3f6f3aceee40f73faefa50bab66e29eddc11460b46955a705fd921f178de"
+  },
+  {
     "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/FullHDFilmizlesene.cs3",
     "status": 3,
     "version": 1,
