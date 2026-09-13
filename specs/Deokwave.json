@@ -1,0 +1,79 @@
+﻿{
+  "schemaVersion": 1,
+  "name": "Deokwave",
+  "displayName": "Deokwave Test",
+  "packageName": "com.wiojelt.turkstream.deokwave",
+  "repository": "Wiojelt/test",
+  "author": "Wiojelt",
+  "kind": "anime",
+  "baseUrl": "https://deokwave.com",
+  "listUrl": "https://deokwave.com/animeler/",
+  "searchUrl": "https://deokwave.com/search_api.php?q=%s",
+  "iconUrl": "https://deokwave.com/img/logo-d.png",
+  "description": "Deokwave 4K Türkçe altyazılı anime sağlayıcısı test paketi.",
+  "language": "tr",
+  "version": 1,
+  "defaultCategory": "Animeler",
+  "tvTypes": [
+    "Anime",
+    "AnimeMovie",
+    "OVA"
+  ],
+  "domainCandidates": [
+    "https://deokwave.com"
+  ],
+  "categoryPages": [
+    {
+      "title": "Popüler Animeler",
+      "url": "https://deokwave.com/animeler/?sort=popularity"
+    },
+    {
+      "title": "Yeni Eklenenler",
+      "url": "https://deokwave.com/animeler/?sort=newest"
+    },
+    {
+      "title": "Puanı En Yüksekler",
+      "url": "https://deokwave.com/animeler/?sort=rating"
+    },
+    {
+      "title": "Anime Filmleri",
+      "url": "https://deokwave.com/animeler/?type=movie"
+    },
+    {
+      "title": "Aksiyon",
+      "url": "https://deokwave.com/animeler/?genre=Action"
+    },
+    {
+      "title": "Komedi",
+      "url": "https://deokwave.com/animeler/?genre=Comedy"
+    },
+    {
+      "title": "Fantastik",
+      "url": "https://deokwave.com/animeler/?genre=Fantasy"
+    },
+    {
+      "title": "Romantizm",
+      "url": "https://deokwave.com/animeler/?genre=Romance"
+    },
+    {
+      "title": "Dram",
+      "url": "https://deokwave.com/animeler/?genre=Drama"
+    }
+  ],
+  "selectors": {
+    "item": "a.anime-card",
+    "title": "h3.card-title",
+    "section": "",
+    "section_title": "h2, h3",
+    "link": "a.anime-card",
+    "poster": "img",
+    "category": ".badge-type",
+    "description": ".anime-synopsis, p",
+    "stream": "video, source",
+    "title_attr": "text",
+    "link_attr": "href",
+    "poster_attr": "data-src",
+    "category_attr": "text",
+    "stream_attr": "src"
+  }
+}
