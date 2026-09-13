@@ -44,14 +44,14 @@
   {
     "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/Jetfilmizle.cs3",
     "status": 3,
-    "version": 5,
+    "version": 6,
     "name": "Jetfilmizle Test",
     "internalName": "Jetfilmizle",
     "authors": [
       "Wiojelt"
     ],
     "description": "TurkStream test sağlayıcısı; katalog doğrulandı, oynatıcı akışı siteye göre beklemede olabilir.",
-    "fileSize": 33159,
+    "fileSize": 33474,
     "repositoryUrl": "https://github.com/Wiojelt/test",
     "language": "tr",
     "tvTypes": [
@@ -60,7 +60,7 @@
     ],
     "iconUrl": "https://jetfilmizle.now/assets/img/logo.png",
     "apiVersion": 1,
-    "fileHash": "sha256-bda1a21d895635cbe22440e49020da25d0bbc252a2b0a8f7258f11b6a7e73afa"
+    "fileHash": "sha256-1abd7cf35f127626e0eaf7165448a663ede2a0ba0fef23ccda7ff3c6ff0a556f"
   },
   {
     "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/HDFilmizleInk.cs3",
