@@ -1,15 +1,15 @@
 [
   {
-    "name": "Birdirbir IPTV",
+    "name": "v10 IPTV",
     "internalName": "BirdirbirIPTV",
     "version": 1,
-    "description": "Birdirbir IPTV - Türk Spor (beIN, S Sport, Tivibu), Türk Ulusal, Haber, Belgesel & Çocuk ve Dünya Spor Kanalları (Sky, TNT, ESPN, Canal+, DAZN, Polsat, Ziggo)",
+    "description": "v10 IPTV - Türk Spor (beIN, S Sport, Tivibu), Türk Ulusal, Haber, Belgesel & Çocuk ve Dünya Spor Kanalları (Sky, TNT, ESPN, Canal+, DAZN, Polsat, Ziggo)",
     "authors": [
       "Wiojelt"
     ],
     "repositoryUrl": "https://github.com/Wiojelt/test",
     "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/BirdirbirIPTV.cs3",
-    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/builds/icon.gif",
+    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/builds/icon.png",
     "tvTypes": [
       "Live"
     ],
