@@ -24,14 +24,14 @@
   {
     "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/DiziAsya.cs3",
     "status": 3,
-    "version": 1,
+    "version": 2,
     "name": "DiziAsya",
     "internalName": "DiziAsya",
     "authors": [
       "Wiojelt"
     ],
     "description": "DiziAsya · Kore, Japon ve Çin Dizileri & Asya Sineması (diziasya.com)",
-    "fileSize": 39218,
+    "fileSize": 39720,
     "repositoryUrl": "https://github.com/Wiojelt/test",
     "language": "tr",
     "tvTypes": [
@@ -41,6 +41,28 @@
     ],
     "iconUrl": "https://diziasya.com/apple-touch-icon.png",
     "apiVersion": 1,
-    "fileHash": "sha256-d261d8ee6e56d5b7473c549b4abea300aae584e4fa9313be706678b948f9c8f7"
+    "fileHash": "sha256-e3ae0b31e07105c03c765ee1f0f994ce7763c6a95253fb73a3b6223861f7e507"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/Dmax.cs3",
+    "status": 3,
+    "version": 1,
+    "name": "DMAX",
+    "internalName": "Dmax",
+    "authors": [
+      "Wiojelt"
+    ],
+    "description": "DMAX · Belgesel, Macera, Canlı TV & Popüler Programlar (dmax.com.tr)",
+    "fileSize": 34326,
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "language": "tr",
+    "tvTypes": [
+      "Documentary",
+      "TvSeries",
+      "Live"
+    ],
+    "iconUrl": "https://img-dmax.mncdn.com/dmaxcomtr_logo.png",
+    "apiVersion": 1,
+    "fileHash": "sha256-e5a69370422ab89926de013af794d6eb74816591969b3005ae51e48867b80584"
   }
 ]
