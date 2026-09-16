@@ -24,14 +24,14 @@
   {
     "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/DiziAsya.cs3",
     "status": 3,
-    "version": 5,
+    "version": 6,
     "name": "DiziAsya",
     "internalName": "DiziAsya",
     "authors": [
       "Wiojelt"
     ],
     "description": "DiziAsya · Kore, Japon ve Çin Dizileri & Asya Sineması (diziasya.com)",
-    "fileSize": 43537,
+    "fileSize": 45852,
     "repositoryUrl": "https://github.com/Wiojelt/test",
     "language": "tr",
     "tvTypes": [
@@ -41,7 +41,7 @@
     ],
     "iconUrl": "https://diziasya.com/apple-touch-icon.png",
     "apiVersion": 1,
-    "fileHash": "sha256-e82fe3a6350a19c28a7f8b53fccdb1bd1200c2787df0eca254ef7418394ad97a"
+    "fileHash": "sha256-4e329ed3345911405d6d61e8a1ffe6ac524aa9b5355a6190e0a9689a3096d517"
   },
   {
     "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/Dmax.cs3",
