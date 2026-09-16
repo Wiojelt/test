@@ -2,22 +2,45 @@
   {
     "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/CineCat.cs3",
     "status": 3,
-    "version": 1,
+    "version": 2,
     "name": "CineCat",
     "internalName": "CineCat",
     "authors": [
       "Wiojelt"
     ],
     "description": "Cinecat · Dizi & Film Portalı (cinecat.eu)",
-    "fileSize": 34215,
+    "fileSize": 750628,
     "repositoryUrl": "https://github.com/Wiojelt/test",
-    "language": "tr",
+    "language": "all",
     "tvTypes": [
       "Movie",
-      "TvSeries"
+      "TvSeries",
+      "Anime"
     ],
     "iconUrl": "https://cinecat.eu/android-chrome-192x192.png?v=3",
     "apiVersion": 1,
-    "fileHash": "sha256-e335f663b07c36e73baffa484f69ecc4ba793b3d67533147104631a88c8fc7b8"
+    "fileHash": "sha256-2feb1408481e38ad07275086af6a770301afd34583e27bda9376de8201d455e4"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/DiziAsya.cs3",
+    "status": 3,
+    "version": 1,
+    "name": "DiziAsya",
+    "internalName": "DiziAsya",
+    "authors": [
+      "Wiojelt"
+    ],
+    "description": "DiziAsya · Kore, Japon ve Çin Dizileri & Asya Sineması (diziasya.com)",
+    "fileSize": 39218,
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "language": "tr",
+    "tvTypes": [
+      "AsianDrama",
+      "TvSeries",
+      "Movie"
+    ],
+    "iconUrl": "https://diziasya.com/apple-touch-icon.png",
+    "apiVersion": 1,
+    "fileHash": "sha256-d261d8ee6e56d5b7473c549b4abea300aae584e4fa9313be706678b948f9c8f7"
   }
 ]
