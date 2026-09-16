@@ -1,22 +1,24 @@
 [
     {
-        "name": "v10 IPTV",
-        "internalName": "BirdirbirIPTV",
-        "version": 1,
-        "description": "v10 IPTV - Türk Spor (beIN, S Sport, Tivibu), Türk Ulusal, Haber, Belgesel & Çocuk ve Dünya Spor Kanalları (Sky, TNT, ESPN, Canal+, DAZN, Polsat, Ziggo)",
+        "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/InatBox.cs3",
+        "status": 1,
+        "version": 59,
+        "name": "InatBox",
+        "internalName": "InatBox",
         "authors": [
             "Wiojelt"
         ],
+        "description": "İnat Box - Canlı TV, Spor, Film ve Dizi",
+        "fileSize": 49715,
         "repositoryUrl": "https://github.com/Wiojelt/test",
-        "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/BirdirbirIPTV.cs3",
-        "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/builds/icon.png",
+        "language": "tr",
         "tvTypes": [
+            "Movie",
+            "TvSeries",
             "Live"
         ],
-        "language": "tr",
-        "status": 3,
-        "filesize": 45438,
-        "fileSize": 68841,
-        "fileHash": "sha256-0546e199b22f28a305aea257e0780f687d47c4f77ccd00040f495f78536b11c8"
+        "iconUrl": "https://raw.githubusercontent.com/Wiojelt/TurkSpor/main/assets/providers/InatBox.webp",
+        "apiVersion": 1,
+        "fileHash": "sha256-40af752b91c04549bf7785bf5fc523b975b79af1b1f3477803c30c78dd36e664"
     }
 ]
