@@ -1,9 +1,9 @@
 {
-  "name": "Wiojelt Test Deposu",
-  "description": "Test Eklenti Deposu",
+  "name": "Test Deposu",
+  "description": "Test Deposu",
   "manifestVersion": 1,
   "pluginLists": [
-    "https://raw.githubusercontent.com/Wiojelt/test/builds/plugins.json?t=1789518825"
+    "https://raw.githubusercontent.com/Wiojelt/test/builds/plugins.json?t=1789519527"
   ],
   "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/builds/icon.gif"
 }
