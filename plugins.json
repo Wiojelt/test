@@ -1,1 +1,23 @@
-[]
+[
+  {
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/CineCat.cs3",
+    "status": 3,
+    "version": 1,
+    "name": "CineCat",
+    "internalName": "CineCat",
+    "authors": [
+      "Wiojelt"
+    ],
+    "description": "Cinecat · Dizi & Film Portalı (cinecat.eu)",
+    "fileSize": 34215,
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "language": "tr",
+    "tvTypes": [
+      "Movie",
+      "TvSeries"
+    ],
+    "iconUrl": "https://cinecat.eu/android-chrome-192x192.png?v=3",
+    "apiVersion": 1,
+    "fileHash": "sha256-e335f663b07c36e73baffa484f69ecc4ba793b3d67533147104631a88c8fc7b8"
+  }
+]
