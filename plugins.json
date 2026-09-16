@@ -64,5 +64,167 @@
     "iconUrl": "https://img-dmax.mncdn.com/dmaxcomtr_logo.png",
     "apiVersion": 1,
     "fileHash": "sha256-26d6dd49eaabbf8f463c88d409ca084a6b37e458cba9331cc68490a57ef500ea"
+  },
+  {
+    "name": "BirAsyaDizi",
+    "internalName": "BirAsyaDizi",
+    "authors": [
+      "Wiojelt"
+    ],
+    "description": "Asya'nın En Ünlü Dizilerini en yüksek çözünürlükte HD ve kesintisiz izleyin, kaliteli Asya film ve dizilerinin keyfini sürün.",
+    "fileSize": 13959,
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/BirAsyaDizi.cs3",
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "language": "tr",
+    "tvTypes": [
+      "AsianDrama"
+    ],
+    "iconUrl": "https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.birasyadizi.com/&size=16",
+    "apiVersion": 1,
+    "version": 1,
+    "status": 1,
+    "fileHash": "sha256-c2f277fd95a24d4348eda8a6910712685c018b8c9d43c7c69e3314342cca568c"
+  },
+  {
+    "name": "OpenAnime",
+    "internalName": "OpenAnime",
+    "authors": [
+      "Wiojelt"
+    ],
+    "description": "OpenAnime - Açık Kaynak Anime Platformu.",
+    "fileSize": 17257,
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/OpenAnime.cs3",
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "language": "tr",
+    "tvTypes": [
+      "Anime"
+    ],
+    "iconUrl": "https://www.google.com/s2/favicons?domain=openani.me&sz=%size%",
+    "apiVersion": 1,
+    "version": 1,
+    "status": 1,
+    "fileHash": "sha256-9d95d1e9518638ba7bfde5a18452cea54252c842e8bf1ab1cc9198128a1dcfc4"
+  },
+  {
+    "name": "UltraFilmizle",
+    "internalName": "UltraFilmizle",
+    "authors": [
+      "Wiojelt"
+    ],
+    "description": "UltraFilmizle - 1080p ve 4K yerli/yabancı film izleme.",
+    "fileSize": 19062,
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/UltraFilmizle.cs3",
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "language": "tr",
+    "tvTypes": [
+      "Movie",
+      "AsianDrama"
+    ],
+    "iconUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://ultrafilmizle.org/&size=128",
+    "apiVersion": 1,
+    "version": 1,
+    "status": 1,
+    "fileHash": "sha256-82198996863da393e3b279da57bae8adad970e3cc9ba6884f1c727133a109ebd"
+  },
+  {
+    "name": "DramaDizilerim",
+    "internalName": "DramaDizilerim",
+    "authors": [
+      "Wiojelt"
+    ],
+    "description": "En popüler NetShort, DramaBox, ReelShort ve FreeReels kısa dizilerini Türkçe dublaj ve altyazı seçenekleriyle Full HD kalitede ücretsiz ve reklamsız izleyin.",
+    "fileSize": 33240,
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/DramaDizilerim.cs3",
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "language": "tr",
+    "tvTypes": [
+      "TvSeries"
+    ],
+    "iconUrl": "https://www.google.com/s2/favicons?domain=https://dramadizilerim.com&sz=%size%",
+    "apiVersion": 1,
+    "version": 1,
+    "status": 1,
+    "fileHash": "sha256-fae3799d735936a9788ef0c7511967db96fb61fc8a9ba43e3a8442bc67324318"
+  },
+  {
+    "name": "AnimeAV",
+    "internalName": "AnimeAV",
+    "authors": [
+      "Wiojelt"
+    ],
+    "description": "Disfruta de los últimos episodios y animes agregados en HD y Sub Español. Miles de series, películas y OVAs disponibles para ver online totalmente gratis.",
+    "fileSize": 27944,
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/AnimeAV.cs3",
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "language": "mx",
+    "tvTypes": [
+      "Anime"
+    ],
+    "iconUrl": "https://www.google.com/s2/favicons?sz=64&domain=animeav1.com",
+    "apiVersion": 1,
+    "version": 1,
+    "status": 1,
+    "fileHash": "sha256-39f41c6c6f3923d7d095934f85528971ebd31df5d58c12d8d19f2d7731b5da50"
+  },
+  {
+    "name": "Animejara",
+    "internalName": "Animejara",
+    "authors": [
+      "Wiojelt"
+    ],
+    "description": "Ver anime online, subtitulado y/o doblado al español latino HD y completamente gratis. Aquí podrás ver y descargar todas tus series preferidas sin anuncios.",
+    "fileSize": 21514,
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/Animejara.cs3",
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "language": "mx",
+    "tvTypes": [
+      "Anime",
+      "AnimeMovie"
+    ],
+    "iconUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://ww1.henaojara.net/&size=128",
+    "apiVersion": 1,
+    "version": 1,
+    "status": 1,
+    "fileHash": "sha256-953a6a40f5355afd85f10f1e1e279c9bfb2a4cd123f631036af771a75374f7ae"
+  },
+  {
+    "name": "AnimeWorld",
+    "internalName": "AnimeWorld",
+    "authors": [
+      "Wiojelt"
+    ],
+    "description": "Scopri il nostro Archivio di Anime in Streaming Sub ITA e ITA. Guarda in Streaming o effettua il Download di migliaia di serie animate sempre aggiornate e in alta qualità, disponibili su PC, console, tablet, smartphone ed altri dispositivi.",
+    "fileSize": 14669,
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/AnimeWorld.cs3",
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "language": "it",
+    "tvTypes": [
+      "Anime"
+    ],
+    "iconUrl": "https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://www.animeworld.ac&size=128",
+    "apiVersion": 1,
+    "version": 1,
+    "status": 1,
+    "fileHash": "sha256-a2af4b38e761d5d36682c3f06919378f9d0cd6d20de88dd79be07f0ebcc8acda"
+  },
+  {
+    "name": "AnimeYTX",
+    "internalName": "AnimeYTX",
+    "authors": [
+      "Wiojelt"
+    ],
+    "description": "Únete a la familia de AnimeYT.es y disfruta del anime online gratis. Disfruta con tus amigos del contenido más popular de la animación japonesa.",
+    "fileSize": 43586,
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/AnimeYTX.cs3",
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "language": "mx",
+    "tvTypes": [
+      "Anime"
+    ],
+    "iconUrl": "https://t1.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://animeyt.cc&size=128",
+    "apiVersion": 1,
+    "version": 1,
+    "status": 1,
+    "fileHash": "sha256-2d1b99418f00eeff2d0bd358f93219df4b9ec10e9402b532604d26674630fa2d"
   }
 ]
