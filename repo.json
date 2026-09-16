@@ -1,9 +1,9 @@
 {
-    "name": "Birdirbir IPTV",
-    "description": "Birdirbir IPTV Eklenti Deposu",
-    "manifestVersion": 1,
-    "pluginLists": [
-        "https://raw.githubusercontent.com/Wiojelt/test/builds/plugins.json?v=1789514567"
-    ],
-    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/builds/icon.gif"
+  "name": "Birdirbir IPTV",
+  "description": "Birdirbir IPTV Eklenti Deposu",
+  "manifestVersion": 1,
+  "pluginLists": [
+    "https://raw.githubusercontent.com/Wiojelt/test/builds/plugins.json?t=1789517203"
+  ],
+  "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/builds/icon.gif"
 }
