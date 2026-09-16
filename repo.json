@@ -1,6 +1,6 @@
 {
-  "name": "Birdirbir IPTV",
-  "description": "Birdirbir IPTV Resmi Eklenti Deposu - Canlı TV & Spor Kanalları",
+  "name": "Test Deposu",
+  "description": "Test Deposu",
   "manifestVersion": 1,
   "pluginLists": [
     "https://raw.githubusercontent.com/Wiojelt/test/builds/plugins.json"

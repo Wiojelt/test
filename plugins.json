@@ -1,0 +1,24 @@
+[
+  {
+    "name": "TurkAnime",
+    "internalName": "TurkAnime",
+    "version": 8,
+    "description": "TurkAnime · Türkçe Altyazılı & Dublajlı Anime Portalı (Film ve Dizi Destekli)",
+    "authors": [
+      "Wiojelt"
+    ],
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/TurkAnime.cs3",
+    "iconUrl": "https://www.google.com/s2/favicons?domain=www.turkanime.tv&sz=128",
+    "tvTypes": [
+      "Anime",
+      "Movie",
+      "TvSeries"
+    ],
+    "language": "tr",
+    "status": 3,
+    "fileSize": 58579,
+    "fileHash": "sha256-9860a9a431ccab3d97e892699bec5b8a36ea5d313cf1034a67d3790a36de39a9",
+    "apiVersion": 1
+  }
+]
