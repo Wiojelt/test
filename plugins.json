@@ -24,14 +24,14 @@
   {
     "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/DiziAsya.cs3",
     "status": 3,
-    "version": 3,
+    "version": 4,
     "name": "DiziAsya",
     "internalName": "DiziAsya",
     "authors": [
       "Wiojelt"
     ],
     "description": "DiziAsya · Kore, Japon ve Çin Dizileri & Asya Sineması (diziasya.com)",
-    "fileSize": 39766,
+    "fileSize": 41053,
     "repositoryUrl": "https://github.com/Wiojelt/test",
     "language": "tr",
     "tvTypes": [
@@ -41,19 +41,19 @@
     ],
     "iconUrl": "https://diziasya.com/apple-touch-icon.png",
     "apiVersion": 1,
-    "fileHash": "sha256-70859ce813a60497aceb8a85902c3ee11a238a105bdbe8f9c3c029cc3d6eda81"
+    "fileHash": "sha256-db4712a7d27030bfb503736305748840d0b2472a4c594687eaf25b335a7e8ece"
   },
   {
     "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/Dmax.cs3",
     "status": 3,
-    "version": 2,
+    "version": 3,
     "name": "DMAX",
     "internalName": "Dmax",
     "authors": [
       "Wiojelt"
     ],
     "description": "DMAX · Belgesel, Macera, Canlı TV & Popüler Programlar (dmax.com.tr)",
-    "fileSize": 34524,
+    "fileSize": 36983,
     "repositoryUrl": "https://github.com/Wiojelt/test",
     "language": "tr",
     "tvTypes": [
@@ -63,6 +63,6 @@
     ],
     "iconUrl": "https://img-dmax.mncdn.com/dmaxcomtr_logo.png",
     "apiVersion": 1,
-    "fileHash": "sha256-841dea4dffe2a9ebedf5085655d39c28aa2276c4efe61ebae0fd7eaa72e82b7b"
+    "fileHash": "sha256-26d6dd49eaabbf8f463c88d409ca084a6b37e458cba9331cc68490a57ef500ea"
   }
 ]
