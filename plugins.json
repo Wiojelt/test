@@ -20,5 +20,89 @@
     "fileSize": 58926,
     "fileHash": "sha256-7c2d987f4df87e064114d3f2afc4878839bed6dd58ea1d72507dd62a38cae2fe",
     "apiVersion": 1
+  },
+  {
+    "name": "BasketballReplays",
+    "internalName": "BasketballReplays",
+    "version": 2,
+    "description": "BasketballReplays · Maç tekrarları ve basketbol özetleri",
+    "authors": [
+      "Wiojelt"
+    ],
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/BasketballReplays.cs3",
+    "iconUrl": "https://www.google.com/s2/favicons?domain=basketballreplays.net&sz=128",
+    "tvTypes": [
+      "TvSeries",
+      "Others"
+    ],
+    "language": "tr",
+    "status": 3,
+    "fileSize": 106852,
+    "fileHash": "sha256-e2b599c5d992ea71566897f7df96921cbf9e8bd2913b8084ce7c25fe70cde0b5",
+    "apiVersion": 1
+  },
+  {
+    "name": "BasketballVideo",
+    "internalName": "BasketballVideo",
+    "version": 2,
+    "description": "BasketballVideo · Güncel basketbol maç kayıtları ve tekrarları",
+    "authors": [
+      "Wiojelt"
+    ],
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/BasketballVideo.cs3",
+    "iconUrl": "https://www.google.com/s2/favicons?domain=basketball-video.com&sz=128",
+    "tvTypes": [
+      "TvSeries",
+      "Others"
+    ],
+    "language": "tr",
+    "status": 3,
+    "fileSize": 109517,
+    "fileHash": "sha256-75c900d980c2cdce4f86f0f5b556ead8834e43671e6b394d012d278a1e247ff8",
+    "apiVersion": 1
+  },
+  {
+    "name": "DramaDizilerim",
+    "internalName": "DramaDizilerim",
+    "version": 2,
+    "description": "DramaDizilerim · Asya ve Uzak Doğu Dizileri (Kore, Çin, Japon)",
+    "authors": [
+      "Wiojelt"
+    ],
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/DramaDizilerim.cs3",
+    "iconUrl": "https://www.google.com/s2/favicons?domain=dramadizilerim.com&sz=128",
+    "tvTypes": [
+      "AsianDrama",
+      "TvSeries"
+    ],
+    "language": "tr",
+    "status": 3,
+    "fileSize": 18640,
+    "fileHash": "sha256-65df70591e3d26770a3af7efe12eab57baa43a3b229fb564374c8e31e706d01a",
+    "apiVersion": 1
+  },
+  {
+    "name": "NetShort",
+    "internalName": "NetShort",
+    "version": 2,
+    "description": "NetShort · Kısa Dizi & Mini Drama Platformu (Türkçe Altyazılı)",
+    "authors": [
+      "Wiojelt"
+    ],
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/NetShort.cs3",
+    "iconUrl": "https://www.google.com/s2/favicons?domain=netshort.com&sz=128",
+    "tvTypes": [
+      "AsianDrama",
+      "TvSeries"
+    ],
+    "language": "tr",
+    "status": 3,
+    "fileSize": 29792,
+    "fileHash": "sha256-cbb16f1fdb7534a81cb48d17e3f36a357dd413280f8fc75ef205931a7a10cb7c",
+    "apiVersion": 1
   }
 ]
