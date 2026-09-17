@@ -45,7 +45,7 @@
   {
     "name": "BasketballVideo",
     "internalName": "BasketballVideo",
-    "version": 2,
+    "version": 3,
     "description": "BasketballVideo · Güncel basketbol maç kayıtları ve tekrarları",
     "authors": [
       "Wiojelt"
@@ -59,8 +59,8 @@
     ],
     "language": "tr",
     "status": 3,
-    "fileSize": 109517,
-    "fileHash": "sha256-75c900d980c2cdce4f86f0f5b556ead8834e43671e6b394d012d278a1e247ff8",
+    "fileSize": 112945,
+    "fileHash": "sha256-40829311b5e8065fd35383843cb0f37d991bf7e4ab7fe9368fa44039c8295a29",
     "apiVersion": 1
   },
   {
@@ -130,7 +130,7 @@
   {
     "name": "BingeBang",
     "internalName": "BingeBang",
-    "version": 1,
+    "version": 2,
     "description": "BingeBang · Yüksek Kaliteli Film & Dizi Platformu (bingebang.tv)",
     "authors": [
       "Wiojelt"
@@ -144,8 +144,8 @@
     ],
     "language": "all",
     "status": 3,
-    "fileSize": 71407,
-    "fileHash": "sha256-108b831b7431e7915f3ce9339dafb3cbcb3ca0e1aab60d0890cc19088173462d",
+    "fileSize": 73502,
+    "fileHash": "sha256-dd6bbc72a37ff6301339dd7e4822490631ca58efa61a22ac1dc8198d394ab809",
     "apiVersion": 1
   }
 ]
