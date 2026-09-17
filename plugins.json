@@ -125,7 +125,27 @@
     "status": 3,
     "fileSize": 75240,
     "fileHash": "sha256-7755b76291199d5a0d66c84d1eb392a101216d20e02e33ccb63bc4a42ea52494",
-    "apiVersion": 1,
-    "hash": "c6faabb1c13b6daedbf9d22c8dad71a6accb27823d4b9df71d44de024b7c5b24"
+    "apiVersion": 1
+  },
+  {
+    "name": "BingeBang",
+    "internalName": "BingeBang",
+    "version": 1,
+    "description": "BingeBang · Yüksek Kaliteli Film & Dizi Platformu (bingebang.tv)",
+    "authors": [
+      "Wiojelt"
+    ],
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/BingeBang.cs3",
+    "iconUrl": "https://bingebang.tv/favicon.ico",
+    "tvTypes": [
+      "Movie",
+      "TvSeries"
+    ],
+    "language": "all",
+    "status": 3,
+    "fileSize": 71407,
+    "fileHash": "sha256-108b831b7431e7915f3ce9339dafb3cbcb3ca0e1aab60d0890cc19088173462d",
+    "apiVersion": 1
   }
 ]
