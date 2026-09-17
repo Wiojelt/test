@@ -104,5 +104,27 @@
     "fileSize": 29792,
     "fileHash": "sha256-cbb16f1fdb7534a81cb48d17e3f36a357dd413280f8fc75ef205931a7a10cb7c",
     "apiVersion": 1
+  },
+  {
+    "name": "DiziAsya",
+    "internalName": "DiziAsya",
+    "version": 7,
+    "description": "DiziAsya · Kore, Japon ve Çin Dizileri & Asya Sineması (diziasya.com)",
+    "authors": [
+      "Wiojelt"
+    ],
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/DiziAsya.cs3",
+    "iconUrl": "https://diziasya.com/apple-touch-icon.png",
+    "tvTypes": [
+      "AsianDrama",
+      "TvSeries",
+      "Movie"
+    ],
+    "language": "tr",
+    "status": 3,
+    "fileSize": 74413,
+    "fileHash": "sha256-7755b76291199d5a0d66c84d1eb392a101216d20e02e33ccb63bc4a42ea52494",
+    "apiVersion": 1
   }
 ]
