@@ -2,7 +2,7 @@
   {
     "name": "Mapple",
     "internalName": "Mapple",
-    "version": 2,
+    "version": 3,
     "description": "Mapple · Film, Dizi & Anime Portalı (mapple.fun). Çoklu kaynak ve 4K/FHD HLS akışları.",
     "authors": [
       "Wiojelt"
@@ -17,8 +17,8 @@
     ],
     "language": "all",
     "status": 3,
-    "fileSize": 81973,
-    "fileHash": "sha256-7b1da15b5bb44e05075a25453d298b81504a4089b3413669d1fb4a9726c3da0d",
+    "fileSize": 83015,
+    "fileHash": "sha256-69395e8d129c80503629f8840e659bb0cd3761457f05ca19479d3f2aff8bb26f",
     "apiVersion": 1
   },
   {
