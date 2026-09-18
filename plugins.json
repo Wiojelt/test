@@ -1,5 +1,27 @@
 [
   {
+    "name": "Mapple",
+    "internalName": "Mapple",
+    "version": 1,
+    "description": "Mapple · Film, Dizi & Anime Portalı (mapple.fun). Çoklu kaynak ve 4K/FHD HLS akışları.",
+    "authors": [
+      "Wiojelt"
+    ],
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/Mapple.cs3",
+    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/builds/logos/mapple.png",
+    "tvTypes": [
+      "Movie",
+      "TvSeries",
+      "Anime"
+    ],
+    "language": "all",
+    "status": 3,
+    "fileSize": 79950,
+    "fileHash": "sha256-04b19d48a5547e4f58eb7c963ab8f53bde6d176200a0519ede9920086d4bb0a6",
+    "apiVersion": 1
+  },
+  {
     "name": "TurkAnime",
     "internalName": "TurkAnime",
     "version": 8,
