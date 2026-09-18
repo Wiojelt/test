@@ -21,7 +21,6 @@
     "fileHash": "sha256-7c2d987f4df87e064114d3f2afc4878839bed6dd58ea1d72507dd62a38cae2fe",
     "apiVersion": 1
   },
-
   {
     "name": "DramaDizilerim",
     "internalName": "DramaDizilerim",
@@ -83,7 +82,8 @@
     "language": "tr",
     "status": 3,
     "fileSize": 75240,
-    "fileHash": "sha256-7755b76291199d5a0d66c84d1eb392a101216d20e02e33ccb63bc4a42ea52494",
-    "apiVersion": 1
+    "fileHash": "sha256-c6faabb1c13b6daedbf9d22c8dad71a6accb27823d4b9df71d44de024b7c5b24",
+    "apiVersion": 1,
+    "hash": "c6faabb1c13b6daedbf9d22c8dad71a6accb27823d4b9df71d44de024b7c5b24"
   }
 ]
