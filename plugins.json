@@ -9,7 +9,7 @@
       "Wiojelt"
     ],
     "description": "Eklenti Oylaması Pop-up Test Eklentisi (Nothing OS Translucent Anket)",
-    "fileSize": 53162,
+    "fileSize": 57407,
     "repositoryUrl": "https://github.com/Wiojelt/test",
     "language": "tr",
     "tvTypes": [
@@ -17,7 +17,7 @@
     ],
     "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/builds/icon.gif",
     "apiVersion": 1,
-    "fileHash": "sha256-02e1f6a365136bf282b1a145cdf99b3529d6a9114f409701ceb6d68083fd8f1c"
+    "fileHash": "sha256-754566a299e71494923f4c3648db57a0a5497ab2de2f289ab831173fe322cba6"
   },
   {
     "name": "WioSinema",
@@ -37,8 +37,8 @@
     ],
     "language": "tr",
     "status": 3,
-    "fileSize": 2018960,
-    "fileHash": "sha256-4695bfa9ed68993d6f5ba434c8e57d0a9940a29a059898a918e186b3260a1f7b",
+    "fileSize": 2021051,
+    "fileHash": "sha256-deb68c871f47d81ead09a0b285e90b0c2ee69b37ec4ffe71e368dc1e4938e577",
     "apiVersion": 1
   }
 ]
