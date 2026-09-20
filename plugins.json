@@ -9,7 +9,7 @@
       "Wiojelt"
     ],
     "description": "Eklenti Oylaması Pop-up Test Eklentisi (10s Geri Sayım & Yönlendirme)",
-    "fileSize": 48507,
+    "fileSize": 50550,
     "repositoryUrl": "https://github.com/Wiojelt/test",
     "language": "tr",
     "tvTypes": [
@@ -17,6 +17,6 @@
     ],
     "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/builds/icon.gif",
     "apiVersion": 1,
-    "fileHash": "sha256-26472eabf2d684ab41a9baed2b5baa7f4a49b3515c6de26e96cab256929328e5"
+    "fileHash": "sha256-fa14edf6a4504790746e0d02c9d314cfcd11247786b5063ba57f947c15e6cba8"
   }
 ]
