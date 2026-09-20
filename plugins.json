@@ -8,8 +8,8 @@
     "authors": [
       "Wiojelt"
     ],
-    "description": "Eklenti Oylaması Pop-up Test Eklentisi (10s Geri Sayım & Yönlendirme)",
-    "fileSize": 51216,
+    "description": "Eklenti Oylaması Pop-up Test Eklentisi (Nothing OS Translucent Anket)",
+    "fileSize": 51682,
     "repositoryUrl": "https://github.com/Wiojelt/test",
     "language": "tr",
     "tvTypes": [
@@ -17,6 +17,28 @@
     ],
     "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/builds/icon.gif",
     "apiVersion": 1,
-    "fileHash": "sha256-2c1fdc2234f97a8efb7b2dcf2f7638f37dff97dc780c42760756124501f8d1e7"
+    "fileHash": "sha256-c334b739b947d3adfb6b12d7a38812c479c3e940105deb60696b17a518b201d9"
+  },
+  {
+    "name": "WioSinema",
+    "internalName": "WioSinema",
+    "version": 27,
+    "description": "Tüm Türkçe film ve dizi sağlayıcıları tek eklentide. TMDB katalog ve çoklu kaynak akışı.",
+    "authors": [
+      "Wiojelt"
+    ],
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/WioSinema.cs3",
+    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/WioSinema/main/assets/logo.png",
+    "tvTypes": [
+      "Movie",
+      "TvSeries",
+      "Anime"
+    ],
+    "language": "tr",
+    "status": 3,
+    "fileSize": 2012529,
+    "fileHash": "sha256-436e0b71f14d824ac5bbd2041ffa66a0c0a9542eea7fa012cbb7d0a25dcda796",
+    "apiVersion": 1
   }
 ]
