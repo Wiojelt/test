@@ -9,7 +9,7 @@
       "Wiojelt"
     ],
     "description": "Eklenti Oylaması Pop-up Test Eklentisi (Nothing OS Translucent Anket)",
-    "fileSize": 57407,
+    "fileSize": 58476,
     "repositoryUrl": "https://github.com/Wiojelt/test",
     "language": "tr",
     "tvTypes": [
@@ -17,6 +17,6 @@
     ],
     "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/builds/icon.gif",
     "apiVersion": 1,
-    "fileHash": "sha256-754566a299e71494923f4c3648db57a0a5497ab2de2f289ab831173fe322cba6"
+    "fileHash": "sha256-db7ed0e365bc8a2963a4ff5a6a7ba2470406281d461d5e6336ab1319029d15c2"
   }
 ]
