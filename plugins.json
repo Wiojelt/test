@@ -1,1 +1,22 @@
-[]
+[
+  {
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/WioPollTest.cs3",
+    "status": 3,
+    "version": 1,
+    "name": "WioPollTest",
+    "internalName": "WioPollTest",
+    "authors": [
+      "Wiojelt"
+    ],
+    "description": "Eklenti Oylaması Pop-up Test Eklentisi (10s Geri Sayım & Yönlendirme)",
+    "fileSize": 48507,
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "language": "tr",
+    "tvTypes": [
+      "Others"
+    ],
+    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/builds/icon.gif",
+    "apiVersion": 1,
+    "fileHash": "sha256-26472eabf2d684ab41a9baed2b5baa7f4a49b3515c6de26e96cab256929328e5"
+  }
+]
