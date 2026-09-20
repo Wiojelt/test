@@ -18,27 +18,5 @@
     "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/builds/icon.gif",
     "apiVersion": 1,
     "fileHash": "sha256-754566a299e71494923f4c3648db57a0a5497ab2de2f289ab831173fe322cba6"
-  },
-  {
-    "name": "WioSinema",
-    "internalName": "WioSinema",
-    "version": 27,
-    "description": "Tüm Türkçe film ve dizi sağlayıcıları tek eklentide. TMDB katalog ve çoklu kaynak akışı.",
-    "authors": [
-      "Wiojelt"
-    ],
-    "repositoryUrl": "https://github.com/Wiojelt/test",
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/WioSinema.cs3",
-    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/WioSinema/main/assets/logo.png",
-    "tvTypes": [
-      "Movie",
-      "TvSeries",
-      "Anime"
-    ],
-    "language": "tr",
-    "status": 3,
-    "fileSize": 2023492,
-    "fileHash": "sha256-835fa8e8d5fedaaa7222d6f33857db83bd7ff41250cab9a318de7c87e0de2a5d",
-    "apiVersion": 1
   }
 ]
