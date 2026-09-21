@@ -22,14 +22,14 @@
   {
     "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/PatronHD.cs3",
     "status": 3,
-    "version": 7,
+    "version": 8,
     "name": "PatronHD",
     "internalName": "PatronHD",
     "authors": [
       "Wiojelt"
     ],
     "description": "🔴 Kaynak: PatronHD / Patronspor · Emeği için teşekkürler ♥ · @wiojelt",
-    "fileSize": 167009,
+    "fileSize": 167509,
     "repositoryUrl": "https://github.com/Wiojelt/test",
     "language": "tr",
     "tvTypes": [
@@ -37,6 +37,6 @@
     ],
     "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/builds/icon.gif",
     "apiVersion": 1,
-    "fileHash": "sha256-0f98d2baa5f962a0fd98064704dac7f009deeff7dbd94908706638ba1bbdc00e"
+    "fileHash": "sha256-bb5b4da55c9fc148b0c8f38ffd4f404cdb9084178dba88a6beda37e904571ce2"
   }
 ]
