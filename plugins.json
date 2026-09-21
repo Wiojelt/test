@@ -1,25 +1,5 @@
 [
   {
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/WioPollTest.cs3",
-    "status": 3,
-    "version": 1,
-    "name": "WioPollTest",
-    "internalName": "WioPollTest",
-    "authors": [
-      "Wiojelt"
-    ],
-    "description": "Eklenti Oylaması Pop-up Test Eklentisi (Nothing OS Translucent Anket)",
-    "fileSize": 58476,
-    "repositoryUrl": "https://github.com/Wiojelt/test",
-    "language": "tr",
-    "tvTypes": [
-      "Others"
-    ],
-    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/builds/icon.gif",
-    "apiVersion": 1,
-    "fileHash": "sha256-db7ed0e365bc8a2963a4ff5a6a7ba2470406281d461d5e6336ab1319029d15c2"
-  },
-  {
     "url": "https://raw.githubusercontent.com/Wiojelt/test/0360803/PatronHD.cs3",
     "status": 3,
     "version": 14,
