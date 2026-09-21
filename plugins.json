@@ -42,7 +42,7 @@
   {
     "name": "WioDB",
     "internalName": "WioDB",
-    "version": 1,
+    "version": 2,
     "description": "WioDB - Doğrudan Cloudflare Gateway ve Özel DB Destekli Ultra Hızlı Oynatıcı",
     "authors": [
       "Wiojelt"
@@ -56,8 +56,8 @@
     ],
     "language": "tr",
     "status": 3,
-    "fileSize": 16912,
-    "fileHash": "sha256-68c0a4720259901b1ca76ab14d5def3ac5823f61cf9a9e74c9f7ef68935ee81f",
+    "fileSize": 16884,
+    "fileHash": "sha256-4b00b3fde802c45bc5739bce417ff59e322cf7b9419e088b055a722d321c6e98",
     "apiVersion": 1
   }
 ]
