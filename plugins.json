@@ -48,7 +48,7 @@
       "Wiojelt"
     ],
     "repositoryUrl": "https://github.com/Wiojelt/test",
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/WioDB.cs3",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/WioDB_v3.cs3",
     "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/builds/icon.gif",
     "tvTypes": [
       "Movie",
@@ -56,8 +56,8 @@
     ],
     "language": "tr",
     "status": 3,
-    "fileSize": 16884,
-    "fileHash": "sha256-4b00b3fde802c45bc5739bce417ff59e322cf7b9419e088b055a722d321c6e98",
+    "fileSize": 17087,
+    "fileHash": "sha256-37d73af338b4e6aab41cbf179a4f557a6d4c35ce4e4633ef260ee559523a277e",
     "apiVersion": 1
   }
 ]
