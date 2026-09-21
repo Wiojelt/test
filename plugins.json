@@ -1,24 +1,63 @@
 [
   {
-    "name": "TurkAnime",
-    "internalName": "TurkAnime",
-    "version": 8,
-    "description": "TurkAnime · Türkçe Altyazılı & Dublajlı Anime Portalı (Film ve Dizi Destekli)",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/WioPollTest.cs3",
+    "status": 3,
+    "version": 1,
+    "name": "WioPollTest",
+    "internalName": "WioPollTest",
+    "authors": [
+      "Wiojelt"
+    ],
+    "description": "Eklenti Oylaması Pop-up Test Eklentisi (Nothing OS Translucent Anket)",
+    "fileSize": 58476,
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "language": "tr",
+    "tvTypes": [
+      "Others"
+    ],
+    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/builds/icon.gif",
+    "apiVersion": 1,
+    "fileHash": "sha256-db7ed0e365bc8a2963a4ff5a6a7ba2470406281d461d5e6336ab1319029d15c2"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/PatronHD.cs3",
+    "status": 3,
+    "version": 11,
+    "name": "PatronHD",
+    "internalName": "PatronHD",
+    "authors": [
+      "Wiojelt"
+    ],
+    "description": "🔴 PatronHD canlı spor sağlayıcısı",
+    "fileSize": 95636,
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "language": "tr",
+    "tvTypes": [
+      "Live"
+    ],
+    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/builds/icon.gif",
+    "apiVersion": 1,
+    "fileHash": "sha256-6fad2f9b01317da128d78d97fd9d460a3d62cb8bfafb58ede0b99bc6d0cfc34b"
+  },
+  {
+    "name": "WioDB",
+    "internalName": "WioDB",
+    "version": 1,
+    "description": "WioDB - Doğrudan Cloudflare Gateway ve Özel DB Destekli Ultra Hızlı Oynatıcı",
     "authors": [
       "Wiojelt"
     ],
     "repositoryUrl": "https://github.com/Wiojelt/test",
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/TurkAnime.cs3",
-    "iconUrl": "https://www.google.com/s2/favicons?domain=www.turkanime.tv&sz=128",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/WioDB.cs3",
+    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/builds/icon.gif",
     "tvTypes": [
-      "Anime",
       "Movie",
       "TvSeries"
     ],
     "language": "tr",
     "status": 3,
-    "fileSize": 58579,
-    "fileHash": "sha256-9860a9a431ccab3d97e892699bec5b8a36ea5d313cf1034a67d3790a36de39a9",
+    "fileSize": 16912,
+    "fileHash": "sha256-68c0a4720259901b1ca76ab14d5def3ac5823f61cf9a9e74c9f7ef68935ee81f",
     "apiVersion": 1
   }
 ]
