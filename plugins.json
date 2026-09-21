@@ -37,8 +37,7 @@
     ],
     "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/builds/icon.gif",
     "apiVersion": 1,
-    "fileHash": "sha256-a272039baa19a15fe8424950762105b4ef4701f2a5e64de1fde0cf9b611562b2",
-    "filesize": 172272,
-    "hash": "82b5a4d798b75cf38ca866afbeef04a13754797d64b2c9868c81e874b26ce051"
+    "fileSize": 172272,
+    "fileHash": "sha256-82b5a4d798b75cf38ca866afbeef04a13754797d64b2c9868c81e874b26ce051"
   }
 ]
