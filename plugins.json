@@ -20,16 +20,16 @@
     "fileHash": "sha256-db7ed0e365bc8a2963a4ff5a6a7ba2470406281d461d5e6336ab1319029d15c2"
   },
   {
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/f7473d0/PatronHD.cs3",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/PatronHD.cs3",
     "status": 3,
-    "version": 13,
+    "version": 14,
     "name": "PatronHD",
     "internalName": "PatronHD",
     "authors": [
       "Wiojelt"
     ],
     "description": "🔴 PatronHD canlı kanallar ve bugünün maçları",
-    "fileSize": 102776,
+    "fileSize": 103069,
     "repositoryUrl": "https://github.com/Wiojelt/test",
     "language": "tr",
     "tvTypes": [
@@ -37,7 +37,7 @@
     ],
     "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/builds/icon.gif",
     "apiVersion": 1,
-    "fileHash": "sha256-0c006092c4d084f55d43e0669ac9273b4f4da3509cb960383ff6ba0d5ba92497"
+    "fileHash": "sha256-9f02cb624c7df4b31d4431b76f89e25b46a9da151d9ccae41772457acbe772bd"
   },
   {
     "name": "WioDB",
