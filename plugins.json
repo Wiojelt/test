@@ -22,13 +22,13 @@
   {
     "name": "WioDB",
     "internalName": "WioDB",
-    "version": 5,
+    "version": 8,
     "description": "WioDB - Doğrudan Cloudflare Gateway ve Özel DB Destekli Ultra Hızlı Oynatıcı",
     "authors": [
       "Wiojelt"
     ],
     "repositoryUrl": "https://github.com/Wiojelt/test",
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/WioDB_v5.cs3",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/WioDB_v8.cs3",
     "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/builds/icon.gif",
     "tvTypes": [
       "Movie",
@@ -36,8 +36,8 @@
     ],
     "language": "tr",
     "status": 3,
-    "fileSize": 19043,
-    "fileHash": "sha256-94341c454ae3369faf4cd06c6a392279fc3aeaab052ef8459b1bd421c30748c0",
+    "fileSize": 29491,
+    "fileHash": "sha256-ce90624e3632b14563c69354b66b54703d27a44b652cb8a8de308dc1e0f95ab3",
     "apiVersion": 1
   }
 ]
