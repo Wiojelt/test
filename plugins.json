@@ -9,7 +9,7 @@
       "Wiojelt"
     ],
     "description": "🔴 PatronHD canlı kanallar ve bugünün maçları",
-    "fileSize": 103069,
+    "fileSize": 167967,
     "repositoryUrl": "https://github.com/Wiojelt/test",
     "language": "tr",
     "tvTypes": [
@@ -17,7 +17,7 @@
     ],
     "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/builds/assets/providers/PatronHD.png",
     "apiVersion": 1,
-    "fileHash": "sha256-9f02cb624c7df4b31d4431b76f89e25b46a9da151d9ccae41772457acbe772bd"
+    "fileHash": "sha256-1b62b327427bbffda225b0896886404cde749a873e17ef0ca65369f4e89ebc93"
   },
   {
     "name": "WioDB",
