@@ -1,43 +1,22 @@
 [
   {
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/0360803/PatronHD.cs3",
-    "status": 3,
-    "version": 14,
-    "name": "PatronHD",
-    "internalName": "PatronHD",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/main/VionTV.cs3",
+    "status": 1,
+    "version": 1,
+    "name": "VİONTV",
+    "internalName": "VionTV",
     "authors": [
       "Wiojelt"
     ],
-    "description": "🔴 PatronHD canlı kanallar ve bugünün maçları",
-    "fileSize": 103069,
+    "description": "VİONTV canlı TV kanalları; kategori, arama ve kanal logolarıyla.",
+    "fileSize": 14146,
     "repositoryUrl": "https://github.com/Wiojelt/test",
     "language": "tr",
     "tvTypes": [
       "Live"
     ],
-    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/builds/assets/providers/PatronHD.png",
+    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/viontv.webp",
     "apiVersion": 1,
-    "fileHash": "sha256-9f02cb624c7df4b31d4431b76f89e25b46a9da151d9ccae41772457acbe772bd"
-  },
-  {
-    "name": "WioDB",
-    "internalName": "WioDB",
-    "version": 8,
-    "description": "WioDB - Doğrudan Cloudflare Gateway ve Özel DB Destekli Ultra Hızlı Oynatıcı",
-    "authors": [
-      "Wiojelt"
-    ],
-    "repositoryUrl": "https://github.com/Wiojelt/test",
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/WioDB_v8.cs3",
-    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/builds/icon.gif",
-    "tvTypes": [
-      "Movie",
-      "TvSeries"
-    ],
-    "language": "tr",
-    "status": 3,
-    "fileSize": 29491,
-    "fileHash": "sha256-ce90624e3632b14563c69354b66b54703d27a44b652cb8a8de308dc1e0f95ab3",
-    "apiVersion": 1
+    "fileHash": "sha256-80eca4d4a93213bce86a02a9cb8f97ffe8bee2b170923458b8f66578c9c57a37"
   }
 ]

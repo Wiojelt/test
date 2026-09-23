@@ -1,5 +1,7 @@
-# Birdirbir IPTV
+# VİONTV CloudStream Test Deposu
 
-Official CloudStream repository for Birdirbir IPTV.
+Yalnızca canlı TV sağlayıcısıdır. Kanal listesi, kategoriler, arama, logolar ve oynatma başlıkları uygulamanın güncel servisinden alınır.
 
-Repository URL: `https://raw.githubusercontent.com/Wiojelt/test/builds/repo.json`
+CloudStream depo bağlantısı:
+
+https://raw.githubusercontent.com/Wiojelt/test/main/repo.json
