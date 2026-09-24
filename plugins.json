@@ -1,7 +1,7 @@
 [
   {
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/0360803/PatronHD.cs3",
-    "status": 3,
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/PatronHD.cs3",
+    "status": 1,
     "version": 15,
     "name": "PatronHD",
     "internalName": "PatronHD",
@@ -35,7 +35,7 @@
       "TvSeries"
     ],
     "language": "tr",
-    "status": 3,
+    "status": 1,
     "fileSize": 29491,
     "fileHash": "sha256-ce90624e3632b14563c69354b66b54703d27a44b652cb8a8de308dc1e0f95ab3",
     "apiVersion": 1
