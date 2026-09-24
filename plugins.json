@@ -59,5 +59,71 @@
     "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/builds/assets/viontv.webp",
     "apiVersion": 1,
     "fileHash": "sha256-80eca4d4a93213bce86a02a9cb8f97ffe8bee2b170923458b8f66578c9c57a37"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/AniArsiv.cs3",
+    "status": 1,
+    "version": 1,
+    "name": "AniArşiv",
+    "internalName": "AniArsiv",
+    "authors": [
+      "Wiojelt"
+    ],
+    "description": "AniArşiv · Güncel ve klasik anime arşivi, Türkçe altyazı",
+    "fileSize": 13090,
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "language": "tr",
+    "tvTypes": [
+      "Anime",
+      "AnimeMovie",
+      "OVA"
+    ],
+    "iconUrl": "https://aniarsiv.com/favicon.ico",
+    "apiVersion": 1,
+    "fileHash": "sha256-2ae3dc6348f98bb3ddc871311715a0a9c9978117e22e71b3ddf5b7f40f4b50ad"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/TrAnimeIzle.cs3",
+    "status": 1,
+    "version": 1,
+    "name": "TrAnimeİzle",
+    "internalName": "TrAnimeIzle",
+    "authors": [
+      "Wiojelt"
+    ],
+    "description": "TrAnimeİzle · Türkiye'nin en popüler anime izleme platformu",
+    "fileSize": 28607,
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "language": "tr",
+    "tvTypes": [
+      "Anime",
+      "AnimeMovie",
+      "OVA"
+    ],
+    "iconUrl": "https://www.tranimeizle.live/favicon.ico",
+    "apiVersion": 1,
+    "fileHash": "sha256-c5fc9835f2638dd72748b68e674f48275988ef143326961900b5e334dc54a159"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/AnizmProvider.cs3",
+    "status": 1,
+    "version": 19,
+    "name": "Anizm",
+    "internalName": "AnizmProvider",
+    "authors": [
+      "Wiojelt"
+    ],
+    "description": "Anizm (anizm.net) · Türkçe altyazılı anime sağlayıcısı",
+    "fileSize": 192385,
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "language": "tr",
+    "tvTypes": [
+      "Anime",
+      "AnimeMovie",
+      "OVA"
+    ],
+    "iconUrl": "https://anizm.net/favicon.ico",
+    "apiVersion": 1,
+    "fileHash": "sha256-ff1eb30281c8b8161ea6dba1b2a4cc1c9009e3e6ce286255954e243c788f6eba"
   }
 ]
