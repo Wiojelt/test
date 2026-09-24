@@ -125,5 +125,27 @@
     "iconUrl": "https://anizm.net/favicon.ico",
     "apiVersion": 1,
     "fileHash": "sha256-ff1eb30281c8b8161ea6dba1b2a4cc1c9009e3e6ce286255954e243c788f6eba"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/OpenAnime.cs3",
+    "status": 1,
+    "version": 1,
+    "name": "OpenAnime",
+    "internalName": "OpenAnime",
+    "authors": [
+      "Wiojelt"
+    ],
+    "description": "OpenAnime (openani.me) · Yüksek kaliteli anime arşivi ve Türkçe altyazı",
+    "fileSize": 44349,
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "language": "tr",
+    "tvTypes": [
+      "Anime",
+      "AnimeMovie",
+      "OVA"
+    ],
+    "iconUrl": "https://openani.me/favicon512.png",
+    "apiVersion": 1,
+    "fileHash": "sha256-aadca9c73a48bd8020d586daa57d9e3665e0354b6f9af87e70617e1cdf14b4a4"
   }
 ]
