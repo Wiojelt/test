@@ -1,5 +1,46 @@
 [
   {
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/main/PatronHD.cs3",
+    "status": 1,
+    "version": 15,
+    "name": "PatronHD",
+    "internalName": "PatronHD",
+    "authors": [
+      "Wiojelt"
+    ],
+    "description": "🔴 PatronHD canlı kanallar ve bugünün maçları",
+    "fileSize": 103070,
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "language": "tr",
+    "tvTypes": [
+      "Live"
+    ],
+    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/providers/PatronHD.png",
+    "apiVersion": 1,
+    "fileHash": "sha256-cdb93f866389d85463c34bcfcf7e6a5e7a195efcb4596de638dc46b811f34bd6"
+  },
+  {
+    "name": "WioDB",
+    "internalName": "WioDB",
+    "version": 8,
+    "description": "WioDB - Doğrudan Cloudflare Gateway ve Özel DB Destekli Ultra Hızlı Oynatıcı",
+    "authors": [
+      "Wiojelt"
+    ],
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/main/WioDB_v8.cs3",
+    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/icon.gif",
+    "tvTypes": [
+      "Movie",
+      "TvSeries"
+    ],
+    "language": "tr",
+    "status": 1,
+    "fileSize": 29491,
+    "fileHash": "sha256-ce90624e3632b14563c69354b66b54703d27a44b652cb8a8de308dc1e0f95ab3",
+    "apiVersion": 1
+  },
+  {
     "url": "https://raw.githubusercontent.com/Wiojelt/test/main/VionTV.cs3",
     "status": 1,
     "version": 1,
@@ -18,5 +59,93 @@
     "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/viontv.webp",
     "apiVersion": 1,
     "fileHash": "sha256-80eca4d4a93213bce86a02a9cb8f97ffe8bee2b170923458b8f66578c9c57a37"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/main/AniArsiv.cs3",
+    "status": 1,
+    "version": 1,
+    "name": "AniArşiv",
+    "internalName": "AniArsiv",
+    "authors": [
+      "Wiojelt"
+    ],
+    "description": "AniArşiv · Güncel ve klasik anime arşivi, Türkçe altyazı",
+    "fileSize": 13090,
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "language": "tr",
+    "tvTypes": [
+      "Anime",
+      "AnimeMovie",
+      "OVA"
+    ],
+    "iconUrl": "https://aniarsiv.com/favicon.ico",
+    "apiVersion": 1,
+    "fileHash": "sha256-2ae3dc6348f98bb3ddc871311715a0a9c9978117e22e71b3ddf5b7f40f4b50ad"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/main/TrAnimeIzle.cs3",
+    "status": 1,
+    "version": 1,
+    "name": "TrAnimeİzle",
+    "internalName": "TrAnimeIzle",
+    "authors": [
+      "Wiojelt"
+    ],
+    "description": "TrAnimeİzle · Türkiye'nin en popüler anime izleme platformu",
+    "fileSize": 28607,
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "language": "tr",
+    "tvTypes": [
+      "Anime",
+      "AnimeMovie",
+      "OVA"
+    ],
+    "iconUrl": "https://www.tranimeizle.live/favicon.ico",
+    "apiVersion": 1,
+    "fileHash": "sha256-c5fc9835f2638dd72748b68e674f48275988ef143326961900b5e334dc54a159"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/main/AnizmProvider.cs3",
+    "status": 1,
+    "version": 19,
+    "name": "Anizm",
+    "internalName": "AnizmProvider",
+    "authors": [
+      "Wiojelt"
+    ],
+    "description": "Anizm (anizm.net) · Türkçe altyazılı anime sağlayıcısı",
+    "fileSize": 192385,
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "language": "tr",
+    "tvTypes": [
+      "Anime",
+      "AnimeMovie",
+      "OVA"
+    ],
+    "iconUrl": "https://anizm.net/favicon.ico",
+    "apiVersion": 1,
+    "fileHash": "sha256-ff1eb30281c8b8161ea6dba1b2a4cc1c9009e3e6ce286255954e243c788f6eba"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/main/OpenAnime.cs3",
+    "status": 1,
+    "version": 1,
+    "name": "OpenAnime",
+    "internalName": "OpenAnime",
+    "authors": [
+      "Wiojelt"
+    ],
+    "description": "OpenAnime (openani.me) · Yüksek kaliteli anime arşivi ve Türkçe altyazı",
+    "fileSize": 44349,
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "language": "tr",
+    "tvTypes": [
+      "Anime",
+      "AnimeMovie",
+      "OVA"
+    ],
+    "iconUrl": "https://openani.me/favicon512.png",
+    "apiVersion": 1,
+    "fileHash": "sha256-aadca9c73a48bd8020d586daa57d9e3665e0354b6f9af87e70617e1cdf14b4a4"
   }
 ]

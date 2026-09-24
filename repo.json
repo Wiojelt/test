@@ -1,6 +1,6 @@
 {
-  "name": "VİONTV Test Deposu",
-  "description": "VİONTV canlı TV CloudStream eklentisi",
+  "name": "TurkStream Studio Test",
+  "description": "TurkStream Studio Test Eklenti Deposu",
   "manifestVersion": 1,
   "pluginLists": [
     "https://raw.githubusercontent.com/Wiojelt/test/main/plugins.json"
