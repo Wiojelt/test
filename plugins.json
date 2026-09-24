@@ -50,7 +50,7 @@
       "Wiojelt"
     ],
     "description": "AniArşiv · Güncel ve klasik anime arşivi, Türkçe altyazı",
-    "fileSize": 13090,
+    "fileSize": 18514,
     "repositoryUrl": "https://github.com/Wiojelt/test",
     "language": "tr",
     "tvTypes": [
@@ -60,7 +60,7 @@
     ],
     "iconUrl": "https://aniarsiv.com/favicon.ico",
     "apiVersion": 1,
-    "fileHash": "sha256-2ae3dc6348f98bb3ddc871311715a0a9c9978117e22e71b3ddf5b7f40f4b50ad"
+    "fileHash": "sha256-61264ace6ef6d1974813edc9fa6411635a1e2a58eede2ec67bdbed86243fcc09"
   },
   {
     "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/TrAnimeIzle.cs3",
@@ -87,14 +87,14 @@
   {
     "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/AnizmProvider.cs3",
     "status": 1,
-    "version": 19,
+    "version": 20,
     "name": "Anizm",
     "internalName": "AnizmProvider",
     "authors": [
       "Wiojelt"
     ],
     "description": "Anizm (anizm.net) · Türkçe altyazılı anime sağlayıcısı",
-    "fileSize": 192385,
+    "fileSize": 192360,
     "repositoryUrl": "https://github.com/Wiojelt/test",
     "language": "tr",
     "tvTypes": [
@@ -104,7 +104,7 @@
     ],
     "iconUrl": "https://anizm.net/favicon.ico",
     "apiVersion": 1,
-    "fileHash": "sha256-ff1eb30281c8b8161ea6dba1b2a4cc1c9009e3e6ce286255954e243c788f6eba"
+    "fileHash": "sha256-76bf8a20bb3e8962a056cfc2387cf112501292116a644b32f615904eedbeff1e"
   },
   {
     "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/OpenAnime.cs3",
