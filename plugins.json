@@ -2,14 +2,14 @@
   {
     "url": "https://raw.githubusercontent.com/Wiojelt/test/main/TurkishCineStream.cs3",
     "status": 1,
-    "version": 2,
+    "version": 3,
     "name": "TurkishCineStream",
     "internalName": "TurkishCineStream",
     "authors": [
       "Wiojelt"
     ],
-    "description": "CineStream video motoru + Türkçe çoklu altyazı motoru (deneysel test sürümü)",
-    "fileSize": 201966,
+    "description": "CineStream video motoru + genişletilmiş Türkçe çoklu altyazı motoru (deneysel test sürümü)",
+    "fileSize": 387359,
     "repositoryUrl": "https://github.com/Wiojelt/test",
     "language": "tr",
     "tvTypes": [
@@ -20,7 +20,7 @@
     ],
     "iconUrl": "https://raw.githubusercontent.com/Wiojelt/WioCinema/main/assets/logo.png",
     "apiVersion": 1,
-    "fileHash": "sha256-9b24b5f86b47992a5d284b7116cac23d2f3fd714c25cd5edd20eddb5545444f2"
+    "fileHash": "sha256-72adb35c51c14b4353c152c88ad058c736482dbe268815824e7dab6ba3716da0"
   },
   {
     "url": "https://raw.githubusercontent.com/Wiojelt/test/main/CizgiVeDizi.cs3",
