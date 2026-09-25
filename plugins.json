@@ -116,7 +116,7 @@
       "Wiojelt"
     ],
     "description": "Anizm (anizm.net) · Türkçe altyazılı anime sağlayıcısı",
-    "fileSize": 192362,
+    "fileSize": 185479,
     "repositoryUrl": "https://github.com/Wiojelt/test",
     "language": "tr",
     "tvTypes": [
@@ -126,7 +126,7 @@
     ],
     "iconUrl": "https://anizm.net/favicon.ico",
     "apiVersion": 1,
-    "fileHash": "sha256-572b24b9df53bf589f20b755fa59d2ebf82a909bca2167cfdbd175917c24fb3e"
+    "fileHash": "sha256-69f432043a08e9a41f86a2c086208bff89179634a088e0b5b46d7913f42c16d1"
   },
   {
     "url": "https://raw.githubusercontent.com/Wiojelt/test/main/OpenAnime.cs3",
