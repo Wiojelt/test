@@ -26,14 +26,14 @@
   {
     "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/CizgiVeDizi.cs3",
     "status": 1,
-    "version": 14,
+    "version": 15,
     "name": "ÇizgiVeDizi",
     "internalName": "CizgiVeDizi",
     "authors": [
       "Wiojelt"
     ],
     "description": "ÇizgiVeDizi (cizgivedizi.com) · Çizgi film, anime ve diziler",
-    "fileSize": 35859,
+    "fileSize": 40002,
     "repositoryUrl": "https://github.com/Wiojelt/test",
     "language": "tr",
     "tvTypes": [
@@ -43,7 +43,7 @@
     ],
     "iconUrl": "https://cizgivedizi.com/favicon.ico",
     "apiVersion": 1,
-    "fileHash": "sha256-22bf7b445dc6693b3f051570403243e6d42846028d5cb0775135e53053fddfd8"
+    "fileHash": "sha256-f08925616ae2ab623ea7cea9db9b06c6dab8bef73f0efed6ad6df5513f40e11f"
   },
   {
     "name": "WioDB",
