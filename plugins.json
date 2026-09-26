@@ -10,7 +10,7 @@
       "megix"
     ],
     "description": "CineStream video motoru; seçilebilir sağlayıcılar ve OpenSubtitles/Stremio Türkçe altyazıları (TCS test)",
-    "fileSize": 733476,
+    "fileSize": 733672,
     "repositoryUrl": "https://github.com/Wiojelt/test",
     "language": "tr",
     "tvTypes": [
@@ -21,7 +21,7 @@
     ],
     "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/turkishcinestream.png",
     "apiVersion": 1,
-    "fileHash": "sha256-a2b5deb8d0dbe048b0f5aee90bce420b3a8fdb4ed2e32a63c14cfeb9561bcb17"
+    "fileHash": "sha256-47ebb90e9f23c7f0768b993233443b2e51fc21988094481126b4368b40f76dd7"
   },
   {
     "url": "https://raw.githubusercontent.com/Wiojelt/test/main/CizgiVeDizi.cs3",
