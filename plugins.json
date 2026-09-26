@@ -2,14 +2,14 @@
   {
     "url": "https://raw.githubusercontent.com/Wiojelt/test/main/TurkishCineStream.cs3",
     "status": 1,
-    "version": 5,
+    "version": 482,
     "name": "TurkishCineStream",
     "internalName": "TurkishCineStream",
     "authors": [
       "Wiojelt",
       "megix"
     ],
-    "description": "CineStream video motoru + Türkçe çoklu altyazı motoru + upstream CineStream ayar paneli (deneysel test sürümü)",
+    "description": "CineStream video motoru; seçilebilir sağlayıcılar ve OpenSubtitles/Stremio Türkçe altyazıları (TCS test)",
     "fileSize": 388553,
     "repositoryUrl": "https://github.com/Wiojelt/test",
     "language": "tr",

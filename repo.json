@@ -3,7 +3,8 @@
   "description": "TurkStream Studio Test Eklenti Deposu",
   "manifestVersion": 1,
   "pluginLists": [
-    "https://raw.githubusercontent.com/Wiojelt/test/main/plugins.json?v=tcs-5-50fe8bcbf30c"
+    "https://raw.githubusercontent.com/Wiojelt/test/builds/plugins.json?v=tcs-482-50fe8bcbf30c"
   ],
   "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/viontv.webp"
 }
+
