@@ -29,6 +29,7 @@ jobs:
       - name: Build
         working-directory: kooltv-src
         run: |
+          rm -f gradle/wrapper/gradle-wrapper.properties
           gradle wrapper --gradle-version 9.4.1
           chmod +x gradlew
           ./gradlew :KoolTV:make --no-daemon
