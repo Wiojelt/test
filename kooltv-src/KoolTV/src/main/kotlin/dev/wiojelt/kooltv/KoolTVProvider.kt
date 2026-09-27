@@ -4,6 +4,8 @@ import android.content.SharedPreferences
 import com.lagradost.cloudstream3.*
 import com.lagradost.cloudstream3.utils.*
 import org.json.JSONObject
+import okhttp3.MediaType.Companion.toMediaTypeOrNull
+import okhttp3.RequestBody.Companion.toRequestBody
 import java.util.Locale
 
 internal data class KoolCountry(val label: String, val groups: List<String>, val language: String, val region: String)
@@ -109,7 +111,7 @@ class KoolTVProvider(private val preferences: SharedPreferences) : MainAPI() {
                 .put("catalogId", "iptv").put("id", "").put("adult", false)
                 .put("search", "").put("sort", "name")
                 .put("filter", JSONObject().put("group", group)).put("cursor", cursor).toString()
-            val response = app.post(mainUrl + "/mediahubmx-catalog.json", requestBody = body, headers = CATALOG_HEADERS, timeout = 18)
+            val response = app.post(mainUrl + "/mediahubmx-catalog.json", requestBody = body.toRequestBody("application/json; charset=utf-8".toMediaTypeOrNull()), headers = CATALOG_HEADERS, timeout = 18)
             if (response.code !in 200..299) throw ErrorLoadingException("Kool katalog yanıtı: HTTP " + response.code)
             val json = JSONObject(response.text)
             val items = json.optJSONArray("items") ?: return out
@@ -148,7 +150,7 @@ class KoolTVProvider(private val preferences: SharedPreferences) : MainAPI() {
         repeat(5) {
             val response = runCatching {
                 app.post(mainUrl + "/mediahubmx-resolve.json",
-                    requestBody = JSONObject().put("language", "de").put("region", "DE").put("url", playUrl).toString(),
+                    requestBody = JSONObject().put("language", "de").put("region", "DE").put("url", playUrl).toString().toRequestBody("application/json; charset=utf-8".toMediaTypeOrNull()),
                     headers = headers, timeout = 12)
             }.getOrNull() ?: return@repeat
             if (response.code !in 200..299) return@repeat
