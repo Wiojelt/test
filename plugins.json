@@ -1,5 +1,25 @@
 [
   {
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/main/KoolLiveTV.cs3",
+    "status": 1,
+    "version": 1,
+    "name": "Kool Live TV",
+    "internalName": "KoolLiveTV",
+    "authors": [
+      "Wiojelt"
+    ],
+    "description": "Kool Live TV · Düzenli ulusal, spor, sinema, belgesel, dünya kanalları, HD logolar ve kesintisiz yedekli yayın motoru.",
+    "fileSize": 157499,
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "language": "tr",
+    "tvTypes": [
+      "Live"
+    ],
+    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/kool.png",
+    "apiVersion": 1,
+    "fileHash": "sha256-0cff5ceeebd6004640c266a1f940383232ae6e210bb12eb30886e217e552e8c9"
+  },
+  {
     "url": "https://raw.githubusercontent.com/Wiojelt/test/main/TurkishCineStream.cs3",
     "status": 1,
     "version": 6,
