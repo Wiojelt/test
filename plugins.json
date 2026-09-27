@@ -173,5 +173,25 @@
     "iconUrl": "https://openani.me/favicon512.png",
     "apiVersion": 1,
     "fileHash": "sha256-aadca9c73a48bd8020d586daa57d9e3665e0354b6f9af87e70617e1cdf14b4a4"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/main/KoolTV.cs3",
+    "status": 1,
+    "version": 1,
+    "name": "Kool TV",
+    "internalName": "KoolTV",
+    "authors": [
+      "Wiojelt"
+    ],
+    "description": "Kool TV · ülke/bölge seçimi, tüm kanallar, kategori rafları ve oynatma anında canlı bağlantı çözümleme.",
+    "fileSize": 26410,
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "language": "tr",
+    "tvTypes": [
+      "Live"
+    ],
+    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/wiotest.png",
+    "apiVersion": 1,
+    "fileHash": "sha256-bf354d6dcbf40c47e473f8987ac62503ec63fbc71fb0dda686fa4dc38fc766f7"
   }
 ]
