@@ -36,8 +36,27 @@ jobs:
       - name: Publish artifact
         run: |
           cp kooltv-src/KoolTV/build/KoolTV.cs3 KoolTV.cs3
+          python3 - <<'PY'
+          import hashlib, json, os
+          path="KoolTV.cs3"
+          with open(path,"rb") as f: digest=hashlib.sha256(f.read()).hexdigest()
+          with open("plugins.json","r",encoding="utf-8") as f: data=json.load(f)
+          entry={
+            "url":"https://raw.githubusercontent.com/Wiojelt/test/main/KoolTV.cs3",
+            "status":1,"version":1,"name":"Kool TV","internalName":"KoolTV",
+            "authors":["Wiojelt"],
+            "description":"Kool TV · ülke seçimi, tüm kanallar ve kategori rafları.",
+            "fileSize":os.path.getsize(path),"repositoryUrl":"https://github.com/Wiojelt/test",
+            "language":"tr","tvTypes":["Live"],
+            "iconUrl":"https://raw.githubusercontent.com/Wiojelt/test/main/assets/wiotest.png",
+            "apiVersion":1,"fileHash":"sha256-"+digest
+          }
+          data=[x for x in data if x.get("internalName")!="KoolTV"]
+          data.append(entry)
+          with open("plugins.json","w",encoding="utf-8") as f: json.dump(data,f,ensure_ascii=False,indent=2); f.write("\n")
+          PY
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git add KoolTV.cs3
+          git add KoolTV.cs3 plugins.json
           git commit -m "Build KoolTV" || exit 0
           git push
