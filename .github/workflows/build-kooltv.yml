@@ -1,0 +1,25 @@
+name: Build KoolTV
+on:
+  push:
+    branches: [main]
+    paths: ['.kool-build/**', '.github/workflows/build-kooltv.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with: { distribution: temurin, java-version: '17' }
+      - uses: android-actions/setup-android@v3
+      - uses: gradle/actions/setup-gradle@v4
+        with: { gradle-version: '9.4.1' }
+      - name: Build
+        working-directory: .kool-build
+        run: gradle :KoolTV:make --stacktrace
+      - uses: actions/upload-artifact@v4
+        with:
+          name: KoolTV
+          path: .kool-build/KoolTV/build/KoolTV.cs3
