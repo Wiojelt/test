@@ -223,7 +223,10 @@ def main() -> int:
                 if error:
                     provider["issues"].append(error)
 
-            if provider["stages"].get("artifact_http") == "FAIL":
+            if internal_name == "WioDB":
+                provider["status"] = "DEVELOPMENT"
+                provider["issues"].append("WioDB is explicitly tracked as DEVELOPMENT, not production ACTIVE/FAIL.")
+            elif provider["stages"].get("artifact_http") == "FAIL":
                 provider["status"] = "HTTP_ERROR"
             elif provider["stages"].get("package_integrity") == "FAIL" or provider["stages"].get("catalog_metadata") == "FAIL":
                 provider["status"] = "BUILD_FAIL"
@@ -243,12 +246,29 @@ def main() -> int:
             repo_result["providers"].append(provider)
         results.append(repo_result)
 
+    occurrences: dict[str, list[dict[str, str]]] = {}
+    for repository in results:
+        source_label = repository.get("repository") or repository.get("catalogUrl") or repository.get("catalog", "unknown")
+        for provider in repository.get("providers", []):
+            internal_name = str(provider.get("internalName") or "").strip()
+            if not internal_name or internal_name in {"WioDB", "MegaWio"}:
+                continue
+            occurrences.setdefault(internal_name, []).append(
+                {"repository": str(source_label), "provider": str(provider.get("name") or internal_name)}
+            )
+    cross_catalog_duplicates = [
+        {"internalName": name, "occurrences": entries}
+        for name, entries in sorted(occurrences.items())
+        if len(entries) > 1
+    ]
+
     if not args.render_existing:
         report = {
             "generatedAt": datetime.now(timezone.utc).isoformat(),
             "runner": "cs3_test_runner.py",
             "scope": "repository metadata, .cs3 package/hash/version, artifact HTTP, optional base-site HTTP smoke only",
             "runtimeLimitation": "CloudStream runtime callbacks and real playback are not simulated; unresolved entries remain CS2004_RISK.",
+            "crossCatalogDuplicates": cross_catalog_duplicates,
             "repositories": results,
         }
         args.report.parent.mkdir(parents=True, exist_ok=True)
@@ -304,6 +324,15 @@ def main() -> int:
         markdown.append("")
     markdown.extend(["## Status totals", ""])
     markdown.extend(f"- `{status}`: {count}" for status, count in sorted(status_totals.items()))
+    markdown.append("")
+    markdown.extend(["## Cross-catalog duplicate `internalName` audit", ""])
+    duplicates = report.get("crossCatalogDuplicates", cross_catalog_duplicates)
+    if duplicates:
+        for duplicate in duplicates:
+            sources = ", ".join(item["repository"] for item in duplicate["occurrences"])
+            markdown.append(f"- `{duplicate['internalName']}`: {sources}")
+    else:
+        markdown.append("No duplicate `internalName` entries were found (WioDB and MegaWio are intentionally excluded).")
     markdown.append("")
     args.markdown_report.parent.mkdir(parents=True, exist_ok=True)
     args.markdown_report.write_text("\n".join(markdown), encoding="utf-8")

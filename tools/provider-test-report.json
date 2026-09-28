@@ -1,12 +1,121 @@
 {
-  "generatedAt": "2026-09-28T19:54:22.866226+00:00",
+  "generatedAt": "2026-09-28T20:33:21.452665+00:00",
   "runner": "cs3_test_runner.py",
   "scope": "repository metadata, .cs3 package/hash/version, artifact HTTP, optional base-site HTTP smoke only",
   "runtimeLimitation": "CloudStream runtime callbacks and real playback are not simulated; unresolved entries remain CS2004_RISK.",
+  "crossCatalogDuplicates": [
+    {
+      "internalName": "AniArsiv",
+      "occurrences": [
+        {
+          "repository": "d57850c5ecb89e02fa0c8bd779b3eaea347ca53d",
+          "provider": "AniArşiv"
+        },
+        {
+          "repository": "f9b7f08603051c555f9c485127c691dfc1be31ea",
+          "provider": "AniArşiv"
+        },
+        {
+          "repository": "a28efecb652fb0acdf89554c9d29b5cded0637ce",
+          "provider": "AniArşiv"
+        }
+      ]
+    },
+    {
+      "internalName": "CizgiVeDizi",
+      "occurrences": [
+        {
+          "repository": "f9b7f08603051c555f9c485127c691dfc1be31ea",
+          "provider": "ÇizgiVeDizi"
+        },
+        {
+          "repository": "a28efecb652fb0acdf89554c9d29b5cded0637ce",
+          "provider": "ÇizgiVeDizi"
+        }
+      ]
+    },
+    {
+      "internalName": "InatBox",
+      "occurrences": [
+        {
+          "repository": "b027479c848b296eb06fb27e855bd1fa47b0854c",
+          "provider": "InatBox"
+        },
+        {
+          "repository": "fc106d016b7d357c45477facbcd627658cec632c",
+          "provider": "InatBox"
+        }
+      ]
+    },
+    {
+      "internalName": "KoolLiveTV",
+      "occurrences": [
+        {
+          "repository": "f9b7f08603051c555f9c485127c691dfc1be31ea",
+          "provider": "Kool Live TV"
+        },
+        {
+          "repository": "a28efecb652fb0acdf89554c9d29b5cded0637ce",
+          "provider": "Kool Live TV"
+        }
+      ]
+    },
+    {
+      "internalName": "OpenAnime",
+      "occurrences": [
+        {
+          "repository": "d57850c5ecb89e02fa0c8bd779b3eaea347ca53d",
+          "provider": "OpenAnime"
+        },
+        {
+          "repository": "f9b7f08603051c555f9c485127c691dfc1be31ea",
+          "provider": "OpenAnime"
+        },
+        {
+          "repository": "a28efecb652fb0acdf89554c9d29b5cded0637ce",
+          "provider": "OpenAnime"
+        }
+      ]
+    },
+    {
+      "internalName": "TrAnimeIzle",
+      "occurrences": [
+        {
+          "repository": "d57850c5ecb89e02fa0c8bd779b3eaea347ca53d",
+          "provider": "TrAnimeİzle"
+        },
+        {
+          "repository": "f9b7f08603051c555f9c485127c691dfc1be31ea",
+          "provider": "TrAnimeİzle"
+        },
+        {
+          "repository": "a28efecb652fb0acdf89554c9d29b5cded0637ce",
+          "provider": "TrAnimeİzle"
+        }
+      ]
+    },
+    {
+      "internalName": "VionTV",
+      "occurrences": [
+        {
+          "repository": "fc106d016b7d357c45477facbcd627658cec632c",
+          "provider": "VionTV"
+        },
+        {
+          "repository": "f9b7f08603051c555f9c485127c691dfc1be31ea",
+          "provider": "VİONTV"
+        },
+        {
+          "repository": "a28efecb652fb0acdf89554c9d29b5cded0637ce",
+          "provider": "VİONTV"
+        }
+      ]
+    }
+  ],
   "repositories": [
     {
-      "repository": "builds",
-      "catalogUrl": "https://raw.githubusercontent.com/Wiojelt/WioSinema/builds/plugins.json?v=32",
+      "repository": "b027479c848b296eb06fb27e855bd1fa47b0854c",
+      "catalogUrl": "https://raw.githubusercontent.com/Wiojelt/WioSinema/b027479c848b296eb06fb27e855bd1fa47b0854c/plugins.json",
       "providers": [
         {
           "name": "0 WioSinema",
@@ -345,30 +454,6 @@
           "status": "CS2004_RISK"
         },
         {
-          "name": "DiziMom",
-          "internalName": "DiziMom",
-          "stages": {
-            "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
-            "site_api": "NOT_MAPPED",
-            "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
-            "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
-            "load": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
-            "loadLinks": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
-            "subtitles": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
-            "live_hls_segments": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
-            "artifact_http": "PASS",
-            "package_integrity": "PASS"
-          },
-          "issues": [
-            "CloudStream runtime catalog/search/load/loadLinks/subtitle/playback flow not executed; do not infer ACTIVE."
-          ],
-          "artifact_http_status": 200,
-          "artifact_bytes": 95150,
-          "sha256": "00d7100f89b87a2cb7e25280e24ee38c8fc2613d262c468ff76aec4d2d8872c6",
-          "status": "CS2004_RISK"
-        },
-        {
           "name": "DiziPal",
           "internalName": "DiziPal",
           "stages": {
@@ -606,30 +691,6 @@
           "artifact_http_status": 200,
           "artifact_bytes": 99809,
           "sha256": "029a2a80564f6de9ca57d3578023784f92cd483113f1b274bb8c4363769b7d13",
-          "status": "CS2004_RISK"
-        },
-        {
-          "name": "HDFilmCehennemi",
-          "internalName": "HDFilmCehennemi",
-          "stages": {
-            "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
-            "site_api": "NOT_MAPPED",
-            "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
-            "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
-            "load": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
-            "loadLinks": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
-            "subtitles": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
-            "live_hls_segments": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
-            "artifact_http": "PASS",
-            "package_integrity": "PASS"
-          },
-          "issues": [
-            "CloudStream runtime catalog/search/load/loadLinks/subtitle/playback flow not executed; do not infer ACTIVE."
-          ],
-          "artifact_http_status": 200,
-          "artifact_bytes": 92497,
-          "sha256": "a8a3ea4b43dde7638f4813dee595fe861bdd009cbb0bf4174607c7938670d92b",
           "status": "CS2004_RISK"
         },
         {
@@ -1017,30 +1078,6 @@
           "status": "CS2004_RISK"
         },
         {
-          "name": "Sinemakolik",
-          "internalName": "Sinemakolik",
-          "stages": {
-            "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
-            "site_api": "NOT_MAPPED",
-            "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
-            "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
-            "load": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
-            "loadLinks": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
-            "subtitles": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
-            "live_hls_segments": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
-            "artifact_http": "PASS",
-            "package_integrity": "PASS"
-          },
-          "issues": [
-            "CloudStream runtime catalog/search/load/loadLinks/subtitle/playback flow not executed; do not infer ACTIVE."
-          ],
-          "artifact_http_status": 200,
-          "artifact_bytes": 91109,
-          "sha256": "356178c41fa923d317f673e6581445a049932286d988d1cb51615b6086337ebe",
-          "status": "CS2004_RISK"
-        },
-        {
           "name": "Sinewix",
           "internalName": "Sinewix",
           "stages": {
@@ -1188,8 +1225,8 @@
       "catalogHttpStatus": 200
     },
     {
-      "repository": "79b81edc4906feb9edd2143519979c78c4efe1ed",
-      "catalogUrl": "https://raw.githubusercontent.com/Wiojelt/WioSpor/79b81edc4906feb9edd2143519979c78c4efe1ed/plugins.json",
+      "repository": "fc106d016b7d357c45477facbcd627658cec632c",
+      "catalogUrl": "https://raw.githubusercontent.com/Wiojelt/WioSpor/fc106d016b7d357c45477facbcd627658cec632c/plugins.json",
       "providers": [
         {
           "name": "0 WioSpor",
@@ -1237,30 +1274,6 @@
           "artifact_http_status": 200,
           "artifact_bytes": 137339,
           "sha256": "d4a7204d4a3ffe75fe3384dd39f07941809a70e494267f9bcc6f45d365f7b666",
-          "status": "CS2004_RISK"
-        },
-        {
-          "name": "AslanTV",
-          "internalName": "AslanTV",
-          "stages": {
-            "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
-            "site_api": "NOT_MAPPED",
-            "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
-            "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
-            "load": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
-            "loadLinks": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
-            "subtitles": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
-            "live_hls_segments": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
-            "artifact_http": "PASS",
-            "package_integrity": "PASS"
-          },
-          "issues": [
-            "CloudStream runtime catalog/search/load/loadLinks/subtitle/playback flow not executed; do not infer ACTIVE."
-          ],
-          "artifact_http_status": 200,
-          "artifact_bytes": 212112,
-          "sha256": "ef7c6f2b7d372c3f8ba8cbc784deff26112035095f59524bcc5da7e1c86c9cd8",
           "status": "CS2004_RISK"
         },
         {
@@ -1336,30 +1349,6 @@
           "status": "CS2004_RISK"
         },
         {
-          "name": "BeyazElma",
-          "internalName": "BeyazElma",
-          "stages": {
-            "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
-            "site_api": "NOT_MAPPED",
-            "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
-            "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
-            "load": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
-            "loadLinks": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
-            "subtitles": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
-            "live_hls_segments": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
-            "artifact_http": "PASS",
-            "package_integrity": "PASS"
-          },
-          "issues": [
-            "CloudStream runtime catalog/search/load/loadLinks/subtitle/playback flow not executed; do not infer ACTIVE."
-          ],
-          "artifact_http_status": 200,
-          "artifact_bytes": 161255,
-          "sha256": "3ac11800f50ed2bf6180cee2d36f7bdd4446eb330dc231173c39265ce36a7636",
-          "status": "CS2004_RISK"
-        },
-        {
           "name": "Crex",
           "internalName": "Crex",
           "stages": {
@@ -1384,30 +1373,6 @@
           "status": "CS2004_RISK"
         },
         {
-          "name": "DaddyLive",
-          "internalName": "DaddyLive",
-          "stages": {
-            "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
-            "site_api": "NOT_MAPPED",
-            "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
-            "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
-            "load": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
-            "loadLinks": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
-            "subtitles": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
-            "live_hls_segments": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
-            "artifact_http": "PASS",
-            "package_integrity": "PASS"
-          },
-          "issues": [
-            "CloudStream runtime catalog/search/load/loadLinks/subtitle/playback flow not executed; do not infer ACTIVE."
-          ],
-          "artifact_http_status": 200,
-          "artifact_bytes": 109464,
-          "sha256": "e861100f8752b6837d2ca10405f8569183aedcdaa0faa80b8cc03275ec1c9daf",
-          "status": "CS2004_RISK"
-        },
-        {
           "name": "DomatesTV",
           "internalName": "DomatesTV",
           "stages": {
@@ -1429,30 +1394,6 @@
           "artifact_http_status": 200,
           "artifact_bytes": 125349,
           "sha256": "13b4c159bdecfef9ed1fa72b7f1c2375a72ec330543a9e37654fcc89ebfd8501",
-          "status": "CS2004_RISK"
-        },
-        {
-          "name": "DominoTV",
-          "internalName": "DominoTV",
-          "stages": {
-            "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
-            "site_api": "NOT_MAPPED",
-            "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
-            "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
-            "load": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
-            "loadLinks": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
-            "subtitles": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
-            "live_hls_segments": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
-            "artifact_http": "PASS",
-            "package_integrity": "PASS"
-          },
-          "issues": [
-            "CloudStream runtime catalog/search/load/loadLinks/subtitle/playback flow not executed; do not infer ACTIVE."
-          ],
-          "artifact_http_status": 200,
-          "artifact_bytes": 124708,
-          "sha256": "0c0edad2ebb03bfd4b29eaf31209d634b214a6b9484c1e4c63bb29e5c3081f57",
           "status": "CS2004_RISK"
         },
         {
@@ -1501,30 +1442,6 @@
           "artifact_http_status": 200,
           "artifact_bytes": 79340,
           "sha256": "b2b2ea838d2f3e236d71ef74ee0c89429cd3d53a50e8900201b004500d042626",
-          "status": "CS2004_RISK"
-        },
-        {
-          "name": "InatTV",
-          "internalName": "InatTV",
-          "stages": {
-            "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
-            "site_api": "NOT_MAPPED",
-            "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
-            "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
-            "load": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
-            "loadLinks": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
-            "subtitles": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
-            "live_hls_segments": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
-            "artifact_http": "PASS",
-            "package_integrity": "PASS"
-          },
-          "issues": [
-            "CloudStream runtime catalog/search/load/loadLinks/subtitle/playback flow not executed; do not infer ACTIVE."
-          ],
-          "artifact_http_status": 200,
-          "artifact_bytes": 134854,
-          "sha256": "5d546abd8ad98e8bdd841e1023de7157ea88c0ebb7979c10148409000956269b",
           "status": "CS2004_RISK"
         },
         {
@@ -1648,30 +1565,6 @@
           "status": "CS2004_RISK"
         },
         {
-          "name": "NetVGold",
-          "internalName": "NetVGold",
-          "stages": {
-            "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
-            "site_api": "NOT_MAPPED",
-            "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
-            "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
-            "load": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
-            "loadLinks": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
-            "subtitles": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
-            "live_hls_segments": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
-            "artifact_http": "PASS",
-            "package_integrity": "PASS"
-          },
-          "issues": [
-            "CloudStream runtime catalog/search/load/loadLinks/subtitle/playback flow not executed; do not infer ACTIVE."
-          ],
-          "artifact_http_status": 200,
-          "artifact_bytes": 173304,
-          "sha256": "27f39deadaf5a2295341f68a97f3f47ad8c01e48a3053cb16bf058cc50ce5a12",
-          "status": "CS2004_RISK"
-        },
-        {
           "name": "Ntvs",
           "internalName": "Ntvs",
           "stages": {
@@ -1693,54 +1586,6 @@
           "artifact_http_status": 200,
           "artifact_bytes": 109433,
           "sha256": "16606cd31cec1319f6b013afe4cd2ae42ba0810c07b3e1c2fbf965e84b3223af",
-          "status": "CS2004_RISK"
-        },
-        {
-          "name": "PapazSports",
-          "internalName": "PapazSports",
-          "stages": {
-            "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
-            "site_api": "NOT_MAPPED",
-            "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
-            "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
-            "load": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
-            "loadLinks": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
-            "subtitles": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
-            "live_hls_segments": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
-            "artifact_http": "PASS",
-            "package_integrity": "PASS"
-          },
-          "issues": [
-            "CloudStream runtime catalog/search/load/loadLinks/subtitle/playback flow not executed; do not infer ACTIVE."
-          ],
-          "artifact_http_status": 200,
-          "artifact_bytes": 132420,
-          "sha256": "21948fbed5bfd3005a92acf83c5195b4f2e2082d8462addc464fbba389b9183f",
-          "status": "CS2004_RISK"
-        },
-        {
-          "name": "SelcukSports",
-          "internalName": "SelcukSports",
-          "stages": {
-            "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
-            "site_api": "NOT_MAPPED",
-            "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
-            "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
-            "load": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
-            "loadLinks": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
-            "subtitles": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
-            "live_hls_segments": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
-            "artifact_http": "PASS",
-            "package_integrity": "PASS"
-          },
-          "issues": [
-            "CloudStream runtime catalog/search/load/loadLinks/subtitle/playback flow not executed; do not infer ACTIVE."
-          ],
-          "artifact_http_status": 200,
-          "artifact_bytes": 133437,
-          "sha256": "03e45df1c0eeea17ab91313acb71672af000231d7b94a486d1f37caee3d111d5",
           "status": "CS2004_RISK"
         },
         {
@@ -1813,30 +1658,6 @@
           "artifact_http_status": 200,
           "artifact_bytes": 135077,
           "sha256": "a00143104280e7bbc63d50170b55476cd7f3dea8597c2c8773c80b66c7c6035f",
-          "status": "CS2004_RISK"
-        },
-        {
-          "name": "TRGoals",
-          "internalName": "TRGoals",
-          "stages": {
-            "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
-            "site_api": "NOT_MAPPED",
-            "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
-            "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
-            "load": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
-            "loadLinks": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
-            "subtitles": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
-            "live_hls_segments": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
-            "artifact_http": "PASS",
-            "package_integrity": "PASS"
-          },
-          "issues": [
-            "CloudStream runtime catalog/search/load/loadLinks/subtitle/playback flow not executed; do not infer ACTIVE."
-          ],
-          "artifact_http_status": 200,
-          "artifact_bytes": 173457,
-          "sha256": "9f700876c9fac4845230538149fcd4c06be8a2fc3c1253fb91ff54f80b1b62d2",
           "status": "CS2004_RISK"
         },
         {
@@ -2011,8 +1832,8 @@
       "catalogHttpStatus": 200
     },
     {
-      "repository": "2f6639f466bd9a41166682f81cbf387e55fd53dd",
-      "catalogUrl": "https://raw.githubusercontent.com/Wiojelt/WioCinema/2f6639f466bd9a41166682f81cbf387e55fd53dd/plugins.json",
+      "repository": "8060b3f6b5cb6db582c4ad8ab261531029c4b244",
+      "catalogUrl": "https://raw.githubusercontent.com/Wiojelt/WioCinema/8060b3f6b5cb6db582c4ad8ab261531029c4b244/plugins.json",
       "providers": [
         {
           "name": "0 WioCinema",
@@ -2132,30 +1953,6 @@
           "artifact_http_status": 200,
           "artifact_bytes": 695013,
           "sha256": "30dc643628702d6b2fe139339e59996783c95a0c1d41efe0a31872ae4d10908b",
-          "status": "CS2004_RISK"
-        },
-        {
-          "name": "ClipBox",
-          "internalName": "ClipBox",
-          "stages": {
-            "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
-            "site_api": "NOT_MAPPED",
-            "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
-            "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
-            "load": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
-            "loadLinks": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
-            "subtitles": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
-            "live_hls_segments": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
-            "artifact_http": "PASS",
-            "package_integrity": "PASS"
-          },
-          "issues": [
-            "CloudStream runtime catalog/search/load/loadLinks/subtitle/playback flow not executed; do not infer ACTIVE."
-          ],
-          "artifact_http_status": 200,
-          "artifact_bytes": 800299,
-          "sha256": "a65a585f5074a5f281a81dc3602d023fcf747cc929c3a1dcbc96a09da3366b9a",
           "status": "CS2004_RISK"
         },
         {
@@ -2628,12 +2425,12 @@
             "package_integrity": "PASS"
           },
           "issues": [
-            "CloudStream runtime catalog/search/load/loadLinks/subtitle/playback flow not executed; do not infer ACTIVE."
+            "WioDB is explicitly tracked as DEVELOPMENT, not production ACTIVE/FAIL."
           ],
           "artifact_http_status": 200,
           "artifact_bytes": 29491,
           "sha256": "ce90624e3632b14563c69354b66b54703d27a44b652cb8a8de308dc1e0f95ab3",
-          "status": "CS2004_RISK"
+          "status": "DEVELOPMENT"
         },
         {
           "name": "VİONTV",
@@ -2803,12 +2600,12 @@
             "package_integrity": "PASS"
           },
           "issues": [
-            "CloudStream runtime catalog/search/load/loadLinks/subtitle/playback flow not executed; do not infer ACTIVE."
+            "WioDB is explicitly tracked as DEVELOPMENT, not production ACTIVE/FAIL."
           ],
           "artifact_http_status": 200,
           "artifact_bytes": 29491,
           "sha256": "ce90624e3632b14563c69354b66b54703d27a44b652cb8a8de308dc1e0f95ab3",
-          "status": "CS2004_RISK"
+          "status": "DEVELOPMENT"
         },
         {
           "name": "VİONTV",
