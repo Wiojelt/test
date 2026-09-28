@@ -1,6 +1,6 @@
 # CloudStream provider verification report
 
-Generated: 2026-09-28T20:33:21.452665+00:00
+Generated: 2026-09-28T20:37:19.899270+00:00
 
 Scope: repository metadata, .cs3 package/hash/version, artifact HTTP, optional base-site HTTP smoke only.
 
@@ -9,14 +9,14 @@ Scope: repository metadata, .cs3 package/hash/version, artifact HTTP, optional b
 | Repository/catalog | Catalog HTTP | Providers | Status summary |
 |---|---:|---:|---|
 | `b027479c848b296eb06fb27e855bd1fa47b0854c` | 200 | 46 | CS2004_RISK: 46 |
-| `fc106d016b7d357c45477facbcd627658cec632c` | 200 | 25 | CS2004_RISK: 25 |
+| `3871fa6dcfd3a449ae3dcd2d6c45afb65acaafd0` | 200 | 26 | CS2004_RISK: 26 |
 | `8060b3f6b5cb6db582c4ad8ab261531029c4b244` | 200 | 9 | CS2004_RISK: 9 |
 | `builds` | 200 | 2 | CS2004_RISK: 2 |
 | `d57850c5ecb89e02fa0c8bd779b3eaea347ca53d` | 200 | 10 | CS2004_RISK: 10 |
 | `f9b7f08603051c555f9c485127c691dfc1be31ea` | 200 | 7 | CS2004_RISK: 6, DEVELOPMENT: 1 |
 | `a28efecb652fb0acdf89554c9d29b5cded0637ce` | 200 | 7 | CS2004_RISK: 6, DEVELOPMENT: 1 |
 
-Total catalog entries: **106**.
+Total catalog entries: **107**.
 
 ## Provider results
 
@@ -71,7 +71,7 @@ Total catalog entries: **106**.
 | YabanciDizi | `YabanciDizi` | `CS2004_RISK` | PASS/PASS; 107803 bytes | `0c3e5fdda7e86a9b52ca0d1edebcf37e3a0c06a88b023350b3a7e1ec910065ab` |
 | YesilCamTv | `YesilCamTv` | `CS2004_RISK` | PASS/PASS; 80003 bytes | `6449fd6511942a9955a5974e34b1f774563e90bccc6290401e8ee1fafe83b6f6` |
 
-### fc106d016b7d357c45477facbcd627658cec632c
+### 3871fa6dcfd3a449ae3dcd2d6c45afb65acaafd0
 
 | Provider | internalName | Status | Artifact | SHA-256 |
 |---|---|---|---:|---|
@@ -81,6 +81,7 @@ Total catalog entries: **106**.
 | BasketballVideo | `BasketballVideo` | `CS2004_RISK` | PASS/PASS; 121480 bytes | `c8eaa24d85a22648516ef75ed74301949bd9951c8e11365b00a42d07cc0b7847` |
 | BetmatikTV | `BetmatikTV` | `CS2004_RISK` | PASS/PASS; 161214 bytes | `d460e9d5bdf67a38c48d1342c1003ea86791a082839a70fadb0f10d17c94d7e8` |
 | Crex | `Crex` | `CS2004_RISK` | PASS/PASS; 138791 bytes | `9ca1a52fd96c9ac747b13b7da7be832b150623b43a34cef1cca72e4082fd0fad` |
+| DaddyLive | `DaddyLive` | `CS2004_RISK` | PASS/PASS; 109464 bytes | `e861100f8752b6837d2ca10405f8569183aedcdaa0faa80b8cc03275ec1c9daf` |
 | DomatesTV | `DomatesTV` | `CS2004_RISK` | PASS/PASS; 125349 bytes | `13b4c159bdecfef9ed1fa72b7f1c2375a72ec330543a9e37654fcc89ebfd8501` |
 | GolgeTV | `GolgeTV` | `CS2004_RISK` | PASS/PASS; 179056 bytes | `621bc0a3e1606b751f4f4faaa76eefdb58ec987a7ccc17a4bf7dcb22eec778af` |
 | Hesgoal | `Hesgoal` | `CS2004_RISK` | PASS/PASS; 79340 bytes | `b2b2ea838d2f3e236d71ef74ee0c89429cd3d53a50e8900201b004500d042626` |
@@ -163,15 +164,15 @@ Total catalog entries: **106**.
 
 ## Status totals
 
-- `CS2004_RISK`: 104
+- `CS2004_RISK`: 105
 - `DEVELOPMENT`: 2
 
 ## Cross-catalog duplicate `internalName` audit
 
 - `AniArsiv`: d57850c5ecb89e02fa0c8bd779b3eaea347ca53d, f9b7f08603051c555f9c485127c691dfc1be31ea, a28efecb652fb0acdf89554c9d29b5cded0637ce
 - `CizgiVeDizi`: f9b7f08603051c555f9c485127c691dfc1be31ea, a28efecb652fb0acdf89554c9d29b5cded0637ce
-- `InatBox`: b027479c848b296eb06fb27e855bd1fa47b0854c, fc106d016b7d357c45477facbcd627658cec632c
+- `InatBox`: b027479c848b296eb06fb27e855bd1fa47b0854c, 3871fa6dcfd3a449ae3dcd2d6c45afb65acaafd0
 - `KoolLiveTV`: f9b7f08603051c555f9c485127c691dfc1be31ea, a28efecb652fb0acdf89554c9d29b5cded0637ce
 - `OpenAnime`: d57850c5ecb89e02fa0c8bd779b3eaea347ca53d, f9b7f08603051c555f9c485127c691dfc1be31ea, a28efecb652fb0acdf89554c9d29b5cded0637ce
 - `TrAnimeIzle`: d57850c5ecb89e02fa0c8bd779b3eaea347ca53d, f9b7f08603051c555f9c485127c691dfc1be31ea, a28efecb652fb0acdf89554c9d29b5cded0637ce
-- `VionTV`: fc106d016b7d357c45477facbcd627658cec632c, f9b7f08603051c555f9c485127c691dfc1be31ea, a28efecb652fb0acdf89554c9d29b5cded0637ce
+- `VionTV`: 3871fa6dcfd3a449ae3dcd2d6c45afb65acaafd0, f9b7f08603051c555f9c485127c691dfc1be31ea, a28efecb652fb0acdf89554c9d29b5cded0637ce

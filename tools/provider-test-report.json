@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T20:33:21.452665+00:00",
+  "generatedAt": "2026-09-28T20:37:19.899270+00:00",
   "runner": "cs3_test_runner.py",
   "scope": "repository metadata, .cs3 package/hash/version, artifact HTTP, optional base-site HTTP smoke only",
   "runtimeLimitation": "CloudStream runtime callbacks and real playback are not simulated; unresolved entries remain CS2004_RISK.",
@@ -42,7 +42,7 @@
           "provider": "InatBox"
         },
         {
-          "repository": "fc106d016b7d357c45477facbcd627658cec632c",
+          "repository": "3871fa6dcfd3a449ae3dcd2d6c45afb65acaafd0",
           "provider": "InatBox"
         }
       ]
@@ -98,7 +98,7 @@
       "internalName": "VionTV",
       "occurrences": [
         {
-          "repository": "fc106d016b7d357c45477facbcd627658cec632c",
+          "repository": "3871fa6dcfd3a449ae3dcd2d6c45afb65acaafd0",
           "provider": "VionTV"
         },
         {
@@ -1225,8 +1225,8 @@
       "catalogHttpStatus": 200
     },
     {
-      "repository": "fc106d016b7d357c45477facbcd627658cec632c",
-      "catalogUrl": "https://raw.githubusercontent.com/Wiojelt/WioSpor/fc106d016b7d357c45477facbcd627658cec632c/plugins.json",
+      "repository": "3871fa6dcfd3a449ae3dcd2d6c45afb65acaafd0",
+      "catalogUrl": "https://raw.githubusercontent.com/Wiojelt/WioSpor/3871fa6dcfd3a449ae3dcd2d6c45afb65acaafd0/plugins.json",
       "providers": [
         {
           "name": "0 WioSpor",
@@ -1370,6 +1370,30 @@
           "artifact_http_status": 200,
           "artifact_bytes": 138791,
           "sha256": "9ca1a52fd96c9ac747b13b7da7be832b150623b43a34cef1cca72e4082fd0fad",
+          "status": "CS2004_RISK"
+        },
+        {
+          "name": "DaddyLive",
+          "internalName": "DaddyLive",
+          "stages": {
+            "catalog_metadata": "PASS",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
+            "site_api": "NOT_MAPPED",
+            "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
+            "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
+            "load": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
+            "loadLinks": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
+            "subtitles": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
+            "live_hls_segments": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
+            "artifact_http": "PASS",
+            "package_integrity": "PASS"
+          },
+          "issues": [
+            "CloudStream runtime catalog/search/load/loadLinks/subtitle/playback flow not executed; do not infer ACTIVE."
+          ],
+          "artifact_http_status": 200,
+          "artifact_bytes": 109464,
+          "sha256": "e861100f8752b6837d2ca10405f8569183aedcdaa0faa80b8cc03275ec1c9daf",
           "status": "CS2004_RISK"
         },
         {
