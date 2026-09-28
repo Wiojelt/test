@@ -9,3 +9,9 @@ python tools/cs3_test_runner.py .\repo-folder --catalog-url https://raw.githubus
 Repeat `--catalog-url` for each additional catalog. Use `--site-map tools/provider-sites.json` only for manually reviewed `internalName` → home URL mappings. The default report path is `tools/provider-test-report.json`.
 
 The runner verifies catalog JSON, duplicate `internalName` values, artifact HTTP status, declared byte size and SHA-256, ZIP integrity, and package manifest version/class metadata. It does **not** load provider callbacks in the CloudStream runtime. Catalog/search/detail/loadLinks/subtitle/live-playback stages therefore remain `NOT_RUN` and the aggregate provider state is `CS2004_RISK` until a real runtime test is performed. HTTP success is not playback proof.
+
+It writes both JSON and Markdown reports. To regenerate only the Markdown companion from an existing report without network requests:
+
+```powershell
+python tools/cs3_test_runner.py --render-existing --report tools/provider-test-report.json --markdown-report tools/provider-test-report.md
+```

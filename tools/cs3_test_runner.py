@@ -97,18 +97,29 @@ def main() -> int:
     parser.add_argument("--timeout", type=float, default=20.0)
     parser.add_argument("--max-mb", type=int, default=120)
     parser.add_argument("--report", type=Path, default=Path("tools/provider-test-report.json"))
+    parser.add_argument(
+        "--markdown-report",
+        type=Path,
+        default=Path("tools/provider-test-report.md"),
+        help="write a human-readable companion report",
+    )
+    parser.add_argument("--render-existing", action="store_true", help="render Markdown from the existing JSON report without network requests")
     parser.add_argument("--offline", action="store_true", help="use local .cs3 files only; never fetch URLs")
     args = parser.parse_args()
 
-    if not args.repo and not args.catalog_url:
+    if not args.render_existing and not args.repo and not args.catalog_url:
         parser.error("provide at least one repo path or --catalog-url")
+    if args.render_existing:
+        report = load_json(args.report)
+        results = report.get("repositories", [])
+    else:
+        results = []
     site_map = load_json(args.site_map) if args.site_map else {}
-    results: list[dict[str, Any]] = []
     max_bytes = args.max_mb * 1024 * 1024
 
     sources: list[tuple[str, Path | str]] = [("path", repo) for repo in args.repo]
     sources.extend(("url", url) for url in args.catalog_url)
-    for source_type, source in sources:
+    for source_type, source in ([] if args.render_existing else sources):
         if source_type == "path":
             source_path = Path(source).resolve()
             repo = source_path if source_path.is_dir() else source_path.parent
@@ -232,15 +243,70 @@ def main() -> int:
             repo_result["providers"].append(provider)
         results.append(repo_result)
 
-    report = {
-        "generatedAt": datetime.now(timezone.utc).isoformat(),
-        "runner": "cs3_test_runner.py",
-        "scope": "repository metadata, .cs3 package/hash/version, artifact HTTP, optional base-site HTTP smoke only",
-        "runtimeLimitation": "CloudStream runtime callbacks and real playback are not simulated; unresolved entries remain CS2004_RISK.",
-        "repositories": results,
-    }
-    args.report.parent.mkdir(parents=True, exist_ok=True)
-    args.report.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    if not args.render_existing:
+        report = {
+            "generatedAt": datetime.now(timezone.utc).isoformat(),
+            "runner": "cs3_test_runner.py",
+            "scope": "repository metadata, .cs3 package/hash/version, artifact HTTP, optional base-site HTTP smoke only",
+            "runtimeLimitation": "CloudStream runtime callbacks and real playback are not simulated; unresolved entries remain CS2004_RISK.",
+            "repositories": results,
+        }
+        args.report.parent.mkdir(parents=True, exist_ok=True)
+        args.report.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+    markdown = [
+        "# CloudStream provider verification report",
+        "",
+        f"Generated: {report['generatedAt']}",
+        "",
+        f"Scope: {report['scope']}.",
+        "",
+        f"> Runtime limitation: {report['runtimeLimitation']}",
+        "",
+        "| Repository/catalog | Catalog HTTP | Providers | Status summary |",
+        "|---|---:|---:|---|",
+    ]
+    status_totals: dict[str, int] = {}
+    provider_total = 0
+    for repository in results:
+        providers = repository.get("providers", [])
+        provider_total += len(providers)
+        statuses: dict[str, int] = {}
+        for provider in providers:
+            status = str(provider.get("status", "UNKNOWN"))
+            statuses[status] = statuses.get(status, 0) + 1
+            status_totals[status] = status_totals.get(status, 0) + 1
+        label = repository.get("repository") or repository.get("catalogUrl") or repository.get("catalog", "unknown")
+        status_text = ", ".join(f"{key}: {value}" for key, value in sorted(statuses.items())) or "no provider entries"
+        http_status = repository.get("catalogHttpStatus", "n/a")
+        markdown.append(f"| `{label}` | {http_status} | {len(providers)} | {status_text} |")
+
+    markdown.extend(["", f"Total catalog entries: **{provider_total}**.", ""])
+    markdown.append("## Provider results")
+    markdown.append("")
+    for repository in results:
+        label = repository.get("repository") or repository.get("catalogUrl") or repository.get("catalog", "unknown")
+        markdown.extend([f"### {label}", ""])
+        if repository.get("error"):
+            markdown.extend([f"Catalog error: `{repository['error']}`", ""])
+            continue
+        markdown.extend(["| Provider | internalName | Status | Artifact | SHA-256 |", "|---|---|---|---:|---|"])
+        for provider in repository.get("providers", []):
+            stages = provider.get("stages", {})
+            artifact_ok = stages.get("artifact_http", "n/a")
+            package_ok = stages.get("package_integrity", "n/a")
+            integrity = f"{artifact_ok}/{package_ok}; {provider.get('artifact_bytes', 'n/a')} bytes"
+            digest = provider.get("sha256", "n/a")
+            markdown.append(
+                f"| {provider.get('name', 'n/a')} | `{provider.get('internalName', 'n/a')}` | "
+                f"`{provider.get('status', 'UNKNOWN')}` | {integrity} | `{digest}` |"
+            )
+        markdown.append("")
+    markdown.extend(["## Status totals", ""])
+    markdown.extend(f"- `{status}`: {count}" for status, count in sorted(status_totals.items()))
+    markdown.append("")
+    args.markdown_report.parent.mkdir(parents=True, exist_ok=True)
+    args.markdown_report.write_text("\n".join(markdown), encoding="utf-8")
 
     counts: dict[str, int] = {}
     total = 0
@@ -248,7 +314,7 @@ def main() -> int:
         for provider in repo.get("providers", []):
             total += 1
             counts[provider["status"]] = counts.get(provider["status"], 0) + 1
-    print(json.dumps({"providers": total, "statuses": counts, "report": str(args.report.resolve())}, ensure_ascii=False))
+    print(json.dumps({"providers": total, "statuses": counts, "report": str(args.report.resolve()), "markdownReport": str(args.markdown_report.resolve())}, ensure_ascii=False))
     return 1 if any(status in counts for status in ("BUILD_FAIL", "HTTP_ERROR")) else 0
 
 
