@@ -3,12 +3,7 @@
   "description": "TurkStream Studio Test Eklenti Deposu",
   "manifestVersion": 1,
   "pluginLists": [
-    "https://raw.githubusercontent.com/Wiojelt/test/b1b0ceb4fce2137e91486750ae466d5cb1f65b3e/plugins.json"
+    "https://raw.githubusercontent.com/Wiojelt/test/main/plugins.json"
   ],
   "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/wiotest.png"
 }
-
-
-
-
-

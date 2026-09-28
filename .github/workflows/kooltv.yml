@@ -1,0 +1,63 @@
+name: Build KoolTV
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'kooltv-src/**'
+      - '.github/workflows/kooltv.yml'
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - name: Checkout CloudStream build tool
+        uses: actions/checkout@v4
+        with:
+          repository: recloudstream/gradle
+          path: kooltv-src/.build-tools/cloudstream-gradle
+      - name: Download CloudStream API
+        run: |
+          mkdir -p "$HOME/.gradle/caches/cloudstream/cloudstream"
+          curl --fail -L --retry 4 https://github.com/recloudstream/cloudstream/releases/download/pre-release/classes.jar -o "$HOME/.gradle/caches/cloudstream/cloudstream/cloudstream.jar"
+      - name: Build
+        working-directory: kooltv-src
+        run: |
+          rm -f gradle/wrapper/gradle-wrapper.properties
+          gradle wrapper --gradle-version 9.4.1
+          chmod +x gradlew
+          ./gradlew :KoolTV:make --no-daemon
+      - name: Publish artifact
+        run: |
+          git pull --rebase origin main
+          cp kooltv-src/KoolTV/build/KoolTV.cs3 KoolTV.cs3
+          python3 - <<'PY'
+          import hashlib, json, os
+          path="KoolTV.cs3"
+          with open(path,"rb") as f: digest=hashlib.sha256(f.read()).hexdigest()
+          with open("plugins.json","r",encoding="utf-8") as f: data=json.load(f)
+          entry={
+            "url":"https://raw.githubusercontent.com/Wiojelt/test/main/KoolTV.cs3",
+            "status":1,"version":1,"name":"Kool TV","internalName":"KoolTV",
+            "authors":["Wiojelt"],
+            "description":"Kool TV · ülke seçimi, tüm kanallar ve kategori rafları.",
+            "fileSize":os.path.getsize(path),"repositoryUrl":"https://github.com/Wiojelt/test",
+            "language":"tr","tvTypes":["Live"],
+            "iconUrl":"https://raw.githubusercontent.com/Wiojelt/test/main/assets/wiotest.png",
+            "apiVersion":1,"fileHash":"sha256-"+digest
+          }
+          data=[x for x in data if x.get("internalName")!="KoolTV"]
+          data.append(entry)
+          with open("plugins.json","w",encoding="utf-8") as f: json.dump(data,f,ensure_ascii=False,indent=2); f.write("\n")
+          PY
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add KoolTV.cs3 plugins.json
+          git commit -m "Build KoolTV" || exit 0
+          git push
