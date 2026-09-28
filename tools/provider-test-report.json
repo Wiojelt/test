@@ -13,7 +13,7 @@
           "internalName": "WioSinema",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -37,7 +37,7 @@
           "internalName": "AltiYuzAltmisAltiFilmIzle",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -61,7 +61,7 @@
           "internalName": "BelgeselX",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -85,7 +85,7 @@
           "internalName": "CizgiMax",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -109,7 +109,7 @@
           "internalName": "CNCVerseDisneyPlus",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -133,7 +133,7 @@
           "internalName": "CNCVerseHotstar",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -157,7 +157,7 @@
           "internalName": "CNCVerseNetflix",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -181,7 +181,7 @@
           "internalName": "CNCVersePrimeVideo",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -205,7 +205,7 @@
           "internalName": "DDizi",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -229,7 +229,7 @@
           "internalName": "DiziBal",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -253,7 +253,7 @@
           "internalName": "DiziBol",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -277,7 +277,7 @@
           "internalName": "DiziBox",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -301,7 +301,7 @@
           "internalName": "DiziFilmIzle",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -325,7 +325,7 @@
           "internalName": "Dizilla",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -349,7 +349,7 @@
           "internalName": "DiziMom",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -373,7 +373,7 @@
           "internalName": "DiziPal",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -397,7 +397,7 @@
           "internalName": "DiziPalOriginal",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -421,7 +421,7 @@
           "internalName": "DiziRella",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -445,7 +445,7 @@
           "internalName": "DiziYou",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -469,7 +469,7 @@
           "internalName": "Dmax",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -493,7 +493,7 @@
           "internalName": "FilmIzzle",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -517,7 +517,7 @@
           "internalName": "FilmMakinesi",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -541,7 +541,7 @@
           "internalName": "FilmModu",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -565,7 +565,7 @@
           "internalName": "FullHDFilm",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -589,7 +589,7 @@
           "internalName": "FullHDFilmizlesene",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -613,7 +613,7 @@
           "internalName": "HDFilmCehennemi",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -637,7 +637,7 @@
           "internalName": "HDFilmDelisi",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -661,7 +661,7 @@
           "internalName": "HDFilmizleBest",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -685,7 +685,7 @@
           "internalName": "HDFilmIzleInk",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -709,7 +709,7 @@
           "internalName": "HDFilmIzleVip",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -733,7 +733,7 @@
           "internalName": "InatBox",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -757,7 +757,7 @@
           "internalName": "JetFilmizle",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -781,7 +781,7 @@
           "internalName": "KultFilmler",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -805,7 +805,7 @@
           "internalName": "LiderFilmIzle",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -829,7 +829,7 @@
           "internalName": "NetFilmizle",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -853,7 +853,7 @@
           "internalName": "PowerSinema",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -877,7 +877,7 @@
           "internalName": "RareFilmm",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -901,7 +901,7 @@
           "internalName": "RecTV",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -925,7 +925,7 @@
           "internalName": "SetFilmIzle",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -949,7 +949,7 @@
           "internalName": "SezonlukDizi",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -973,7 +973,7 @@
           "internalName": "SinemaCX",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -997,7 +997,7 @@
           "internalName": "SinemaGG",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -1021,7 +1021,7 @@
           "internalName": "Sinemakolik",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -1045,7 +1045,7 @@
           "internalName": "Sinewix",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -1069,7 +1069,7 @@
           "internalName": "Tlctr",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -1093,7 +1093,7 @@
           "internalName": "TrDiziIzle",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -1117,7 +1117,7 @@
           "internalName": "WebteIzle",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -1141,7 +1141,7 @@
           "internalName": "YabanciDizi",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -1165,7 +1165,7 @@
           "internalName": "YesilCamTv",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -1196,7 +1196,7 @@
           "internalName": "WioSpor",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -1220,7 +1220,7 @@
           "internalName": "ArdaSpor",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -1244,7 +1244,7 @@
           "internalName": "AslanTV",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -1268,7 +1268,7 @@
           "internalName": "BasketballReplays",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -1292,7 +1292,7 @@
           "internalName": "BasketballVideo",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -1316,7 +1316,7 @@
           "internalName": "BetmatikTV",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -1340,7 +1340,7 @@
           "internalName": "BeyazElma",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -1364,7 +1364,7 @@
           "internalName": "Crex",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -1388,7 +1388,7 @@
           "internalName": "DaddyLive",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -1412,7 +1412,7 @@
           "internalName": "DomatesTV",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -1436,7 +1436,7 @@
           "internalName": "DominoTV",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -1460,7 +1460,7 @@
           "internalName": "GolgeTV",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -1484,7 +1484,7 @@
           "internalName": "Hesgoal",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -1508,7 +1508,7 @@
           "internalName": "InatTV",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -1532,7 +1532,7 @@
           "internalName": "InterSporTV",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -1556,7 +1556,7 @@
           "internalName": "JestYayin",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -1580,7 +1580,7 @@
           "internalName": "KralSporHD",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -1604,7 +1604,7 @@
           "internalName": "MacKeyfi",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -1628,7 +1628,7 @@
           "internalName": "MahsunSports",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -1652,7 +1652,7 @@
           "internalName": "NetVGold",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -1676,7 +1676,7 @@
           "internalName": "Ntvs",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -1700,7 +1700,7 @@
           "internalName": "PapazSports",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -1724,7 +1724,7 @@
           "internalName": "SelcukSports",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -1748,7 +1748,7 @@
           "internalName": "SportzxProvider",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -1772,7 +1772,7 @@
           "internalName": "Streamed",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -1796,7 +1796,7 @@
           "internalName": "Taraftarium24",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -1820,7 +1820,7 @@
           "internalName": "TRGoals",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -1844,7 +1844,7 @@
           "internalName": "BirdirbirIPTV",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -1868,7 +1868,7 @@
           "internalName": "VivoXSpor",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -1892,7 +1892,7 @@
           "internalName": "ZbahisTV",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -1916,7 +1916,7 @@
           "internalName": "InatBox",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -1940,7 +1940,7 @@
           "internalName": "PatronHD",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -1964,7 +1964,7 @@
           "internalName": "VionTV",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -1988,7 +1988,7 @@
           "internalName": "KoolTV",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -2019,7 +2019,7 @@
           "internalName": "WioCinema",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -2043,7 +2043,7 @@
           "internalName": "BingeBang",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -2067,7 +2067,7 @@
           "internalName": "CineCat",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -2091,7 +2091,7 @@
           "internalName": "CineSimkl",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -2115,7 +2115,7 @@
           "internalName": "CineStream",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -2139,7 +2139,7 @@
           "internalName": "ClipBox",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -2163,7 +2163,7 @@
           "internalName": "FlixNetwork",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -2187,7 +2187,7 @@
           "internalName": "Mapple",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -2211,7 +2211,7 @@
           "internalName": "Watch2Movies",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -2235,7 +2235,7 @@
           "internalName": "TurkishCineStream",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -2266,7 +2266,7 @@
           "internalName": "DramaDizilerim",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -2290,7 +2290,7 @@
           "internalName": "NetShort",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -2321,7 +2321,7 @@
           "internalName": "AnimeciX",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -2345,7 +2345,7 @@
           "internalName": "Anizium",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -2369,7 +2369,7 @@
           "internalName": "AsyaAnimeleri",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -2393,7 +2393,7 @@
           "internalName": "Deokwave",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -2417,7 +2417,7 @@
           "internalName": "TRanimaci",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -2441,7 +2441,7 @@
           "internalName": "TurkAnime",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -2465,7 +2465,7 @@
           "internalName": "AniArsiv",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -2489,7 +2489,7 @@
           "internalName": "TrAnimeIzle",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -2513,7 +2513,7 @@
           "internalName": "OpenAnime",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -2537,7 +2537,7 @@
           "internalName": "AnizmProvider",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -2568,7 +2568,7 @@
           "internalName": "KoolLiveTV",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -2592,7 +2592,7 @@
           "internalName": "CizgiVeDizi",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -2616,7 +2616,7 @@
           "internalName": "WioDB",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -2640,7 +2640,7 @@
           "internalName": "VionTV",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -2664,7 +2664,7 @@
           "internalName": "AniArsiv",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -2688,7 +2688,7 @@
           "internalName": "TrAnimeIzle",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -2712,7 +2712,7 @@
           "internalName": "OpenAnime",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -2743,7 +2743,7 @@
           "internalName": "KoolLiveTV",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -2767,7 +2767,7 @@
           "internalName": "CizgiVeDizi",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -2791,7 +2791,7 @@
           "internalName": "WioDB",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -2815,7 +2815,7 @@
           "internalName": "VionTV",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -2839,7 +2839,7 @@
           "internalName": "AniArsiv",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -2863,7 +2863,7 @@
           "internalName": "TrAnimeIzle",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
@@ -2887,7 +2887,7 @@
           "internalName": "OpenAnime",
           "stages": {
             "catalog_metadata": "PASS",
-            "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+            "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
             "site_api": "NOT_MAPPED",
             "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
             "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",

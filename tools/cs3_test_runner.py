@@ -154,7 +154,7 @@ def main() -> int:
                 "internalName": internal_name,
                 "stages": {
                     "catalog_metadata": "PASS",
-                    "build": "NOT_RUN_SOURCE_UNAVAILABLE",
+                    "build": "NOT_RUN_SOURCE_BUILD_NOT_CONFIGURED",
                     "site_api": "NOT_MAPPED",
                     "main_page": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
                     "search": "NOT_RUN_CLOUDSTREAM_RUNTIME_REQUIRED",
