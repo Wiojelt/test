@@ -168,8 +168,10 @@ def main() -> int:
 
             if not internal_name:
                 provider["issues"].append("missing internalName/name")
+                provider["stages"]["catalog_metadata"] = "FAIL"
             elif internal_name in seen:
                 provider["issues"].append(f"duplicate internalName: {internal_name}")
+                provider["stages"]["catalog_metadata"] = "FAIL"
             else:
                 seen.add(internal_name)
 
@@ -210,8 +212,18 @@ def main() -> int:
                 if error:
                     provider["issues"].append(error)
 
-            if any(stage == "FAIL" for stage in provider["stages"].values()):
-                provider["status"] = "HTTP_ERROR" if provider["stages"].get("artifact_http") == "FAIL" else "BUILD_FAIL"
+            if provider["stages"].get("artifact_http") == "FAIL":
+                provider["status"] = "HTTP_ERROR"
+            elif provider["stages"].get("package_integrity") == "FAIL" or provider["stages"].get("catalog_metadata") == "FAIL":
+                provider["status"] = "BUILD_FAIL"
+            elif provider["stages"].get("site_api") == "FAIL":
+                issue_text = " ".join(provider["issues"])
+                if "CLOUDFLARE_BLOCK" in issue_text:
+                    provider["status"] = "CLOUDFLARE_BLOCK"
+                elif provider.get("site_http_status") is None:
+                    provider["status"] = "SITE_DOWN"
+                else:
+                    provider["status"] = "HTTP_ERROR"
             else:
                 provider["status"] = "CS2004_RISK"
                 provider["issues"].append(
