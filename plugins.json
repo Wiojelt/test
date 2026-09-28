@@ -20,30 +20,6 @@
     "fileHash": "sha256-0cff5ceeebd6004640c266a1f940383232ae6e210bb12eb30886e217e552e8c9"
   },
   {
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/TurkishCineStream.cs3",
-    "status": 1,
-    "version": 6,
-    "name": "TurkishCineStream",
-    "internalName": "TurkishCineStream",
-    "authors": [
-      "Wiojelt",
-      "megix"
-    ],
-    "description": "CineStream video motoru + Türkçe çoklu altyazı motoru + upstream CineStream ayar paneli (deneysel test sürümü)",
-    "fileSize": 391581,
-    "repositoryUrl": "https://github.com/Wiojelt/test",
-    "language": "tr",
-    "tvTypes": [
-      "Movie",
-      "TvSeries",
-      "Anime",
-      "AsianDrama"
-    ],
-    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/turkishcinestream.png",
-    "apiVersion": 1,
-    "fileHash": "sha256-e6f3262d9a448365068ce7c4a67baafb147bfbb06f0f8e637aeeb77d13113b53"
-  },
-  {
     "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/CizgiVeDizi.cs3",
     "status": 1,
     "version": 18,
@@ -149,28 +125,6 @@
     "iconUrl": "https://www.tranimeizle.live/favicon.ico",
     "apiVersion": 1,
     "fileHash": "sha256-a7ead2850a4e683c9fdd7ad1a5017f46b69de98bc07d843c9a59691628527a1a"
-  },
-  {
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/AnizmProvider.cs3",
-    "status": 1,
-    "version": 20,
-    "name": "Anizm",
-    "internalName": "AnizmProvider",
-    "authors": [
-      "Wiojelt"
-    ],
-    "description": "Anizm (anizm.net) · Türkçe altyazılı anime sağlayıcısı",
-    "fileSize": 185479,
-    "repositoryUrl": "https://github.com/Wiojelt/test",
-    "language": "tr",
-    "tvTypes": [
-      "Anime",
-      "AnimeMovie",
-      "OVA"
-    ],
-    "iconUrl": "https://anizm.net/favicon.ico",
-    "apiVersion": 1,
-    "fileHash": "sha256-69f432043a08e9a41f86a2c086208bff89179634a088e0b5b46d7913f42c16d1"
   },
   {
     "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/OpenAnime.cs3",
