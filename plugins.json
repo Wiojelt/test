@@ -6,7 +6,7 @@
     "description": "WioSinema kalite varyantlari, alternatif basliklar ve DiziPal onerilen kaynak testi",
     "authors": ["Wiojelt"],
     "repositoryUrl": "https://github.com/Wiojelt/test",
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/WioSinema.cs3",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/3c056b7/WioSinema.cs3",
     "iconUrl": "https://raw.githubusercontent.com/Wiojelt/WioSinema/main/assets/logo.png",
     "tvTypes": ["Movie", "TvSeries"],
     "language": "tr",
