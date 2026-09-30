@@ -1,5 +1,21 @@
 [
   {
+    "name": "0 WioSinema Test",
+    "internalName": "WioSinema",
+    "version": 50,
+    "description": "WioSinema kalite varyantlari ve alternatif baslik eslesmesi test surumu",
+    "authors": ["Wiojelt"],
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/WioSinema.cs3",
+    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/WioSinema/main/assets/logo.png",
+    "tvTypes": ["Movie", "TvSeries"],
+    "language": "tr",
+    "status": 3,
+    "fileSize": 2004939,
+    "fileHash": "sha256-4e51127bb901e6998f3bb82e65e02d71256aca91f7c10b1fb1e9b81e3786b8cb",
+    "apiVersion": 1
+  },
+  {
     "name": "Sinewix",
     "internalName": "Sinewix",
     "version": 8,
