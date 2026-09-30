@@ -3,7 +3,7 @@
   "description": "Test Deposu",
   "manifestVersion": 1,
   "pluginLists": [
-    "https://raw.githubusercontent.com/Wiojelt/test/builds/plugins.json"
+    "https://raw.githubusercontent.com/Wiojelt/test/builds/plugins.json?rev=be662904f248c7693ce01d3567006e830a8c4d24"
   ],
   "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/wiotest.png"
 }
