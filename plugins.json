@@ -1,5 +1,21 @@
 [
   {
+    "name": "Sinewix",
+    "internalName": "Sinewix",
+    "version": 8,
+    "description": "Sinewix son eklenenler katalog adayi",
+    "authors": ["Wiojelt"],
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/Sinewix.cs3",
+    "iconUrl": "https://play-lh.googleusercontent.com/brwGNmr7IjA_MKk_TTPs0va10hdKE_bD_a1lnKoiMuCayW98EHpRv55edA6aEoJlmwfX=w240-h480",
+    "tvTypes": ["Movie", "TvSeries", "Anime"],
+    "language": "tr",
+    "status": 3,
+    "fileSize": 118998,
+    "fileHash": "sha256-0f98b0b760d72314560a0dd03ff20f41214a42620013af68c2c9488cab803017",
+    "apiVersion": 1
+  },
+  {
     "name": "DiziPal",
     "internalName": "DiziPal",
     "version": 11,
