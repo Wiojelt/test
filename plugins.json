@@ -96,6 +96,38 @@
     "apiVersion": 1
   },
   {
+    "name": "WioAnime Test",
+    "internalName": "WioAnime",
+    "version": 2,
+    "description": "Anime catalog source scan and provider fallback test",
+    "authors": ["Wiojelt"],
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/WioAnime.cs3",
+    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/WioAnime/main/assets/logo.png",
+    "tvTypes": ["Anime", "AnimeMovie", "OVA", "TvSeries"],
+    "language": "tr",
+    "status": 3,
+    "fileSize": 2108151,
+    "fileHash": "sha256-f61551e275dc214b9f9b8b4834fa3d054271808720ae6e8ce1bc7bf83c8df51a",
+    "apiVersion": 1
+  },
+  {
+    "name": "WioAsya Test",
+    "internalName": "WioAsya",
+    "version": 2,
+    "description": "Asian drama catalog source scan and provider fallback test",
+    "authors": ["Wiojelt"],
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/WioAsya.cs3",
+    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/WioAsya/main/assets/logo.png",
+    "tvTypes": ["AsianDrama", "TvSeries", "Movie"],
+    "language": "tr",
+    "status": 3,
+    "fileSize": 2108111,
+    "fileHash": "sha256-ae84251671c9a8fd0fef7fd462015774ed4af04664af066fb04e3859c6f2c9a2",
+    "apiVersion": 1
+  },
+  {
     "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/CizgiVeDizi.cs3",
     "status": 1,
     "version": 18,
