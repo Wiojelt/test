@@ -2,8 +2,8 @@
   {
     "name": "StbTV",
     "internalName": "StbTV",
-    "version": 1,
-    "description": "Stalker Stb Canlı TV ve Spor Kanalları (TV1 & 8kGold Panelleri)",
+    "version": 2,
+    "description": "Stalker Stb Canlı TV ve Spor Kanalları (Dinamik Oturum & Taze Token Destekli)",
     "authors": [
       "Wiojelt"
     ],
@@ -15,8 +15,8 @@
     ],
     "language": "tr",
     "status": 1,
-    "fileSize": 128818,
-    "fileHash": "sha256-bf61b4cb0a475b1c8d0be18d33dca1df6dbca3eea0e89f26839651a62bc94e1a",
+    "fileSize": 132835,
+    "fileHash": "sha256-6fb10a40fbef72102ec1033a9b29fa29446094bb935353af9ee800f2bf983d66",
     "apiVersion": 1
   },
   {
