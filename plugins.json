@@ -2,14 +2,14 @@
   {
     "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/SeyirTURK.cs3",
     "status": 1,
-    "version": 2,
+    "version": 3,
     "name": "SeyirTURK",
     "internalName": "SeyirTURK",
     "authors": [
       "Wiojelt"
     ],
     "description": "SeyirTURK · Yerli ve yabancı filmler, diziler ve canlı TV kanalları",
-    "fileSize": 139851,
+    "fileSize": 150412,
     "repositoryUrl": "https://github.com/Wiojelt/test",
     "language": "tr",
     "tvTypes": [
@@ -19,7 +19,7 @@
     ],
     "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/builds/assets/seyirturk.png",
     "apiVersion": 1,
-    "fileHash": "sha256-8ee90682ea276fd9ff50ec54d8d263c44607900e493d626d438a831407bf2fd4"
+    "fileHash": "sha256-e3c935e88204e1b974a9a156476eff77233b16a2e8699b3b76e59252fda21cc1"
   },
   {
     "name": "WioDB",
