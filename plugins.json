@@ -1,5 +1,25 @@
 [
   {
+    "name": "StbTV",
+    "internalName": "StbTV",
+    "version": 1,
+    "description": "Stalker Stb Canlı TV ve Spor Kanalları (TV1 & 8kGold Panelleri)",
+    "authors": [
+      "Wiojelt"
+    ],
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/StbTV.cs3",
+    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/builds/assets/seyirturk.png",
+    "tvTypes": [
+      "Live"
+    ],
+    "language": "tr",
+    "status": 1,
+    "fileSize": 128818,
+    "fileHash": "sha256-bf61b4cb0a475b1c8d0be18d33dca1df6dbca3eea0e89f26839651a62bc94e1a",
+    "apiVersion": 1
+  },
+  {
     "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/SeyirTURK.cs3",
     "status": 1,
     "version": 5,
