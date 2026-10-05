@@ -61,5 +61,28 @@
     "fileSize": 29491,
     "fileHash": "sha256-ce90624e3632b14563c69354b66b54703d27a44b652cb8a8de308dc1e0f95ab3",
     "apiVersion": 1
+  },
+  {
+    "name": "DiziKorea",
+    "internalName": "DiziKorea",
+    "version": 16,
+    "description": "Asya dizileri ve filmleri. Yayınlanmamış bölümlerde 'Bu bölümü sizler için hazırlıyoruz' bilgisi bölüm açıklamasında gösterilir.",
+    "authors": [
+      "Wiojelt",
+      "CloudStreamTR",
+      "kraptor"
+    ],
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/DiziKorea.cs3",
+    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/providers/DiziKorea.png",
+    "tvTypes": [
+      "AsianDrama",
+      "Movie"
+    ],
+    "language": "tr",
+    "status": 1,
+    "apiVersion": 1,
+    "fileSize": 136717,
+    "fileHash": "sha256-eb9e6312960b2ea97444cc764424ddb26211144adadb28ae02c68f6700573295"
   }
 ]
