@@ -84,5 +84,146 @@
     "apiVersion": 1,
     "fileSize": 151209,
     "fileHash": "sha256-cbf10da5c294aa06810ed6a8879df2f75b5791beb27e0739e2594b56ac5bb1b8"
+  },
+  {
+    "name": "LeoTV",
+    "internalName": "LeoTV",
+    "version": 1,
+    "description": "LeoTV / LeoGrand canlı spor ve TV yayınları (Dinamik AES-CBC akış çözücü)",
+    "authors": [
+      "Wiojelt"
+    ],
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/LeoTV.cs3",
+    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/builds/icon.gif",
+    "tvTypes": [
+      "Live"
+    ],
+    "language": "tr",
+    "status": 1,
+    "apiVersion": 1,
+    "fileSize": 113818,
+    "fileHash": "sha256-a6359f6b9caa7000c825610cb07c537e3f3d60357cd9e0c6fb5a1ca251635377"
+  },
+  {
+    "name": "VegolTV",
+    "internalName": "VegolTV",
+    "version": 1,
+    "description": "VegolTV / Zirve canlı spor ve maç yayınları",
+    "authors": [
+      "Wiojelt"
+    ],
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/VegolTV.cs3",
+    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/builds/icon.gif",
+    "tvTypes": [
+      "Live"
+    ],
+    "language": "tr",
+    "status": 1,
+    "apiVersion": 1,
+    "fileSize": 111275,
+    "fileHash": "sha256-68e986ce00d44b2ed1d21df194761d12ab40abe2941717292ed7a005c2157585"
+  },
+  {
+    "name": "TRGoals",
+    "internalName": "TRGoals",
+    "version": 2,
+    "description": "TRGoals / TRGool canlı maç ve spor yayınları (Güncel domain desteği)",
+    "authors": [
+      "Wiojelt"
+    ],
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/TRGoals.cs3",
+    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/builds/icon.gif",
+    "tvTypes": [
+      "Live"
+    ],
+    "language": "tr",
+    "status": 1,
+    "apiVersion": 1,
+    "fileSize": 180258,
+    "fileHash": "sha256-cd23d085428ce0173c8130f8107e72b283280e0ee78daac1e6a9d4781e5bbb9b"
+  },
+  {
+    "name": "KacakSpor",
+    "internalName": "KacakSpor",
+    "version": 1,
+    "description": "Kaçakspor canlı spor kanalları ve kesintisiz maç yayınları",
+    "authors": [
+      "Wiojelt"
+    ],
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/KacakSpor.cs3",
+    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/builds/icon.gif",
+    "tvTypes": [
+      "Live"
+    ],
+    "language": "tr",
+    "status": 1,
+    "apiVersion": 1,
+    "fileSize": 113459,
+    "fileHash": "sha256-3db7d63975665295c62f5b70dc4df129abb81790647e725160ba4c5caf9ebdcc"
+  },
+  {
+    "name": "AtomSpor",
+    "internalName": "AtomSpor",
+    "version": 1,
+    "description": "AtomSporTV canlı spor kanalları ve maç yayınları",
+    "authors": [
+      "Wiojelt"
+    ],
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/AtomSpor.cs3",
+    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/builds/icon.gif",
+    "tvTypes": [
+      "Live"
+    ],
+    "language": "tr",
+    "status": 1,
+    "apiVersion": 1,
+    "fileSize": 111560,
+    "fileHash": "sha256-ad54c3a18e5f3bc9f23b259485a90a3ca951b40b4bb0a7267e7a8f95afc4be28"
+  },
+  {
+    "name": "Warflix",
+    "internalName": "Warflix",
+    "version": 1,
+    "description": "Warflix - 70 adet entegre hızlı embed sunucu seçeneği ile film ve diziler",
+    "authors": [
+      "Wiojelt"
+    ],
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/Warflix.cs3",
+    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/builds/icon.gif",
+    "tvTypes": [
+      "Movie",
+      "TvSeries"
+    ],
+    "language": "en",
+    "status": 1,
+    "apiVersion": 1,
+    "fileSize": 116782,
+    "fileHash": "sha256-ca226745beb8131d8d4d09b6c926b9b3e5e21bc9957e399544c3018633b80592"
+  },
+  {
+    "name": "DaddyLive",
+    "internalName": "DaddyLive",
+    "version": 5,
+    "description": "DaddyLive 7/24 spor kanalları ve etkinlikler (Güncel API desteği)",
+    "authors": [
+      "Wiojelt"
+    ],
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/DaddyLive.cs3",
+    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/builds/icon.gif",
+    "tvTypes": [
+      "Live"
+    ],
+    "language": "tr",
+    "status": 1,
+    "apiVersion": 1,
+    "fileSize": 109439,
+    "fileHash": "sha256-8f646d9831658fd935a690fa0f0235fdd73d6f087c895cfc3f521bb4f5f9e277"
   }
 ]
