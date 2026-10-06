@@ -88,7 +88,7 @@
   {
     "name": "LeoTV",
     "internalName": "LeoTV",
-    "version": 2,
+    "version": 3,
     "description": "LeoTV / LeoGrand canlı spor ve TV yayınları (Dinamik AES-CBC akış çözücü)",
     "authors": [
       "Wiojelt"
@@ -102,13 +102,13 @@
     "language": "tr",
     "status": 1,
     "apiVersion": 1,
-    "fileSize": 116397,
-    "fileHash": "sha256-41e78b49e0b4745cc8bda3d15227609b7e687112aa2836d40a02d5c1fd825a5e"
+    "fileSize": 117360,
+    "fileHash": "sha256-d09caf47de610826caa068c97257ca6face3451733d1a457ec1c5370cc619d58"
   },
   {
     "name": "VegolTV",
     "internalName": "VegolTV",
-    "version": 2,
+    "version": 3,
     "description": "VegolTV / Zirve canlı spor ve maç yayınları",
     "authors": [
       "Wiojelt"
@@ -122,8 +122,8 @@
     "language": "tr",
     "status": 1,
     "apiVersion": 1,
-    "fileSize": 119147,
-    "fileHash": "sha256-8b32d2ae16fd6d491b26da55072e3f89db2186b1b2adecbc65a2364fbe057ff9"
+    "fileSize": 119351,
+    "fileHash": "sha256-e22423438893310f9440dda01ffe90853e6fcacd8920712ad464f4a2489b0562"
   },
   {
     "name": "TRGoals",
@@ -148,7 +148,7 @@
   {
     "name": "KacakSpor",
     "internalName": "KacakSpor",
-    "version": 2,
+    "version": 3,
     "description": "Kaçakspor canlı spor kanalları ve kesintisiz maç yayınları",
     "authors": [
       "Wiojelt"
@@ -162,8 +162,8 @@
     "language": "tr",
     "status": 1,
     "apiVersion": 1,
-    "fileSize": 116597,
-    "fileHash": "sha256-465eacf5d65a3cb4b8e0bd917c95f0fc0d9cc3c5b456da9d56a29b968aa1d4f8"
+    "fileSize": 117038,
+    "fileHash": "sha256-e4a14d98105d9bef640f1313d6181386d2befbe5f821f7e27836ef9e4b467a9b"
   },
   {
     "name": "AtomSpor",
@@ -188,7 +188,7 @@
   {
     "name": "Warflix",
     "internalName": "Warflix",
-    "version": 2,
+    "version": 3,
     "description": "Warflix - 70 adet entegre hızlı embed sunucu seçeneği ile film ve diziler",
     "authors": [
       "Wiojelt"
@@ -203,8 +203,8 @@
     "language": "en",
     "status": 1,
     "apiVersion": 1,
-    "fileSize": 123163,
-    "fileHash": "sha256-856101bf28651ba1300b8669269ccaa06d0440dd5aea0d597c2f833a3cb138d3"
+    "fileSize": 128670,
+    "fileHash": "sha256-1084dfe45ab7c152c7ede9eda39928f821f225ad0f0cbc81be2f5f0ac4b121ca"
   },
   {
     "name": "DaddyLive",
