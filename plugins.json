@@ -225,5 +225,45 @@
     "apiVersion": 1,
     "fileSize": 111087,
     "fileHash": "sha256-8f51aef66cfa5a35eaac2cb8f1025869f0f57477bd6077f2a18911602fb6b3e1"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/DDizi.cs3",
+    "status": 1,
+    "version": 8,
+    "name": "DDizi",
+    "internalName": "DDizi",
+    "authors": [
+      "Wiojelt"
+    ],
+    "description": "DDizi - Yerli ve yabancı diziler (ddizi.tel güncel domain)",
+    "fileSize": 111525,
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "language": "tr",
+    "tvTypes": [
+      "TvSeries"
+    ],
+    "iconUrl": "https://www.google.com/s2/favicons?domain=www.ddizi.tel&sz=128",
+    "apiVersion": 1,
+    "fileHash": "sha256-f4216761209064eef9813b2bcb0eabe644ca3fd7c78f3f37771fe9b940bf7fe9"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/DDiziAlternatif.cs3",
+    "status": 1,
+    "version": 8,
+    "name": "DDizi • Alternatif",
+    "internalName": "DDiziAlternatif",
+    "authors": [
+      "Wiojelt"
+    ],
+    "description": "DDizi Alternatif - Yerli ve yabancı diziler (ddizi.tel güncel domain)",
+    "fileSize": 117527,
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "language": "tr",
+    "tvTypes": [
+      "TvSeries"
+    ],
+    "iconUrl": "https://www.google.com/s2/favicons?domain=www.ddizi.tel&sz=128",
+    "apiVersion": 1,
+    "fileHash": "sha256-159c80380f2eb6ea7ccc0063f9b2cdb5040986333e04fde14260cfe8cf95f214"
   }
 ]
