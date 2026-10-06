@@ -88,7 +88,7 @@
   {
     "name": "LeoTV",
     "internalName": "LeoTV",
-    "version": 1,
+    "version": 2,
     "description": "LeoTV / LeoGrand canlı spor ve TV yayınları (Dinamik AES-CBC akış çözücü)",
     "authors": [
       "Wiojelt"
@@ -102,13 +102,13 @@
     "language": "tr",
     "status": 1,
     "apiVersion": 1,
-    "fileSize": 113818,
-    "fileHash": "sha256-a6359f6b9caa7000c825610cb07c537e3f3d60357cd9e0c6fb5a1ca251635377"
+    "fileSize": 116397,
+    "fileHash": "sha256-41e78b49e0b4745cc8bda3d15227609b7e687112aa2836d40a02d5c1fd825a5e"
   },
   {
     "name": "VegolTV",
     "internalName": "VegolTV",
-    "version": 1,
+    "version": 2,
     "description": "VegolTV / Zirve canlı spor ve maç yayınları",
     "authors": [
       "Wiojelt"
@@ -122,13 +122,13 @@
     "language": "tr",
     "status": 1,
     "apiVersion": 1,
-    "fileSize": 111275,
-    "fileHash": "sha256-68e986ce00d44b2ed1d21df194761d12ab40abe2941717292ed7a005c2157585"
+    "fileSize": 119147,
+    "fileHash": "sha256-8b32d2ae16fd6d491b26da55072e3f89db2186b1b2adecbc65a2364fbe057ff9"
   },
   {
     "name": "TRGoals",
     "internalName": "TRGoals",
-    "version": 2,
+    "version": 3,
     "description": "TRGoals / TRGool canlı maç ve spor yayınları (Güncel domain desteği)",
     "authors": [
       "Wiojelt"
@@ -142,13 +142,13 @@
     "language": "tr",
     "status": 1,
     "apiVersion": 1,
-    "fileSize": 180258,
-    "fileHash": "sha256-cd23d085428ce0173c8130f8107e72b283280e0ee78daac1e6a9d4781e5bbb9b"
+    "fileSize": 182825,
+    "fileHash": "sha256-32da3e3d8d8f6422edc30f9f94931a1bd8145046ec995b084878a8492d8467cd"
   },
   {
     "name": "KacakSpor",
     "internalName": "KacakSpor",
-    "version": 1,
+    "version": 2,
     "description": "Kaçakspor canlı spor kanalları ve kesintisiz maç yayınları",
     "authors": [
       "Wiojelt"
@@ -162,13 +162,13 @@
     "language": "tr",
     "status": 1,
     "apiVersion": 1,
-    "fileSize": 113459,
-    "fileHash": "sha256-3db7d63975665295c62f5b70dc4df129abb81790647e725160ba4c5caf9ebdcc"
+    "fileSize": 116597,
+    "fileHash": "sha256-465eacf5d65a3cb4b8e0bd917c95f0fc0d9cc3c5b456da9d56a29b968aa1d4f8"
   },
   {
     "name": "AtomSpor",
     "internalName": "AtomSpor",
-    "version": 1,
+    "version": 2,
     "description": "AtomSporTV canlı spor kanalları ve maç yayınları",
     "authors": [
       "Wiojelt"
@@ -182,13 +182,13 @@
     "language": "tr",
     "status": 1,
     "apiVersion": 1,
-    "fileSize": 111560,
-    "fileHash": "sha256-ad54c3a18e5f3bc9f23b259485a90a3ca951b40b4bb0a7267e7a8f95afc4be28"
+    "fileSize": 113571,
+    "fileHash": "sha256-b2960385a887e61bfab8beadca21db086a5bba5acedb017db9094d67ca9e0b40"
   },
   {
     "name": "Warflix",
     "internalName": "Warflix",
-    "version": 1,
+    "version": 2,
     "description": "Warflix - 70 adet entegre hızlı embed sunucu seçeneği ile film ve diziler",
     "authors": [
       "Wiojelt"
@@ -203,13 +203,13 @@
     "language": "en",
     "status": 1,
     "apiVersion": 1,
-    "fileSize": 116782,
-    "fileHash": "sha256-ca226745beb8131d8d4d09b6c926b9b3e5e21bc9957e399544c3018633b80592"
+    "fileSize": 123163,
+    "fileHash": "sha256-856101bf28651ba1300b8669269ccaa06d0440dd5aea0d597c2f833a3cb138d3"
   },
   {
     "name": "DaddyLive",
     "internalName": "DaddyLive",
-    "version": 5,
+    "version": 6,
     "description": "DaddyLive 7/24 spor kanalları ve etkinlikler (Güncel API desteği)",
     "authors": [
       "Wiojelt"
@@ -223,7 +223,7 @@
     "language": "tr",
     "status": 1,
     "apiVersion": 1,
-    "fileSize": 109439,
-    "fileHash": "sha256-8f646d9831658fd935a690fa0f0235fdd73d6f087c895cfc3f521bb4f5f9e277"
+    "fileSize": 111087,
+    "fileHash": "sha256-8f51aef66cfa5a35eaac2cb8f1025869f0f57477bd6077f2a18911602fb6b3e1"
   }
 ]
