@@ -148,7 +148,7 @@
   {
     "name": "KacakSpor",
     "internalName": "KacakSpor",
-    "version": 3,
+    "version": 4,
     "description": "Kaçakspor canlı spor kanalları ve kesintisiz maç yayınları",
     "authors": [
       "Wiojelt"
@@ -162,8 +162,8 @@
     "language": "tr",
     "status": 1,
     "apiVersion": 1,
-    "fileSize": 117038,
-    "fileHash": "sha256-e4a14d98105d9bef640f1313d6181386d2befbe5f821f7e27836ef9e4b467a9b"
+    "fileSize": 118353,
+    "fileHash": "sha256-e4f331334f7db7a4075a339c85881faa1d529a7d7a4f11787d72b18b58ad1824"
   },
   {
     "name": "AtomSpor",
@@ -188,7 +188,7 @@
   {
     "name": "Warflix",
     "internalName": "Warflix",
-    "version": 3,
+    "version": 4,
     "description": "Warflix - 70 adet entegre hızlı embed sunucu seçeneği ile film ve diziler",
     "authors": [
       "Wiojelt"
@@ -203,8 +203,8 @@
     "language": "en",
     "status": 1,
     "apiVersion": 1,
-    "fileSize": 128670,
-    "fileHash": "sha256-1084dfe45ab7c152c7ede9eda39928f821f225ad0f0cbc81be2f5f0ac4b121ca"
+    "fileSize": 130416,
+    "fileHash": "sha256-b3348a9c3cf3fde44023c94a5a95e595c0d2a20b7ebe439be1b5779b5fc38515"
   },
   {
     "name": "DaddyLive",
