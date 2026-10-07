@@ -1,23 +1,23 @@
 [
   {
-    "name": "Nebula Sports",
+    "name": "Global Spor",
     "internalName": "NebulaSports",
-    "version": 1,
-    "description": "Nebula Sports - Canli spor karsilasmalari, uluslararasi kanallar ve fikstur yayinlari.",
+    "version": 2,
+    "description": "Global Spor - Canlı spor karşılaşmaları, uluslararası TV kanalları, fikstür ve maç özetleri.",
     "authors": [
       "Wiojelt"
     ],
     "repositoryUrl": "https://github.com/Wiojelt/test",
     "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/NebulaSports.cs3",
-    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/builds/assets/providers/NebulaSports.png",
+    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/builds/icon.gif",
     "tvTypes": [
       "Live"
     ],
-    "language": "en",
+    "language": "tr",
     "status": 1,
     "apiVersion": 1,
-    "fileSize": 117157,
-    "fileHash": "sha256-f80c9a5ffa3e0401ac328a69598d75124e84c339f62ae2447f133203de9c35f9"
+    "fileSize": 130268,
+    "fileHash": "sha256-901c19ec3942629973ab3388ab4e6e2c8d7faa0695ec05d91635cf94c4323f7c"
   },
   {
     "name": "StbTV",
