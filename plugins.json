@@ -2,7 +2,7 @@
   {
     "name": "Global Spor",
     "internalName": "NebulaSports",
-    "version": 2,
+    "version": 3,
     "description": "Global Spor - Canlı spor karşılaşmaları, uluslararası TV kanalları, fikstür ve maç özetleri.",
     "authors": [
       "Wiojelt"
@@ -16,8 +16,8 @@
     "language": "tr",
     "status": 1,
     "apiVersion": 1,
-    "fileSize": 130268,
-    "fileHash": "sha256-901c19ec3942629973ab3388ab4e6e2c8d7faa0695ec05d91635cf94c4323f7c"
+    "fileSize": 169598,
+    "fileHash": "sha256-5dd83d35431ad5c13a11e13770afbc9f904ac537601e0b5963a604559d119a19"
   },
   {
     "name": "StbTV",
