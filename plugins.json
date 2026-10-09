@@ -81,5 +81,27 @@
     "fileSize": 29491,
     "fileHash": "sha256-ce90624e3632b14563c69354b66b54703d27a44b652cb8a8de308dc1e0f95ab3",
     "apiVersion": 1
+  },
+  {
+    "name": "HintFilmİzle",
+    "internalName": "HintFilmIzle",
+    "version": 1,
+    "description": "HintFilmİzle · En yeni Hint ve Asya filmleri & dizileri (hintfilmizle.com)",
+    "authors": [
+      "Wiojelt"
+    ],
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/HintFilmIzle.cs3",
+    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/builds/icon.png",
+    "tvTypes": [
+      "Movie",
+      "TvSeries",
+      "AsianDrama"
+    ],
+    "language": "tr",
+    "status": 1,
+    "fileSize": 110909,
+    "fileHash": "sha256-4992112d2c6648442ba6a05f1f4527c4b11545dd79b380c563d7b44ccc9d1c8b",
+    "apiVersion": 1
   }
 ]
