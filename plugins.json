@@ -1,5 +1,26 @@
 [
   {
+    "name": "TestDrama",
+    "internalName": "TestDrama",
+    "version": 1,
+    "description": "TestDrama · Movim Short & DramaBox Dikey Kısa Dizi Paketi (Dublaj & Altyazı)",
+    "authors": [
+      "Wiojelt"
+    ],
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/TestDrama.cs3",
+    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/builds/icon.png",
+    "tvTypes": [
+      "AsianDrama",
+      "TvSeries"
+    ],
+    "language": "tr",
+    "status": 1,
+    "fileSize": 116367,
+    "fileHash": "sha256-cd5c4502bb6c071b1f58d4fa8638d48d6cbb7f2b244d5a161f97471908b001a5",
+    "apiVersion": 1
+  },
+  {
     "name": "WioSync",
     "internalName": "WioSync",
     "version": 1,
