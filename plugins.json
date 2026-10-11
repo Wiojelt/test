@@ -2,22 +2,22 @@
   {
     "name": "TestDrama",
     "internalName": "TestDrama",
-    "version": 1,
-    "description": "TestDrama · Movim Short & DramaBox Dikey Kısa Dizi Paketi (Dublaj & Altyazı)",
+    "version": 2,
+    "description": "TestDrama · DramaBox ve Movim Short; geniş kategoriler ve güncel bölüm adresleri.",
     "authors": [
       "Wiojelt"
     ],
     "repositoryUrl": "https://github.com/Wiojelt/test",
     "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/TestDrama.cs3",
-    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/builds/icon.png",
+    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/providers/TestDrama.png",
     "tvTypes": [
       "AsianDrama",
       "TvSeries"
     ],
     "language": "tr",
     "status": 1,
-    "fileSize": 116367,
-    "fileHash": "sha256-cd5c4502bb6c071b1f58d4fa8638d48d6cbb7f2b244d5a161f97471908b001a5",
+    "fileSize": 122499,
+    "fileHash": "sha256-1810a6e50f12b06a6ceba825b25c055cbc7c7cb9e74b5e4300ff92e683e36e15",
     "apiVersion": 1
   },
   {
@@ -124,5 +124,26 @@
     "fileSize": 163198,
     "fileHash": "sha256-7c530048788ea7c18c231b94d73df56f6a54ba92f31b898e706e100763860d23",
     "apiVersion": 1
+  },
+  {
+    "name": "DramaFlix",
+    "internalName": "DramaFlix",
+    "version": 1,
+    "description": "DramaFlix · 31 keşif satırı, Türkçe kısa diziler, dublaj, altyazı ve hesap girişi.",
+    "authors": [
+      "Wiojelt"
+    ],
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/DramaFlix.cs3",
+    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/providers/DramaFlix.png",
+    "tvTypes": [
+      "AsianDrama",
+      "TvSeries"
+    ],
+    "language": "tr",
+    "status": 1,
+    "apiVersion": 1,
+    "fileSize": 114034,
+    "fileHash": "sha256-0d0a8ebc8e5af2dc14d712be245b042e1a94c2c30a0c97670e4e78e2eb838b97"
   }
 ]
