@@ -142,8 +142,8 @@
     ],
     "language": "tr",
     "status": 1,
-    "fileSize": 116814,
-    "fileHash": "sha256-dd9991e60cccf49c0818f9af580b4ccc36d73e04dbfa9836032a57a09e79e588",
+    "fileSize": 118230,
+    "fileHash": "sha256-c2fe5e3d64f1717ba54431219b6768516c89667b87eb2e95c77cd69e95cbcc7b",
     "apiVersion": 1
   },
   {
@@ -164,8 +164,8 @@
     ],
     "language": "tr",
     "status": 1,
-    "fileSize": 192356,
-    "fileHash": "sha256-46b935ecf83908ab72b212e22b59fee508cd1f6b8e76fcd19a8760dc283bbf67",
+    "fileSize": 192363,
+    "fileHash": "sha256-92ba0fca3523d0fbd1ae2c0fd175f89a1f86747dec0c58cdad11a84266cfa2ee",
     "apiVersion": 1
   }
 ]
