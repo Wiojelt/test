@@ -128,21 +128,44 @@
   {
     "name": "Aile TV",
     "internalName": "AileTV",
-    "version": 1,
-    "description": "Aile TV · 3.100+ Canlı TV Kanalı (Spor, Ulusal, Sinema, Haber ve Belgesel)",
+    "version": 2,
+    "description": "Aile TV · hakankara (Forum Sinetech) canlı IPTV eklentisi. Canlı spor, ulusal ve seçilebilir kategoriler.",
     "authors": [
-      "Wiojelt"
+      "Wiojelt",
+      "hakankara"
     ],
     "repositoryUrl": "https://github.com/Wiojelt/test",
     "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/AileTV.cs3",
-    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/builds/icon.png",
+    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/builds/assets/ailetv.png",
     "tvTypes": [
       "Live"
     ],
     "language": "tr",
     "status": 1,
-    "fileSize": 111699,
-    "fileHash": "sha256-5897203b08978563ac62e226846915c547544585de794950d10c4fbc1d9ece9e",
+    "fileSize": 116814,
+    "fileHash": "sha256-dd9991e60cccf49c0818f9af580b4ccc36d73e04dbfa9836032a57a09e79e588",
+    "apiVersion": 1
+  },
+  {
+    "name": "Anizm",
+    "internalName": "AnizmProvider",
+    "version": 21,
+    "description": "Anizm (anizm.net) · Türkçe altyazılı anime sağlayıcısı",
+    "authors": [
+      "Wiojelt"
+    ],
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/AnizmProvider.cs3",
+    "iconUrl": "https://anizm.net/favicon.ico",
+    "tvTypes": [
+      "Anime",
+      "AnimeMovie",
+      "OVA"
+    ],
+    "language": "tr",
+    "status": 1,
+    "fileSize": 192356,
+    "fileHash": "sha256-46b935ecf83908ab72b212e22b59fee508cd1f6b8e76fcd19a8760dc283bbf67",
     "apiVersion": 1
   }
 ]
