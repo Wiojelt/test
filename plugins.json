@@ -128,7 +128,7 @@
   {
     "name": "Aile TV",
     "internalName": "AileTV",
-    "version": 4,
+    "version": 5,
     "description": "Aile TV · hakankara (Forum Sinetech) canlı IPTV eklentisi. Canlı spor, ulusal ve seçilebilir kategoriler.",
     "authors": [
       "Wiojelt",
@@ -142,8 +142,8 @@
     ],
     "language": "tr",
     "status": 1,
-    "fileSize": 119614,
-    "fileHash": "sha256-598917b230eb93e903098a6fd82af432c38492280458c1bc6150a0e7fab50374",
+    "fileSize": 119619,
+    "fileHash": "sha256-07e8d78e339f9cd7df8ec922ac17f84f5cef62225ef068a6fee2372e6acaa1b0",
     "apiVersion": 1
   },
   {
