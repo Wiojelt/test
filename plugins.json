@@ -124,5 +124,25 @@
     "apiVersion": 1,
     "fileSize": 114034,
     "fileHash": "sha256-0d0a8ebc8e5af2dc14d712be245b042e1a94c2c30a0c97670e4e78e2eb838b97"
+  },
+  {
+    "name": "Aile TV",
+    "internalName": "AileTV",
+    "version": 1,
+    "description": "Aile TV · 3.100+ Canlı TV Kanalı (Spor, Ulusal, Sinema, Haber ve Belgesel)",
+    "authors": [
+      "Wiojelt"
+    ],
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/AileTV.cs3",
+    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/builds/icon.png",
+    "tvTypes": [
+      "Live"
+    ],
+    "language": "tr",
+    "status": 1,
+    "fileSize": 111699,
+    "fileHash": "sha256-5897203b08978563ac62e226846915c547544585de794950d10c4fbc1d9ece9e",
+    "apiVersion": 1
   }
 ]
