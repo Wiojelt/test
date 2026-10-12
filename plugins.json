@@ -128,7 +128,7 @@
   {
     "name": "Aile TV",
     "internalName": "AileTV",
-    "version": 3,
+    "version": 4,
     "description": "Aile TV · hakankara (Forum Sinetech) canlı IPTV eklentisi. Canlı spor, ulusal ve seçilebilir kategoriler.",
     "authors": [
       "Wiojelt",
@@ -142,21 +142,21 @@
     ],
     "language": "tr",
     "status": 1,
-    "fileSize": 119827,
-    "fileHash": "sha256-db264041e55a979fbb33957e8b70f629da518531938c58f488ff9ec64b4bd19f",
+    "fileSize": 119614,
+    "fileHash": "sha256-598917b230eb93e903098a6fd82af432c38492280458c1bc6150a0e7fab50374",
     "apiVersion": 1
   },
   {
     "name": "Anizm",
     "internalName": "AnizmProvider",
-    "version": 22,
-    "description": "Anizm (anizm.net) · Türkçe altyazılı anime sağlayıcısı",
+    "version": 23,
+    "description": "Anizm (anizm.com.tr) · 30 kategori, son bölümler ve HD oynatıcı",
     "authors": [
       "Wiojelt"
     ],
     "repositoryUrl": "https://github.com/Wiojelt/test",
     "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/AnizmProvider.cs3",
-    "iconUrl": "https://anizm.net/favicon.ico",
+    "iconUrl": "https://anizm.com.tr/images/logo_128x128.png",
     "tvTypes": [
       "Anime",
       "AnimeMovie",
@@ -164,8 +164,8 @@
     ],
     "language": "tr",
     "status": 1,
-    "fileSize": 185479,
-    "fileHash": "sha256-7ebbc29928ba3636705ae98ab356fbe9889b05448302487ff90f15fd79090e0b",
+    "fileSize": 113496,
+    "fileHash": "sha256-5be1a5f04b093b6f192805355d2705028246b6c4c5ba619c7fad02f7b1566284",
     "apiVersion": 1
   }
 ]
