@@ -1,27 +1,5 @@
 [
   {
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/main/CizgiVeDizi.cs3",
-    "status": 1,
-    "version": 18,
-    "name": "ÇizgiVeDizi",
-    "internalName": "CizgiVeDizi",
-    "authors": [
-      "Wiojelt"
-    ],
-    "description": "ÇizgiVeDizi (cizgivedizi.com) · Çizgi film, anime ve diziler",
-    "fileSize": 117572,
-    "repositoryUrl": "https://github.com/Wiojelt/test",
-    "language": "tr",
-    "tvTypes": [
-      "Movie",
-      "TvSeries",
-      "Anime"
-    ],
-    "iconUrl": "https://cizgivedizi.com/favicon.ico",
-    "apiVersion": 1,
-    "fileHash": "sha256-d6017ea5ffe67a8c98ba6dbf820f2fa3d1a79a32a6630a235d8fe68ed3c9b50e"
-  },
-  {
     "name": "WioDB",
     "internalName": "WioDB",
     "version": 8,
@@ -43,89 +21,45 @@
     "apiVersion": 1
   },
   {
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/main/VionTV.cs3",
-    "status": 1,
-    "version": 1,
-    "name": "VİONTV",
-    "internalName": "VionTV",
+    "name": "StbTV",
+    "internalName": "StbTV",
+    "version": 3,
+    "description": "Stalker STB Canlı TV & Spor. Linkler en az 2, en fazla 6 kişiliktir. Sağlam çalışan bir hat bulduğunuzda limit aşımı olmaması için sık kanal/hat değiştirmeyiniz.",
     "authors": [
       "Wiojelt"
     ],
-    "description": "VİONTV canlı TV kanalları; kategori, arama ve kanal logolarıyla.",
-    "fileSize": 14146,
     "repositoryUrl": "https://github.com/Wiojelt/test",
-    "language": "tr",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/main/StbTV.cs3",
+    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/seyirturk.png",
     "tvTypes": [
       "Live"
     ],
-    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/viontv.webp",
-    "apiVersion": 1,
-    "fileHash": "sha256-80eca4d4a93213bce86a02a9cb8f97ffe8bee2b170923458b8f66578c9c57a37"
+    "language": "tr",
+    "status": 1,
+    "fileSize": 179210,
+    "fileHash": "sha256-6c45e29f7579b7b7dbbd343078365ab06826dfdd6c415bf263aedc4c88434f45",
+    "apiVersion": 1
   },
   {
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/main/AniArsiv.cs3",
-    "status": 1,
-    "version": 1,
-    "name": "AniArşiv",
-    "internalName": "AniArsiv",
+    "name": "SeyirTURK",
+    "internalName": "SeyirTURK",
+    "version": 13,
+    "description": "SeyirTURK · Yerli ve yabancı filmler, diziler ve canlı TV kanalları",
     "authors": [
       "Wiojelt"
     ],
-    "description": "AniArşiv · Güncel ve klasik anime arşivi, Türkçe altyazı",
-    "fileSize": 18514,
     "repositoryUrl": "https://github.com/Wiojelt/test",
-    "language": "tr",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/main/SeyirTURK.cs3",
+    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/seyirturk.png",
     "tvTypes": [
-      "Anime",
-      "AnimeMovie",
-      "OVA"
+      "Movie",
+      "TvSeries",
+      "Live"
     ],
-    "iconUrl": "https://aniarsiv.com/favicon.ico",
-    "apiVersion": 1,
-    "fileHash": "sha256-61264ace6ef6d1974813edc9fa6411635a1e2a58eede2ec67bdbed86243fcc09"
-  },
-  {
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/main/TrAnimeIzle.cs3",
+    "language": "tr",
     "status": 1,
-    "version": 2,
-    "name": "TrAnimeİzle",
-    "internalName": "TrAnimeIzle",
-    "authors": [
-      "Wiojelt"
-    ],
-    "description": "TrAnimeİzle · Türkiye'nin en popüler anime izleme platformu",
-    "fileSize": 29300,
-    "repositoryUrl": "https://github.com/Wiojelt/test",
-    "language": "tr",
-    "tvTypes": [
-      "Anime",
-      "AnimeMovie",
-      "OVA"
-    ],
-    "iconUrl": "https://www.tranimeizle.live/favicon.ico",
-    "apiVersion": 1,
-    "fileHash": "sha256-a7ead2850a4e683c9fdd7ad1a5017f46b69de98bc07d843c9a59691628527a1a"
-  },
-  {
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/main/OpenAnime.cs3",
-    "status": 1,
-    "version": 1,
-    "name": "OpenAnime",
-    "internalName": "OpenAnime",
-    "authors": [
-      "Wiojelt"
-    ],
-    "description": "OpenAnime (openani.me) · Yüksek kaliteli anime arşivi ve Türkçe altyazı",
-    "fileSize": 44349,
-    "repositoryUrl": "https://github.com/Wiojelt/test",
-    "language": "tr",
-    "tvTypes": [
-      "Anime",
-      "AnimeMovie",
-      "OVA"
-    ],
-    "iconUrl": "https://openani.me/favicon512.png",
-    "apiVersion": 1,
-    "fileHash": "sha256-aadca9c73a48bd8020d586daa57d9e3665e0354b6f9af87e70617e1cdf14b4a4"
+    "fileSize": 219696,
+    "fileHash": "sha256-eb79546afa084edc1881087bd7abf45ade7335965db61a245e2b4103b5b61ee3",
+    "apiVersion": 1
   }
 ]
