@@ -8,8 +8,8 @@
       "Wiojelt"
     ],
     "repositoryUrl": "https://github.com/Wiojelt/test",
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/WioDB_v8.cs3",
-    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/builds/icon.gif",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/main/WioDB_v8.cs3",
+    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/icon.gif",
     "tvTypes": [
       "Movie",
       "TvSeries"
@@ -29,8 +29,8 @@
       "Wiojelt"
     ],
     "repositoryUrl": "https://github.com/Wiojelt/test",
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/StbTV.cs3",
-    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/builds/assets/seyirturk.png",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/main/StbTV.cs3",
+    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/seyirturk.png",
     "tvTypes": [
       "Live"
     ],
@@ -41,7 +41,7 @@
     "apiVersion": 1
   },
   {
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/SeyirTURK.cs3",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/main/SeyirTURK.cs3",
     "status": 1,
     "version": 13,
     "name": "SeyirTURK",
@@ -58,7 +58,7 @@
       "TvSeries",
       "Live"
     ],
-    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/builds/assets/seyirturk.png",
+    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/seyirturk.png",
     "apiVersion": 1,
     "fileHash": "sha256-eb79546afa084edc1881087bd7abf45ade7335965db61a245e2b4103b5b61ee3"
   }
