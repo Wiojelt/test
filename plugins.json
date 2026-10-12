@@ -23,7 +23,7 @@
   {
     "name": "StbTV",
     "internalName": "StbTV",
-    "version": 4,
+    "version": 5,
     "description": "Stalker STB Canlı TV & Spor. Linkler en az 2, en fazla 6 kişiliktir. Sağlam çalışan bir hat bulduğunuzda limit aşımı olmaması için sık kanal/hat değiştirmeyiniz.",
     "authors": [
       "Wiojelt"
@@ -36,8 +36,8 @@
     ],
     "language": "tr",
     "status": 1,
-    "fileSize": 181617,
-    "fileHash": "sha256-22bc51af7019c3c8467dba96ed4638b19a8ef2171eb71e535fb7c2a262ecb9d2",
+    "fileSize": 267794,
+    "fileHash": "sha256-e88f500b6a2cf2fc3002f1ca7a05bee43e45f0497ce73d91683b1ec04a97306e",
     "apiVersion": 1
   },
   {
