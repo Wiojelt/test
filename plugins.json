@@ -23,21 +23,21 @@
   {
     "name": "StbTV",
     "internalName": "StbTV",
-    "version": 3,
+    "version": 4,
     "description": "Stalker STB Canlı TV & Spor. Linkler en az 2, en fazla 6 kişiliktir. Sağlam çalışan bir hat bulduğunuzda limit aşımı olmaması için sık kanal/hat değiştirmeyiniz.",
     "authors": [
       "Wiojelt"
     ],
     "repositoryUrl": "https://github.com/Wiojelt/test",
     "url": "https://raw.githubusercontent.com/Wiojelt/test/main/StbTV.cs3",
-    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/seyirturk.png",
+    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/builds/assets/stbtv.png",
     "tvTypes": [
       "Live"
     ],
     "language": "tr",
     "status": 1,
-    "fileSize": 179210,
-    "fileHash": "sha256-6c45e29f7579b7b7dbbd343078365ab06826dfdd6c415bf263aedc4c88434f45",
+    "fileSize": 181617,
+    "fileHash": "sha256-22bc51af7019c3c8467dba96ed4638b19a8ef2171eb71e535fb7c2a262ecb9d2",
     "apiVersion": 1
   },
   {
