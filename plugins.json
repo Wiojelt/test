@@ -144,5 +144,26 @@
         "fileSize": 111090,
         "fileHash": "sha256-7478b65d91a8726307ba9e07930293529a6cd6ac43d29d7a5d0c0820431d9ca6",
         "apiVersion": 1
+    },
+    {
+        "name": "oiDRAMA",
+        "internalName": "OiDrama",
+        "version": 1,
+        "description": "oiDRAMA · Popüler dikey kısa drama ve trend dizi akışları.",
+        "authors": [
+            "Wiojelt"
+        ],
+        "repositoryUrl": "https://github.com/Wiojelt/test",
+        "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/oiDRAMA.cs3?v=822688488315",
+        "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/oiDRAMA.png",
+        "tvTypes": [
+            "AsianDrama",
+            "TvSeries"
+        ],
+        "language": "tr",
+        "status": 1,
+        "fileSize": 108655,
+        "fileHash": "sha256-822688488315dd7eee13c166ff017bea08e2c97538466a0a2ad0805ca3c5f868",
+        "apiVersion": 1
     }
 ]
