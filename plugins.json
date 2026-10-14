@@ -123,5 +123,26 @@
         "fileSize": 106381,
         "fileHash": "sha256-da026cebb7ed4cc08a2281bc4e8e3dc9220375d512927864b4bec6046be35c64",
         "apiVersion": 1
+    },
+    {
+        "name": "hiDRAMA",
+        "internalName": "HiDrama",
+        "version": 1,
+        "description": "hiDRAMA · Popüler dikey kısa drama ve trend dizi akışları.",
+        "authors": [
+            "Wiojelt"
+        ],
+        "repositoryUrl": "https://github.com/Wiojelt/test",
+        "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/hiDRAMA.cs3?v=7478b65d91a8",
+        "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/hiDRAMA.png",
+        "tvTypes": [
+            "AsianDrama",
+            "TvSeries"
+        ],
+        "language": "tr",
+        "status": 1,
+        "fileSize": 111090,
+        "fileHash": "sha256-7478b65d91a8726307ba9e07930293529a6cd6ac43d29d7a5d0c0820431d9ca6",
+        "apiVersion": 1
     }
 ]
