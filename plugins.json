@@ -1,85 +1,106 @@
-﻿[
+[
     {
-        "name":  "WioDB",
-        "internalName":  "WioDB",
-        "version":  8,
-        "description":  "WioDB - DoÄŸrudan Cloudflare Gateway ve Ã–zel DB Destekli Ultra HÄ±zlÄ± OynatÄ±cÄ±",
-        "authors":  [
-                        "Wiojelt"
-                    ],
-        "repositoryUrl":  "https://github.com/Wiojelt/test",
-        "url":  "https://raw.githubusercontent.com/Wiojelt/test/main/WioDB_v8.cs3",
-        "iconUrl":  "https://raw.githubusercontent.com/Wiojelt/test/main/icon.gif",
-        "tvTypes":  [
-                        "Movie",
-                        "TvSeries"
-                    ],
-        "language":  "tr",
-        "status":  1,
-        "fileSize":  29491,
-        "fileHash":  "sha256-ce90624e3632b14563c69354b66b54703d27a44b652cb8a8de308dc1e0f95ab3",
-        "apiVersion":  1
+        "name": "WioDB",
+        "internalName": "WioDB",
+        "version": 8,
+        "description": "WioDB - DoÄŸrudan Cloudflare Gateway ve Ã–zel DB Destekli Ultra HÄ±zlÄ± OynatÄ±cÄ±",
+        "authors": [
+            "Wiojelt"
+        ],
+        "repositoryUrl": "https://github.com/Wiojelt/test",
+        "url": "https://raw.githubusercontent.com/Wiojelt/test/main/WioDB_v8.cs3",
+        "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/icon.gif",
+        "tvTypes": [
+            "Movie",
+            "TvSeries"
+        ],
+        "language": "tr",
+        "status": 1,
+        "fileSize": 29491,
+        "fileHash": "sha256-ce90624e3632b14563c69354b66b54703d27a44b652cb8a8de308dc1e0f95ab3",
+        "apiVersion": 1
     },
     {
-        "name":  "StbTV",
-        "internalName":  "StbTV",
-        "version":  5,
-        "description":  "Stalker STB CanlÄ± TV \u0026 Spor. Linkler en az 2, en fazla 6 kiÅŸiliktir. SaÄŸlam Ã§alÄ±ÅŸan bir hat bulduÄŸunuzda limit aÅŸÄ±mÄ± olmamasÄ± iÃ§in sÄ±k kanal/hat deÄŸiÅŸtirmeyiniz.",
-        "authors":  [
-                        "Wiojelt"
-                    ],
-        "repositoryUrl":  "https://github.com/Wiojelt/test",
-        "url":  "https://raw.githubusercontent.com/Wiojelt/test/main/StbTV.cs3",
-        "iconUrl":  "https://raw.githubusercontent.com/Wiojelt/test/builds/assets/stbtv.png",
-        "tvTypes":  [
-                        "Live"
-                    ],
-        "language":  "tr",
-        "status":  1,
-        "fileSize":  267794,
-        "fileHash":  "sha256-e88f500b6a2cf2fc3002f1ca7a05bee43e45f0497ce73d91683b1ec04a97306e",
-        "apiVersion":  1
+        "name": "StbTV",
+        "internalName": "StbTV",
+        "version": 5,
+        "description": "Stalker STB CanlÄ± TV & Spor. Linkler en az 2, en fazla 6 kiÅŸiliktir. SaÄŸlam Ã§alÄ±ÅŸan bir hat bulduÄŸunuzda limit aÅŸÄ±mÄ± olmamasÄ± iÃ§in sÄ±k kanal/hat deÄŸiÅŸtirmeyiniz.",
+        "authors": [
+            "Wiojelt"
+        ],
+        "repositoryUrl": "https://github.com/Wiojelt/test",
+        "url": "https://raw.githubusercontent.com/Wiojelt/test/main/StbTV.cs3",
+        "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/builds/assets/stbtv.png",
+        "tvTypes": [
+            "Live"
+        ],
+        "language": "tr",
+        "status": 1,
+        "fileSize": 267794,
+        "fileHash": "sha256-e88f500b6a2cf2fc3002f1ca7a05bee43e45f0497ce73d91683b1ec04a97306e",
+        "apiVersion": 1
     },
     {
-        "name":  "SeyirTURK",
-        "internalName":  "SeyirTURK",
-        "version":  13,
-        "description":  "SeyirTURK Â· Yerli ve yabancÄ± filmler, diziler ve canlÄ± TV kanallarÄ±",
-        "authors":  [
-                        "Wiojelt"
-                    ],
-        "repositoryUrl":  "https://github.com/Wiojelt/test",
-        "url":  "https://raw.githubusercontent.com/Wiojelt/test/main/SeyirTURK.cs3",
-        "iconUrl":  "https://raw.githubusercontent.com/Wiojelt/test/main/assets/seyirturk.png",
-        "tvTypes":  [
-                        "Movie",
-                        "TvSeries",
-                        "Live"
-                    ],
-        "language":  "tr",
-        "status":  1,
-        "fileSize":  219696,
-        "fileHash":  "sha256-eb79546afa084edc1881087bd7abf45ade7335965db61a245e2b4103b5b61ee3",
-        "apiVersion":  1
+        "name": "SeyirTURK",
+        "internalName": "SeyirTURK",
+        "version": 13,
+        "description": "SeyirTURK Â· Yerli ve yabancÄ± filmler, diziler ve canlÄ± TV kanallarÄ±",
+        "authors": [
+            "Wiojelt"
+        ],
+        "repositoryUrl": "https://github.com/Wiojelt/test",
+        "url": "https://raw.githubusercontent.com/Wiojelt/test/main/SeyirTURK.cs3",
+        "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/seyirturk.png",
+        "tvTypes": [
+            "Movie",
+            "TvSeries",
+            "Live"
+        ],
+        "language": "tr",
+        "status": 1,
+        "fileSize": 219696,
+        "fileHash": "sha256-eb79546afa084edc1881087bd7abf45ade7335965db61a245e2b4103b5b61ee3",
+        "apiVersion": 1
     },
     {
-        "name":  "KoalaTV",
-        "internalName":  "KoalaTV",
-        "version":  1,
-        "description":  "KoalaTV Â· CanlÄ± TV kanallarÄ±, spor, ulusal ve dÃ¼nya yayÄ±nlarÄ±.",
-        "authors":  [
-                        "Wiojelt"
-                    ],
-        "repositoryUrl":  "https://github.com/Wiojelt/test",
-        "url":  "https://raw.githubusercontent.com/Wiojelt/test/builds/KoalaTV.cs3?v=2df24344a5ab",
-        "iconUrl":  "https://raw.githubusercontent.com/Wiojelt/test/main/assets/koalatv.png",
-        "tvTypes":  [
-                        "Live"
-                    ],
-        "language":  "tr",
-        "status":  1,
-        "fileSize":  540481,
-        "fileHash":  "sha256-2df24344a5abc9a04f73c17c599ba8b82ce026015af64857c078b4b0a07c2941",
-        "apiVersion":  1
+        "name": "KoalaTV",
+        "internalName": "KoalaTV",
+        "version": 2,
+        "description": "KoalaTV Â· CanlÄ± TV kanallarÄ±, spor, ulusal ve dÃ¼nya yayÄ±nlarÄ±.",
+        "authors": [
+            "Wiojelt"
+        ],
+        "repositoryUrl": "https://github.com/Wiojelt/test",
+        "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/KoalaTV.cs3?v=e648085da6cd",
+        "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/koalatv.png",
+        "tvTypes": [
+            "Live"
+        ],
+        "language": "tr",
+        "status": 1,
+        "fileSize": 546212,
+        "fileHash": "sha256-e648085da6cd1ee18cea4c56973425585da7109cb5b314ac3f51d18dea5c181a",
+        "apiVersion": 1
+    },
+    {
+        "name": "dboxDRAMA",
+        "internalName": "DramaBox",
+        "version": 2,
+        "description": "dboxDRAMA · Popüler dikey kısa drama ve trend dizi akışları.",
+        "authors": [
+            "Wiojelt"
+        ],
+        "repositoryUrl": "https://github.com/Wiojelt/test",
+        "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/dboxDRAMA.cs3?v=0f04ba9946ae",
+        "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/dboxDRAMA.png",
+        "tvTypes": [
+            "AsianDrama",
+            "TvSeries"
+        ],
+        "language": "tr",
+        "status": 1,
+        "fileSize": 106297,
+        "fileHash": "sha256-0f04ba9946aee3048f856738f6f7e1fe554e90482a7a35165ba4fc43fa7c189f",
+        "apiVersion": 1
     }
 ]
