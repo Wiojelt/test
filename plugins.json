@@ -82,5 +82,25 @@
     "fileSize": 107379,
     "fileHash": "sha256-6a3f368f67ae6583c74f453940f36551039d69ca444e4122a4d397787b9753ee",
     "apiVersion": 1
+  },
+  {
+    "name": "KoalaTV",
+    "internalName": "KoalaTV",
+    "version": 1,
+    "description": "KoalaTV · Canlı TV kanalları, spor, ulusal ve dünya yayınları.",
+    "authors": [
+      "Wiojelt"
+    ],
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/KoalaTV.cs3?v=2df24344a5ab",
+    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/koalatv.png",
+    "tvTypes": [
+      "Live"
+    ],
+    "language": "tr",
+    "status": 1,
+    "fileSize": 540481,
+    "fileHash": "sha256-2df24344a5abc9a04f73c17c599ba8b82ce026015af64857c078b4b0a07c2941",
+    "apiVersion": 1
   }
 ]
