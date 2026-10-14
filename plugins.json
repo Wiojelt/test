@@ -65,13 +65,13 @@
   {
     "name": "TryDrama",
     "internalName": "TryDrama",
-    "version": 1,
+    "version": 2,
     "description": "TryDrama · Türkçe dikey kısa drama dizileri ve mini diziler.",
     "authors": [
       "Wiojelt"
     ],
     "repositoryUrl": "https://github.com/Wiojelt/test",
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/TryDrama.cs3",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/TryDrama.cs3?v=de7da1c097bb",
     "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/builds/assets/trydrama.png",
     "tvTypes": [
       "AsianDrama",
@@ -79,8 +79,8 @@
     ],
     "language": "tr",
     "status": 1,
-    "fileSize": 106875,
-    "fileHash": "sha256-34688f1073278369b8280e25094322473e3994d74f3d30e2c566793ead6e33ec",
+    "fileSize": 106214,
+    "fileHash": "sha256-de7da1c097bb15f86cafc0bdeea805ee7e87a0517bbb6d43ead162dc8fb0d8b4",
     "apiVersion": 1
   }
 ]
