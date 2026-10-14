@@ -63,27 +63,6 @@
     "apiVersion": 1
   },
   {
-    "name": "trDRAMA",
-    "internalName": "TryDrama",
-    "version": 4,
-    "description": "trDRAMA · Türkçe dikey kısa drama dizileri ve mini diziler.",
-    "authors": [
-      "Wiojelt"
-    ],
-    "repositoryUrl": "https://github.com/Wiojelt/test",
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/TryDrama.cs3?v=6a3f368f67ae",
-    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/trdrama.png",
-    "tvTypes": [
-      "AsianDrama",
-      "TvSeries"
-    ],
-    "language": "tr",
-    "status": 1,
-    "fileSize": 107379,
-    "fileHash": "sha256-6a3f368f67ae6583c74f453940f36551039d69ca444e4122a4d397787b9753ee",
-    "apiVersion": 1
-  },
-  {
     "name": "KoalaTV",
     "internalName": "KoalaTV",
     "version": 1,
