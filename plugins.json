@@ -102,5 +102,26 @@
         "fileSize": 106297,
         "fileHash": "sha256-0f04ba9946aee3048f856738f6f7e1fe554e90482a7a35165ba4fc43fa7c189f",
         "apiVersion": 1
+    },
+    {
+        "name": "greatDRAMA",
+        "internalName": "GreatDrama",
+        "version": 1,
+        "description": "greatDRAMA · Popüler dikey kısa drama ve trend dizi akışları.",
+        "authors": [
+            "Wiojelt"
+        ],
+        "repositoryUrl": "https://github.com/Wiojelt/test",
+        "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/greatDRAMA.cs3?v=da026cebb7ed",
+        "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/greatDRAMA.png",
+        "tvTypes": [
+            "AsianDrama",
+            "TvSeries"
+        ],
+        "language": "tr",
+        "status": 1,
+        "fileSize": 106381,
+        "fileHash": "sha256-da026cebb7ed4cc08a2281bc4e8e3dc9220375d512927864b4bec6046be35c64",
+        "apiVersion": 1
     }
 ]
