@@ -228,5 +228,26 @@
         "fileSize": 111075,
         "fileHash": "sha256-127db07a56a6cff6bc60a8c3df2326f720a20390b86a0b89cdad5d9f843e1acd",
         "apiVersion": 1
+    },
+    {
+        "name": "loveDRAMA",
+        "internalName": "LoveDrama",
+        "version": 1,
+        "description": "loveDRAMA · 1080p Full HD dikey kısa diziler ve romantik bölümler.",
+        "authors": [
+            "Wiojelt"
+        ],
+        "repositoryUrl": "https://github.com/Wiojelt/test",
+        "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/loveDRAMA.cs3?v=df7dca4d3ae2",
+        "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/loveDRAMA.png",
+        "tvTypes": [
+            "AsianDrama",
+            "TvSeries"
+        ],
+        "language": "tr",
+        "status": 1,
+        "fileSize": 108919,
+        "fileHash": "sha256-df7dca4d3ae2de84c1210f240db9b14e2b5008acc168cb2f96509c79493613b4",
+        "apiVersion": 1
     }
 ]
