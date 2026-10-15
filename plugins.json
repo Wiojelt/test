@@ -249,5 +249,89 @@
         "fileSize": 108919,
         "fileHash": "sha256-df7dca4d3ae2de84c1210f240db9b14e2b5008acc168cb2f96509c79493613b4",
         "apiVersion": 1
+    },
+    {
+        "name": "mcDRAMA",
+        "internalName": "McDrama",
+        "version": 1,
+        "description": "mcDRAMA · Popüler dikey kısa drama ve trend dizi akışları.",
+        "authors": [
+            "Wiojelt"
+        ],
+        "repositoryUrl": "https://github.com/Wiojelt/test",
+        "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/mcDRAMA.cs3?v=628b0ca0468d",
+        "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/mcDRAMA.png",
+        "tvTypes": [
+            "AsianDrama",
+            "TvSeries"
+        ],
+        "language": "tr",
+        "status": 1,
+        "fileSize": 105926,
+        "fileHash": "sha256-628b0ca0468da648b52819a3b41c0b1642cb78baf00b425b7284040a950c1989",
+        "apiVersion": 1
+    },
+    {
+        "name": "bingbongDRAMA",
+        "internalName": "BingbongDrama",
+        "version": 1,
+        "description": "bingbongDRAMA · Popüler dikey kısa drama ve trend dizi akışları.",
+        "authors": [
+            "Wiojelt"
+        ],
+        "repositoryUrl": "https://github.com/Wiojelt/test",
+        "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/bingbongDRAMA.cs3?v=b13a058c1333",
+        "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/bingbongDRAMA.png",
+        "tvTypes": [
+            "AsianDrama",
+            "TvSeries"
+        ],
+        "language": "tr",
+        "status": 1,
+        "fileSize": 114053,
+        "fileHash": "sha256-b13a058c133313631b8acfde04c54d74f0f9200cb682327296832ad61af487a6",
+        "apiVersion": 1
+    },
+    {
+        "name": "asidbRAMA",
+        "internalName": "AsidbDrama",
+        "version": 1,
+        "description": "asidbRAMA · Popüler dikey kısa drama ve trend dizi akışları.",
+        "authors": [
+            "Wiojelt"
+        ],
+        "repositoryUrl": "https://github.com/Wiojelt/test",
+        "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/asidbRAMA.cs3?v=f64f10c5952b",
+        "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/asidbDRAMA.png",
+        "tvTypes": [
+            "AsianDrama",
+            "TvSeries"
+        ],
+        "language": "tr",
+        "status": 1,
+        "fileSize": 107505,
+        "fileHash": "sha256-f64f10c5952b4cd303cde0fee289de41711de4be1f0cefa253b47afc2d0b8944",
+        "apiVersion": 1
+    },
+    {
+        "name": "eloDRAMA",
+        "internalName": "EloDrama",
+        "version": 1,
+        "description": "eloDRAMA · Popüler dikey kısa drama ve trend dizi akışları.",
+        "authors": [
+            "Wiojelt"
+        ],
+        "repositoryUrl": "https://github.com/Wiojelt/test",
+        "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/eloDRAMA.cs3?v=0daba418e5fe",
+        "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/eloDRAMA.png",
+        "tvTypes": [
+            "AsianDrama",
+            "TvSeries"
+        ],
+        "language": "tr",
+        "status": 1,
+        "fileSize": 107545,
+        "fileHash": "sha256-0daba418e5fe16a8805ae376930f32d19e00f23ddff3a2957f70637d65645e4c",
+        "apiVersion": 1
     }
 ]
