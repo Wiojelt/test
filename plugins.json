@@ -165,5 +165,26 @@
         "fileSize": 108655,
         "fileHash": "sha256-822688488315dd7eee13c166ff017bea08e2c97538466a0a2ad0805ca3c5f868",
         "apiVersion": 1
+    },
+    {
+        "name": "mtDRAMA",
+        "internalName": "MtDrama",
+        "version": 1,
+        "description": "mtDRAMA · Popüler dikey kısa drama ve trend dizi akışları.",
+        "authors": [
+            "Wiojelt"
+        ],
+        "repositoryUrl": "https://github.com/Wiojelt/test",
+        "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/mtDRAMA.cs3?v=d90cbad08960",
+        "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/mtDRAMA.png",
+        "tvTypes": [
+            "AsianDrama",
+            "TvSeries"
+        ],
+        "language": "tr",
+        "status": 1,
+        "fileSize": 109650,
+        "fileHash": "sha256-d90cbad0896009a072148a5625d7e2e71537b08c21d0201228a582fc69153e32",
+        "apiVersion": 1
     }
 ]
