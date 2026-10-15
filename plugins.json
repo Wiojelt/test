@@ -186,5 +186,26 @@
         "fileSize": 109650,
         "fileHash": "sha256-d90cbad0896009a072148a5625d7e2e71537b08c21d0201228a582fc69153e32",
         "apiVersion": 1
+    },
+    {
+        "name": "dmaxDRAMA",
+        "internalName": "DmaxDrama",
+        "version": 1,
+        "description": "dmaxDRAMA · Popüler dikey kısa drama ve trend dizi akışları.",
+        "authors": [
+            "Wiojelt"
+        ],
+        "repositoryUrl": "https://github.com/Wiojelt/test",
+        "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/dmaxDRAMA.cs3?v=bc14dc844dd2",
+        "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/dmaxDRAMA.png",
+        "tvTypes": [
+            "AsianDrama",
+            "TvSeries"
+        ],
+        "language": "tr",
+        "status": 1,
+        "fileSize": 113455,
+        "fileHash": "sha256-bc14dc844dd20e5cf21684fb288efedbdaafabbd70b522a35411ce3ed447bfa9",
+        "apiVersion": 1
     }
 ]
