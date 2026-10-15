@@ -207,5 +207,26 @@
         "fileSize": 113455,
         "fileHash": "sha256-bc14dc844dd20e5cf21684fb288efedbdaafabbd70b522a35411ce3ed447bfa9",
         "apiVersion": 1
+    },
+    {
+        "name": "freeDRAMA",
+        "internalName": "FreeDrama",
+        "version": 1,
+        "description": "freeDRAMA · 1080p Full HD dikey kısa diziler ve trend bölümler.",
+        "authors": [
+            "Wiojelt"
+        ],
+        "repositoryUrl": "https://github.com/Wiojelt/test",
+        "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/freeDRAMA.cs3?v=127db07a56a6",
+        "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/freeDRAMA.png",
+        "tvTypes": [
+            "AsianDrama",
+            "TvSeries"
+        ],
+        "language": "tr",
+        "status": 1,
+        "fileSize": 111075,
+        "fileHash": "sha256-127db07a56a6cff6bc60a8c3df2326f720a20390b86a0b89cdad5d9f843e1acd",
+        "apiVersion": 1
     }
 ]
