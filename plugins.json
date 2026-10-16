@@ -65,34 +65,34 @@
   {
     "name": "KoalaTV",
     "internalName": "KoalaTV",
-    "version": 3,
+    "version": 4,
     "description": "KoalaTV Â· CanlÄ± TV kanallarÄ±, spor, ulusal ve dÃ¼nya yayÄ±nlarÄ±.",
     "authors": [
       "Wiojelt"
     ],
     "repositoryUrl": "https://github.com/Wiojelt/test",
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/KoalaTV.cs3?v=3b2fee2083db",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/KoalaTV.cs3?v=127b6d709f1c",
     "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/koalatv.png",
     "tvTypes": [
       "Live"
     ],
     "language": "tr",
     "status": 1,
-    "fileSize": 547267,
-    "fileHash": "sha256-3b2fee2083dbae5c9c0cc56fc4eebc368a43421683d275f1ab000ae8fa815618",
+    "fileSize": 546669,
+    "fileHash": "sha256-127b6d709f1cfd6b16c7a6f23bd0643158312a7726717c36d18852b90db8616d",
     "apiVersion": 1,
-    "hash": "3b2fee2083dbae5c9c0cc56fc4eebc368a43421683d275f1ab000ae8fa815618"
+    "hash": "127b6d709f1cfd6b16c7a6f23bd0643158312a7726717c36d18852b90db8616d"
   },
   {
     "name": "oiDRAMA",
     "internalName": "OiDrama",
-    "version": 1,
+    "version": 2,
     "description": "oiDRAMA · Popüler dikey kısa drama ve trend dizi akışları.",
     "authors": [
       "Wiojelt"
     ],
     "repositoryUrl": "https://github.com/Wiojelt/test",
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/oiDRAMA.cs3?v=822688488315",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/oiDRAMA.cs3?v=200b4f128454",
     "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/oiDRAMA.png",
     "tvTypes": [
       "AsianDrama",
@@ -100,20 +100,20 @@
     ],
     "language": "tr",
     "status": 1,
-    "fileSize": 108655,
-    "fileHash": "sha256-822688488315dd7eee13c166ff017bea08e2c97538466a0a2ad0805ca3c5f868",
+    "fileSize": 109400,
+    "fileHash": "sha256-200b4f128454ba74eb7a8d32905342d9e9b04109f3ead2be2c10836f4330a23d",
     "apiVersion": 1
   },
   {
     "name": "mtDRAMA",
     "internalName": "MtDrama",
-    "version": 3,
+    "version": 4,
     "description": "mtDRAMA · Popüler dikey kısa drama ve trend dizi akışları.",
     "authors": [
       "Wiojelt"
     ],
     "repositoryUrl": "https://github.com/Wiojelt/test",
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/mtDRAMA.cs3?v=637ec3897f24",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/mtDRAMA.cs3?v=fa87a3ceebd1",
     "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/mtDRAMA.png",
     "tvTypes": [
       "AsianDrama",
@@ -121,21 +121,21 @@
     ],
     "language": "tr",
     "status": 1,
-    "fileSize": 110062,
-    "fileHash": "sha256-637ec3897f24e40f172b11300e0a72d1b98c62ee70351aafcdee4cce11f40401",
+    "fileSize": 110034,
+    "fileHash": "sha256-fa87a3ceebd18e39df64ae92d8fc0381ea126537fcd6a69a572d93e0ff5822e7",
     "apiVersion": 1,
-    "hash": "637ec3897f24e40f172b11300e0a72d1b98c62ee70351aafcdee4cce11f40401"
+    "hash": "fa87a3ceebd18e39df64ae92d8fc0381ea126537fcd6a69a572d93e0ff5822e7"
   },
   {
     "name": "freeDRAMA",
     "internalName": "FreeDrama",
-    "version": 3,
+    "version": 4,
     "description": "freeDRAMA · 1080p Full HD dikey kısa diziler ve trend bölümler.",
     "authors": [
       "Wiojelt"
     ],
     "repositoryUrl": "https://github.com/Wiojelt/test",
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/freeDRAMA.cs3?v=72e7080cd266",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/freeDRAMA.cs3?v=781388252403",
     "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/freeDRAMA.png",
     "tvTypes": [
       "AsianDrama",
@@ -143,21 +143,21 @@
     ],
     "language": "tr",
     "status": 1,
-    "fileSize": 110745,
-    "fileHash": "sha256-72e7080cd266760327fe11e1ebf7b2ca5591208ffbabbcf7fc152da5b3d4ee49",
+    "fileSize": 111515,
+    "fileHash": "sha256-781388252403e5fb2128bbe44e83552b964887c52434e62523a7ac0e6b56b870",
     "apiVersion": 1,
-    "hash": "72e7080cd266760327fe11e1ebf7b2ca5591208ffbabbcf7fc152da5b3d4ee49"
+    "hash": "781388252403e5fb2128bbe44e83552b964887c52434e62523a7ac0e6b56b870"
   },
   {
     "name": "loveDRAMA",
     "internalName": "LoveDrama",
-    "version": 3,
+    "version": 4,
     "description": "loveDRAMA · 1080p Full HD dikey kısa diziler ve romantik bölümler.",
     "authors": [
       "Wiojelt"
     ],
     "repositoryUrl": "https://github.com/Wiojelt/test",
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/loveDRAMA.cs3?v=ab084d6cb608",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/loveDRAMA.cs3?v=3a505a3ec969",
     "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/loveDRAMA.png",
     "tvTypes": [
       "AsianDrama",
@@ -165,21 +165,21 @@
     ],
     "language": "tr",
     "status": 1,
-    "fileSize": 106836,
-    "fileHash": "sha256-ab084d6cb60850d4382bf33aefd7689d91e12375aca55013e964d47e30b38207",
+    "fileSize": 107112,
+    "fileHash": "sha256-3a505a3ec9692ff8cdd4bb81bc768b784566643ad4c8b63bc495439dbb307728",
     "apiVersion": 1,
-    "hash": "ab084d6cb60850d4382bf33aefd7689d91e12375aca55013e964d47e30b38207"
+    "hash": "3a505a3ec9692ff8cdd4bb81bc768b784566643ad4c8b63bc495439dbb307728"
   },
   {
     "name": "mcDRAMA",
     "internalName": "McDrama",
-    "version": 3,
+    "version": 4,
     "description": "mcDRAMA · Popüler dikey kısa drama ve trend dizi akışları.",
     "authors": [
       "Wiojelt"
     ],
     "repositoryUrl": "https://github.com/Wiojelt/test",
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/mcDRAMA.cs3?v=eb565c4ac213",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/mcDRAMA.cs3?v=aace782f58ba",
     "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/mcDRAMA.png",
     "tvTypes": [
       "AsianDrama",
@@ -187,21 +187,21 @@
     ],
     "language": "tr",
     "status": 1,
-    "fileSize": 106309,
-    "fileHash": "sha256-eb565c4ac2130f317192873cdf4b5ce1da1545930920eaa19f75bb9055f9dfef",
+    "fileSize": 106527,
+    "fileHash": "sha256-aace782f58ba45e09bf3a8dc70cf5ee5e1f3d7ea82e69016ade71ec361f4c687",
     "apiVersion": 1,
-    "hash": "eb565c4ac2130f317192873cdf4b5ce1da1545930920eaa19f75bb9055f9dfef"
+    "hash": "aace782f58ba45e09bf3a8dc70cf5ee5e1f3d7ea82e69016ade71ec361f4c687"
   },
   {
     "name": "bingbongDRAMA",
     "internalName": "BingbongDrama",
-    "version": 3,
+    "version": 4,
     "description": "bingbongDRAMA · Popüler dikey kısa drama ve trend dizi akışları.",
     "authors": [
       "Wiojelt"
     ],
     "repositoryUrl": "https://github.com/Wiojelt/test",
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/bingbongDRAMA.cs3?v=c713931909b9",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/bingbongDRAMA.cs3?v=a330ff3e36cb",
     "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/bingbongDRAMA.png",
     "tvTypes": [
       "AsianDrama",
@@ -209,21 +209,21 @@
     ],
     "language": "tr",
     "status": 1,
-    "fileSize": 116461,
-    "fileHash": "sha256-c713931909b9dcf0553124be2b8365631f8a276a951a691502b11454706bafe5",
+    "fileSize": 116542,
+    "fileHash": "sha256-a330ff3e36cb620b7388599e764483e93f1d1b4ce879215a29d08a8ce5cc689a",
     "apiVersion": 1,
-    "hash": "c713931909b9dcf0553124be2b8365631f8a276a951a691502b11454706bafe5"
+    "hash": "a330ff3e36cb620b7388599e764483e93f1d1b4ce879215a29d08a8ce5cc689a"
   },
   {
     "name": "asidbRAMA",
     "internalName": "AsidbDrama",
-    "version": 2,
+    "version": 3,
     "description": "asidbRAMA · Popüler dikey kısa drama ve trend dizi akışları.",
     "authors": [
       "Wiojelt"
     ],
     "repositoryUrl": "https://github.com/Wiojelt/test",
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/asidbRAMA.cs3?v=5907b9ee3740",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/asidbRAMA.cs3?v=4ad6a90bb61b",
     "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/asidbDRAMA.png",
     "tvTypes": [
       "AsianDrama",
@@ -231,21 +231,21 @@
     ],
     "language": "tr",
     "status": 1,
-    "fileSize": 107503,
-    "fileHash": "sha256-5907b9ee374066b68fa67f01c6bbc2f026da8523cb6a177788663d466b3283c1",
+    "fileSize": 107047,
+    "fileHash": "sha256-4ad6a90bb61bfe5b03be7460b1cc174d1bf43600e908ec7e68cced6508dbb106",
     "apiVersion": 1,
-    "hash": "5907b9ee374066b68fa67f01c6bbc2f026da8523cb6a177788663d466b3283c1"
+    "hash": "4ad6a90bb61bfe5b03be7460b1cc174d1bf43600e908ec7e68cced6508dbb106"
   },
   {
     "name": "SinemaTV",
     "internalName": "SinemaTV",
-    "version": 2,
+    "version": 3,
     "description": "SinemaTV · Azərbaycan və xarici filmlər, seriallar və cizgi filmləri.",
     "authors": [
       "Wiojelt"
     ],
     "repositoryUrl": "https://github.com/Wiojelt/test",
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/SinemaTV.cs3?v=2f8d9f9ec5ae",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/SinemaTV.cs3?v=d5192994aabe",
     "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/sinematv.png",
     "tvTypes": [
       "Movie",
@@ -255,9 +255,9 @@
     ],
     "language": "az",
     "status": 1,
-    "fileSize": 119462,
-    "fileHash": "sha256-2f8d9f9ec5ae7b72b7024f2b23f71ae66dd868642a15662364b3a3935c67b7aa",
+    "fileSize": 118070,
+    "fileHash": "sha256-d5192994aabe688825fcb6b5e619bd6e8ed030c8939ae701fe10b71ad420ae2d",
     "apiVersion": 1,
-    "hash": "2f8d9f9ec5ae7b72b7024f2b23f71ae66dd868642a15662364b3a3935c67b7aa"
+    "hash": "d5192994aabe688825fcb6b5e619bd6e8ed030c8939ae701fe10b71ad420ae2d"
   }
 ]
