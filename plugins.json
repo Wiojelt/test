@@ -239,13 +239,13 @@
   {
     "name": "SinemaTV",
     "internalName": "SinemaTV",
-    "version": 5,
+    "version": 6,
     "description": "SinemaTV · Azərbaycan və xarici filmlər, seriallar və cizgi filmləri.",
     "authors": [
       "Wiojelt"
     ],
     "repositoryUrl": "https://github.com/Wiojelt/test",
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/SinemaTV.cs3?v=8e28ef37bdda",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/SinemaTV.cs3?v=c2fefa291828",
     "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/sinematv.png",
     "tvTypes": [
       "Movie",
@@ -255,21 +255,21 @@
     ],
     "language": "az",
     "status": 1,
-    "fileSize": 117354,
-    "fileHash": "sha256-8e28ef37bdda68aca182fc9aee4bf849cc4d31123d460fb4b3d3378a043ff08a",
+    "fileSize": 127892,
+    "fileHash": "sha256-c2fefa291828f0f8445f2bbc1ab57ed275282be7ed10dfe118824195549926b4",
     "apiVersion": 1,
-    "hash": "8e28ef37bdda68aca182fc9aee4bf849cc4d31123d460fb4b3d3378a043ff08a"
+    "hash": "c2fefa291828f0f8445f2bbc1ab57ed275282be7ed10dfe118824195549926b4"
   },
   {
     "name": "7Reels",
     "internalName": "SevenReels",
-    "version": 2,
+    "version": 3,
     "description": "7Reels • 4K Direct Master Stream Router (VidFast, VidCore, VixSrc)",
     "authors": [
       "Wiojelt"
     ],
     "repositoryUrl": "https://github.com/Wiojelt/test",
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/SevenReels.cs3?v=24a2b940f1a3",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/SevenReels.cs3?v=1c5401f0e6f2",
     "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/7reels.png",
     "tvTypes": [
       "Movie",
@@ -277,21 +277,21 @@
     ],
     "language": "en",
     "status": 1,
-    "fileSize": 130290,
-    "fileHash": "sha256-24a2b940f1a31f53bc964d6c6e8eaaddfdec0b55be462699c8920371d6ffe1a0",
+    "fileSize": 133128,
+    "fileHash": "sha256-1c5401f0e6f2a0ce5154d1b434b146e0dce5b7853f36165b616a70994b25a81c",
     "apiVersion": 1,
-    "hash": "24a2b940f1a31f53bc964d6c6e8eaaddfdec0b55be462699c8920371d6ffe1a0"
+    "hash": "1c5401f0e6f2a0ce5154d1b434b146e0dce5b7853f36165b616a70994b25a81c"
   },
   {
     "name": "Velarium",
     "internalName": "Velarium",
-    "version": 2,
+    "version": 3,
     "description": "Velarium • 4K Master M3U8 Direct Router with SHA-256 PoW Solver",
     "authors": [
       "Wiojelt"
     ],
     "repositoryUrl": "https://github.com/Wiojelt/test",
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/Velarium.cs3?v=daef503cdbaf",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/Velarium.cs3?v=6d454ec000c2",
     "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/velarium.png",
     "tvTypes": [
       "Movie",
@@ -299,9 +299,9 @@
     ],
     "language": "en",
     "status": 1,
-    "fileSize": 123907,
-    "fileHash": "sha256-daef503cdbaf3842accf38b2174dd76322a77529a5a50827c92319cef42ad66b",
+    "fileSize": 126492,
+    "fileHash": "sha256-6d454ec000c2e959a61449a934584ecc9a5f7216405bdba1c82d6196918f3af6",
     "apiVersion": 1,
-    "hash": "daef503cdbaf3842accf38b2174dd76322a77529a5a50827c92319cef42ad66b"
+    "hash": "6d454ec000c2e959a61449a934584ecc9a5f7216405bdba1c82d6196918f3af6"
   }
 ]
