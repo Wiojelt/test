@@ -281,5 +281,27 @@
     "fileHash": "sha256-2c1afc4cb099fc26a28621776be4877d27eaa06fd231c1eca1f5b88f57fe4eaa",
     "apiVersion": 1,
     "hash": "2c1afc4cb099fc26a28621776be4877d27eaa06fd231c1eca1f5b88f57fe4eaa"
+  },
+  {
+    "name": "Velarium",
+    "internalName": "Velarium",
+    "version": 1,
+    "description": "Velarium • 4K Master M3U8 Direct Router with SHA-256 PoW Solver",
+    "authors": [
+      "Wiojelt"
+    ],
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/Velarium.cs3?v=effb6dac6f26",
+    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/velarium.png",
+    "tvTypes": [
+      "Movie",
+      "TvSeries"
+    ],
+    "language": "en",
+    "status": 1,
+    "fileSize": 123988,
+    "fileHash": "sha256-effb6dac6f268fd534ec4aabb5d25db53e760fb31dd008b04c1a7852ad3f952d",
+    "apiVersion": 1,
+    "hash": "effb6dac6f268fd534ec4aabb5d25db53e760fb31dd008b04c1a7852ad3f952d"
   }
 ]
