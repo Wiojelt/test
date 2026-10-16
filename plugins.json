@@ -239,13 +239,13 @@
   {
     "name": "SinemaTV",
     "internalName": "SinemaTV",
-    "version": 3,
+    "version": 4,
     "description": "SinemaTV · Azərbaycan və xarici filmlər, seriallar və cizgi filmləri.",
     "authors": [
       "Wiojelt"
     ],
     "repositoryUrl": "https://github.com/Wiojelt/test",
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/SinemaTV.cs3?v=d5192994aabe",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/SinemaTV.cs3?v=bbaaf5282ae5",
     "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/sinematv.png",
     "tvTypes": [
       "Movie",
@@ -255,9 +255,9 @@
     ],
     "language": "az",
     "status": 1,
-    "fileSize": 118070,
-    "fileHash": "sha256-d5192994aabe688825fcb6b5e619bd6e8ed030c8939ae701fe10b71ad420ae2d",
+    "fileSize": 117427,
+    "fileHash": "sha256-bbaaf5282ae550b1bd079788398d240881d0ad5f5dbc63436cc1d57b608e3b9f",
     "apiVersion": 1,
-    "hash": "d5192994aabe688825fcb6b5e619bd6e8ed030c8939ae701fe10b71ad420ae2d"
+    "hash": "bbaaf5282ae550b1bd079788398d240881d0ad5f5dbc63436cc1d57b608e3b9f"
   }
 ]
