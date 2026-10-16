@@ -105,28 +105,6 @@
     "hash": "b3d43a81af0bff728731649fab4249f2cff3639939e3be3e4e425aa14d846fc0"
   },
   {
-    "name": "greatDRAMA",
-    "internalName": "GreatDrama",
-    "version": 2,
-    "description": "greatDRAMA · Popüler dikey kısa drama ve trend dizi akışları.",
-    "authors": [
-      "Wiojelt"
-    ],
-    "repositoryUrl": "https://github.com/Wiojelt/test",
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/greatDRAMA.cs3?v=ad9c65acb78a",
-    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/greatDRAMA.png",
-    "tvTypes": [
-      "AsianDrama",
-      "TvSeries"
-    ],
-    "language": "tr",
-    "status": 1,
-    "fileSize": 106417,
-    "fileHash": "sha256-ad9c65acb78a6e56e26123415f008316cfed6269baf4c33dc2bf524f53cb3fd5",
-    "apiVersion": 1,
-    "hash": "ad9c65acb78a6e56e26123415f008316cfed6269baf4c33dc2bf524f53cb3fd5"
-  },
-  {
     "name": "hiDRAMA",
     "internalName": "HiDrama",
     "version": 2,
@@ -322,27 +300,6 @@
     "fileHash": "sha256-5907b9ee374066b68fa67f01c6bbc2f026da8523cb6a177788663d466b3283c1",
     "apiVersion": 1,
     "hash": "5907b9ee374066b68fa67f01c6bbc2f026da8523cb6a177788663d466b3283c1"
-  },
-  {
-    "name": "eloDRAMA",
-    "internalName": "EloDrama",
-    "version": 1,
-    "description": "eloDRAMA · Popüler dikey kısa drama ve trend dizi akışları.",
-    "authors": [
-      "Wiojelt"
-    ],
-    "repositoryUrl": "https://github.com/Wiojelt/test",
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/eloDRAMA.cs3?v=0daba418e5fe",
-    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/eloDRAMA.png",
-    "tvTypes": [
-      "AsianDrama",
-      "TvSeries"
-    ],
-    "language": "tr",
-    "status": 1,
-    "fileSize": 107545,
-    "fileHash": "sha256-0daba418e5fe16a8805ae376930f32d19e00f23ddff3a2957f70637d65645e4c",
-    "apiVersion": 1
   },
   {
     "name": "SinemaTV",
