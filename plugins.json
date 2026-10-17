@@ -280,5 +280,29 @@
     "fileHash": "sha256-06385670e6a58e54496e2997b5b195fe8358b2cfccb49aaecace33a00c07e538",
     "apiVersion": 1,
     "hash": "06385670e6a58e54496e2997b5b195fe8358b2cfccb49aaecace33a00c07e538"
+  },
+  {
+    "name": "DiziPalHub",
+    "internalName": "DiziPalHub",
+    "version": 23,
+    "description": "DiziPal Hub · Son Bölümler, 1590, 2225, DDiziPal ve Orjinal 14 kaynakları tek merkezde",
+    "authors": [
+      "Wiojelt"
+    ],
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/DiziPalHub.cs3?v=70f18ab8350b_1792234622",
+    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/DiziPalHub.png",
+    "tvTypes": [
+      "Movie",
+      "TvSeries",
+      "Anime",
+      "Documentary"
+    ],
+    "language": "tr",
+    "status": 3,
+    "fileSize": 223245,
+    "fileHash": "sha256-70f18ab8350b1b474f31bc99671a43ab9fc772ffb01d3eba4b33491049672c76",
+    "apiVersion": 1,
+    "hash": "70f18ab8350b1b474f31bc99671a43ab9fc772ffb01d3eba4b33491049672c76"
   }
 ]
