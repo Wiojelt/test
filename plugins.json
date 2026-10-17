@@ -23,21 +23,21 @@
   {
     "name": "StbTV",
     "internalName": "StbTV",
-    "version": 5,
+    "version": 6,
     "description": "Stalker STB CanlÄ± TV & Spor. Linkler en az 2, en fazla 6 kiÅŸiliktir. SaÄŸlam Ã§alÄ±ÅŸan bir hat bulduÄŸunuzda limit aÅŸÄ±mÄ± olmamasÄ± iÃ§in sÄ±k kanal/hat deÄŸiÅŸtirmeyiniz.",
     "authors": [
       "Wiojelt"
     ],
     "repositoryUrl": "https://github.com/Wiojelt/test",
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/main/StbTV.cs3",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/StbTV.cs3?v=e63cd5ce9cdf",
     "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/builds/assets/stbtv.png",
     "tvTypes": [
       "Live"
     ],
     "language": "tr",
     "status": 1,
-    "fileSize": 267794,
-    "fileHash": "sha256-e88f500b6a2cf2fc3002f1ca7a05bee43e45f0497ce73d91683b1ec04a97306e",
+    "fileSize": 280014,
+    "fileHash": "sha256-e63cd5ce9cdfddcca0fa3f3f9b0201e8547fef02a6f5455c5feafee111f40089",
     "apiVersion": 1
   },
   {
@@ -263,23 +263,23 @@
   {
     "name": "NewTVLive",
     "internalName": "NewTVLive",
-    "version": 1,
+    "version": 2,
     "description": "NewTV Live · Canlı TV, Türk kanalları, spor, sinema & ulusal yayınlar.",
     "authors": [
       "Wiojelt"
     ],
     "repositoryUrl": "https://github.com/Wiojelt/test",
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/NewTVLive.cs3?v=06385670e6a5",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/NewTVLive.cs3?v=d08f93092789",
     "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/newtvlive.png",
     "tvTypes": [
       "Live"
     ],
     "language": "tr",
     "status": 1,
-    "fileSize": 119430,
-    "fileHash": "sha256-06385670e6a58e54496e2997b5b195fe8358b2cfccb49aaecace33a00c07e538",
+    "fileSize": 125835,
+    "fileHash": "sha256-d08f93092789a8f0e762826412d47690b8092a5d0eba31d45a594c34c14bf190",
     "apiVersion": 1,
-    "hash": "06385670e6a58e54496e2997b5b195fe8358b2cfccb49aaecace33a00c07e538"
+    "hash": "d08f93092789a8f0e762826412d47690b8092a5d0eba31d45a594c34c14bf190"
   },
   {
     "name": "DiziPalHub",
