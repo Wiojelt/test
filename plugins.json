@@ -259,5 +259,26 @@
     "fileHash": "sha256-fd68e0e55a9d2c148a57c51d2bf92d37ac4ab3006d7bd80390069bf43e53b6cb",
     "apiVersion": 1,
     "hash": "fd68e0e55a9d2c148a57c51d2bf92d37ac4ab3006d7bd80390069bf43e53b6cb"
+  },
+  {
+    "name": "NewTVLive",
+    "internalName": "NewTVLive",
+    "version": 1,
+    "description": "NewTV Live · Canlı TV, Türk kanalları, spor, sinema & ulusal yayınlar.",
+    "authors": [
+      "Wiojelt"
+    ],
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/NewTVLive.cs3?v=06385670e6a5",
+    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/newtvlive.png",
+    "tvTypes": [
+      "Live"
+    ],
+    "language": "tr",
+    "status": 1,
+    "fileSize": 119430,
+    "fileHash": "sha256-06385670e6a58e54496e2997b5b195fe8358b2cfccb49aaecace33a00c07e538",
+    "apiVersion": 1,
+    "hash": "06385670e6a58e54496e2997b5b195fe8358b2cfccb49aaecace33a00c07e538"
   }
 ]
