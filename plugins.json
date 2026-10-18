@@ -237,30 +237,6 @@
     "hash": "4ad6a90bb61bfe5b03be7460b1cc174d1bf43600e908ec7e68cced6508dbb106"
   },
   {
-    "name": "SinemaTV",
-    "internalName": "SinemaTV",
-    "version": 7,
-    "description": "SinemaTV · Azərbaycan və xarici filmlər, seriallar və cizgi filmləri.",
-    "authors": [
-      "Wiojelt"
-    ],
-    "repositoryUrl": "https://github.com/Wiojelt/test",
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/SinemaTV.cs3?v=fd68e0e55a9d",
-    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/sinematv.png",
-    "tvTypes": [
-      "Movie",
-      "TvSeries",
-      "Anime",
-      "Cartoon"
-    ],
-    "language": "az",
-    "status": 1,
-    "fileSize": 128035,
-    "fileHash": "sha256-fd68e0e55a9d2c148a57c51d2bf92d37ac4ab3006d7bd80390069bf43e53b6cb",
-    "apiVersion": 1,
-    "hash": "fd68e0e55a9d2c148a57c51d2bf92d37ac4ab3006d7bd80390069bf43e53b6cb"
-  },
-  {
     "name": "NewTVLive",
     "internalName": "NewTVLive",
     "version": 2,
@@ -280,29 +256,5 @@
     "fileHash": "sha256-d08f93092789a8f0e762826412d47690b8092a5d0eba31d45a594c34c14bf190",
     "apiVersion": 1,
     "hash": "d08f93092789a8f0e762826412d47690b8092a5d0eba31d45a594c34c14bf190"
-  },
-  {
-    "name": "DiziPalHub",
-    "internalName": "DiziPalHub",
-    "version": 23,
-    "description": "DiziPal Hub · Son Bölümler, 1590, 2225, DDiziPal ve Orjinal 14 kaynakları tek merkezde",
-    "authors": [
-      "Wiojelt"
-    ],
-    "repositoryUrl": "https://github.com/Wiojelt/test",
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/DiziPalHub.cs3?v=70f18ab8350b_1792234622",
-    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/DiziPalHub.png",
-    "tvTypes": [
-      "Movie",
-      "TvSeries",
-      "Anime",
-      "Documentary"
-    ],
-    "language": "tr",
-    "status": 3,
-    "fileSize": 223245,
-    "fileHash": "sha256-70f18ab8350b1b474f31bc99671a43ab9fc772ffb01d3eba4b33491049672c76",
-    "apiVersion": 1,
-    "hash": "70f18ab8350b1b474f31bc99671a43ab9fc772ffb01d3eba4b33491049672c76"
   }
 ]
