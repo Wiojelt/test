@@ -21,26 +21,6 @@
     "apiVersion": 1
   },
   {
-    "name": "StbTV",
-    "internalName": "StbTV",
-    "version": 6,
-    "description": "Stalker STB CanlÄ± TV & Spor. Linkler en az 2, en fazla 6 kiÅŸiliktir. SaÄŸlam Ã§alÄ±ÅŸan bir hat bulduÄŸunuzda limit aÅŸÄ±mÄ± olmamasÄ± iÃ§in sÄ±k kanal/hat deÄŸiÅŸtirmeyiniz.",
-    "authors": [
-      "Wiojelt"
-    ],
-    "repositoryUrl": "https://github.com/Wiojelt/test",
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/StbTV.cs3?v=e63cd5ce9cdf",
-    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/builds/assets/stbtv.png",
-    "tvTypes": [
-      "Live"
-    ],
-    "language": "tr",
-    "status": 1,
-    "fileSize": 280014,
-    "fileHash": "sha256-e63cd5ce9cdfddcca0fa3f3f9b0201e8547fef02a6f5455c5feafee111f40089",
-    "apiVersion": 1
-  },
-  {
     "name": "SeyirTURK",
     "internalName": "SeyirTURK",
     "version": 13,
@@ -239,22 +219,22 @@
   {
     "name": "NewTVLive",
     "internalName": "NewTVLive",
-    "version": 2,
+    "version": 3,
     "description": "NewTV Live · Canlı TV, Türk kanalları, spor, sinema & ulusal yayınlar.",
     "authors": [
       "Wiojelt"
     ],
     "repositoryUrl": "https://github.com/Wiojelt/test",
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/NewTVLive.cs3?v=d08f93092789",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/NewTVLive.cs3?v=f85e82304952",
     "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/newtvlive.png",
     "tvTypes": [
       "Live"
     ],
     "language": "tr",
     "status": 1,
-    "fileSize": 125835,
-    "fileHash": "sha256-d08f93092789a8f0e762826412d47690b8092a5d0eba31d45a594c34c14bf190",
+    "fileSize": 127443,
+    "fileHash": "sha256-f85e82304952b88a07f45eff5e1f38d0ceb13ed15d9e007f9198a1833a14fe11",
     "apiVersion": 1,
-    "hash": "d08f93092789a8f0e762826412d47690b8092a5d0eba31d45a594c34c14bf190"
+    "hash": "f85e82304952b88a07f45eff5e1f38d0ceb13ed15d9e007f9198a1833a14fe11"
   }
 ]
