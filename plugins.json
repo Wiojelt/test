@@ -72,7 +72,7 @@
       "Wiojelt"
     ],
     "repositoryUrl": "https://github.com/Wiojelt/test",
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/oiDRAMA.cs3?v=200b4f128454",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/oiDRAMA.cs3?v=ed246f08fd54",
     "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/oiDRAMA.png",
     "tvTypes": [
       "AsianDrama",
@@ -80,8 +80,8 @@
     ],
     "language": "tr",
     "status": 1,
-    "fileSize": 109400,
-    "fileHash": "sha256-200b4f128454ba74eb7a8d32905342d9e9b04109f3ead2be2c10836f4330a23d",
+    "fileSize": 112112,
+    "fileHash": "sha256-ed246f08fd547974de1d9ad2a705b576ad075a773f65ddaf0a1c340af8ee493a",
     "apiVersion": 1
   },
   {
@@ -159,7 +159,7 @@
       "Wiojelt"
     ],
     "repositoryUrl": "https://github.com/Wiojelt/test",
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/mcDRAMA.cs3?v=aace782f58ba",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/mcDRAMA.cs3?v=9616707f94cf",
     "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/mcDRAMA.png",
     "tvTypes": [
       "AsianDrama",
@@ -167,10 +167,10 @@
     ],
     "language": "tr",
     "status": 1,
-    "fileSize": 106527,
-    "fileHash": "sha256-aace782f58ba45e09bf3a8dc70cf5ee5e1f3d7ea82e69016ade71ec361f4c687",
+    "fileSize": 106526,
+    "fileHash": "sha256-9616707f94cfae439aa1b6df13696cbedf3cdfce30e6efc3f66e359fd298cbcf",
     "apiVersion": 1,
-    "hash": "aace782f58ba45e09bf3a8dc70cf5ee5e1f3d7ea82e69016ade71ec361f4c687"
+    "hash": "9616707f94cfae439aa1b6df13696cbedf3cdfce30e6efc3f66e359fd298cbcf"
   },
   {
     "name": "bingbongDRAMA",
