@@ -236,5 +236,26 @@
     "fileHash": "sha256-a1f75b84c66caec7be7d01b397bfc7cbe40d30838a6459423b369c105a8526af",
     "apiVersion": 1,
     "hash": "a1f75b84c66caec7be7d01b397bfc7cbe40d30838a6459423b369c105a8526af"
+  },
+  {
+    "name": "çiftd2m",
+    "internalName": "CiftD2M",
+    "version": 1,
+    "description": "çiftd2m · py.md/json canlı yayınları ve kategori yönetimi.",
+    "authors": [
+      "Wiojelt"
+    ],
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/CiftD2M.cs3?v=8ebba826f714",
+    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/ciftd2m.png",
+    "tvTypes": [
+      "Live"
+    ],
+    "language": "tr",
+    "status": 1,
+    "fileSize": 179645,
+    "fileHash": "sha256-8ebba826f714322142a4eff3a553fcc84b7fdfb88d05365d4c74e4f4f8af0004",
+    "apiVersion": 1,
+    "hash": "8ebba826f714322142a4eff3a553fcc84b7fdfb88d05365d4c74e4f4f8af0004"
   }
 ]
