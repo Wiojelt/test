@@ -21,26 +21,6 @@
     "apiVersion": 1
   },
   {
-    "name": "StbTV",
-    "internalName": "StbTV",
-    "version": 5,
-    "description": "Stalker STB CanlÄ± TV & Spor. Linkler en az 2, en fazla 6 kiÅŸiliktir. SaÄŸlam Ã§alÄ±ÅŸan bir hat bulduÄŸunuzda limit aÅŸÄ±mÄ± olmamasÄ± iÃ§in sÄ±k kanal/hat deÄŸiÅŸtirmeyiniz.",
-    "authors": [
-      "Wiojelt"
-    ],
-    "repositoryUrl": "https://github.com/Wiojelt/test",
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/main/StbTV.cs3",
-    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/builds/assets/stbtv.png",
-    "tvTypes": [
-      "Live"
-    ],
-    "language": "tr",
-    "status": 1,
-    "fileSize": 267794,
-    "fileHash": "sha256-e88f500b6a2cf2fc3002f1ca7a05bee43e45f0497ce73d91683b1ec04a97306e",
-    "apiVersion": 1
-  },
-  {
     "name": "SeyirTURK",
     "internalName": "SeyirTURK",
     "version": 13,
@@ -65,23 +45,23 @@
   {
     "name": "KoalaTV",
     "internalName": "KoalaTV",
-    "version": 4,
+    "version": 5,
     "description": "KoalaTV Â· CanlÄ± TV kanallarÄ±, spor, ulusal ve dÃ¼nya yayÄ±nlarÄ±.",
     "authors": [
       "Wiojelt"
     ],
     "repositoryUrl": "https://github.com/Wiojelt/test",
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/KoalaTV.cs3?v=127b6d709f1c",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/KoalaTV.cs3?v=61a9c4feee1f",
     "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/koalatv.png",
     "tvTypes": [
       "Live"
     ],
     "language": "tr",
     "status": 1,
-    "fileSize": 546669,
-    "fileHash": "sha256-127b6d709f1cfd6b16c7a6f23bd0643158312a7726717c36d18852b90db8616d",
+    "fileSize": 547125,
+    "fileHash": "sha256-61a9c4feee1f6f94dcf76cd2d6e6a6875bb5e7686dd6440db65e7f705b248736",
     "apiVersion": 1,
-    "hash": "127b6d709f1cfd6b16c7a6f23bd0643158312a7726717c36d18852b90db8616d"
+    "hash": "61a9c4feee1f6f94dcf76cd2d6e6a6875bb5e7686dd6440db65e7f705b248736"
   },
   {
     "name": "oiDRAMA",
@@ -92,7 +72,7 @@
       "Wiojelt"
     ],
     "repositoryUrl": "https://github.com/Wiojelt/test",
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/oiDRAMA.cs3?v=200b4f128454",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/oiDRAMA.cs3?v=ed246f08fd54",
     "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/oiDRAMA.png",
     "tvTypes": [
       "AsianDrama",
@@ -100,8 +80,8 @@
     ],
     "language": "tr",
     "status": 1,
-    "fileSize": 109400,
-    "fileHash": "sha256-200b4f128454ba74eb7a8d32905342d9e9b04109f3ead2be2c10836f4330a23d",
+    "fileSize": 112112,
+    "fileHash": "sha256-ed246f08fd547974de1d9ad2a705b576ad075a773f65ddaf0a1c340af8ee493a",
     "apiVersion": 1
   },
   {
@@ -179,7 +159,7 @@
       "Wiojelt"
     ],
     "repositoryUrl": "https://github.com/Wiojelt/test",
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/mcDRAMA.cs3?v=aace782f58ba",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/mcDRAMA.cs3?v=9616707f94cf",
     "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/mcDRAMA.png",
     "tvTypes": [
       "AsianDrama",
@@ -187,10 +167,10 @@
     ],
     "language": "tr",
     "status": 1,
-    "fileSize": 106527,
-    "fileHash": "sha256-aace782f58ba45e09bf3a8dc70cf5ee5e1f3d7ea82e69016ade71ec361f4c687",
+    "fileSize": 106526,
+    "fileHash": "sha256-9616707f94cfae439aa1b6df13696cbedf3cdfce30e6efc3f66e359fd298cbcf",
     "apiVersion": 1,
-    "hash": "aace782f58ba45e09bf3a8dc70cf5ee5e1f3d7ea82e69016ade71ec361f4c687"
+    "hash": "9616707f94cfae439aa1b6df13696cbedf3cdfce30e6efc3f66e359fd298cbcf"
   },
   {
     "name": "bingbongDRAMA",
@@ -237,27 +217,66 @@
     "hash": "4ad6a90bb61bfe5b03be7460b1cc174d1bf43600e908ec7e68cced6508dbb106"
   },
   {
-    "name": "SinemaTV",
-    "internalName": "SinemaTV",
+    "name": "NewTVLive",
+    "internalName": "NewTVLive",
     "version": 3,
-    "description": "SinemaTV · Azərbaycan və xarici filmlər, seriallar və cizgi filmləri.",
+    "description": "NewTV Live · Canlı TV, Türk kanalları, spor, sinema & ulusal yayınlar.",
     "authors": [
       "Wiojelt"
     ],
     "repositoryUrl": "https://github.com/Wiojelt/test",
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/SinemaTV.cs3?v=d5192994aabe",
-    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/sinematv.png",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/NewTVLive.cs3?v=a1f75b84c66c",
+    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/newtvlive.png",
     "tvTypes": [
-      "Movie",
-      "TvSeries",
-      "Anime",
-      "Cartoon"
+      "Live"
     ],
-    "language": "az",
+    "language": "tr",
     "status": 1,
-    "fileSize": 118070,
-    "fileHash": "sha256-d5192994aabe688825fcb6b5e619bd6e8ed030c8939ae701fe10b71ad420ae2d",
+    "fileSize": 177549,
+    "fileHash": "sha256-a1f75b84c66caec7be7d01b397bfc7cbe40d30838a6459423b369c105a8526af",
     "apiVersion": 1,
-    "hash": "d5192994aabe688825fcb6b5e619bd6e8ed030c8939ae701fe10b71ad420ae2d"
+    "hash": "a1f75b84c66caec7be7d01b397bfc7cbe40d30838a6459423b369c105a8526af"
+  },
+  {
+    "name": "çiftd2m",
+    "internalName": "CiftD2M",
+    "version": 2,
+    "description": "çiftd2m · py.md/json canlı yayınları ve dinamik kategori yönetimi.",
+    "authors": [
+      "Wiojelt"
+    ],
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/CiftD2M.cs3?v=e7adaf0f2a85",
+    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/ciftd2m.png",
+    "tvTypes": [
+      "Live"
+    ],
+    "language": "tr",
+    "status": 1,
+    "fileSize": 181279,
+    "fileHash": "sha256-e7adaf0f2a8526459d9374d0e7e7d2e37b7e2d88b590f0b625b6975714d7bd14",
+    "apiVersion": 1,
+    "hash": "e7adaf0f2a8526459d9374d0e7e7d2e37b7e2d88b590f0b625b6975714d7bd14"
+  },
+  {
+    "name": "TimStreams",
+    "internalName": "TimStreams",
+    "version": 2,
+    "description": "TimStreams · Canlı TV kanalları (Sports, Entertainment, Cartoons, Movies, News/Politics).",
+    "authors": [
+      "Wiojelt"
+    ],
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/TimStreams.cs3?v=9448c702c1b8",
+    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/timstreams.png",
+    "tvTypes": [
+      "Live"
+    ],
+    "language": "all",
+    "status": 1,
+    "fileSize": 168365,
+    "fileHash": "sha256-9448c702c1b8060c4568d4cd76e1320ba16dffbbb6d65736452f49c6ff19d376",
+    "apiVersion": 1,
+    "hash": "9448c702c1b8060c4568d4cd76e1320ba16dffbbb6d65736452f49c6ff19d376"
   }
 ]
