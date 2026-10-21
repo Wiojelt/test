@@ -257,5 +257,26 @@
     "fileHash": "sha256-e7adaf0f2a8526459d9374d0e7e7d2e37b7e2d88b590f0b625b6975714d7bd14",
     "apiVersion": 1,
     "hash": "e7adaf0f2a8526459d9374d0e7e7d2e37b7e2d88b590f0b625b6975714d7bd14"
+  },
+  {
+    "name": "TimStreams",
+    "internalName": "TimStreams",
+    "version": 1,
+    "description": "TimStreams · Canlı TV kanalları (Sports, Entertainment, Cartoons, Movies, News/Politics).",
+    "authors": [
+      "Wiojelt"
+    ],
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/TimStreams.cs3?v=2dca7164efe6",
+    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/timstreams.png",
+    "tvTypes": [
+      "Live"
+    ],
+    "language": "all",
+    "status": 1,
+    "fileSize": 165936,
+    "fileHash": "sha256-2dca7164efe68be63b17db40ed9187d7c9c9fb1d6e6a6e38f0fda05577225aa5",
+    "apiVersion": 1,
+    "hash": "2dca7164efe68be63b17db40ed9187d7c9c9fb1d6e6a6e38f0fda05577225aa5"
   }
 ]
