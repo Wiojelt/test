@@ -282,13 +282,13 @@
   {
     "name": "Donkey",
     "internalName": "Donkey",
-    "version": 1,
+    "version": 2,
     "description": "Donkey · Ücretsiz yerli ve yabancı film, dizi ve trend akışları.",
     "authors": [
       "Wiojelt"
     ],
     "repositoryUrl": "https://github.com/Wiojelt/test",
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/Donkey.cs3?v=6cac94276742",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/Donkey.cs3?v=244c81d10b43",
     "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/builds/assets/donkey.png",
     "tvTypes": [
       "Movie",
@@ -296,8 +296,8 @@
     ],
     "language": "tr",
     "status": 1,
-    "fileSize": 129682,
-    "fileHash": "sha256-6cac942767425634fde0ff973d2203093d8834e1c97ad137a9e7ae80c279aebf",
+    "fileSize": 148548,
+    "fileHash": "sha256-244c81d10b43458ad6ea49ebcd5ccb73b67f95e32630332fea1dd2b7b275d62a",
     "apiVersion": 1
   }
 ]
