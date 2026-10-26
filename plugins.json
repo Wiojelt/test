@@ -217,27 +217,6 @@
     "hash": "4ad6a90bb61bfe5b03be7460b1cc174d1bf43600e908ec7e68cced6508dbb106"
   },
   {
-    "name": "NewTVLive",
-    "internalName": "NewTVLive",
-    "version": 3,
-    "description": "NewTV Live · Canlı TV, Türk kanalları, spor, sinema & ulusal yayınlar.",
-    "authors": [
-      "Wiojelt"
-    ],
-    "repositoryUrl": "https://github.com/Wiojelt/test",
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/NewTVLive.cs3?v=a1f75b84c66c",
-    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/newtvlive.png",
-    "tvTypes": [
-      "Live"
-    ],
-    "language": "tr",
-    "status": 1,
-    "fileSize": 177549,
-    "fileHash": "sha256-a1f75b84c66caec7be7d01b397bfc7cbe40d30838a6459423b369c105a8526af",
-    "apiVersion": 1,
-    "hash": "a1f75b84c66caec7be7d01b397bfc7cbe40d30838a6459423b369c105a8526af"
-  },
-  {
     "name": "çiftd2m",
     "internalName": "CiftD2M",
     "version": 2,
