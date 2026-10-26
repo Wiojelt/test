@@ -240,21 +240,21 @@
   {
     "name": "TimStreams",
     "internalName": "TimStreams",
-    "version": 3,
-    "description": "TimStreams · Canlı TV kanalları (Sports, Entertainment, Cartoons, Movies, News/Politics).",
+    "version": 4,
+    "description": "TimStreams · Canlı TV kanalları (Sports, Entertainment, Cartoons, Movies, News/Politics). TikTok CDN proxy & altyazı optimizasyonu.",
     "authors": [
       "Wiojelt"
     ],
     "repositoryUrl": "https://github.com/Wiojelt/test",
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/TimStreams.cs3?v=be0e83456b4e",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/TimStreams.cs3?v=0512185930a0",
     "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/timstreams.png",
     "tvTypes": [
       "Live"
     ],
     "language": "all",
     "status": 1,
-    "fileSize": 174043,
-    "fileHash": "sha256-be0e83456b4e01121bb5363087ce80c057070402ea3c98eb6c6d387e77142f27",
+    "fileSize": 181013,
+    "fileHash": "sha256-0512185930a054789a25b0daad7cefa8814a756f060595eb01700751baa38dd5",
     "apiVersion": 1,
     "hash": "be0e83456b4e01121bb5363087ce80c057070402ea3c98eb6c6d387e77142f27"
   },
