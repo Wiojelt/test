@@ -283,13 +283,13 @@
   {
     "name": "İnatBox",
     "internalName": "InatBox",
-    "version": 2,
+    "version": 3,
     "description": "İnatBox · TurkSinema ayrı sağlayıcı paketi",
     "authors": [
       "Wiojelt"
     ],
     "repositoryUrl": "https://github.com/Wiojelt/test",
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/InatBox.cs3?v=c26260316c0d",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/InatBox.cs3?v=sha256-53731",
     "iconUrl": "https://raw.githubusercontent.com/Wiojelt/TurkSinema/builds/assets/inatbox.png",
     "tvTypes": [
       "Movie",
@@ -298,20 +298,20 @@
     ],
     "language": "tr",
     "status": 1,
-    "fileSize": 141345,
-    "fileHash": "sha256-c26260316c0dc3e77b83cbed6369bf2ab82301ed0e5c661528b69793cdc87ed2",
+    "fileSize": 141174,
+    "fileHash": "sha256-5373107120c11cf87192032dc11ff112b22f1764e0400d3993a83a3c37a1fd59",
     "apiVersion": 1
   },
   {
     "name": "RecTV",
     "internalName": "RecTV",
-    "version": 3,
+    "version": 4,
     "description": "RecTV · TurkSinema ayrı sağlayıcı paketi",
     "authors": [
       "Wiojelt"
     ],
     "repositoryUrl": "https://github.com/Wiojelt/test",
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/RecTV.cs3?v=33a45de2e4fb",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/RecTV.cs3?v=sha256-ead09",
     "iconUrl": "https://raw.githubusercontent.com/Wiojelt/TurkSinema/builds/assets/rectv.png",
     "tvTypes": [
       "Movie",
@@ -320,8 +320,8 @@
     ],
     "language": "tr",
     "status": 1,
-    "fileSize": 142784,
-    "fileHash": "sha256-33a45de2e4fb7b1daf3945d8074b4b542e33e0f99baa52cb170a167629f72e39",
+    "fileSize": 142785,
+    "fileHash": "sha256-ead099dd4a508c95ef1f1a5b988897d42c6cf9856ada273218b0a6f13ba0ec4e",
     "apiVersion": 1
   }
 ]
