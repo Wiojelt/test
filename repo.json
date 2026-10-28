@@ -1,7 +1,7 @@
 {
   "name": "TurkStream Studio Test",
   "description": "TurkStream Studio Test Eklenti Deposu (WioDB, StbTV, SeyirTURK)",
-  "manifestVersion": 1,
+  "manifestVersion": 2,
   "pluginLists": [
     "https://raw.githubusercontent.com/Wiojelt/test/builds/plugins.json?t=1793142834"
   ],
