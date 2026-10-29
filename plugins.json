@@ -45,13 +45,13 @@
   {
     "name": "İnatBox",
     "internalName": "InatBox",
-    "version": 6,
+    "version": 7,
     "description": "İnatBox · TurkSinema ayrı sağlayıcı paketi",
     "authors": [
       "Wiojelt"
     ],
     "repositoryUrl": "https://github.com/Wiojelt/test",
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/InatBox.cs3?v=4cbeb2b4229d",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/InatBox.cs3?v=0479c442b773",
     "iconUrl": "https://raw.githubusercontent.com/Wiojelt/TurkSinema/builds/assets/inatbox.png",
     "tvTypes": [
       "Movie",
@@ -60,8 +60,8 @@
     ],
     "language": "tr",
     "status": 1,
-    "fileSize": 145817,
-    "fileHash": "sha256-4cbeb2b4229dbaaa21ab567bb44ef4c6454c71de006282c7e3ae6e252e556fc2",
+    "fileSize": 146899,
+    "fileHash": "sha256-0479c442b77312ce0b8efdcc103d7278eca78970e1844121a35b7815d8453c83",
     "apiVersion": 1
   }
 ]
