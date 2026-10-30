@@ -45,13 +45,13 @@
   {
     "name": "İnatBox",
     "internalName": "InatBox",
-    "version": 7,
+    "version": 8,
     "description": "İnatBox · TurkSinema ayrı sağlayıcı paketi",
     "authors": [
       "Wiojelt"
     ],
     "repositoryUrl": "https://github.com/Wiojelt/test",
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/InatBox.cs3?v=0479c442b773",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/InatBox.cs3?v=2ac0eb8e9130",
     "iconUrl": "https://raw.githubusercontent.com/Wiojelt/TurkSinema/builds/assets/inatbox.png",
     "tvTypes": [
       "Movie",
@@ -60,20 +60,20 @@
     ],
     "language": "tr",
     "status": 1,
-    "fileSize": 146899,
-    "fileHash": "sha256-0479c442b77312ce0b8efdcc103d7278eca78970e1844121a35b7815d8453c83",
+    "fileSize": 148002,
+    "fileHash": "sha256-2ac0eb8e9130cad7ef6527726dd8041954c78b9d0f3f093b6ab7d3901aef09d8",
     "apiVersion": 1
   },
   {
     "name": "muse drama",
     "internalName": "MuseDrama",
-    "version": 1,
+    "version": 2,
     "description": "muse drama — Türkçe altyazılı dikey kısa drama dizileri ve mini diziler.",
     "authors": [
       "Wiojelt"
     ],
     "repositoryUrl": "https://github.com/Wiojelt/test",
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/MuseDrama.cs3?v=f9943dd0bc9f",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/MuseDrama.cs3?v=9e762d33c6a1",
     "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/musedrama.png",
     "tvTypes": [
       "AsianDrama",
@@ -81,8 +81,8 @@
     ],
     "language": "tr",
     "status": 1,
-    "fileSize": 114835,
-    "fileHash": "sha256-f9943dd0bc9fdf88a229a2c732f8c9421710bda709f728b88bb1b5784cda2a5e",
+    "fileSize": 114936,
+    "fileHash": "sha256-9e762d33c6a1c679cf5462dccc1dfc727b968c7063e57ed8163708d67457c185",
     "apiVersion": 1
   }
 ]
