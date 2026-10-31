@@ -315,5 +315,26 @@
     "fileSize": 113284,
     "fileHash": "sha256-77f82ddd9a22c8be7a4c6845feae988fe95287cc64459cf738fddef13f258b2f",
     "apiVersion": 1
+  },
+  {
+    "name": "YOUKU",
+    "internalName": "Youku",
+    "version": 1,
+    "description": "YOUKU (优酷) — Popüler Çin ve Asya dizileri, tarihi ve romantik kısa diziler (Türkçe/İngilizce altyazılı).",
+    "authors": [
+      "Wiojelt"
+    ],
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/Youku.cs3?v=a28e449f4b3f",
+    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/youku.png",
+    "tvTypes": [
+      "AsianDrama",
+      "TvSeries"
+    ],
+    "language": "zh",
+    "status": 1,
+    "fileSize": 113082,
+    "fileHash": "sha256-a28e449f4b3f0741ce900fcb0f223ce4146a3e1a7d4cef13ae65d8720a5a0f2a",
+    "apiVersion": 1
   }
 ]
