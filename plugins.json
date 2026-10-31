@@ -189,5 +189,26 @@
     "fileSize": 108902,
     "fileHash": "sha256-d9916542247291c2fe6a66bd6c3b0fdfaf55e262555d871a9b86329becdbfd6c",
     "apiVersion": 1
+  },
+  {
+    "name": "FlickReels",
+    "internalName": "FlickReels",
+    "version": 1,
+    "description": "FlickReels — Türkçe ve çok dilli dikey kısa drama dizileri ve mini diziler.",
+    "authors": [
+      "Wiojelt"
+    ],
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/FlickReels.cs3?v=b6741e4423bc",
+    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/flickreels.png",
+    "tvTypes": [
+      "AsianDrama",
+      "TvSeries"
+    ],
+    "language": "tr",
+    "status": 1,
+    "fileSize": 112173,
+    "fileHash": "sha256-b6741e4423bc709949ca2aefc51a6c054b40a90b8c86ff656f549e46520a2ce6",
+    "apiVersion": 1
   }
 ]
