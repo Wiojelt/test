@@ -168,5 +168,26 @@
     "fileSize": 115784,
     "fileHash": "sha256-8156294f1a79cfb2a923f465dfe0b9583bf567be453a092a00fa001379e611ef",
     "apiVersion": 1
+  },
+  {
+    "name": "MinuteDrama",
+    "internalName": "MinuteDrama",
+    "version": 1,
+    "description": "MinuteDrama — Türkçe altyazılı dikey kısa drama dizileri ve mini diziler.",
+    "authors": [
+      "Wiojelt"
+    ],
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/MinuteDrama.cs3?v=d99165422472",
+    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/minutedrama.png",
+    "tvTypes": [
+      "AsianDrama",
+      "TvSeries"
+    ],
+    "language": "tr",
+    "status": 1,
+    "fileSize": 108902,
+    "fileHash": "sha256-d9916542247291c2fe6a66bd6c3b0fdfaf55e262555d871a9b86329becdbfd6c",
+    "apiVersion": 1
   }
 ]
