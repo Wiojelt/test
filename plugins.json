@@ -294,5 +294,26 @@
     "fileSize": 110600,
     "fileHash": "sha256-00dc830b1936b2bda57af1ff15b13c42aa828ff6c7345807d72a78987fdec641",
     "apiVersion": 1
+  },
+  {
+    "name": "VibeShort",
+    "internalName": "VibeShort",
+    "version": 1,
+    "description": "VibeShort — Türkçe dublajlı ve altyazılı dikey kısa drama dizileri ve mini diziler.",
+    "authors": [
+      "Wiojelt"
+    ],
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/VibeShort.cs3?v=77f82ddd9a22",
+    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/vibeshort.png",
+    "tvTypes": [
+      "AsianDrama",
+      "TvSeries"
+    ],
+    "language": "tr",
+    "status": 1,
+    "fileSize": 113284,
+    "fileHash": "sha256-77f82ddd9a22c8be7a4c6845feae988fe95287cc64459cf738fddef13f258b2f",
+    "apiVersion": 1
   }
 ]
