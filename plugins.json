@@ -231,5 +231,26 @@
     "fileSize": 110584,
     "fileHash": "sha256-22636501cb8c70b4f8b3f8b0a492abced0dde06940edda3e23cfb9240add17e5",
     "apiVersion": 1
+  },
+  {
+    "name": "Shot Short",
+    "internalName": "ShotShort",
+    "version": 1,
+    "description": "Shot Short — Türkçe altyazılı dikey kısa drama dizileri ve mini diziler.",
+    "authors": [
+      "Wiojelt"
+    ],
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/ShotShort.cs3?v=4c1dd5783224",
+    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/shotshort.png",
+    "tvTypes": [
+      "AsianDrama",
+      "TvSeries"
+    ],
+    "language": "tr",
+    "status": 1,
+    "fileSize": 110330,
+    "fileHash": "sha256-4c1dd5783224fe9cbd96fa9eebcb42c590d4644ae54e3ea7d550b211ff976b4b",
+    "apiVersion": 1
   }
 ]
