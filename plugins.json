@@ -67,13 +67,13 @@
   {
     "name": "muse drama",
     "internalName": "MuseDrama",
-    "version": 6,
+    "version": 7,
     "description": "muse drama — Türkçe altyazılı dikey kısa drama dizileri ve mini diziler.",
     "authors": [
       "Wiojelt"
     ],
     "repositoryUrl": "https://github.com/Wiojelt/test",
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/MuseDrama.cs3?v=9b413842a617",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/MuseDrama.cs3?v=e557c4e2567d",
     "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/musedrama.png",
     "tvTypes": [
       "AsianDrama",
@@ -81,8 +81,8 @@
     ],
     "language": "tr",
     "status": 1,
-    "fileSize": 115023,
-    "fileHash": "sha256-9b413842a6179ef1354c24f4deb52c783df55c09500df02fe060677af51beb42",
+    "fileSize": 115593,
+    "fileHash": "sha256-e557c4e2567d9e7463e882ed3d4e0d6242c3dcd408794d102c38c2639578c25d",
     "apiVersion": 1
   },
   {
@@ -335,6 +335,48 @@
     "status": 1,
     "fileSize": 113082,
     "fileHash": "sha256-a28e449f4b3f0741ce900fcb0f223ce4146a3e1a7d4cef13ae65d8720a5a0f2a",
+    "apiVersion": 1
+  },
+  {
+    "name": "ShortsWave",
+    "internalName": "ShortsWave",
+    "version": 1,
+    "description": "ShortsWave – Türkçe altyazılı ve dublajlı dikey kısa drama dizileri ve mini diziler.",
+    "authors": [
+      "Wiojelt"
+    ],
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/ShortsWave.cs3?v=615715eedd00",
+    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/shortswave.png",
+    "tvTypes": [
+      "AsianDrama",
+      "TvSeries"
+    ],
+    "language": "tr",
+    "status": 1,
+    "fileSize": 110943,
+    "fileHash": "sha256-615715eedd00a46daea69f2fea3ef197650b6819b12d02097b621e56941d3e60",
+    "apiVersion": 1
+  },
+  {
+    "name": "StardustTV",
+    "internalName": "StardustTV",
+    "version": 1,
+    "description": "StardustTV – 2500+ mini dizi ve kısa drama kataloğu (Türkçe altyazı destekli, unencrypted HLS).",
+    "authors": [
+      "Wiojelt"
+    ],
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/StardustTV.cs3?v=9abd7da4fdf5",
+    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/stardusttv.png",
+    "tvTypes": [
+      "AsianDrama",
+      "TvSeries"
+    ],
+    "language": "tr",
+    "status": 1,
+    "fileSize": 111999,
+    "fileHash": "sha256-9abd7da4fdf56808b8c8f6bd089088109ca29e7419d8da8037959a6432d8aea2",
     "apiVersion": 1
   }
 ]
