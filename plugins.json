@@ -67,13 +67,13 @@
   {
     "name": "muse drama",
     "internalName": "MuseDrama",
-    "version": 5,
+    "version": 6,
     "description": "muse drama — Türkçe altyazılı dikey kısa drama dizileri ve mini diziler.",
     "authors": [
       "Wiojelt"
     ],
     "repositoryUrl": "https://github.com/Wiojelt/test",
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/MuseDrama.cs3?v=7dd8e1e6c82e",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/MuseDrama.cs3?v=9b413842a617",
     "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/musedrama.png",
     "tvTypes": [
       "AsianDrama",
@@ -81,8 +81,8 @@
     ],
     "language": "tr",
     "status": 1,
-    "fileSize": 114935,
-    "fileHash": "sha256-7dd8e1e6c82e1b66193ac1ca046a8ee76a4bdeb1b79fbb11bc33fb44bdace91e",
+    "fileSize": 115023,
+    "fileHash": "sha256-9b413842a6179ef1354c24f4deb52c783df55c09500df02fe060677af51beb42",
     "apiVersion": 1
   },
   {
