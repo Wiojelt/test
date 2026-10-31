@@ -105,5 +105,26 @@
     "fileSize": 114415,
     "fileHash": "sha256-450d10d8522f307a3600a3394f9349a611306395d60c6790ab3238efcb4a4ac7",
     "apiVersion": 1
+  },
+  {
+    "name": "Shortizle",
+    "internalName": "Shortizle",
+    "version": 1,
+    "description": "Shortizle — Türkçe altyazılı ve dublajlı dikey kısa drama dizileri.",
+    "authors": [
+      "Wiojelt"
+    ],
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/Shortizle.cs3?v=eb0d0208dc7c",
+    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/shortizle.png",
+    "tvTypes": [
+      "AsianDrama",
+      "TvSeries"
+    ],
+    "language": "tr",
+    "status": 1,
+    "fileSize": 115442,
+    "fileHash": "sha256-eb0d0208dc7c7e5fa7098ba56552d83ca11bd8ba8212b5239a24522c99e93bbd",
+    "apiVersion": 1
   }
 ]
