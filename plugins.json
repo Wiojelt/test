@@ -84,5 +84,26 @@
     "fileSize": 114936,
     "fileHash": "sha256-9e762d33c6a1c679cf5462dccc1dfc727b968c7063e57ed8163708d67457c185",
     "apiVersion": 1
+  },
+  {
+    "name": "Drama Dünyam",
+    "internalName": "DramaDunyam",
+    "version": 1,
+    "description": "Drama Dünyam — Türkçe dublajlı ve altyazılı dikey kısa drama dizileri.",
+    "authors": [
+      "Wiojelt"
+    ],
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/DramaDunyam.cs3?v=c3bfb5995b96",
+    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/dramadunyam.png",
+    "tvTypes": [
+      "AsianDrama",
+      "TvSeries"
+    ],
+    "language": "tr",
+    "status": 1,
+    "fileSize": 113490,
+    "fileHash": "sha256-c3bfb5995b96ecf919ce299419d355c7164583c76d8e849ff7428ac12b015deb",
+    "apiVersion": 1
   }
 ]
