@@ -273,5 +273,26 @@
     "fileSize": 111267,
     "fileHash": "sha256-8085c3f55febf3213663e23ea3d53707b19332776b638499f21b95ff136df44e",
     "apiVersion": 1
+  },
+  {
+    "name": "MoreShort",
+    "internalName": "MoreShort",
+    "version": 1,
+    "description": "MoreShort – Türkçe ve İngilizce dikey kısa drama dizileri.",
+    "authors": [
+      "Wiojelt"
+    ],
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/MoreShort.cs3?v=00dc830b1936",
+    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/moreshort.png",
+    "tvTypes": [
+      "AsianDrama",
+      "TvSeries"
+    ],
+    "language": "tr",
+    "status": 1,
+    "fileSize": 110600,
+    "fileHash": "sha256-00dc830b1936b2bda57af1ff15b13c42aa828ff6c7345807d72a78987fdec641",
+    "apiVersion": 1
   }
 ]
