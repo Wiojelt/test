@@ -67,13 +67,13 @@
   {
     "name": "muse drama",
     "internalName": "MuseDrama",
-    "version": 4,
+    "version": 5,
     "description": "muse drama — Türkçe altyazılı dikey kısa drama dizileri ve mini diziler.",
     "authors": [
       "Wiojelt"
     ],
     "repositoryUrl": "https://github.com/Wiojelt/test",
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/MuseDrama.cs3?v=67dd6e45e304",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/MuseDrama.cs3?v=7dd8e1e6c82e",
     "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/musedrama.png",
     "tvTypes": [
       "AsianDrama",
@@ -81,8 +81,8 @@
     ],
     "language": "tr",
     "status": 1,
-    "fileSize": 114918,
-    "fileHash": "sha256-67dd6e45e3045090d2703ff730daccd36c7d8aa29dfbf3017d0fbe76abc098b3",
+    "fileSize": 114935,
+    "fileHash": "sha256-7dd8e1e6c82e1b66193ac1ca046a8ee76a4bdeb1b79fbb11bc33fb44bdace91e",
     "apiVersion": 1
   },
   {
@@ -209,6 +209,27 @@
     "status": 1,
     "fileSize": 112173,
     "fileHash": "sha256-b6741e4423bc709949ca2aefc51a6c054b40a90b8c86ff656f549e46520a2ce6",
+    "apiVersion": 1
+  },
+  {
+    "name": "Micro Drama",
+    "internalName": "MicroDrama",
+    "version": 1,
+    "description": "Micro Drama — ByteDance ShortPlay altyapılı popüler kısa drama dizileri.",
+    "authors": [
+      "Wiojelt"
+    ],
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/MicroDrama.cs3?v=22636501cb8c",
+    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/microdrama.png",
+    "tvTypes": [
+      "AsianDrama",
+      "TvSeries"
+    ],
+    "language": "tr",
+    "status": 1,
+    "fileSize": 110584,
+    "fileHash": "sha256-22636501cb8c70b4f8b3f8b0a492abced0dde06940edda3e23cfb9240add17e5",
     "apiVersion": 1
   }
 ]
