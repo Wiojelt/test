@@ -252,5 +252,26 @@
     "fileSize": 110330,
     "fileHash": "sha256-4c1dd5783224fe9cbd96fa9eebcb42c590d4644ae54e3ea7d550b211ff976b4b",
     "apiVersion": 1
+  },
+  {
+    "name": "ShortMax",
+    "internalName": "ShortMax",
+    "version": 1,
+    "description": "ShortMax – Türkçe dublajlı ve altyazılı dikey kısa drama dizileri ve mini diziler.",
+    "authors": [
+      "Wiojelt"
+    ],
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/ShortMax.cs3?v=8085c3f55feb",
+    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/shortmax.png",
+    "tvTypes": [
+      "AsianDrama",
+      "TvSeries"
+    ],
+    "language": "tr",
+    "status": 1,
+    "fileSize": 111267,
+    "fileHash": "sha256-8085c3f55febf3213663e23ea3d53707b19332776b638499f21b95ff136df44e",
+    "apiVersion": 1
   }
 ]
