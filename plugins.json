@@ -147,5 +147,26 @@
     "fileSize": 107347,
     "fileHash": "sha256-ca571721aa0724c07a3279c24eea7adb86e76c3480d5e1ff53a2a9ee57256d72",
     "apiVersion": 1
+  },
+  {
+    "name": "My Drama",
+    "internalName": "MyDrama",
+    "version": 1,
+    "description": "My Drama — Türkçe altyazılı dikey kısa drama ve romantizm dizileri.",
+    "authors": [
+      "Wiojelt"
+    ],
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/MyDrama.cs3?v=ebf413b3089a",
+    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/mydrama.png",
+    "tvTypes": [
+      "AsianDrama",
+      "TvSeries"
+    ],
+    "language": "tr",
+    "status": 1,
+    "fileSize": 115718,
+    "fileHash": "sha256-ebf413b3089af3839ac9845d60aaab18d1e2eaaf2e659d39c93da710aa58c570",
+    "apiVersion": 1
   }
 ]
