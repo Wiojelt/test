@@ -67,13 +67,13 @@
   {
     "name": "muse drama",
     "internalName": "MuseDrama",
-    "version": 3,
+    "version": 4,
     "description": "muse drama — Türkçe altyazılı dikey kısa drama dizileri ve mini diziler.",
     "authors": [
       "Wiojelt"
     ],
     "repositoryUrl": "https://github.com/Wiojelt/test",
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/MuseDrama.cs3?v=3eefc45c647d",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/MuseDrama.cs3?v=67dd6e45e304",
     "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/musedrama.png",
     "tvTypes": [
       "AsianDrama",
@@ -81,8 +81,8 @@
     ],
     "language": "tr",
     "status": 1,
-    "fileSize": 114888,
-    "fileHash": "sha256-3eefc45c647d8a94f0d552b7e4ba7ee8715b943287cd27a599cc465281c3784d",
+    "fileSize": 114918,
+    "fileHash": "sha256-67dd6e45e3045090d2703ff730daccd36c7d8aa29dfbf3017d0fbe76abc098b3",
     "apiVersion": 1
   },
   {
@@ -151,13 +151,13 @@
   {
     "name": "My Drama",
     "internalName": "MyDrama",
-    "version": 1,
+    "version": 2,
     "description": "My Drama — Türkçe altyazılı dikey kısa drama ve romantizm dizileri.",
     "authors": [
       "Wiojelt"
     ],
     "repositoryUrl": "https://github.com/Wiojelt/test",
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/MyDrama.cs3?v=ebf413b3089a",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/MyDrama.cs3?v=8156294f1a79",
     "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/mydrama.png",
     "tvTypes": [
       "AsianDrama",
@@ -165,8 +165,8 @@
     ],
     "language": "tr",
     "status": 1,
-    "fileSize": 115718,
-    "fileHash": "sha256-ebf413b3089af3839ac9845d60aaab18d1e2eaaf2e659d39c93da710aa58c570",
+    "fileSize": 115784,
+    "fileHash": "sha256-8156294f1a79cfb2a923f465dfe0b9583bf567be453a092a00fa001379e611ef",
     "apiVersion": 1
   }
 ]
