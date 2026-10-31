@@ -3,11 +3,11 @@
   "description": "TurkStream Studio Test Eklenti Deposu (WioDB, StbTV, SeyirTURK)",
   "manifestVersion": 3,
   "pluginLists": [
-    "https://raw.githubusercontent.com/Wiojelt/test/builds/plugins.json?v=1793447675"
+    "https://raw.githubusercontent.com/Wiojelt/test/builds/plugins.json?v=1793448523"
   ],
   "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/viontv.webp",
-  "timestamp": 1793233336,
-  "pluginCount": 3,
-  "lastUpdated": 1793233336610,
+  "timestamp": 1793448523,
+  "pluginCount": 5,
+  "lastUpdated": 1793448523946,
   "version": 4
 }
