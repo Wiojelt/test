@@ -126,5 +126,26 @@
     "fileSize": 115442,
     "fileHash": "sha256-eb0d0208dc7c7e5fa7098ba56552d83ca11bd8ba8212b5239a24522c99e93bbd",
     "apiVersion": 1
+  },
+  {
+    "name": "Mini Dizi İzle",
+    "internalName": "MiniDiziIzle",
+    "version": 1,
+    "description": "Mini Dizi İzle — Türkçe dublajlı ve altyazılı mini dizi platformu.",
+    "authors": [
+      "Wiojelt"
+    ],
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/MiniDiziIzle.cs3?v=ca571721aa07",
+    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/minidiziizle.png",
+    "tvTypes": [
+      "AsianDrama",
+      "TvSeries"
+    ],
+    "language": "tr",
+    "status": 1,
+    "fileSize": 107347,
+    "fileHash": "sha256-ca571721aa0724c07a3279c24eea7adb86e76c3480d5e1ff53a2a9ee57256d72",
+    "apiVersion": 1
   }
 ]
