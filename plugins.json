@@ -378,5 +378,49 @@
     "fileSize": 111999,
     "fileHash": "sha256-9abd7da4fdf56808b8c8f6bd089088109ca29e7419d8da8037959a6432d8aea2",
     "apiVersion": 1
+  },
+  {
+    "name": "RaceReplay",
+    "internalName": "RaceReplay",
+    "version": 1,
+    "description": "RaceReplay – Formula 1, MotoGP, Superbike ve motor sporları tam yarış tekrarları ve arşivleri (FullRaceReplay, WatchF1Full, MotoMundo, SportVideo).",
+    "authors": [
+      "Wiojelt"
+    ],
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/RaceReplay.cs3?v=661e6a2f0e0f",
+    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/racereplay.png",
+    "tvTypes": [
+      "Live",
+      "TvSeries",
+      "Movie"
+    ],
+    "language": "en",
+    "status": 1,
+    "fileSize": 128764,
+    "fileHash": "sha256-661e6a2f0e0f3242e471552e805f2f0f9849a660b4c5d54e05e37431d606281a",
+    "apiVersion": 1
+  },
+  {
+    "name": "FootballReplay",
+    "internalName": "FootballReplay",
+    "version": 1,
+    "description": "FootballReplay – Premier League, Şampiyonlar Ligi, La Liga, Serie A ve dünya sporları tam maç tekrarları (SoccerFull, WatchReplay).",
+    "authors": [
+      "Wiojelt"
+    ],
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/FootballReplay.cs3?v=9000e60121a5",
+    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/footballreplay.png",
+    "tvTypes": [
+      "Live",
+      "TvSeries",
+      "Movie"
+    ],
+    "language": "en",
+    "status": 1,
+    "fileSize": 113357,
+    "fileHash": "sha256-9000e60121a5030f4fefd1f1fc7ef8a06c9c628ee0ac661700605c120d1d1ae7",
+    "apiVersion": 1
   }
 ]

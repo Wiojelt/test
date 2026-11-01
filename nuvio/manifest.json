@@ -1,0 +1,76 @@
+{
+  "id": "app.wiojelt.nuvio.sports",
+  "name": "Wiojelt Sports & Race Replay",
+  "logo": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/sports.png",
+  "version": "1.0.0",
+  "author": "Wiojelt",
+  "scrapers": [
+    {
+      "id": "soccerfull",
+      "name": "SoccerFull (Football Replays)",
+      "logo": "https://soccerfull.net/assets/images/logo.png",
+      "version": "1.0.0",
+      "filename": "providers/soccerfull.js",
+      "supportedTypes": ["movie", "tv"],
+      "contentLanguage": ["en", "tr"],
+      "supportsStreams": true,
+      "supportsSearch": true,
+      "catalogs": [
+        { "id": "premier-league", "name": "Premier League", "type": "series", "supportsPagination": true },
+        { "id": "champions-league", "name": "Champions League", "type": "series", "supportsPagination": true },
+        { "id": "laliga", "name": "La Liga", "type": "series", "supportsPagination": true },
+        { "id": "serie-a", "name": "Serie A", "type": "series", "supportsPagination": true },
+        { "id": "bundesliga", "name": "Bundesliga", "type": "series", "supportsPagination": true }
+      ]
+    },
+    {
+      "id": "fullracereplay",
+      "name": "FullRaceReplay (F1 & MotoGP)",
+      "logo": "https://fullracereplay.com/iconfrr.webp",
+      "version": "1.0.0",
+      "filename": "providers/fullracereplay.js",
+      "supportedTypes": ["movie", "tv"],
+      "contentLanguage": ["en"],
+      "supportsStreams": true,
+      "supportsSearch": true,
+      "catalogs": [
+        { "id": "f1", "name": "Formula 1 Replays", "type": "series", "supportsPagination": true },
+        { "id": "motogp", "name": "MotoGP Replays", "type": "series", "supportsPagination": true }
+      ]
+    },
+    {
+      "id": "motomundo",
+      "name": "MotoMundo (MotoGP & WSBK)",
+      "logo": "https://motomundo.net/favicon.ico",
+      "version": "1.0.0",
+      "filename": "providers/motomundo.js",
+      "supportedTypes": ["movie", "tv"],
+      "contentLanguage": ["en"],
+      "supportsStreams": true,
+      "supportsSearch": true,
+      "catalogs": [
+        { "id": "motogp", "name": "MotoGP", "type": "series", "supportsPagination": true },
+        { "id": "moto2", "name": "Moto2", "type": "series", "supportsPagination": true },
+        { "id": "moto3", "name": "Moto3", "type": "series", "supportsPagination": true },
+        { "id": "wsbk", "name": "WorldSBK", "type": "series", "supportsPagination": true }
+      ]
+    },
+    {
+      "id": "watchreplay",
+      "name": "WatchReplay (NFL & US Sports)",
+      "logo": "https://watchreplay.net/favicon.ico",
+      "version": "1.0.0",
+      "filename": "providers/watchreplay.js",
+      "supportedTypes": ["movie", "tv"],
+      "contentLanguage": ["en"],
+      "supportsStreams": true,
+      "supportsSearch": true,
+      "catalogs": [
+        { "id": "nfl", "name": "NFL Replays", "type": "series", "supportsPagination": true },
+        { "id": "nba", "name": "NBA Replays", "type": "series", "supportsPagination": true },
+        { "id": "nhl", "name": "NHL Replays", "type": "series", "supportsPagination": true },
+        { "id": "mlb", "name": "MLB Replays", "type": "series", "supportsPagination": true }
+      ]
+    }
+  ]
+}
