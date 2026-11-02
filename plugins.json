@@ -319,13 +319,13 @@
   {
     "name": "WioSpor",
     "internalName": "WioSpor",
-    "version": 1,
-    "description": "WioSpor · Formula 1, MotoGP, Futbol (Premier League, Şampiyonlar Ligi, La Liga), NFL ve Spor Arşivi tek eklentide birleştirilmiş maç ve yarış tekrarları.",
+    "version": 2,
+    "description": "WioSpor · Formula 1, MotoGP (MotoMundo & FRR), Futbol (Premier League, Şampiyonlar Ligi), NFL ve Spor Arşivi tek eklentide birleştirilmiş maç ve yarış tekrarları.",
     "authors": [
       "Wiojelt"
     ],
     "repositoryUrl": "https://github.com/Wiojelt/test",
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/WioSpor.cs3?v=7f8df1da4cf1",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/WioSpor.cs3?v=31cb10ccf522",
     "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/wiospor.png",
     "tvTypes": [
       "Live",
@@ -334,8 +334,8 @@
     ],
     "language": "tr",
     "status": 1,
-    "fileSize": 125613,
-    "fileHash": "sha256-7f8df1da4cf155c313d750e0e152f8e9902320b6fa38f98241ef4b4ff151f340",
+    "fileSize": 133066,
+    "fileHash": "sha256-31cb10ccf5220bc7d00ad0accb4794b38dbd637683e22f92f9dfa54e32384606",
     "apiVersion": 1
   }
 ]
