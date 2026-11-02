@@ -65,36 +65,15 @@
     "apiVersion": 1
   },
   {
-    "name": "muse drama",
-    "internalName": "MuseDrama",
-    "version": 7,
-    "description": "muse drama — Türkçe altyazılı dikey kısa drama dizileri ve mini diziler.",
-    "authors": [
-      "Wiojelt"
-    ],
-    "repositoryUrl": "https://github.com/Wiojelt/test",
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/MuseDrama.cs3?v=e557c4e2567d",
-    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/musedrama.png",
-    "tvTypes": [
-      "AsianDrama",
-      "TvSeries"
-    ],
-    "language": "tr",
-    "status": 1,
-    "fileSize": 115593,
-    "fileHash": "sha256-e557c4e2567d9e7463e882ed3d4e0d6242c3dcd408794d102c38c2639578c25d",
-    "apiVersion": 1
-  },
-  {
     "name": "Drama Dünyam",
     "internalName": "DramaDunyam",
-    "version": 2,
+    "version": 3,
     "description": "Drama Dünyam — Türkçe dublajlı ve altyazılı dikey kısa drama dizileri.",
     "authors": [
       "Wiojelt"
     ],
     "repositoryUrl": "https://github.com/Wiojelt/test",
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/DramaDunyam.cs3?v=450d10d8522f",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/DramaDunyam.cs3?v=3eb403e20577",
     "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/dramadunyam.png",
     "tvTypes": [
       "AsianDrama",
@@ -102,20 +81,20 @@
     ],
     "language": "tr",
     "status": 1,
-    "fileSize": 114415,
-    "fileHash": "sha256-450d10d8522f307a3600a3394f9349a611306395d60c6790ab3238efcb4a4ac7",
+    "fileSize": 115963,
+    "fileHash": "sha256-3eb403e20577cf9311da0add0a860c1e750dc0cc06d0b1bdaf5829a4c8126419",
     "apiVersion": 1
   },
   {
     "name": "Shortizle",
     "internalName": "Shortizle",
-    "version": 1,
+    "version": 2,
     "description": "Shortizle — Türkçe altyazılı ve dublajlı dikey kısa drama dizileri.",
     "authors": [
       "Wiojelt"
     ],
     "repositoryUrl": "https://github.com/Wiojelt/test",
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/Shortizle.cs3?v=eb0d0208dc7c",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/Shortizle.cs3?v=b353f5412036",
     "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/shortizle.png",
     "tvTypes": [
       "AsianDrama",
@@ -123,20 +102,20 @@
     ],
     "language": "tr",
     "status": 1,
-    "fileSize": 115442,
-    "fileHash": "sha256-eb0d0208dc7c7e5fa7098ba56552d83ca11bd8ba8212b5239a24522c99e93bbd",
+    "fileSize": 115047,
+    "fileHash": "sha256-b353f54120367a5455c1e69e5c9bb118cd90942f12daefaaa70b4aa6f4892e60",
     "apiVersion": 1
   },
   {
     "name": "Mini Dizi İzle",
     "internalName": "MiniDiziIzle",
-    "version": 1,
+    "version": 2,
     "description": "Mini Dizi İzle — Türkçe dublajlı ve altyazılı mini dizi platformu.",
     "authors": [
       "Wiojelt"
     ],
     "repositoryUrl": "https://github.com/Wiojelt/test",
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/MiniDiziIzle.cs3?v=ca571721aa07",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/MiniDiziIzle.cs3?v=8aac6b2adcf4",
     "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/minidiziizle.png",
     "tvTypes": [
       "AsianDrama",
@@ -144,41 +123,20 @@
     ],
     "language": "tr",
     "status": 1,
-    "fileSize": 107347,
-    "fileHash": "sha256-ca571721aa0724c07a3279c24eea7adb86e76c3480d5e1ff53a2a9ee57256d72",
-    "apiVersion": 1
-  },
-  {
-    "name": "My Drama",
-    "internalName": "MyDrama",
-    "version": 2,
-    "description": "My Drama — Türkçe altyazılı dikey kısa drama ve romantizm dizileri.",
-    "authors": [
-      "Wiojelt"
-    ],
-    "repositoryUrl": "https://github.com/Wiojelt/test",
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/MyDrama.cs3?v=8156294f1a79",
-    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/mydrama.png",
-    "tvTypes": [
-      "AsianDrama",
-      "TvSeries"
-    ],
-    "language": "tr",
-    "status": 1,
-    "fileSize": 115784,
-    "fileHash": "sha256-8156294f1a79cfb2a923f465dfe0b9583bf567be453a092a00fa001379e611ef",
+    "fileSize": 110753,
+    "fileHash": "sha256-8aac6b2adcf4f331ab3b4897bddfe28ebba62d842ca39ff07ccb4d99257f9c4e",
     "apiVersion": 1
   },
   {
     "name": "MinuteDrama",
     "internalName": "MinuteDrama",
-    "version": 1,
+    "version": 2,
     "description": "MinuteDrama — Türkçe altyazılı dikey kısa drama dizileri ve mini diziler.",
     "authors": [
       "Wiojelt"
     ],
     "repositoryUrl": "https://github.com/Wiojelt/test",
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/MinuteDrama.cs3?v=d99165422472",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/MinuteDrama.cs3?v=ee9052785e67",
     "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/minutedrama.png",
     "tvTypes": [
       "AsianDrama",
@@ -186,8 +144,8 @@
     ],
     "language": "tr",
     "status": 1,
-    "fileSize": 108902,
-    "fileHash": "sha256-d9916542247291c2fe6a66bd6c3b0fdfaf55e262555d871a9b86329becdbfd6c",
+    "fileSize": 110527,
+    "fileHash": "sha256-ee9052785e67a4fd49e881471f6227aad47cbe907b470c941e557f0c39a8cefc",
     "apiVersion": 1
   },
   {
@@ -214,13 +172,13 @@
   {
     "name": "Micro Drama",
     "internalName": "MicroDrama",
-    "version": 1,
+    "version": 2,
     "description": "Micro Drama — ByteDance ShortPlay altyapılı popüler kısa drama dizileri.",
     "authors": [
       "Wiojelt"
     ],
     "repositoryUrl": "https://github.com/Wiojelt/test",
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/MicroDrama.cs3?v=22636501cb8c",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/MicroDrama.cs3?v=344d173b9703",
     "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/microdrama.png",
     "tvTypes": [
       "AsianDrama",
@@ -228,41 +186,20 @@
     ],
     "language": "tr",
     "status": 1,
-    "fileSize": 110584,
-    "fileHash": "sha256-22636501cb8c70b4f8b3f8b0a492abced0dde06940edda3e23cfb9240add17e5",
-    "apiVersion": 1
-  },
-  {
-    "name": "Shot Short",
-    "internalName": "ShotShort",
-    "version": 1,
-    "description": "Shot Short — Türkçe altyazılı dikey kısa drama dizileri ve mini diziler.",
-    "authors": [
-      "Wiojelt"
-    ],
-    "repositoryUrl": "https://github.com/Wiojelt/test",
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/ShotShort.cs3?v=4c1dd5783224",
-    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/shotshort.png",
-    "tvTypes": [
-      "AsianDrama",
-      "TvSeries"
-    ],
-    "language": "tr",
-    "status": 1,
-    "fileSize": 110330,
-    "fileHash": "sha256-4c1dd5783224fe9cbd96fa9eebcb42c590d4644ae54e3ea7d550b211ff976b4b",
+    "fileSize": 106689,
+    "fileHash": "sha256-344d173b9703920725c42c2e31feb5205143e12f0229999050491b1ec363d6db",
     "apiVersion": 1
   },
   {
     "name": "ShortMax",
     "internalName": "ShortMax",
-    "version": 1,
+    "version": 2,
     "description": "ShortMax – Türkçe dublajlı ve altyazılı dikey kısa drama dizileri ve mini diziler.",
     "authors": [
       "Wiojelt"
     ],
     "repositoryUrl": "https://github.com/Wiojelt/test",
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/ShortMax.cs3?v=8085c3f55feb",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/ShortMax.cs3?v=dbab367c85f7",
     "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/shortmax.png",
     "tvTypes": [
       "AsianDrama",
@@ -270,8 +207,8 @@
     ],
     "language": "tr",
     "status": 1,
-    "fileSize": 111267,
-    "fileHash": "sha256-8085c3f55febf3213663e23ea3d53707b19332776b638499f21b95ff136df44e",
+    "fileSize": 111399,
+    "fileHash": "sha256-dbab367c85f7014bddfd7695819e192512b3b68c8c12796813e2c283e2aee736",
     "apiVersion": 1
   },
   {
@@ -298,13 +235,13 @@
   {
     "name": "VibeShort",
     "internalName": "VibeShort",
-    "version": 1,
+    "version": 2,
     "description": "VibeShort — Türkçe dublajlı ve altyazılı dikey kısa drama dizileri ve mini diziler.",
     "authors": [
       "Wiojelt"
     ],
     "repositoryUrl": "https://github.com/Wiojelt/test",
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/VibeShort.cs3?v=77f82ddd9a22",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/VibeShort.cs3?v=1e777d191ada",
     "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/vibeshort.png",
     "tvTypes": [
       "AsianDrama",
@@ -312,20 +249,20 @@
     ],
     "language": "tr",
     "status": 1,
-    "fileSize": 113284,
-    "fileHash": "sha256-77f82ddd9a22c8be7a4c6845feae988fe95287cc64459cf738fddef13f258b2f",
+    "fileSize": 111050,
+    "fileHash": "sha256-1e777d191ada937542e9f3cb45cbc0e6c92353360d3aa9f938daefee51287d05",
     "apiVersion": 1
   },
   {
     "name": "YOUKU",
     "internalName": "Youku",
-    "version": 1,
+    "version": 2,
     "description": "YOUKU (优酷) — Popüler Çin ve Asya dizileri, tarihi ve romantik kısa diziler (Türkçe/İngilizce altyazılı).",
     "authors": [
       "Wiojelt"
     ],
     "repositoryUrl": "https://github.com/Wiojelt/test",
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/Youku.cs3?v=a28e449f4b3f",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/Youku.cs3?v=07a1886c919d",
     "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/youku.png",
     "tvTypes": [
       "AsianDrama",
@@ -333,8 +270,8 @@
     ],
     "language": "zh",
     "status": 1,
-    "fileSize": 113082,
-    "fileHash": "sha256-a28e449f4b3f0741ce900fcb0f223ce4146a3e1a7d4cef13ae65d8720a5a0f2a",
+    "fileSize": 113194,
+    "fileHash": "sha256-07a1886c919d9583c6c3ac880c63f3060137ac073f84cc4c8ccbd22b2136a840",
     "apiVersion": 1
   },
   {
@@ -361,13 +298,13 @@
   {
     "name": "StardustTV",
     "internalName": "StardustTV",
-    "version": 1,
+    "version": 2,
     "description": "StardustTV – 2500+ mini dizi ve kısa drama kataloğu (Türkçe altyazı destekli, unencrypted HLS).",
     "authors": [
       "Wiojelt"
     ],
     "repositoryUrl": "https://github.com/Wiojelt/test",
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/StardustTV.cs3?v=9abd7da4fdf5",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/StardustTV.cs3?v=5b5b7b976dcd",
     "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/stardusttv.png",
     "tvTypes": [
       "AsianDrama",
@@ -375,52 +312,30 @@
     ],
     "language": "tr",
     "status": 1,
-    "fileSize": 111999,
-    "fileHash": "sha256-9abd7da4fdf56808b8c8f6bd089088109ca29e7419d8da8037959a6432d8aea2",
+    "fileSize": 112088,
+    "fileHash": "sha256-5b5b7b976dcdd6082e424af1c25fab5c9a13a47a8867a60f047e9bb2e2c86edb",
     "apiVersion": 1
   },
   {
-    "name": "RaceReplay",
-    "internalName": "RaceReplay",
+    "name": "WioSpor",
+    "internalName": "WioSpor",
     "version": 1,
-    "description": "RaceReplay – Formula 1, MotoGP, Superbike ve motor sporları tam yarış tekrarları ve arşivleri (FullRaceReplay, WatchF1Full, MotoMundo, SportVideo).",
+    "description": "WioSpor · Formula 1, MotoGP, Futbol (Premier League, Şampiyonlar Ligi, La Liga), NFL ve Spor Arşivi tek eklentide birleştirilmiş maç ve yarış tekrarları.",
     "authors": [
       "Wiojelt"
     ],
     "repositoryUrl": "https://github.com/Wiojelt/test",
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/RaceReplay.cs3?v=7569289f6f06",
-    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/racereplay.png",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/WioSpor.cs3?v=7f8df1da4cf1",
+    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/wiospor.png",
     "tvTypes": [
       "Live",
       "TvSeries",
       "Movie"
     ],
-    "language": "en",
+    "language": "tr",
     "status": 1,
-    "fileSize": 131348,
-    "fileHash": "sha256-7569289f6f066cd8d1cf19d0a0b7dbd32b4e2c7a1dc23efcca94677e66171a48",
-    "apiVersion": 1
-  },
-  {
-    "name": "FootballReplay",
-    "internalName": "FootballReplay",
-    "version": 1,
-    "description": "FootballReplay – Premier League, Şampiyonlar Ligi, La Liga, Serie A ve dünya sporları tam maç tekrarları (SoccerFull, WatchReplay).",
-    "authors": [
-      "Wiojelt"
-    ],
-    "repositoryUrl": "https://github.com/Wiojelt/test",
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/FootballReplay.cs3?v=9000e60121a5",
-    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/footballreplay.png",
-    "tvTypes": [
-      "Live",
-      "TvSeries",
-      "Movie"
-    ],
-    "language": "en",
-    "status": 1,
-    "fileSize": 113357,
-    "fileHash": "sha256-9000e60121a5030f4fefd1f1fc7ef8a06c9c628ee0ac661700605c120d1d1ae7",
+    "fileSize": 125613,
+    "fileHash": "sha256-7f8df1da4cf155c313d750e0e152f8e9902320b6fa38f98241ef4b4ff151f340",
     "apiVersion": 1
   }
 ]
