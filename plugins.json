@@ -65,27 +65,6 @@
     "apiVersion": 1
   },
   {
-    "name": "Drama Dünyam",
-    "internalName": "DramaDunyam",
-    "version": 3,
-    "description": "Drama Dünyam — Türkçe dublajlı ve altyazılı dikey kısa drama dizileri.",
-    "authors": [
-      "Wiojelt"
-    ],
-    "repositoryUrl": "https://github.com/Wiojelt/test",
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/DramaDunyam.cs3?v=3eb403e20577",
-    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/dramadunyam.png",
-    "tvTypes": [
-      "AsianDrama",
-      "TvSeries"
-    ],
-    "language": "tr",
-    "status": 1,
-    "fileSize": 115963,
-    "fileHash": "sha256-3eb403e20577cf9311da0add0a860c1e750dc0cc06d0b1bdaf5829a4c8126419",
-    "apiVersion": 1
-  },
-  {
     "name": "Shortizle",
     "internalName": "Shortizle",
     "version": 2,
@@ -104,27 +83,6 @@
     "status": 1,
     "fileSize": 115047,
     "fileHash": "sha256-b353f54120367a5455c1e69e5c9bb118cd90942f12daefaaa70b4aa6f4892e60",
-    "apiVersion": 1
-  },
-  {
-    "name": "Mini Dizi İzle",
-    "internalName": "MiniDiziIzle",
-    "version": 2,
-    "description": "Mini Dizi İzle — Türkçe dublajlı ve altyazılı mini dizi platformu.",
-    "authors": [
-      "Wiojelt"
-    ],
-    "repositoryUrl": "https://github.com/Wiojelt/test",
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/MiniDiziIzle.cs3?v=8aac6b2adcf4",
-    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/minidiziizle.png",
-    "tvTypes": [
-      "AsianDrama",
-      "TvSeries"
-    ],
-    "language": "tr",
-    "status": 1,
-    "fileSize": 110753,
-    "fileHash": "sha256-8aac6b2adcf4f331ab3b4897bddfe28ebba62d842ca39ff07ccb4d99257f9c4e",
     "apiVersion": 1
   },
   {
@@ -167,27 +125,6 @@
     "status": 1,
     "fileSize": 112173,
     "fileHash": "sha256-b6741e4423bc709949ca2aefc51a6c054b40a90b8c86ff656f549e46520a2ce6",
-    "apiVersion": 1
-  },
-  {
-    "name": "Micro Drama",
-    "internalName": "MicroDrama",
-    "version": 2,
-    "description": "Micro Drama — ByteDance ShortPlay altyapılı popüler kısa drama dizileri.",
-    "authors": [
-      "Wiojelt"
-    ],
-    "repositoryUrl": "https://github.com/Wiojelt/test",
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/MicroDrama.cs3?v=344d173b9703",
-    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/microdrama.png",
-    "tvTypes": [
-      "AsianDrama",
-      "TvSeries"
-    ],
-    "language": "tr",
-    "status": 1,
-    "fileSize": 106689,
-    "fileHash": "sha256-344d173b9703920725c42c2e31feb5205143e12f0229999050491b1ec363d6db",
     "apiVersion": 1
   },
   {
