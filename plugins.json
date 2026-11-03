@@ -86,27 +86,6 @@
     "apiVersion": 1
   },
   {
-    "name": "MinuteDrama",
-    "internalName": "MinuteDrama",
-    "version": 2,
-    "description": "MinuteDrama — Türkçe altyazılı dikey kısa drama dizileri ve mini diziler.",
-    "authors": [
-      "Wiojelt"
-    ],
-    "repositoryUrl": "https://github.com/Wiojelt/test",
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/MinuteDrama.cs3?v=ee9052785e67",
-    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/minutedrama.png",
-    "tvTypes": [
-      "AsianDrama",
-      "TvSeries"
-    ],
-    "language": "tr",
-    "status": 1,
-    "fileSize": 110527,
-    "fileHash": "sha256-ee9052785e67a4fd49e881471f6227aad47cbe907b470c941e557f0c39a8cefc",
-    "apiVersion": 1
-  },
-  {
     "name": "FlickReels",
     "internalName": "FlickReels",
     "version": 1,
