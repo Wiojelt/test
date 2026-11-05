@@ -115,7 +115,7 @@
       "Wiojelt"
     ],
     "repositoryUrl": "https://github.com/Wiojelt/test",
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/Shortizle.cs3?v=eb0d0208dc7c",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/Shortizle.cs3?v=b353f5412036",
     "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/shortizle.png",
     "tvTypes": [
       "AsianDrama",
@@ -123,8 +123,8 @@
     ],
     "language": "tr",
     "status": 1,
-    "fileSize": 115442,
-    "fileHash": "sha256-eb0d0208dc7c7e5fa7098ba56552d83ca11bd8ba8212b5239a24522c99e93bbd",
+    "fileSize": 115047,
+    "fileHash": "sha256-b353f54120367a5455c1e69e5c9bb118cd90942f12daefaaa70b4aa6f4892e60",
     "apiVersion": 1
   },
   {
@@ -241,7 +241,7 @@
       "Wiojelt"
     ],
     "repositoryUrl": "https://github.com/Wiojelt/test",
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/ShortMax.cs3?v=8085c3f55feb",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/ShortMax.cs3?v=dbab367c85f7",
     "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/shortmax.png",
     "tvTypes": [
       "AsianDrama",
@@ -249,8 +249,8 @@
     ],
     "language": "tr",
     "status": 1,
-    "fileSize": 111267,
-    "fileHash": "sha256-8085c3f55febf3213663e23ea3d53707b19332776b638499f21b95ff136df44e",
+    "fileSize": 111399,
+    "fileHash": "sha256-dbab367c85f7014bddfd7695819e192512b3b68c8c12796813e2c283e2aee736",
     "apiVersion": 1
   },
   {
@@ -277,13 +277,13 @@
   {
     "name": "VibeShort",
     "internalName": "VibeShort",
-    "version": 1,
+    "version": 3,
     "description": "VibeShort — Türkçe dublajlı ve altyazılı dikey kısa drama dizileri ve mini diziler.",
     "authors": [
       "Wiojelt"
     ],
     "repositoryUrl": "https://github.com/Wiojelt/test",
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/VibeShort.cs3?v=77f82ddd9a22",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/VibeShort.cs3?v=1e777d191ada",
     "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/vibeshort.png",
     "tvTypes": [
       "AsianDrama",
@@ -291,8 +291,8 @@
     ],
     "language": "tr",
     "status": 1,
-    "fileSize": 113284,
-    "fileHash": "sha256-77f82ddd9a22c8be7a4c6845feae988fe95287cc64459cf738fddef13f258b2f",
+    "fileSize": 111050,
+    "fileHash": "sha256-1e777d191ada937542e9f3cb45cbc0e6c92353360d3aa9f938daefee51287d05",
     "apiVersion": 1
   },
   {
@@ -304,7 +304,7 @@
       "Wiojelt"
     ],
     "repositoryUrl": "https://github.com/Wiojelt/test",
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/Youku.cs3?v=a28e449f4b3f",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/Youku.cs3?v=07a1886c919d",
     "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/youku.png",
     "tvTypes": [
       "AsianDrama",
@@ -312,8 +312,8 @@
     ],
     "language": "zh",
     "status": 1,
-    "fileSize": 113082,
-    "fileHash": "sha256-a28e449f4b3f0741ce900fcb0f223ce4146a3e1a7d4cef13ae65d8720a5a0f2a",
+    "fileSize": 113194,
+    "fileHash": "sha256-07a1886c919d9583c6c3ac880c63f3060137ac073f84cc4c8ccbd22b2136a840",
     "apiVersion": 1
   },
   {
@@ -346,7 +346,7 @@
       "Wiojelt"
     ],
     "repositoryUrl": "https://github.com/Wiojelt/test",
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/StardustTV.cs3?v=9abd7da4fdf5",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/StardustTV.cs3?v=5b5b7b976dcd",
     "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/stardusttv.png",
     "tvTypes": [
       "AsianDrama",
@@ -354,8 +354,8 @@
     ],
     "language": "tr",
     "status": 1,
-    "fileSize": 111999,
-    "fileHash": "sha256-9abd7da4fdf56808b8c8f6bd089088109ca29e7419d8da8037959a6432d8aea2",
+    "fileSize": 112088,
+    "fileHash": "sha256-5b5b7b976dcdd6082e424af1c25fab5c9a13a47a8867a60f047e9bb2e2c86edb",
     "apiVersion": 1
   },
   {
