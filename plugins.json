@@ -67,7 +67,7 @@
   {
     "name": "Shortizle",
     "internalName": "Shortizle",
-    "version": 2,
+    "version": 1,
     "description": "Shortizle — Türkçe altyazılı ve dublajlı dikey kısa drama dizileri.",
     "authors": [
       "Wiojelt"
@@ -109,7 +109,7 @@
   {
     "name": "ShortMax",
     "internalName": "ShortMax",
-    "version": 2,
+    "version": 1,
     "description": "ShortMax – Türkçe dublajlı ve altyazılı dikey kısa drama dizileri ve mini diziler.",
     "authors": [
       "Wiojelt"
@@ -151,7 +151,7 @@
   {
     "name": "VibeShort",
     "internalName": "VibeShort",
-    "version": 2,
+    "version": 3,
     "description": "VibeShort — Türkçe dublajlı ve altyazılı dikey kısa drama dizileri ve mini diziler.",
     "authors": [
       "Wiojelt"
@@ -172,7 +172,7 @@
   {
     "name": "YOUKU",
     "internalName": "Youku",
-    "version": 2,
+    "version": 1,
     "description": "YOUKU (优酷) — Popüler Çin ve Asya dizileri, tarihi ve romantik kısa diziler (Türkçe/İngilizce altyazılı).",
     "authors": [
       "Wiojelt"
@@ -214,7 +214,7 @@
   {
     "name": "StardustTV",
     "internalName": "StardustTV",
-    "version": 2,
+    "version": 1,
     "description": "StardustTV – 2500+ mini dizi ve kısa drama kataloğu (Türkçe altyazı destekli, unencrypted HLS).",
     "authors": [
       "Wiojelt"
@@ -235,13 +235,13 @@
   {
     "name": "WioSpor",
     "internalName": "WioSpor",
-    "version": 2,
+    "version": 3,
     "description": "WioSpor · Formula 1, MotoGP (MotoMundo & FRR), Futbol (Premier League, Şampiyonlar Ligi), NFL ve Spor Arşivi tek eklentide birleştirilmiş maç ve yarış tekrarları.",
     "authors": [
       "Wiojelt"
     ],
     "repositoryUrl": "https://github.com/Wiojelt/test",
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/WioSpor.cs3?v=31cb10ccf522",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/WioSpor.cs3?v=4e9b7bd519b6",
     "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/main/assets/wiospor.png",
     "tvTypes": [
       "Live",
@@ -250,8 +250,8 @@
     ],
     "language": "tr",
     "status": 1,
-    "fileSize": 133066,
-    "fileHash": "sha256-31cb10ccf5220bc7d00ad0accb4794b38dbd637683e22f92f9dfa54e32384606",
+    "fileSize": 140731,
+    "fileHash": "sha256-4e9b7bd519b6d403d3e30265e772dd5bc977d7dcdd9174f8b360baa9731fd05e",
     "apiVersion": 1
   }
 ]
