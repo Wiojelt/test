@@ -257,8 +257,8 @@
   {
     "name": "Catcast TV",
     "internalName": "Catcast",
-    "version": 1,
-    "description": "Catcast TV · Canlı Web TV, Tematik Kanallar ve Canlı Yayın Platformu (catcast.tv)",
+    "version": 2,
+    "description": "Catcast TV · Canlı Web TV, Tematik Kanallar, 270 Sayfa Popüler & Ülke Kategorileri (Türkiye, Azerbaycan, Rusya, Global)",
     "authors": [
       "Wiojelt"
     ],
@@ -270,8 +270,8 @@
     ],
     "language": "all",
     "status": 1,
-    "fileSize": 108311,
-    "fileHash": "sha256-c3060d400b6965fbc48b0cef89cc515c3ae93bc67d039f3f96106f9a819a8919",
+    "fileSize": 113867,
+    "fileHash": "sha256-11663611032ae5b051edb04c189915f93ef83634927a245f955f2a026eca3293",
     "apiVersion": 1
   }
 ]
