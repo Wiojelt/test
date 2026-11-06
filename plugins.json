@@ -253,5 +253,25 @@
     "fileSize": 140629,
     "fileHash": "sha256-6f5f2951e8a356a127e505cb6d73a3774a6eeb515a3e9fc8f22525a526071234",
     "apiVersion": 1
+  },
+  {
+    "name": "Catcast TV",
+    "internalName": "Catcast",
+    "version": 1,
+    "description": "Catcast TV · Canlı Web TV, Tematik Kanallar ve Canlı Yayın Platformu (catcast.tv)",
+    "authors": [
+      "Wiojelt"
+    ],
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/Catcast.cs3",
+    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/builds/assets/catcast.png",
+    "tvTypes": [
+      "Live"
+    ],
+    "language": "all",
+    "status": 1,
+    "fileSize": 108311,
+    "fileHash": "sha256-c3060d400b6965fbc48b0cef89cc515c3ae93bc67d039f3f96106f9a819a8919",
+    "apiVersion": 1
   }
 ]
