@@ -257,21 +257,21 @@
   {
     "name": "Catcast TV",
     "internalName": "Catcast",
-    "version": 2,
-    "description": "Catcast TV · Canlı Web TV, Tematik Kanallar, 270 Sayfa Popüler & Ülke Kategorileri (Türkiye, Azerbaycan, Rusya, Global)",
+    "version": 3,
+    "description": "Catcast TV · Sadece Türkçe Canlı Kanallar (Ulusal, Haber, Sinema, Dizi, Spor, Müzik, Çocuk, Belgesel)",
     "authors": [
       "Wiojelt"
     ],
     "repositoryUrl": "https://github.com/Wiojelt/test",
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/Catcast.cs3",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/Catcast.cs3?v=5a332e04a042",
     "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/builds/assets/catcast.png",
     "tvTypes": [
       "Live"
     ],
-    "language": "all",
+    "language": "tr",
     "status": 1,
-    "fileSize": 113867,
-    "fileHash": "sha256-11663611032ae5b051edb04c189915f93ef83634927a245f955f2a026eca3293",
+    "fileSize": 123479,
+    "fileHash": "sha256-5a332e04a042d061baf516bc240e945cb3e93953653d95b48e5a557a317c9684",
     "apiVersion": 1
   }
 ]
