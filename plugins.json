@@ -427,5 +427,27 @@
     "fileSize": 114245,
     "fileHash": "sha256-f6c0c6ceed38d5afd00ce6fbfcb93fe7b5256a576fa494cebb5909ab8fe88022",
     "apiVersion": 1
+  },
+  {
+    "name": "Konflix",
+    "internalName": "Konflix",
+    "version": 1,
+    "description": "KONFLİX · Güncel yerli ve yabancı filmler, diziler, animasyonlar ve özel yapımlar.",
+    "authors": [
+      "Wiojelt"
+    ],
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/Konflix.cs3?v=013e0c3af615",
+    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/builds/assets/konflix.png",
+    "tvTypes": [
+      "Movie",
+      "TvSeries",
+      "Anime"
+    ],
+    "language": "tr",
+    "status": 1,
+    "fileSize": 112687,
+    "fileHash": "sha256-013e0c3af61585d8327c2f16b1d2cd4a26520b5580c4d746ddc54606d47b9529",
+    "apiVersion": 1
   }
 ]
