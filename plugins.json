@@ -700,5 +700,26 @@
     "fileSize": 114407,
     "fileHash": "sha256-ecf2693227c62a7509f61bd909b6dfd19b367c87063d6d1eac2b212b8b48462a",
     "apiVersion": 1
+  },
+  {
+    "name": "One Pace TR",
+    "internalName": "OnePaceTR",
+    "version": 1,
+    "description": "One Pace TR · Manga temposuna sadık, dolgu bölümlerden arındırılmış One Piece Türkçe serisi (35 Ark & Güncel Bölümler).",
+    "authors": [
+      "Wiojelt"
+    ],
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/OnePaceTR.cs3?v=abe142f36fb0",
+    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/builds/assets/onepacetr.png",
+    "tvTypes": [
+      "Anime",
+      "TvSeries"
+    ],
+    "language": "tr",
+    "status": 1,
+    "fileSize": 112909,
+    "fileHash": "sha256-abe142f36fb0f0332a30f2d79ae74214db8a7bd3965beef3adaf93cacaddb5bf",
+    "apiVersion": 1
   }
 ]
