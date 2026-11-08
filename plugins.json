@@ -416,7 +416,7 @@
       "Wiojelt"
     ],
     "repositoryUrl": "https://github.com/Wiojelt/test",
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/ArcanaDrama.cs3?v=f6c0c6ceed38",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/ArcanaDrama.cs3?v=287b61b1f139",
     "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/builds/assets/arcanadrama.png",
     "tvTypes": [
       "AsianDrama",
@@ -424,8 +424,8 @@
     ],
     "language": "tr",
     "status": 1,
-    "fileSize": 114245,
-    "fileHash": "sha256-f6c0c6ceed38d5afd00ce6fbfcb93fe7b5256a576fa494cebb5909ab8fe88022",
+    "fileSize": 114410,
+    "fileHash": "sha256-287b61b1f139b01bc36d9cc66843551ab2bfe0ab5a510f8628879c21827b8303",
     "apiVersion": 1
   },
   {
