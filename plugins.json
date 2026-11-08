@@ -677,5 +677,28 @@
     "iconUrl": "https://www.google.com/s2/favicons?domain=trdiziizle.tv&sz=128",
     "apiVersion": 1,
     "fileHash": "sha256-3b5de2e72657d197ff498133195b9e7c7ee5776ce71b9b534217952fc5ab28d3"
+  },
+  {
+    "name": "Net TV",
+    "internalName": "NetTV",
+    "version": 1,
+    "description": "Net TV · Canlı TV, Ulusal, Spor, Sinema ve popüler diziler (Adnan4161 & Aksaçlı).",
+    "authors": [
+      "Wiojelt",
+      "Adnan4161"
+    ],
+    "repositoryUrl": "https://github.com/Wiojelt/test",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/NetTV.cs3?v=fa239f34c636",
+    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/builds/assets/nettv.png",
+    "tvTypes": [
+      "Live",
+      "TvSeries",
+      "Movie"
+    ],
+    "language": "tr",
+    "status": 1,
+    "fileSize": 114382,
+    "fileHash": "sha256-fa239f34c636519b534f7f4c38f1ed130e0bac22ba74e0d1fcdcd894477d4fbc",
+    "apiVersion": 1
   }
 ]
