@@ -277,13 +277,13 @@
   {
     "name": "fragileTV",
     "internalName": "Sinewix",
-    "version": 7,
+    "version": 26,
     "description": "fragileTV · Film, Dizi ve Animasyon arşivi",
     "authors": [
       "Wiojelt"
     ],
     "repositoryUrl": "https://github.com/Wiojelt/test",
-    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/Sinewix.cs3?v=4ad9caccd4c5",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/Sinewix.cs3?v=26",
     "iconUrl": "https://raw.githubusercontent.com/Wiojelt/WioSinema/main/assets/fragiletv.png",
     "tvTypes": [
       "Movie",
@@ -293,8 +293,8 @@
     ],
     "language": "tr",
     "status": 1,
-    "fileSize": 39889,
-    "fileHash": "sha256-4ad9caccd4c50acf62d03a38b9339a88ae57c6e1aee058eca4c719586aa19f84",
+    "fileSize": 146205,
+    "fileHash": "sha256-7bd6bd06e6d29a0275500f7b84f6804aef0b29339f5bc18fdb9f621f0d6eaa9e",
     "apiVersion": 1
   },
   {
