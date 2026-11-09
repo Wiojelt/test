@@ -721,5 +721,24 @@
     "fileSize": 112909,
     "fileHash": "sha256-abe142f36fb0f0332a30f2d79ae74214db8a7bd3965beef3adaf93cacaddb5bf",
     "apiVersion": 1
+  },
+  {
+    "name": "TR Sesli Kitap",
+    "internalName": "TRSesliKitap",
+    "version": 1,
+    "tvTypes": [
+      "AudioBook",
+      "Podcast"
+    ],
+    "lang": "tr",
+    "iconUrl": "https://raw.githubusercontent.com/Wiojelt/test/builds/assets/trseslikitap.png",
+    "description": "TR Sesli Kitap · Türkçe sesli kitaplar, romanlar, klasik eserler ve radyo tiyatrosu arşivi.",
+    "authors": [
+      "Wiojelt"
+    ],
+    "status": 1,
+    "fileSize": 102813,
+    "fileHash": "sha256-c041f54f294db566c2d9401289ae1aa38812dc08988aabdb583891aceb004017",
+    "url": "https://raw.githubusercontent.com/Wiojelt/test/builds/TRSesliKitap.cs3"
   }
 ]
